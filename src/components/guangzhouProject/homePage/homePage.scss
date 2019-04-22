@@ -1,0 +1,26 @@
+.top_con{
+    height:680px;
+    width:100%;
+    box-sizing: border-box;
+    padding:10px 0;
+    .top_con_left{
+        width:540px;
+        height:100%;
+    }
+    .top_con_middle{
+        width:calc(100% - 1080px);
+        height:100%;
+        box-sizing: border-box;
+        padding:0 10px;
+    }
+    .top_con_right{
+        width:540px;
+        height:100%;
+    }
+}
+.bottom_con{
+    height:275px;
+    width:100%;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}

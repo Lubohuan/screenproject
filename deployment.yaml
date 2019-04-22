@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: standard-screen-website
+  namespace: develop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: standard-screen-website
+  template:
+    metadata:
+      labels:
+        name: standard-screen-website
+        app: standard-screen-website
+    spec:
+      containers:
+      - image: registry.cn-beijing.aliyuncs.com/huazhu_alpha/standard-screen-website:${TAG}
+        imagePullPolicy: Always
+        name: standard-screen-website
+        ports:
+        - containerPort: 8886

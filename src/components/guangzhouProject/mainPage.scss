@@ -1,0 +1,108 @@
+#maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden!important;
+    box-sizing: border-box;
+    color:#fff;
+    font-size:16px;
+}
+#body{
+    height:1080px;
+    width:1920px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .1s; 
+    .header_top{
+        height:65px;
+        width:100%;
+        box-sizing: border-box;
+        padding:0 20px;
+    }
+    .header_title{
+        margin:0 15px;
+        font-size:26px;
+        font-weight:bold;
+        background-image:-webkit-linear-gradient(bottom,#B0F9FF,#4CF0FE); 
+        -webkit-background-clip:text; 
+        -webkit-text-fill-color:transparent;
+    }
+    .timerday{
+        width:15px;
+        height:20px;
+        text-align: center;
+        background-color:rgba(254, 223, 80, .2);
+        color:#FEDF50;
+        line-height:22px;
+        margin:0 1px;
+    }
+    .header_tab{
+        height:50px;
+        width:100%;
+        background-color:rgba(40, 54, 100, 1);
+        .tabtext{
+            font-size: 18px;
+            color:rgba(223, 250, 255, 1);
+            text-align: center;
+            font-weight: bolder;
+            width:210px;
+            height:100%;
+            line-height:50px;
+            cursor: pointer;
+            position: relative;
+            .titletext{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .bgtext{
+                display: none;
+            }
+        }
+        .tabtext.active{
+            .bgtext{
+                display:block;
+                width:80%;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .titletext{
+                color: rgba(76, 240, 254, 1);
+            }
+        }
+    }
+}
+.flex_b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height:35px;
+}
+.flex_r{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.t18f{
+    font-size:20px;
+}
+.t16f{
+    font-size:16px;
+}
+.textdot{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
