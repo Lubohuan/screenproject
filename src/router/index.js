@@ -26,6 +26,14 @@ var mainRouters = [
           return require(['../components/guangzhouProject/userManager/userManager.vue'], resolve)
         },
         children:[],
+      },
+      {
+        path: '/qualityManage',
+        name: 'qualityManage',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/qualityManage/qualityManage.vue'], resolve)
+        },
+        children:[],
       }
     ],
   },
