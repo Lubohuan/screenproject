@@ -18,6 +18,13 @@ var mainRouters = [
         component: (resolve) => {
           return require(['../components/guangzhouProject/homePage/homePage.vue'], resolve)
         },
+      },
+      {
+        path: '/userManager',
+        name: 'userManager',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/userManager/userManager.vue'], resolve)
+        },
         children:[],
       }
     ],

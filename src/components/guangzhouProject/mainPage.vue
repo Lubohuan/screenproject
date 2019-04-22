@@ -49,7 +49,7 @@ export default {
       activeIndex:0,
       tabData:[
         {text:'指挥中心',path:'/'},
-        {text:'人员管理',path:'/'},
+        {text:'人员管理',path:'/userManager'},
         {text:'机械管理',path:'/'},
         {text:'物料管理',path:'/'},
         {text:'生产进度',path:'/'},
