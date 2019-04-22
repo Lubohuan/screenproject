@@ -106,3 +106,15 @@
     white-space: nowrap;
     cursor: pointer;
 }
+.ibox-title{
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight:500;
+    color:rgba(255,255,255,1);      
+    background:rgba(40,54,100,1);
+}
+.ibox-content{
+    background: rgba(29,40,77,.5);
+    height: calc(100% - 40px);
+}

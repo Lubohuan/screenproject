@@ -53,7 +53,7 @@ export default {
         {text:'机械管理',path:'/'},
         {text:'物料管理',path:'/'},
         {text:'生产进度',path:'/'},
-        {text:'质量管理',path:'/'},
+        {text:'质量管理',path:'/qualityManage'},
         {text:'现场安全',path:'/'},
         {text:'AIOT',path:'/'},
         {text:'BIM应用',path:'/'},
