@@ -55,7 +55,7 @@
                         人员管理
                         <span class="font12" style="color:#FEDF50;margin-left:12px;">注意：假期提醒（5.1劳动节，注意劳务稳定性）</span>
                     </div>
-                    <div class="bg padding10">
+                    <!-- <div class="bg padding10">
                         <table class="font12" style="width:100%;color:#DBE1FF">
                             <tr style="text-align:center"><td >人员偏量</td><td>少5人</td><td>在场人数</td><td>50人</td><td>计划人数</td><td>45人</td></tr>
                             <tr style="background:rgba(255,255,255,0.15);text-align:center"><td >累计用工</td><td>1500人/日</td><td>人效同比昨日</td><td class="down_data">5%↓</td><td>连续7日工效</td><td class="up_data">2%↑</td></tr>
@@ -81,6 +81,68 @@
                                 </td><td>多5人</td><td></td></tr>
                         </table>
                         <p class="bigNum font12" style="margin-left:18px;">注意：D区人员偏离较大，请及时关注！</p>
+                    </div> -->
+                    <div class="bg padding10">
+                         <div class="flex" style="height:66px">
+                            <div class="flex1 font12 marginL30">
+                                <div style="margin-bottom:10px;">在册人数</div>
+                                <div><span class="font28 bigNum">5522</span>人</div>
+                            </div>
+                            <div class="flex1 font12 marginL30">
+                                <div style="margin-bottom:10px;">在场人数</div>
+                                <div><span class="font28 bigNum">2451</span>人</div>
+                            </div>
+                            <div class="flex1 font12 marginL30">
+                                <div style="margin-bottom:10px;">管理人员</div>
+                                <div><span class="font28 bigNum">41</span>人</div>
+                            </div>
+                            <div class="flex1 font12 marginL30">
+                                <div style="margin-bottom:10px;">特种工种</div>
+                                <div><span class="font28 bigNum">444</span>人</div>
+                            </div>
+                        </div>
+                        <div class="flex" >
+                            <div class="flex1">
+                                <div class="font12 marginL30"><img src="../../../assets/index/gli.png" alt=""> 管理人员</div>
+                                <div class="flex">
+                                    <div class="cir_time marginR30">
+                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <div class="text_loc text_center font12">在场人数 </div>
+                                        <div class="time_size1">80人</div>
+                                    </div>
+                                    <div class="cir_time marginR30">
+                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <div class="text_loc text_center font12">在场人数 </div>
+                                        <div class="time_size1">80人</div>
+                                    </div>
+                                    <div class="cir_time marginR30">
+                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <div class="text_loc text_center font12">在场人数 </div>
+                                        <div class="time_size1">80人</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex1">
+                                <div class="font12 marginL30"><img src="../../../assets/index/lwu.png" alt=""> 劳务人员</div>
+                                <div class="flex1 flex">
+                                    <div class="cir_time marginR30">
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <div class="text_loc text_center font12">在场人数 </div>
+                                        <div class="time_size1">80人</div>
+                                    </div>
+                                    <div class="cir_time marginR30">
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <div class="text_loc text_center font12">在场人数 </div>
+                                        <div class="time_size1">80人</div>
+                                    </div>
+                                    <div class="cir_time marginR30">
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <div class="text_loc text_center font12">在场人数</div>
+                                        <div class="time_size1">80人</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                </div>
                <div style="height:130px;width:100%;">
@@ -89,22 +151,22 @@
                         机械管理
                     </div>
                     <div class="bg flex" style="padding:17px 10px">
-                        <div class="flex1 font12 marginL30">
+                        <div class="flex1 font12 marginL30 text_center">
                             <div>正常运行</div>
                             <div><span class="font28 bigNum">6</span>台</div>
                         </div>
-                        <div class="flex1 font12 marginL30">
+                        <div class="flex1 font12 marginL30 text_center">
                             <div>离线</div>
                             <div><span class="font28 bigNum color_red">6</span>台</div>
                         </div>
-                        <div class="font12 marginL30" style="line-height: 50px;">
-                            <div><span class="bgcStyle bgcStyle_a">未工作</span><span class="font28 bigNum  color_green" style="vertical-align: bottom;">6</span>台</div>
+                        <div class="font12" style="line-height: 50px;margin:0 15px">
+                            <div><span class="bgcStyle bgcStyle_a">未工作</span> <span class="font28 bigNum  color_green">6</span>台 </div>
                         </div>
-                        <div class="font12 marginL30" style="line-height: 50px;">
-                            <div><span class="bgcStyle bgcStyle_b">故障</span><span class="font28 bigNum  color_red" style="vertical-align: bottom;">6</span>台</div>
+                        <div class="font12" style="line-height: 50px;margin:0 15px">
+                            <div><span class="bgcStyle bgcStyle_b">故障</span> <span class="font28 bigNum  color_red" >6</span>台 </div>
                         </div>
-                        <div class="font12 marginL30" style="line-height: 50px;">
-                            <div><span class="bgcStyle bgcStyle_c">维保</span><span class="font28 bigNum  color_yellow" style="vertical-align: bottom;">6</span>台</div>
+                        <div class="font12" style="line-height: 50px;margin:0 15px">
+                            <div><span class="bgcStyle bgcStyle_c">维保</span> <span class="font28 bigNum  color_yellow">6</span>台 </div>
                         </div>
                     </div>
                </div>
@@ -212,15 +274,15 @@
                         </div>
                    </div>
                </div>
-               <div style="height:235px;width:100%;background-color:#fff;">
+               <div style="height:235px;width:100%;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         工程进度
                         <span class="font12" style="color:#76D0DF;margin-left:15px;">剩余工期：420天 最近里程碑：完成基工程（12天）</span>
                     </div>
                     <div class="bg padding10">
-                        <div style="display:flex;height:190px;">
-                            <div class="cir_time">
+                        <div style="display:flex;height:174px;">
+                            <div class="cir_time" style="margin:20px 0px 0 30px;">
                                 <el-progress type="circle" :percentage="25" color="#00F29F"></el-progress>
                                 <p class="text_center">已施工(天)</p>
                                 <div class="time_size">80</div>
@@ -243,9 +305,9 @@
                                         <p>开工时间</p>
                                     </li>
                                 </ul>
-                                 <div class="color_time">
+                                <div class="color_time">
                                      <i class="now_loading"></i>
-                                 </div>
+                                </div>
 
                             </div>
                             
@@ -342,31 +404,47 @@
                <div style="height:220px;width:100%;margin-bottom:10px;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                        质量管理
-                        <span class="font12" style="color:#76D0DF;margin-left:15px;">验收一次通过率：99% +3% 累计验收：7851次</span>
+                        质量问题类型统计
                     </div>
                     <div class="bg padding10">
-                        <table style="width:100%" class="quality">
+                        <!-- <table style="width:100%" class="quality">
                             <tr class="font12" style="color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><th>排名</th><th>分包单位</th><th>通过率（问题数）</th><th>周环比</th></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/frist.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/second.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="down_data">10%↓</td></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/third.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
                             <tr class="font12" style="text-align:center;"><td style="color:#7A9BBF;font-size:16px;">4</td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
                             <tr class="font12" style="text-align:center;"><td style="color:#7A9BBF;font-size:16px;">5</td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
-                        </table>
+                        </table> -->
+                        <div id="echart-pie" style="width:100%;height:160px"></div>
                     </div>
                </div>
                <div style="height:235px;width:100%;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                        物资验收
-                        <div style="float:right;line-height:26px;margin-top:6px;margin-right:18px;border:1px solid #33558c;" class="echart_goods">
-                            <span style="padding:5px 25px;" class="active">本月</span>
-                            <span style="padding:5px 25px;">累计</span>
-                        </div>
+                        安全管理
+                        <span class="font12" style="color:#4CF0FE;margin-left:12px;">整改率：90% +3% 累计检查：18590次</span>
                     </div>
                     <div class="bg padding10">
-                        <div id="goodsChart" :style="{width: '100%', height: '175px'}"></div>
+                        <div class="flex">
+                            <div class="flex1 font12 marginL30">
+                            <div>今日重大危险源</div>
+                            <div><span class="font28 bigNum">6</span></div>
+                            </div>
+                            <div class="flex1 font12 marginL30">
+                            <div>今日危险作业</div>
+                            <div><span class="font28 bigNum">6</span></div>
+                            </div>
+                            <div class="flex1 font12 marginL30">
+                            <div>超期隐患</div>
+                            <div><span class="font28 bigNum">0</span></div>
+                            </div>
+                            <div class="flex1 font12 marginL30">
+                            <div>未销重大隐患</div>
+                            <div><span class="font28 bigNum">60</span></div>
+                            </div>
+                        </div>
+                        <!-- <div id="goodsChart" :style="{width: '100%', height: '175px'}"></div> -->
+                        <div id="myChart" :style="{width: '100%', height: '120px'}"></div>
                     </div>
                 </div>
            </div>
@@ -375,10 +453,13 @@
            <div style="height:100%;width:540px;">
                 <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                     <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                    安全管理
-                    <span class="font12" style="color:#76D0DF;margin-left:15px;">整改率：90% +3% 累计检查：18590次</span>
+                    物资收量偏差分析
+                    <div style="float:right;line-height:26px;margin-top:6px;margin-right:18px;border:1px solid #33558c;" class="echart_goods">
+                        <span style="padding:3px 25px;background-color: #4cbdfe;color: #000;border: 0;">本月</span>
+                        <span style="padding:5px 25px;">累计</span>
+                    </div>
                 </div>
-                <div class="bg padding10">
+                <!-- <div class="bg padding10">
                     <div class="flex">
                         <div class="flex1 font12 marginL30">
                         <div>今日重大危险源</div>
@@ -398,6 +479,16 @@
                         </div>
                     </div>
                     <div id="myChart" :style="{width: '100%', height: '162px'}"></div>
+                </div> -->
+                
+                <div class="bg padding10">
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>物资名称</td><td>发货量（吨）</td><td>验收量（吨）</td><td>验收量（吨）</td><td>偏差率</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                    </table>
                 </div>
            </div>
            <div style="height:100%;width:calc(100% - 1080px);box-sizing: border-box;padding:0 10px;">
@@ -447,7 +538,8 @@
         },
         mounted(){
             this.drawLine();
-            this.goodsChart();
+            this.drawPie();
+            // this.goodsChart();
         },
         methods: {
             openPic(index){
@@ -456,6 +548,177 @@
             openhidden(index){
                 this.hiddenIndexItem = index;
             },
+            drawPie() {
+                var myChart = this.$echarts.init(document.getElementById("echart-pie"));
+               
+                var data = [
+                    { value: 20, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
+                    { value: 20, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
+                    { value: 20, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
+                    {
+                         value: 20,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
+                    }
+                ];
+
+                // 计算总数
+                var total = data.map(v => v.value).reduce((o, n) => o + n);
+
+                // 计算每一个data的其实角度和末了角度 θ1和θ2
+                data.reduce((o, v) => {
+                    v.theta1 = o;
+                    v.theta2 = o + v.value / total;
+                    return v.theta2;
+                }, 0);
+                // 添加渐变
+                data.forEach((v, i) => {
+                    var ops = calc(v.theta1 * 2 * Math.PI, v.theta2 * 2 * Math.PI);
+                    if (v.value)
+                    v.itemStyle = {
+                        color: {
+                        type: "radial",
+                        x: ops.center[0],
+                        y: ops.center[1],
+                        r: ops.radius,
+                        colorStops: [
+                            {
+                            offset: 0,
+                            color: v.color0
+                            },
+                            {
+                            offset: 0.5,
+                            color: v.color0
+                            },
+                            {
+                            offset: 0.3,
+                            color: v.color1
+                            },
+                            {
+                            offset: 1,
+                            color: v.color1
+                            }
+                        ]
+                        // globalCoord: false // 缺省为 false
+                        }
+                    };
+                    v.label = {
+                    normal: {
+                        show: true,
+                        formatter: "{b}\n\n{d}%",
+                        textStyle: {
+                        fontSize: 12,
+                        color: v.color1
+                        },
+                        position: "outside"
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                    };
+                });
+
+                // 计算渐变中心以及渐变半径
+                function calc(theta1, theta2) {
+                    var r = 0.5; // 半径是0.5 其实表示0.5个直径
+                    var inner = 0.6; // 里面镂空部分占60%  option中radius为[33%, 55%]  55 * 0.6 == 33
+
+                    var cos = Math.cos;
+                    var sin = Math.sin;
+                    var PI = Math.PI;
+                    var min = Math.min;
+                    var max = Math.max;
+
+                    var bottom = 0;
+                    var left = 2 * r;
+                    var right = 0;
+
+                    // y0: θ1对应的外部点的y值
+                    // y1: θ2对应的外部点的y值
+                    // _y0: θ1对应的内部点的y值
+                    // _y1: θ2对应的内部点的y值
+                    // x0: θ1对应的外部点的x值
+                    // x1: θ2对应的外部点的x值
+                    // _x0: θ1对应的内部点的x值
+                    // _x1: θ2对应的内部点的x值
+                    var y0 = r * (1 - cos(theta1));
+                    var y1 = r * (1 - cos(theta2));
+
+                    var _y0 = r * (1 - inner * cos(theta1));
+                    var _y1 = r * (1 - inner * cos(theta2));
+
+                    // 如果这个弧经过θ == PI的点  则bottom = 2PI
+                    // bottom用于之后的max计算中
+                    if (theta1 < PI && theta2 > PI) {
+                    bottom = 2 * r;
+                    }
+                    // 计算这几个点的最大最小值
+                    var ymin = min(_y0, _y1, y0, y1);
+                    var ymax = max(_y0, _y1, y0, y1, bottom);
+
+                    var x0 = r * (1 + sin(theta1));
+                    var x1 = r * (1 + sin(theta2));
+
+                    var _x0 = r * (1 + inner * sin(theta1));
+                    var _x1 = r * (1 + inner * sin(theta2));
+
+                    // 如果这个弧经过θ == PI / 2的点  则right = 2PI
+                    if (theta1 < PI / 2 && theta2 > PI / 2) {
+                    right = 2 * r;
+                    }
+                    // 如果这个弧经过θ == PI / 2 * 3的点  则left = 0
+                    if (theta1 < (PI / 2) * 3 && theta2 > (PI / 2) * 3) {
+                    left = 0;
+                    }
+                    var xmin = min(_x0, _x1, x0, x1, left);
+                    var xmax = max(_x0, _x1, x1, x0, right);
+
+                    return {
+                    // 计算圆心以及半径
+                    center: [(r - xmin) / (xmax - xmin), (r - ymin) / (ymax - ymin)],
+                    radius: r / min(xmax - xmin, ymax - ymin)
+                    };
+                }
+
+                var option = {
+                    tooltip: {
+                        trigger: "item",
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        orient: "vertical",
+                        x: "75%",
+                        y: "25%",
+                        itemWidth: 14,
+                        itemHeight: 14,
+                        align: "left",
+                        data: ["已通过", "通过中", "未开始", "预警"],
+                        textStyle: {
+                            color: "#fff"
+                        }
+                    },
+
+                    series: [
+                    {
+                        name: "质量问题",
+                        type: "pie",
+                        radius: ["45%", "70%"],
+                        center: ["35%", "50%"],
+                        data: data,
+                        itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: "rgba(255, 255, 255,1)"
+                        }
+                        }
+                        // animation: false
+                    }
+                    ]
+                };
+                myChart.setOption(option);
+                window.addEventListener("resize", () => {
+                    myChart.resize();
+                });
+                },
            drawLine(){
                 // 基于准备好的dom，初始化echarts实例
                 let myChart = this.$echarts.init(document.getElementById('myChart'))
@@ -466,8 +729,8 @@
                     },
                     grid: {
                     top: '8%',
-                    left: '1%',
-                    right: '1%',
+                    left: '5%',
+                    right: '5%',
                     bottom: '8%',
                     containLabel: true,
                     },
@@ -667,8 +930,6 @@
   width: 100%;
   height:100%;
   color: #fff;
-
-  
   table tr {
     line-height: 26px;
   }
@@ -861,6 +1122,26 @@
             line-height: 100px;
             background-color: rgba(45,241,215,0.6);
             color: #fff;
+        }
+        .time_size1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            background-color: #1D284D;
+            color: #4CF0FE;
+        }
+        .text_loc  {
+            position: absolute;
+            top: 55px;
+            width: 100%;
+            background-color: #1D284D;
         }
     }
     .progress_time {
