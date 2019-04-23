@@ -9,6 +9,7 @@ import '../node_modules/layui-src/src/layui.js'
 import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import './assets/main.scss'
 import locale from 'element-ui/lib/locale/lang/zh-CN' // lang i18n
 import './fonts/iconfont.css'
 import Api from './components/public/public.js'
