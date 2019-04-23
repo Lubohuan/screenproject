@@ -9,6 +9,7 @@ import '../node_modules/layui-src/src/css/layui.css'
 import '../node_modules/layui-src/src/layui.js'
 import axios from 'axios'
 import ElementUI from 'element-ui'
+import 'swiper/dist/css/swiper.css';
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/main.scss'
 import locale from 'element-ui/lib/locale/lang/zh-CN' // lang i18n
@@ -31,7 +32,6 @@ import vuePicturePreview from 'vue-picture-preview'
 Vue.use(vuePicturePreview)
 
 Vue.use(ElementUI, { locale })
-
 /* eslint-disable no-new */
 var index = new Vue({
   el: '#hompage',

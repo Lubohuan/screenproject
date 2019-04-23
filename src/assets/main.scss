@@ -186,6 +186,22 @@
   -ms-flex: none;
   flex: none;
 }
+.list-task{
+  .title{
+    color: #76D0DF;
+    margin-right: 10px;
+  }
+  li{
+    width:400px;
+    height:17px;
+    font-size:12px;
+    line-height: 17px;
+    margin: 12px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
 
 .textdot {
   overflow: hidden;
@@ -305,6 +321,7 @@
     background: rgba(40, 54, 100, 1);
     padding-left: 10px;
     line-height: 40px;
+    
 
     .text {
       display: inline-block;
@@ -387,33 +404,59 @@
     text-align: center
   }
 }
-
-.i_red {
+.it-span
+{
   display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-right:10px;
+}
+.it-i{
+  display: inline-block;
+  border-radius: 50%;
   width: 8px;
   height: 8px;
-  background: rgba(252, 12, 89, 1);
-  border: 4px solid #4c183c;
-  border-radius: 50%;
+}
+.i-danger{
+  color: rgba(252,12,89,1);
+  .it-span{
+    background:rgba(252,12,89,0.12);
+    .it-i{
+      background: rgba(252, 12, 89, 1);
+    }
+  }
+}
+.i-warning{
+  color: rgba(254, 223, 80, 1);
+  .it-span{
+    background:#454339;
+    .it-i{
+      background: rgba(254, 223, 80, 1);
+    }
+  }
+}
+.i-success{
+  color: #00F7BD;
+  .it-span{
+    background:#12474f;
+    .it-i{
+      background: rgba(0, 247, 189, 1);
+    }
+  }
+  
+}
+.special_span{
+  line-height: 13px;
+}
+.table.today{
+  height: 100%;
+  // td{
+  //   padding:8px;
+  // }
 }
 
-.i_yellow {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: rgba(254, 223, 80, 1);
-  border: 4px solid #454339;
-  border-radius: 50%;
-}
 
-.i_green {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: rgba(0, 247, 189, 1);
-  border: 4px solid #12474f;
-  border-radius: 50%;
-}
 
 .media {
   background: rgba(29, 40, 77, 0.5);
@@ -444,6 +487,7 @@
     .media-content {
       font-size: 12px;
       line-height: 18px;
+      height:40px;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -487,4 +531,35 @@
 }
 .thumb.blue{
   background: #1500CC;
+}
+.weather-warning{
+  color: #FEDF50;
+  font-size: 12px;
+  width: 300px;
+  margin-left: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  p {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: block;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 3px;
+  display: inline-block;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 1);
+  opacity: .2;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
 }
