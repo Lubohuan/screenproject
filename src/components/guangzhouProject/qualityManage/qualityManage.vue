@@ -352,7 +352,7 @@
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
               <span class="text">绿色施工</span>
-              <div id="textPcontainer" class="weather-warning">
+              <div  id="textPcontainer" class="weather-warning">
                 <p id="textP">砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
               </div>
             </div>
@@ -703,26 +703,38 @@
 <script>
 import $ from 'jquery'
 import Swiper from "swiper";
+import { setTimeout } from 'timers';
 export default {
   name: "homePage",
   data() {
-    return {};
+    return {
+      intervalTimer:"",
+      showScroll:false,
+    };
   },
   methods: {
     textScroll(){
-      var timer = setTimeout(this.marquee, 1000);
+     var timer = setTimeout(()=>{
+       this.marquee()
+     },1000)
     },
     marquee() {
         var scrollWidth = $('#textPcontainer').width();
-        var textWidth = $('#textP').width()+10;
-        var i = scrollWidth;
-        setInterval(function() {
-            i--;
-            if(i < -textWidth ) {
-                i = scrollWidth;
-            }
-            $('#textP').animate({'left': i+'px'}, 20);
-        }, 20);
+        var textWidth = $('#textP').width();
+        if(textWidth>scrollWidth){
+          $('#textP').css("left",300);
+          var i = scrollWidth;
+          this.intervalTimer = setInterval(function() {
+              i--;
+              if(i < -textWidth ) {
+                  i = scrollWidth;
+              }
+              $('#textP').animate({'left': i+'px'}, 20);
+          }, 20);
+        }else{
+          $('#textP').css("left",0);
+        }
+        
     },
     drawLine() {
       var myChart = this.$echarts.init(document.getElementById("echart-line"));
@@ -1148,7 +1160,9 @@ export default {
       });
     }
   },
-  created() {},
+  created() {
+    
+  },
   mounted() {
     var mySwiper = new Swiper(".swiper-container", {
       loopAdditionalSlides: 3,
@@ -1169,6 +1183,9 @@ export default {
     this.drawLine();
     this.drawPie();
     this.textScroll()
+  },
+  beforeDestroy () {
+   clearInterval(this.intervalTimer)
   }
 };
 </script>
