@@ -26,6 +26,22 @@ var mainRouters = [
           return require(['../components/guangzhouProject/userManager/userManager.vue'], resolve)
         },
         children:[],
+      },
+      {
+        path: '/siteSafety',
+        name: 'siteSafety',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/siteSafety/siteSafety.vue'], resolve)
+        },
+        children:[],
+      },
+      {
+        path: '/materialAcceptance',
+        name: 'materialAcceptance',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/materialAcceptance/materialAcceptance.vue'], resolve)
+        },
+        children:[],
       }
     ],
   },
