@@ -1,0 +1,98 @@
+//.flex{
+//  display: flex;
+//}
+.ibox .ibox-content {
+  height: calc(100% - 40px);
+}
+.media {
+  background: rgba(29, 40, 77, 0.5);
+  padding: 8px 10px;
+  overflow: hidden;
+  display: flex;
+  border-bottom: 1px solid #2E4970;
+}
+.media:last-of-type {
+  border-bottom: 0;
+}
+.media .media-body {
+  margin-right: 154px;
+}
+.media .media-body .media-header {
+  margin-bottom: 10px;
+}
+.media .media-body .media-header label {
+  background: rgba(76, 240, 254, 0.2);
+  padding: 4px 7px;
+  color: #4CF0FE;
+  font-size: 12px;
+}
+.media .media-body .media-header span {
+  margin-left: 10px;
+  color: #76D0DF;
+}
+.media .media-body .media-content {
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.media .media-body .media-footer {
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 10px;
+}
+.inline-block {
+  display: inline-block;
+}
+.media .media-right {
+  width: 116px;
+  height: 80px;
+}
+#myTable3{
+  color: #DBE1FF;
+  flex: 1;
+  tr:first-child {
+    background-color: #1D284D;
+  }
+  tr{
+    td{
+      text-align: left;
+      //padding: 0 6px;//根据情况自己设置
+      white-space: nowrap;//不换行
+      border-bottom: 0;
+    }
+  }
+  tr:nth-of-type(odd){
+    height: 16px;
+    line-height: 16px;
+    td{
+      border-bottom: 0;
+      padding-top: 10px;
+    }
+  }
+}
+#myTable1{
+  color: #DBE1FF;
+  flex: 1;
+  tr:first-child {
+    background-color: #1D284D;
+  }
+  tr{
+    td{
+      text-align: left;
+      //padding: 0 6px;//根据情况自己设置
+      white-space: nowrap;//不换行
+      border-bottom: 0;
+    }
+  }
+  tr:nth-of-type(odd){
+    height: 16px;
+    line-height: 16px;
+    td{
+      border-bottom: 0;
+      padding-top: 10px;
+    }
+  }
+}

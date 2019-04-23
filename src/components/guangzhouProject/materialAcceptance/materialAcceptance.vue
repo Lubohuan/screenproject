@@ -2,7 +2,65 @@
   <div style="height:100%;width:100%;">
     <div class="top_con flex_b">
       <div class="top_con_left">
-        <div style="height:185px;width:100%;background-color:#fff;margin-bottom:10px;"></div>
+        <div style="height:185px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5>项目层级</h5>
+            </div>
+          </div>
+          <div class="doubleTable" style="display: flex">
+            <div class="table" id="myTable1">
+              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
+                <tr>
+                  <td>发料数</td>
+                  <td>今日</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">70</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">15</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px"></span></td>
+                </tr>
+                <tr>
+                  <td>验收数</td>
+                  <td>今日</td>
+                  <td>发料数</td>
+                </tr>
+                <tr>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">70</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">15</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">700</span>单</td>
+                </tr>
+              </table>
+            </div>
+            <div class="tableLine" style="width: 1px;height: 113px;background: #2E4970;margin-top: 10px;margin-right: 28px;"></div>
+            <div class="table" id="myTable3">
+              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
+                <tr>
+                  <td>发料金额</td>
+                  <td>今日</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">120</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">13</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
+                </tr>
+                <tr>
+                  <td>验收金额</td>
+                  <td>今日</td>
+                  <td>供应商总数</td>
+                </tr>
+                <tr>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">608</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">19</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">68</span>家</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
         <div style="height:225px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="top_con_right_title">
             <div class="title_left">
@@ -236,9 +294,97 @@
         </div>
       </div>
       <div class="top_con_right">
-        <div style="height:420px;width:100%;background-color:#fff;margin-bottom:10px;"></div>
-        <div style="height:248px;width:100%;background-color:#fff;margin-bottom:10px;"></div>
-        <div style="height:248px;width:100%;background-color:#fff;"></div>
+        <div style="height:420px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5>工作动态</h5>
+            </div>
+          </div>
+          <div class="ibox-content flex column" style="background: transparent;padding:0;">
+            <div class="media">
+              <div class="media-body">
+                <div class="media-header">
+                  <label>质量检查</label>
+                  <span class="inline-block">施工一区</span>
+                </div>
+                <div class="media-content">
+                            <span>
+                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
+                            </span>
+                </div>
+                <div class="media-footer">
+                  2019.01.10 23:23
+                </div>
+              </div>
+              <div class="media-right">
+                <img src="" alt="">
+              </div>
+            </div>
+            <div class="media" style="margin:5px 0;">
+              <div class="media-body">
+                <div class="media-header">
+                  <label>质量检查</label>
+                  <span class="inline-block">施工一区</span>
+                </div>
+                <div class="media-content">
+                            <span>
+                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
+                            </span>
+                </div>
+                <div class="media-footer">
+                  2019.01.10 23:23
+                </div>
+              </div>
+              <div class="media-right">
+                <img src="" alt="">
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <div class="media-header">
+                  <label>质量检查</label>
+                  <span class="inline-block">施工一区</span>
+                </div>
+                <div class="media-content">
+                            <span>
+                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
+                            </span>
+                </div>
+                <div class="media-footer">
+                  2019.01.10 23:23
+                </div>
+              </div>
+              <div class="media-right">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height:248px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;border-bottom: 1px solid #4CF0FE">供应商评价统计</h5>
+              <h5 style="height: 39px;line-height: 39px">合同使用情况分析</h5>
+            </div>
+          </div>
+          <div style="padding: 40px 26px 0">
+            <img src="../../../assets/mate-two.png" alt="">
+          </div>
+        </div>
+        <div style="height:248px;width:100%;background-color:#1D284D;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;border-bottom: 1px solid #4CF0FE">预警情况分析</h5>
+              <h5 style="height: 39px;line-height: 39px">物资资金使用情况</h5>
+            </div>
+          </div>
+          <div style="padding: 23px 16px 0">
+            <img src="../../../assets/mate-three.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -284,6 +430,7 @@ export default {
 <style lang="scss" scoped>
   @import "../homePage/homePage.scss";
   @import "../siteSafety/siteSafety";
+  @import "./materialAcceptance";
 </style>
 <style lang="scss" scoped>
   .triangle{
