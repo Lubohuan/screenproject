@@ -1,5 +1,5 @@
 <template>
-  <div class="qualityManage" style="height:100%;width:100%;">
+  <div class="qualityManage commonClass" style="height:100%;width:100%;">
     <div class="top_con flex_b">
       <div class="top_con_left">
         <!-- 质量目标 -->
@@ -118,14 +118,12 @@
         <!-- 表格 -->
         <div style="height:274px;width:100%;">
           <div class="ibox">
-              <table class="table table-bordered">
-                  <thead>
-                    <tr></tr>
-                  </thead>
-                  <tbody>
-
-                  </tbody>
-              </table>
+            <table class="table table-bordered">
+              <thead>
+                <tr></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -139,7 +137,251 @@
               <span class="text">绿色施工</span>
             </div>
             <div class="ibox-content">
-              <div c></div>
+              <div class="weather-container flex">
+                  <!-- 第一格 -->
+                  <div class="item flex column" style="width:200px;border-right:1px solid rgba(255,255,255,.1);" >
+                    <!-- 上半部分 -->
+                     <div class="flex top">
+                       <div class="flex-3 flex ai-end" style="height:58px;">
+                        <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
+                       </div>
+                       <div class="flex-3 flex ai-end" style="height:48px;">
+                         <span style="font-size:36px;line-height:35px;">10</span>
+                         <span style="font-size:18px;line-height:18px;">℃</span>     
+                       </div>
+                       <div class="flex-2 flex ai-end" style="height:48px;">
+                         <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
+                       </div>
+                     </div>
+                     <!-- 下半部分 -->
+                     <div class="flex bottom wrap">
+                        <div class="font12 flex ai-center" style="width:35%">
+                          <img src="../../../assets/index/wind.png" alt> <span>南风2级</span>
+                        </div>
+                        <div class="font12 flex ai-center" style="width:34%">
+                          <img src="../../../assets/index/temperature.png" alt> <span>12℃</span>
+                        </div>
+                        <div class="font12 flex ai-center" style="width:31%">
+                          <img src="../../../assets/index/rainfall.png" alt> <span>67%</span>
+                        </div>
+                        <div class="font12 flex ai-center" style="width:35%">
+                          <img src="../../../assets/index/pm25.png" alt> <span>35</span>
+                        </div>
+                        <div class="font12 flex ai-center" style="width:34%">
+                          <img src="../../../assets/index/pm10.png" alt> <span>78</span>
+                        </div>
+                        <div class="font12 flex ai-center" style="width:31%">
+                          <img src="../../../assets/index/noise.png" alt> <span>45dB</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- 第二格 -->
+                  <div class="item flex" style="width:200px;border-right:1px solid rgba(255,255,255,.1);padding-top:5px;">
+                      <!-- 明天-->
+                      <div class="flex column ai-center flex-1">
+                          <dl class="">
+                            <dt class="font12 text-center" style="line-height:13px;">明天</dt>
+                            <dd>
+                               <img src="../../../assets/index/sunny.png" alt >
+                            </dd>
+                          </dl>
+                          <p class="" style="font-size:14px;margin:6px 0">
+                             <span class="font28">10</span>℃
+                          </p>
+                           <p  class="font12 text-center" style="color:#FEDF50;padding-top:5px;line-height:12px;">晴</p>
+                      </div>
+                      <!-- 后天 -->
+                      <div class="flex column ai-center flex-1">
+                          <dl>
+                            <dt class="font12 text-center" style="line-height:13px;">后天</dt>
+                            <dd>
+                               <img src="../../../assets/index/rain.png" alt >
+                            </dd>
+                          </dl>
+                          <p style="font-size:14px;margin:6px 0">
+                             <span class="font28">10</span>℃
+                          </p>
+                           <p class="font12 text-center" style="color:#FEDF50;padding-top:5px;line-height:12px;">雨</p>
+                      </div>
+                      <!-- 大后天 -->
+                      <div class="flex column ai-center flex-1">
+                          <dl>
+                            <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
+                            <dd>
+                               <img src="../../../assets/index/cloudy.png" alt >
+                            </dd>
+                          </dl>
+                          <p style="font-size:14px;margin:6px 0">
+                             <span class="font28">10</span>℃
+                          </p>
+                           <p class="font12 text-center" style="color:#FEDF50;padding-top:5px;line-height:12px;">多云</p>
+                      </div>
+                  </div>
+                  <!-- 第三格 -->
+                  <div class="item flex" style="width:120px;padding-top:5px;">
+                      <dl style="width:100%">
+                        <dt class="font12  text-center" style="line-height:12px;">
+                           <span class="text-center">晴雨表</span>
+                        </dt>
+                        <dd>
+                          <div class="flex wrap jc-between ai-center">
+                              <div class="div-c flex column jc-center" style="width:50%;">
+                                  <div class="c-top" style="">
+                                    <span class="thumb black"></span>
+                                  </div>
+                                  <div class="c-bottom">
+                                    <span>12</span>
+                                  </div>
+                              </div>
+                              <div class="div-c flex column jc-center" style="width:50%;">
+                                  <div class="c-top" style="">
+                                    <span class="thumb black"></span>
+                                  </div>
+                                  <div class="c-bottom">
+                                    <span>12</span>
+                                  </div>
+                              </div>
+                              <div class="div-c flex column jc-center" style="width:50%;">
+                                  <div class="c-top" style="">
+                                    <span class="thumb red"></span>
+                                  </div>
+                                  <div class="c-bottom">
+                                    <span>12</span>
+                                  </div>
+                              </div>
+                              <div class="div-c flex column jc-center" style="width:50%;">
+                                  <div class="c-top" style="">
+                                    <span class="thumb blue"></span>
+                                  </div>
+                                  <div class="c-bottom">
+                                    <span>12</span>
+                                  </div>
+                              </div>
+                          </div>
+                        </dd>
+                      </dl>
+                      
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height:185px;width:100%;margin-bottom:10px;display:none">
+          <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+            <img
+              src="../../../assets/index/icon.png"
+              alt
+              width="16px"
+              height="16px"
+              style="margin: -2px 8px 0 12px;"
+            >
+            绿色施工
+          </div>
+          <div class="bg padding10 bg_h">
+            <div
+              style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;"
+            >
+              <div class="flex1 flex">
+                <div class="flex1">
+                  <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
+                </div>
+                <div class="flex1" style="font-size:18px;">
+                  <span style="font-size:36px;">10</span>℃
+                </div>
+                <div class="flex1" style="color:#FEDF50;font-size:16px;">多云</div>
+              </div>
+              <div class="flex1 flex" style="flex-direction:column;">
+                <div class="flex">
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/wind.png" alt> 南风2级
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/temperature.png" alt> 12℃
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/rainfall.png" alt> 67%
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/pm25.png" alt> 35
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/pm10.png" alt> 78
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/noise.png" alt> 45dB
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;"
+            >
+              <div class="flex1 flex">
+                <div class="flex1 text_center">
+                  <p class="font12">明天</p>
+                  <img src="../../../assets/index/sunny.png" alt width="34px">
+                </div>
+                <div class="flex1 text_center">
+                  <p class="font12">后天</p>
+                  <img src="../../../assets/index/rain.png" alt width="34px">
+                </div>
+                <div class="flex1 text_center">
+                  <p class="font12">大后天</p>
+                  <img src="../../../assets/index/cloudy.png" alt width="34px">
+                </div>
+              </div>
+              <div class="flex1 flex">
+                <div class="flex1 text_center">
+                  <p style="font-size:14px;margin:8px 0">
+                    <span class="font28">10</span>℃
+                  </p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">晴</p>
+                </div>
+                <div class="flex1 text_center">
+                  <p style="font-size:14px;margin:8px 0">
+                    <span class="font28">14</span>℃
+                  </p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">
+                    雨
+                    <img src="../../../assets/index/warning.png" alt width="20px">
+                  </p>
+                </div>
+                <div class="flex1 text_center">
+                  <p style="font-size:14px;margin:8px 0">
+                    <span class="font28">8</span>℃
+                  </p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">多云</p>
+                </div>
+              </div>
+            </div>
+            <div style="height:125px;width:114px;float:left;">
+              <div style="height:26px;">
+                <div class="font12 text_center" style="line-height:26px;">晴雨表</div>
+              </div>
+              <div class="flex" style="flex-direction:column;line-height:22px;">
+                <div class="flex1 flex">
+                  <div class="flex1 text_center" style="line-height:25px;">
+                    <span class="blank_cir cir"></span>
+                    <p>18</p>
+                  </div>
+                  <div class="flex1 text_center">
+                    <span class="blue_cir cir"></span>
+                    <p>19</p>
+                  </div>
+                </div>
+                <div class="flex1 flex">
+                  <div class="flex1 text_center">
+                    <span class="blue_cir cir"></span>
+                    <p>20</p>
+                  </div>
+                  <div class="flex1 text_center">
+                    <span class="red_cir cir"></span>
+                    <p>21</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -151,63 +393,51 @@
               <span class="text">工作动态</span>
             </div>
             <div class="ibox-content flex column" style="background: transparent;padding:0;">
-                <div class="media">
-                    <div class="media-body">
-                        <div class="media-header">
-                            <label>质量检查</label>
-                            <span class="inline-block">施工一区</span>
-                        </div>
-                        <div class="media-content">
-                            <span>
-                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
-                            </span>
-                        </div>
-                        <div class="media-footer">
-                            2019.01.10 23:23
-                        </div>
-                    </div>
-                    <div class="media-right">
-                        <img src="" alt="">
-                    </div>
+              <div class="media">
+                <div class="media-body">
+                  <div class="media-header">
+                    <label>质量检查</label>
+                    <span class="inline-block">施工一区</span>
+                  </div>
+                  <div class="media-content">
+                    <span>检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。</span>
+                  </div>
+                  <div class="media-footer">2019.01.10 23:23</div>
                 </div>
-                <div class="media" style="margin:5px 0;">
-                    <div class="media-body">
-                        <div class="media-header">
-                            <label>质量检查</label>
-                            <span class="inline-block">施工一区</span>
-                        </div>
-                        <div class="media-content">
-                            <span>
-                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
-                            </span>
-                        </div>
-                        <div class="media-footer">
-                            2019.01.10 23:23
-                        </div>
-                    </div>
-                    <div class="media-right">
-                        <img src="" alt="">
-                    </div>
+                <div class="media-right">
+                  <img src alt>
                 </div>
-                <div class="media">
-                    <div class="media-body">
-                        <div class="media-header">
-                            <label>质量检查</label>
-                            <span class="inline-block">施工一区</span>
-                        </div>
-                        <div class="media-content">
-                            <span>
-                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
-                            </span>
-                        </div>
-                        <div class="media-footer">
-                            2019.01.10 23:23
-                        </div>
-                    </div>
-                    <div class="media-right">
-                        <img src="" alt="">
-                    </div>
+              </div>
+              <div class="media" style="margin:5px 0;">
+                <div class="media-body">
+                  <div class="media-header">
+                    <label>质量检查</label>
+                    <span class="inline-block">施工一区</span>
+                  </div>
+                  <div class="media-content">
+                    <span>检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。</span>
+                  </div>
+                  <div class="media-footer">2019.01.10 23:23</div>
                 </div>
+                <div class="media-right">
+                  <img src alt>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-body">
+                  <div class="media-header">
+                    <label>质量检查</label>
+                    <span class="inline-block">施工一区</span>
+                  </div>
+                  <div class="media-content">
+                    <span>检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。</span>
+                  </div>
+                  <div class="media-footer">2019.01.10 23:23</div>
+                </div>
+                <div class="media-right">
+                  <img src alt>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -219,148 +449,122 @@
               <span class="text">分包单位排行榜</span>
             </div>
             <div class="ibox-content">
-                <table class="table text-center">
-                    <thead>
-                        <tr>
-                            <th>排名</th>
-                            <th>分包单位</th>
-                            <th>通过率<span>(问题数)</span></th>
-                            <th>周环比</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img src="../../../assets/index/frist.png" alt="">
-                            </td>
-                            <td>
-                                <div class="eclipse">
-                                   <span >牛逼单位额发发阿斯顿发lore </span>
-                                </div>
-                            </td>
-                            <td>
-                                <span>
-                                    99%（30）
-                                </span>
-                            </td>
-                            <td>
-                                <div class="good">
-                                    <span>
-                                       10%
-                                    </span>
-                                    <span>
-                                        <i class="iconfont">↑</i>
-                                    </span>
-                                </div>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="../../../assets/index/second.png" alt="">
-                            </td>
-                            <td>
-                                <div class="eclipse">
-                                   <span >牛逼单位额发发阿斯顿发lore </span>
-                                </div>
-                            </td>
-                            <td>
-                                <span>
-                                    99%（30）
-                                </span>
-                            </td>
-                            <td>
-                                <div class="bad">
-                                    <span>
-                                       10%
-                                    </span>
-                                    <span>
-                                        <i class="iconfont">↓</i>
-                                    </span>
-                                </div>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="../../../assets/index/third.png" alt="">
-                            </td>
-                            <td>
-                                <div class="eclipse">
-                                   <span >牛逼单位额发发阿斯顿发lore </span>
-                                </div>
-                            </td>
-                            <td>
-                                <span>
-                                    99%（30）
-                                </span>
-                            </td>
-                            <td>
-                                <div class="good">
-                                    <span>
-                                       10%
-                                    </span>
-                                    <span>
-                                        <i class="iconfont">↑</i>
-                                    </span>
-                                </div>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cixu">
-                               4
-                            </td>
-                            <td>
-                                <div class="eclipse">
-                                   <span >牛逼单位额发发阿斯顿发lore </span>
-                                </div>
-                            </td>
-                            <td>
-                                <span>
-                                    99%（30）
-                                </span>
-                            </td>
-                            <td>
-                                <div class="good">
-                                    <span>
-                                       10%
-                                    </span>
-                                    <span>
-                                        <i class="iconfont">↑</i>
-                                    </span>
-                                </div>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cixu">
-                               5
-                            </td>
-                            <td>
-                                <div class="eclipse">
-                                   <span >牛逼单位额发发阿斯顿发lore </span>
-                                </div>
-                            </td>
-                            <td>
-                                <span>
-                                    99%（30）
-                                </span>
-                            </td>
-                            <td>
-                                <div class="good">
-                                    <span>
-                                       10%
-                                    </span>
-                                    <span>
-                                        <i class="iconfont">↑</i>
-                                    </span>
-                                </div>
-                                
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th>排名</th>
+                    <th>分包单位</th>
+                    <th>
+                      通过率
+                      <span>(问题数)</span>
+                    </th>
+                    <th>周环比</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="../../../assets/index/frist.png" alt>
+                    </td>
+                    <td>
+                      <div class="eclipse">
+                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span>99%（30）</span>
+                    </td>
+                    <td>
+                      <div class="good">
+                        <span>10%</span>
+                        <span>
+                          <i class="iconfont">↑</i>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="../../../assets/index/second.png" alt>
+                    </td>
+                    <td>
+                      <div class="eclipse">
+                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span>99%（30）</span>
+                    </td>
+                    <td>
+                      <div class="bad">
+                        <span>10%</span>
+                        <span>
+                          <i class="iconfont">↓</i>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="../../../assets/index/third.png" alt>
+                    </td>
+                    <td>
+                      <div class="eclipse">
+                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span>99%（30）</span>
+                    </td>
+                    <td>
+                      <div class="good">
+                        <span>10%</span>
+                        <span>
+                          <i class="iconfont">↑</i>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cixu">4</td>
+                    <td>
+                      <div class="eclipse">
+                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span>99%（30）</span>
+                    </td>
+                    <td>
+                      <div class="good">
+                        <span>10%</span>
+                        <span>
+                          <i class="iconfont">↑</i>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cixu">5</td>
+                    <td>
+                      <div class="eclipse">
+                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span>99%（30）</span>
+                    </td>
+                    <td>
+                      <div class="good">
+                        <span>10%</span>
+                        <span>
+                          <i class="iconfont">↑</i>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -619,7 +823,12 @@ export default {
         { value: 20, name: "直接访问", color0: "#FF687D", color1: "#FC0C59" },
         { value: 20, name: "邮件营销", color0: "#FCDE54", color1: "#F7BA2A" },
         { value: 20, name: "联盟广告", color0: "#15E09B", color1: "#1DBD6B" },
-        { value: 20, name: "视频广告", color0: "rgba(13,138,212,1)", color1: "rgba(60,181,251,1)" },
+        {
+          value: 20,
+          name: "视频广告",
+          color0: "rgba(13,138,212,1)",
+          color1: "rgba(60,181,251,1)"
+        },
         { value: 20, name: "搜索引擎", color0: "yellow", color1: "yellowgreen" }
       ];
 
@@ -659,25 +868,24 @@ export default {
                   offset: 1,
                   color: v.color1
                 }
-              ],
-             // globalCoord: false // 缺省为 false
+              ]
+              // globalCoord: false // 缺省为 false
             }
           };
-          v.label={
-                 normal: {
-                     show: true,
-                     formatter: "{b}\n\n{d}%",
-                     textStyle: {
-                         fontSize: 12,
-                         color:v.color1
-                     },
-                     position: 'outside'
-                 },
-                 emphasis: {
-                     show: true
-                 }
-             
+        v.label = {
+          normal: {
+            show: true,
+            formatter: "{b}\n\n{d}%",
+            textStyle: {
+              fontSize: 12,
+              color: v.color1
+            },
+            position: "outside"
+          },
+          emphasis: {
+            show: true
           }
+        };
       });
 
       // 计算渐变中心以及渐变半径
@@ -748,18 +956,18 @@ export default {
           formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
         legend: {
-            orient: "vertical",
-            x: "75%",
-            y:"25%",
-            itemWidth: 14,
-            itemHeight: 14,
-            align: "left",
-            data: ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜索引擎"],
-            textStyle: {
-              color: "#fff"
-            }
-          },
-       
+          orient: "vertical",
+          x: "75%",
+          y: "25%",
+          itemWidth: 14,
+          itemHeight: 14,
+          align: "left",
+          data: ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜索引擎"],
+          textStyle: {
+            color: "#fff"
+          }
+        },
+
         series: [
           {
             name: "访问来源",

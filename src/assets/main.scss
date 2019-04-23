@@ -206,7 +206,7 @@
   display: inline-block;
 }
 
-.qualityManage {
+.commonClass {
   .good{
     color: #00F7BD
   }
@@ -240,7 +240,7 @@
   .table td,
   .table th {
     background-color: transparent;
-    font-size: 12px;
+     font-size: 12px;
 
   }
 
@@ -286,6 +286,13 @@
 
 .text-center {
   text-align: center;
+}
+.div-c{
+  margin-top:10px;
+  .c-top,.c-bottom{
+    line-height:1.2;
+    text-align: center;
+  }
 }
 
 .ibox {
@@ -464,4 +471,20 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.thumb{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.thumb.black{
+  background: #151515;
+}
+.thumb.red{
+  background: #FF0100;
+}
+.thumb.blue{
+  background: #1500CC;
 }
