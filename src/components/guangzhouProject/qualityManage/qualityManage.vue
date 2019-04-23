@@ -117,7 +117,16 @@
         </div>
         <!-- 表格 -->
         <div style="height:274px;width:100%;">
-          <div class="ibox"></div>
+          <div class="ibox">
+              <table class="table table-bordered">
+                  <thead>
+                    <tr></tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+              </table>
+          </div>
         </div>
       </div>
       <!-- right start -->
@@ -129,7 +138,9 @@
               <img src="../../../assets/index/icon.png" alt width="16px">
               <span class="text">绿色施工</span>
             </div>
-            <div class="ibox-content"></div>
+            <div class="ibox-content">
+              <div c></div>
+            </div>
           </div>
         </div>
         <!-- 工作动态 -->
@@ -208,7 +219,7 @@
               <span class="text">分包单位排行榜</span>
             </div>
             <div class="ibox-content">
-                <table class="table">
+                <table class="table text-center">
                     <thead>
                         <tr>
                             <th>排名</th>
@@ -219,7 +230,134 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td></td>
+                            <td>
+                                <img src="../../../assets/index/frist.png" alt="">
+                            </td>
+                            <td>
+                                <div class="eclipse">
+                                   <span >牛逼单位额发发阿斯顿发lore </span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>
+                                    99%（30）
+                                </span>
+                            </td>
+                            <td>
+                                <div class="good">
+                                    <span>
+                                       10%
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">↑</i>
+                                    </span>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../../assets/index/second.png" alt="">
+                            </td>
+                            <td>
+                                <div class="eclipse">
+                                   <span >牛逼单位额发发阿斯顿发lore </span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>
+                                    99%（30）
+                                </span>
+                            </td>
+                            <td>
+                                <div class="bad">
+                                    <span>
+                                       10%
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">↓</i>
+                                    </span>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../../assets/index/third.png" alt="">
+                            </td>
+                            <td>
+                                <div class="eclipse">
+                                   <span >牛逼单位额发发阿斯顿发lore </span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>
+                                    99%（30）
+                                </span>
+                            </td>
+                            <td>
+                                <div class="good">
+                                    <span>
+                                       10%
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">↑</i>
+                                    </span>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cixu">
+                               4
+                            </td>
+                            <td>
+                                <div class="eclipse">
+                                   <span >牛逼单位额发发阿斯顿发lore </span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>
+                                    99%（30）
+                                </span>
+                            </td>
+                            <td>
+                                <div class="good">
+                                    <span>
+                                       10%
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">↑</i>
+                                    </span>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cixu">
+                               5
+                            </td>
+                            <td>
+                                <div class="eclipse">
+                                   <span >牛逼单位额发发阿斯顿发lore </span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>
+                                    99%（30）
+                                </span>
+                            </td>
+                            <td>
+                                <div class="good">
+                                    <span>
+                                       10%
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">↑</i>
+                                    </span>
+                                </div>
+                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
