@@ -10,7 +10,7 @@
               <div class="titleWord">
                 <p style="margin-left: 13px;">隐患总数</p>
                 <p>重大隐患</p>
-                <p>隐患整改率</p>
+                <p>隐患整改率 </p>
               </div>
             </div>
           </div>
