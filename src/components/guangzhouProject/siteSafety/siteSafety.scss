@@ -1,0 +1,147 @@
+.top_con_right_title{
+  padding: 0 13px;
+  height: 40px;
+  background: #283664;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  .title_left{
+    display: -webkit-flex;
+    align-items: center;
+    img{
+      width: 16px;
+      height: 16px;
+      margin-right: 13px;
+    }
+    h5{
+      //font-size:16px;
+      color: #ffffff;
+      font-family:PingFangSC-Medium;
+      height: 16px;
+      line-height: 16px;
+    }
+    .titleWord{
+      display: -webkit-flex;
+      align-items: center;
+      p{
+        height:20px;
+        font-size:12px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(223,250,255,1);
+        line-height: 20px;
+      }
+      p:nth-of-type(2){
+        color: #4CF0FE;
+        margin: 0 20px;
+      }
+    }
+  }
+  .timeSelect{
+    display: -webkit-flex;
+    align-items: center;
+    p{
+      display: inline-block;
+      width: 48px;
+      height: 18px;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      line-height: 18px;
+      //font-weight: bold;
+      border:1px solid rgba(118,208,223,1);
+    }
+    p:nth-of-type(1){
+      background: #4CBDFE;
+    }
+  }
+}
+.table{
+  padding: 0 13px;
+  font-size: 12px;
+  //margin-top: 56px;
+  table{
+    tr:first-child{
+      width: 100%;
+      text-align: center;
+      background-color: #262C4A;
+      color: #4CBDFE;
+      border: 0;
+    }
+    tr{
+      height: 40px;
+      line-height: 40px;
+      td{
+        text-align: center;
+        color: #DFFAFF;
+        border-bottom: 1px solid #2E4970;
+      }
+    }
+    tr:last-child{
+      td{
+        border-bottom: 0;
+      }
+    }
+  }
+}
+.safeData{
+  height: 55px;
+  display: -webkit-flex;
+  align-items: center;
+  padding-left: 34px;
+  h5{
+    font-size: 12px;
+    color: #4CF0FE;
+    margin-right: 40px;
+  }
+}
+#myTable{
+  color: #DFFAFF;
+  tr:first-child{
+    width: 100%;
+    text-align: center;
+    background-color: #1D284D;
+    color: #DFFAFF;
+  }
+  th{
+    font-weight: normal;
+    padding: 0 20px;//根据情况自己设置
+    white-space: nowrap;//不换行
+  }
+}
+#myTable table tr:nth-of-type(2n) th{
+  border-bottom: 1px solid #2E4970;
+}
+#myTable table tr:last-of-type th{
+  border-bottom: none;
+}
+#myTable2 table tr:first-child{
+  background-color: transparent;
+}
+#myTable table tr th:first-child{
+  text-align: left;
+}
+#myTable table tr th:nth-child(2){
+  text-align: left;
+}
+#myTable1{
+  color: #DBE1FF;
+  tr:first-child {
+    background-color: #1D284D;
+  }
+  tr{
+    td{
+      text-align: left;
+      //padding: 0 6px;//根据情况自己设置
+      white-space: nowrap;//不换行
+    }
+  }
+  tr:nth-of-type(odd){
+    height: 16px;
+    line-height: 16px;
+    td{
+      border-bottom: 0;
+      padding-top: 20px;
+    }
+  }
+}
