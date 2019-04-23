@@ -28,18 +28,10 @@ var mainRouters = [
         children:[],
       },
       {
-        path: '/siteSafety',
-        name: 'siteSafety',
+        path: '/qualityManage',
+        name: 'qualityManage',
         component: (resolve) => {
-          return require(['../components/guangzhouProject/siteSafety/siteSafety.vue'], resolve)
-        },
-        children:[],
-      },
-      {
-        path: '/materialAcceptance',
-        name: 'materialAcceptance',
-        component: (resolve) => {
-          return require(['../components/guangzhouProject/materialAcceptance/materialAcceptance.vue'], resolve)
+          return require(['../components/guangzhouProject/qualityManage/qualityManage.vue'], resolve)
         },
         children:[],
       }
