@@ -65,7 +65,95 @@
         </div>
       </div>
       <div class="top_con_middle">
-        <div style="height:410px;width:100%;background-color:#fff;margin-bottom:10px;"></div>
+        <div style="height:410px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
+          <div class="bottom_ul">
+            <ul>
+              <li style="color:#FC0C59"><i class="i_red"></i>重大危险源 : 10个</li>
+              <li style="color:#FEDF50"><i class="i_yellow"></i>危险作业: 10个</li>
+              <li style="color:#FC0C59"><i class="i_red"></i>一级1个</li>
+              <li style="color:#FEDF50"><i class="i_yellow"></i>二级3个</li>
+              <li style="color:#4CF0FE"><i class="i_blue"></i>三级2个</li>
+              <li style="color:#00F7BD"><i class="i_green"></i>四级1个</li>
+
+            </ul>
+<!--            <a href="javascript:0;">项目简介</a>-->
+          </div>
+          <!-- 摄像头 -->
+          <div class="camera">
+            <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
+              <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==0" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+            </div>
+            <div class="camera_loc" style="top: 280px;left: 130px;" @click="openPic(1)">
+              <img v-show="indexItem!=1" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==1" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==1" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+            </div>
+            <div class="camera_loc" style="top: 330px;left: 520px;" @click="openPic(2)">
+              <img v-show="indexItem!=2" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==2" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==2" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+            </div>
+            <div class="camera_loc" style="top: 160px;left: 560px;" @click="openPic(3)">
+              <img v-show="indexItem!=3" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==3" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+              <img v-show="indexItem==3" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+            </div>
+          </div>
+          <!-- 隐患 -->
+          <div class="hidden">
+            <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
+              <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+              <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
+                <dl>
+                  <dt><span>较大隐患</span><span>安全防护</span></dt>
+                  <dd>斜撑梁局部防护缺失</dd>
+                  <dd>整改责任人：张富立</dd>
+                  <dd>复查人：陈力</dd>
+                  <dd>整改期限：2019-05-01</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
+              <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+              <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;">
+                <dl>
+                  <dt><span>较大隐患</span><span>安全防护</span></dt>
+                  <dd>斜撑梁局部防护缺失</dd>
+                  <dd>整改责任人：张富立</dd>
+                  <dd>复查人：陈力</dd>
+                  <dd>整改期限：2019-05-01</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
+              <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+              <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;">
+                <dl>
+                  <dt><span>较大隐患</span><span>安全防护</span></dt>
+                  <dd>斜撑梁局部防护缺失</dd>
+                  <dd>整改责任人：张富立</dd>
+                  <dd>复查人：陈力</dd>
+                  <dd>整改期限：2019-05-01</dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
+              <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
+              <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
+                <dl>
+                  <dt><span>较大隐患</span><span>安全防护</span></dt>
+                  <dd>斜撑梁局部防护缺失</dd>
+                  <dd>整改责任人：张富立</dd>
+                  <dd>复查人：陈力</dd>
+                  <dd>整改期限：2019-05-01</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="height:516px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="top_con_right_title">
             <div class="title_left">
@@ -77,14 +165,31 @@
               <p>本月</p>
             </div>
           </div>
-          <div class="table" >
+          <div class="top_con_middle_content" style="display: flex;padding: 30px">
+            <div class="top_con_middle_content_left" style="display: flex">
+              <div class="cir_time" style="margin:20px 20px 0 30px;">
+                <el-progress type="circle" :percentage="25" color="#00F29F"></el-progress>
+                <div class="time_size">60%</div>
+              </div>
+              <div class="top_con_middle_content_word">
+                <p><span class="yi"></span> 已验收</p>
+                <p><span class="er"></span> 待验收</p>
+              </div>
+            </div>
+            <div class="top_con_middle_content_right" style="flex: 1">
+              <div id="echart-pie" style="width:100%;height:100%"></div>
+            </div>
+          </div>
+          <div class="table" style="margin-top: 20px">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>验收类型</th>
-                <th >设备名称</th>
-                <th>验收状态</th>
-                <th>验收人</th>
-              </tr>
+              <thead>
+                <tr>
+                  <th>验收类型</th>
+                  <th >设备名称</th>
+                  <th>验收状态</th>
+                  <th>验收人</th>
+                </tr>
+              </thead>
               <tr>
                 <td>安全管理</td>
                 <td><span>车载起重机</span></td>
@@ -187,14 +292,16 @@
           </div>
           <div class="table" style="margin-top: 55px">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>危险源名称</th>
-                <th>等级</th>
-                <th>责任人</th>
-                <th>状态</th>
-                <th>已监管次数</th>
-                <th>需监管次数</th>
-              </tr>
+              <thead>
+                <tr>
+                  <th>危险源名称</th>
+                  <th>等级</th>
+                  <th>责任人</th>
+                  <th>状态</th>
+                  <th>已监管次数</th>
+                  <th>需监管次数</th>
+                </tr>
+              </thead>
               <tr>
                 <td>危险源1</td>
                 <td>一级</td>
@@ -247,12 +354,14 @@
           </div>
           <div class="table" >
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>作业类型</th>
-                <th colspan="2">状态</th>
-                <th>责任人</th>
-                <th>监管人</th>
-              </tr>
+              <thead>
+                <tr>
+                  <th>作业类型</th>
+                  <th colspan="2">状态</th>
+                  <th>责任人</th>
+                  <th>监管人</th>
+                </tr>
+              </thead>
               <tr>
                 <td>作业类型1</td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">未验收</span></td>
@@ -296,8 +405,183 @@ export default {
     }
   },
   methods: {
+    drawPie () {
+      var myChart = this.$echarts.init(document.getElementById("echart-pie"));
+
+      var data = [
+        { value: 20, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
+        { value: 20, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
+        { value: 20, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
+        {
+          value: 20,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
+        }
+      ];
+
+      // 计算总数
+      var total = data.map(v => v.value).reduce((o, n) => o + n);
+
+      // 计算每一个data的其实角度和末了角度 θ1和θ2
+      data.reduce((o, v) => {
+        v.theta1 = o;
+        v.theta2 = o + v.value / total;
+        return v.theta2;
+      }, 0);
+      // 添加渐变
+      data.forEach((v, i) => {
+        var ops = calc(v.theta1 * 2 * Math.PI, v.theta2 * 2 * Math.PI);
+        if (v.value)
+          v.itemStyle = {
+            color: {
+              type: "radial",
+              x: ops.center[0],
+              y: ops.center[1],
+              r: ops.radius,
+              colorStops: [
+                {
+                  offset: 0,
+                  color: v.color0
+                },
+                {
+                  offset: 0.5,
+                  color: v.color0
+                },
+                {
+                  offset: 0.3,
+                  color: v.color1
+                },
+                {
+                  offset: 1,
+                  color: v.color1
+                }
+              ]
+              // globalCoord: false // 缺省为 false
+            }
+          };
+        v.label = {
+          normal: {
+            show: true,
+            formatter: "{b}\n\n{d}%",
+            textStyle: {
+              fontSize: 12,
+              color: v.color1
+            },
+            position: "outside"
+          },
+          emphasis: {
+            show: true
+          }
+        };
+      });
+
+      // 计算渐变中心以及渐变半径
+      function calc(theta1, theta2) {
+        var r = 0.5; // 半径是0.5 其实表示0.5个直径
+        var inner = 0.6; // 里面镂空部分占60%  option中radius为[33%, 55%]  55 * 0.6 == 33
+
+        var cos = Math.cos;
+        var sin = Math.sin;
+        var PI = Math.PI;
+        var min = Math.min;
+        var max = Math.max;
+
+        var bottom = 0;
+        var left = 2 * r;
+        var right = 0;
+
+        // y0: θ1对应的外部点的y值
+        // y1: θ2对应的外部点的y值
+        // _y0: θ1对应的内部点的y值
+        // _y1: θ2对应的内部点的y值
+        // x0: θ1对应的外部点的x值
+        // x1: θ2对应的外部点的x值
+        // _x0: θ1对应的内部点的x值
+        // _x1: θ2对应的内部点的x值
+        var y0 = r * (1 - cos(theta1));
+        var y1 = r * (1 - cos(theta2));
+
+        var _y0 = r * (1 - inner * cos(theta1));
+        var _y1 = r * (1 - inner * cos(theta2));
+
+        // 如果这个弧经过θ == PI的点  则bottom = 2PI
+        // bottom用于之后的max计算中
+        if (theta1 < PI && theta2 > PI) {
+          bottom = 2 * r;
+        }
+        // 计算这几个点的最大最小值
+        var ymin = min(_y0, _y1, y0, y1);
+        var ymax = max(_y0, _y1, y0, y1, bottom);
+
+        var x0 = r * (1 + sin(theta1));
+        var x1 = r * (1 + sin(theta2));
+
+        var _x0 = r * (1 + inner * sin(theta1));
+        var _x1 = r * (1 + inner * sin(theta2));
+
+        // 如果这个弧经过θ == PI / 2的点  则right = 2PI
+        if (theta1 < PI / 2 && theta2 > PI / 2) {
+          right = 2 * r;
+        }
+        // 如果这个弧经过θ == PI / 2 * 3的点  则left = 0
+        if (theta1 < (PI / 2) * 3 && theta2 > (PI / 2) * 3) {
+          left = 0;
+        }
+        var xmin = min(_x0, _x1, x0, x1, left);
+        var xmax = max(_x0, _x1, x1, x0, right);
+
+        return {
+          // 计算圆心以及半径
+          center: [(r - xmin) / (xmax - xmin), (r - ymin) / (ymax - ymin)],
+          radius: r / min(xmax - xmin, ymax - ymin)
+        };
+      }
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+          orient: "vertical",
+          x: "75%",
+          y: "25%",
+          itemWidth: 14,
+          itemHeight: 14,
+          align: "left",
+          data: ["已通过", "通过中", "未开始", "预警"],
+          textStyle: {
+            color: "#fff"
+          }
+        },
+
+        series: [
+          {
+            name: "质量问题",
+            type: "pie",
+            radius: ["45%", "70%"],
+            center: ["35%", "50%"],
+            data: data,
+            itemStyle: {
+              emphasis: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(255, 255, 255,1)"
+              }
+            }
+            // animation: false
+          }
+        ]
+      };
+      myChart.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
+    }
   },
-  created () {
+  mounted () {
+    this.drawPie()
+  },
+  beforeDestroy () {
+    clearInterval(this.intervalTimer)
   }
 }
 </script>
@@ -306,4 +590,163 @@ export default {
 </style>
 <style lang="scss" scoped>
   @import './siteSafety';
+  .cir_time {
+    position: relative;
+    .time_size {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100px;
+      background-color: rgba(45,241,215,0.6);
+      color: #fff;
+    }
+    .time_size1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      background-color: #1D284D;
+      color: #4CF0FE;
+    }
+    .text_loc  {
+      position: absolute;
+      top: 55px;
+      width: 100%;
+      background-color: #1D284D;
+    }
+  }
+  .top_con_middle_content_word{
+    padding: 34px;
+    p {
+      font-size: 12px;
+      color: #FFFFFF;
+      width: 60px;
+    }
+    span{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    .yi{
+      background:linear-gradient(180deg,rgba(176,249,255,1) 0%,rgba(76,240,254,1) 100%)
+    }
+    .er{
+      background:rgba(94,100,121,1)
+    }
+  }
+  .middle_bg {
+    position: relative;
+    background: #000 url('../../../assets/bg_img.jpg');
+    background-size: 100%;
+    .top_ul {
+      height: 40px;
+      ul {
+        li {
+          float: left;
+          width:100px;
+          height:40px;
+          background:rgba(23,28,51,0.3);
+          text-align: center;
+          color: #4CF0FE;
+          margin-right: 2px;
+        }
+      }
+    }
+    .middle_ul {
+      position: absolute;
+      left: 0;
+      top: 80px;
+      ul {
+        li {
+          width:100px;
+          height:40px;
+          background:rgba(23,28,51,0.3);
+          text-align: center;
+          color: #4CF0FE;
+          margin-bottom: 2px;
+        }
+      }
+    }
+    .bottom_ul {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      line-height: 50px;
+      width: 100%;
+      background:rgba(23,28,51,0.56);
+      ul {
+        float: left;
+        li {
+          float: left;
+          height:50px;
+          text-align: center;
+          color: #4CF0FE;
+          margin: 0 10px 0 10px;
+        }
+      }
+      a {
+        float: right;
+        color: #4CF0FE;
+        margin-right: 15px;
+      }
+    }
+    .camera {
+      .camera_loc {
+        position: absolute;
+        cursor: pointer;
+        img {
+          position: absolute;
+        }
+      }
+    }
+    .hidden {
+      .hidden_loc {
+        position: absolute;
+        cursor: pointer;
+        .icon_hidden {
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+        }
+        .alertHidden {
+          position: absolute;
+          width: 203px;
+          height: 125px;
+          background: transparent url('../../../assets/index/alert_bg.png');
+          padding: 5px 20px;
+          box-sizing: border-box;
+          font-size: 12px;
+          line-height: 22px;
+          color: #DFFAFF;
+          dt {
+            color: #FEDF50;
+          }
+        }
+      }
+    }
+  }
+  .i_blue{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background:rgba(76,240,254,1);
+    box-shadow:0px 0px 0px 4px rgba(76,240,254,0.19);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
 </style>

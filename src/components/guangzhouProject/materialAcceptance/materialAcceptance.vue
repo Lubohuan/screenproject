@@ -85,12 +85,14 @@
           </div>
           <div class="table" style="margin-top: 10px">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>物资名称</th>
-                <th >发货量（吨）</th>
-                <th>验收量（吨）</th>
-                <th>偏差率<p class="triangle"></p></th>
-              </tr>
+              <thead>
+                <tr>
+                  <th>物资名称</th>
+                  <th >发货量（吨）</th>
+                  <th>验收量（吨）</th>
+                  <th>偏差率<p class="triangle"></p></th>
+                </tr>
+              </thead>
               <tr>
                 <td>作业类型1</td>
                 <td>5</td>
@@ -127,12 +129,14 @@
           </div>
           <div class="table" style="margin-top: 10px">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>收料员</th>
-                <th >验收单数</th>
-                <th>滞签次数</th>
-                <th>滞签率<p class="triangle"></p></th>
-              </tr>
+              <thead>
+                <tr>
+                  <th>收料员</th>
+                  <th >验收单数</th>
+                  <th>滞签次数</th>
+                  <th>滞签率<p class="triangle"></p></th>
+                </tr>
+              </thead>
               <tr>
                 <td>螺旋丸</td>
                 <td>5</td>
@@ -162,17 +166,30 @@
         </div>
       </div>
       <div class="top_con_middle">
-        <div style="height:360px;width:100%;background-color:#fff;margin-bottom:10px;"></div>
+        <div style="height:360px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;border-bottom: 1px solid #4CF0FE">物料库存</h5>
+              <h5 style="height: 39px;line-height: 39px">物资使用趋势</h5>
+            </div>
+          </div>
+<!--          <div class="drawTuQu" style="padding-right: 40px">-->
+<!--            <div id="chartmainbar" style="width:100%; height:320px;"></div>-->
+<!--          </div>-->
+        </div>
         <div style="height:308px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="table" style="padding-top: 20px">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>物资名称</th>
-                <th>规格型号</th>
-                <th >入库总量（吨）</th>
-                <th>出库总（吨）</th>
-                <th>库存余量（吨）</th>
-              </tr>
+              <thead>
+                <tr>
+                  <th>物资名称</th>
+                  <th>规格型号</th>
+                  <th >入库总量（吨）</th>
+                  <th>出库总（吨）</th>
+                  <th>库存余量（吨）</th>
+                </tr>
+              </thead>
               <tr>
                 <td>抗震螺纹钢</td>
                 <td>HRB400ESO</td>
@@ -218,14 +235,14 @@
             </table>
           </div>
         </div>
-        <div style="height:248px;width:100%;background-color:#1D284D;">
-          <div class="top_con_right_title">
+        <div style="height:248px;width:100%;background-color:#1D284D;display: flex;flex-direction: column">
+          <div class="top_con_right_title" style="height: 40px">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
               <h5>物资消耗情况</h5>
             </div>
             <div class="title_right" style="display: flex;align-items: center;">
-              <el-select v-model="value" placeholder="钢材">
+              <el-select v-model="value" placeholder="钢材" id="title_right">
                 <el-option
                   id="selectBox"
                   v-for="item in options"
@@ -237,58 +254,32 @@
               <div style="font-size: 12px;margin-left: 10px">单位 : 吨</div>
             </div>
           </div>
-          <div class="table" style="margin-top: 10px">
-            <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <tr>
-                <th>物资名称</th>
-                <th>规格型号</th>
-                <th >领用量</th>
-                <th>计划用量</th>
-                <th>图纸计算量</th>
-                <th>超量</th>
-                <th>领用比</th>
-                <th>超量比</th>
-              </tr>
-              <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>30</td>
-                <td>30</td>
-                <td>12</td>
-                <td>4</td>
-                <td><span style="color: #FEDF50">30%</span></td>
-                <td><span style="color: #FC0C59">30%</span></td>
-              </tr>
-              <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>30</td>
-                <td>30</td>
-                <td>12</td>
-                <td>4</td>
-                <td><span style="color: #FEDF50">30%</span></td>
-                <td><span style="color: #FC0C59">30%</span></td>
-              </tr>
-              <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>30</td>
-                <td>30</td>
-                <td>12</td>
-                <td>4</td>
-                <td><span style="color: #FEDF50">30%</span></td>
-                <td><span style="color: #FC0C59">30%</span></td>
-              </tr>
-              <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>30</td>
-                <td>30</td>
-                <td>12</td>
-                <td>4</td>
-                <td><span style="color: #FEDF50">30%</span></td>
-                <td><span style="color: #FC0C59">30%</span></td>
-              </tr>
+          <div class="table" id="scolTab" style="margin-top: 10px;flex: 1;overflow: hidden">
+            <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+              <thead>
+                <tr>
+                  <th>物资名称</th>
+                  <th>规格型号</th>
+                  <th >领用量</th>
+                  <th>计划用量</th>
+                  <th>图纸计算量</th>
+                  <th>超量</th>
+                  <th>领用比</th>
+                  <th>超量比</th>
+                </tr>
+              </thead>
+              <tbody style="overflow-y: auto;">
+                <tr v-for="(item,index) in 15" :key="index">
+                  <td>抗震螺纹钢</td>
+                  <td>HRB400ESO</td>
+                  <td>30</td>
+                  <td>30</td>
+                  <td>12</td>
+                  <td>4</td>
+                  <td><span style="color: #FEDF50">30%</span></td>
+                  <td><span style="color: #FC0C59">30%</span></td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -321,7 +312,7 @@
                 <img src="" alt="">
               </div>
             </div>
-            <div class="media" style="margin:5px 0;">
+            <div class="media">
               <div class="media-body">
                 <div class="media-header">
                   <label>质量检查</label>
@@ -414,17 +405,229 @@ export default {
     }
   },
   methods: {
+    drawLine () {
+      let myChart = this.$echarts.init(document.getElementById('chartmainbar'))
+      var option = {
+        xAxis: {
+          show: false
+        },
+        yAxis: [{
+          show: true,
+          data: ['钢筋', '螺纹钢', '砂子', '模板', '混凝土', '圆钢'],
+          inverse: true,
+          axisLine: {
+            show: false
+          },
+          splitLine: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          },
+          axisLabel: {
+            textStyle: {
+              color: '#DBE1FF'
+            },
+            formatter: function(value, index) {
+              return [
+                '{title|' + value + '} '
+              ].join('\n')
+            },
+            rich: {}
+          },
+
+        }, {
+          show: true,
+          inverse: true,
+          data: ['50/100（吨）','50/100（吨）', '50/100（吨）', '50/100（吨）', '50/100（吨）','50/100（吨）'],
+          axisLabel: {
+            textStyle: {
+              color: '#DBE1FF'
+            }
+          },
+          axisLine: {
+            show: false
+          },
+          splitLine: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          }
+        }],
+        series: [{
+          name: '条',
+          type: 'bar',
+          yAxisIndex: 0,
+          data: [{
+            value: 53,
+            itemStyle: {
+              normal: {
+                color: {
+                  type: 'bar',
+                  colorStops: [{
+                    offset: 0,
+                    color: 'rgba(0,153,239,0.8)' // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: 'rgba(66,187,255,1)' // 100% 处的颜色
+                  }],
+                  globalCoord: false // 缺省为 false
+                }
+              }
+            }
+          }, {
+            value: 80,
+            itemStyle: {
+              // normal:{color:'#b250ff',barBorderRadius:[0,10,10,0],}
+              normal: {
+                color: {
+                  type: 'bar',
+                  colorStops: [{
+                    offset: 0,
+                    color: 'rgba(39,161,125,1)' // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: 'rgba(39,161,125,1)' // 100% 处的颜色
+                  }],
+                  globalCoord: false // 缺省为 false
+                }
+              }
+            }
+          }, {
+            value: 20,
+            itemStyle: {
+              // normal:{color:'#4f9aff',barBorderRadius:[0,10,10,0],}
+              normal: {
+                color: {
+                  type: 'bar',
+                  colorStops: [{
+                    offset: 0,
+                    color: 'rgba(216,185,42,1)' // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: 'rgba(216,185,42,1)' // 100% 处的颜色
+                  }],
+                  globalCoord: false // 缺省为 false
+                }
+              }
+            }
+          }, {
+            value: 40,
+            itemStyle: {
+              // normal:{color:'#4bf3ff',barBorderRadius:[0,10,10,0],  },
+              normal: {
+                color: {
+                  type: 'bar',
+                  colorStops: [{
+                    offset: 0,
+                    color: 'rgba(223,92,180,1)' // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: 'rgba(224,124,118,1)' // 100% 处的颜色
+                  }],
+                  globalCoord: false // 缺省为 false
+                }
+              }
+
+            }
+          },{
+            value: 53,
+            itemStyle: {
+              // normal:{color:'#4bf3ff',barBorderRadius:[0,10,10,0],  },
+              normal: {
+                color: {
+                  type: 'bar',
+                  colorStops: [{
+                    offset: 0,
+                    color: 'rgba(191,229,121,1)' // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: 'rgba(139,198,68,1)' // 100% 处的颜色
+                  }],
+                  globalCoord: false // 缺省为 false
+                }
+              }
+
+            }
+          },{
+            value: 53,
+            itemStyle: {
+              // normal:{color:'#4bf3ff',barBorderRadius:[0,10,10,0],  },
+              normal: {
+                color: {
+                  type: 'bar',
+                  colorStops: [{
+                    offset: 0,
+                    color: 'rgba(81,246,240,1)' // 0% 处的颜色
+                  }, {
+                    offset: 1,
+                    color: 'rgba(2,199,249,1)' // 100% 处的颜色
+                  }],
+                  globalCoord: false // 缺省为 false
+                }
+              }
+
+            }
+          }],
+          barWidth: 10,
+          itemStyle: {
+            normal: {
+              barBorderRadius: 0,
+              color: 'rgba(255,255,255,0.3)'
+              // color: function(params) {
+              //   var num = myColor.length;
+              //   return myColor[params.dataIndex % num]
+              // },
+            }
+          },
+          label: {
+            normal: {
+              show: false,
+              position: 'inside',
+              formatter: '{c}%'
+            }
+          },
+        }]
+      };
+      myChart.setOption(option);
+    }
   },
-  created () {
+  mounted () {
+    this.drawLine()
   }
 }
 </script>
-<style lang="scss" scoped>
-  .el-select .el-input__inner {
-    height: 24px;
+<style lang="scss">
+  #title_right{
+    height: 24px!important;
   }
-  .el-input--suffix .el-input__inner {
-    height: 24px;
+  #scolTab tbody{
+    height: 168px;
+    display: block;
+  }
+  #scolTab table thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  tbody::-webkit-scrollbar {
+    width: 6px!important;
+    height: 4px;
+    background: transparent;
+  }
+  tbody::-webkit-scrollbar-thumb {
+    width: 12px!important;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0px rgba(76,189,254,1);
+    background: rgba(76,189,254,1);
+  }
+  tbody::-webkit-scrollbar-track {
+    display: none;
+    -webkit-box-shadow: inset 0 0 5px rgba(76,189,254,1);
+    border-radius: 10px;
+    background: rgba(76,189,254,1);
   }
 </style>
 <style lang="scss" scoped>
@@ -446,7 +649,7 @@ export default {
   .el-select{
     width: 100px;
   }
- #title_right .el-select .el-input__inner .el-input--suffix .el-input__inner{
-    height: 24px!important;
+  #scolTab::-webkit-scrollbar {
+    display: none;
   }
 </style>
