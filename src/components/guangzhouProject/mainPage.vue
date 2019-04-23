@@ -6,7 +6,7 @@
         <img src="../../assets/logo.png" style="height:25px;" />
         <div style="width:150px;color:hsla(185, 99%, 65%, 1);font-size:20px;text-align:center;font-weight:bold;">智慧工地V2.0</div>
         <div style="height:20px;width:1px;background-color:hsla(185, 99%, 65%, 1);margin-right:15px;"></div>
-        <img src="../../assets/huazhu.png" style="height:25px;" />
+        <img src="../../assets/huazhu.png" style="height:20px;" />
       </div>
       <div class="flex_b">
         <img src="../../assets/left.png" style="height:4px;" />
@@ -15,7 +15,7 @@
       </div>
       <div class="flex_b">
         <img src="../../assets/timer.png" style="height:16px;margin-right:10px;" />
-        <span style="font-size:14px;">2019/4/19 14:00:00</span>
+        <span style="font-size:16px;">2019/4/19 14:00:00</span>
         <span style="font-size:14px;margin:0 15px;">安全生产</span>
         <span class="timerday" style="font-size:18px;">1</span>
         <span class="timerday" style="font-size:18px;">0</span>
@@ -53,7 +53,7 @@ export default {
         {text:'机械管理',path:'/'},
         {text:'物料管理',path:'/'},
         {text:'生产进度',path:'/'},
-        {text:'质量管理',path:'/'},
+        {text:'质量管理',path:'/qualityManage'},
         {text:'现场安全',path:'/'},
         {text:'AIOT',path:'/'},
         {text:'BIM应用',path:'/'},

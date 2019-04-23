@@ -1,3 +1,4 @@
+
 #maincontainer{
     display: flex;
     flex-direction: row;
@@ -31,6 +32,7 @@
         margin:0 15px;
         font-size:26px;
         font-weight:bold;
+        font-family: "Microsoft YaHei","微软雅黑",Arial,sans-serif;
         background-image:-webkit-linear-gradient(bottom,#B0F9FF,#4CF0FE); 
         -webkit-background-clip:text; 
         -webkit-text-fill-color:transparent;
@@ -99,10 +101,4 @@
 }
 .t16f{
     font-size:16px;
-}
-.textdot{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
 }
