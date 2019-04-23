@@ -95,22 +95,123 @@
                         </div>
                         <div class="flex1 font12 marginL30">
                             <div>离线</div>
-                            <div><span class="font28 bigNum">6</span>台</div>
+                            <div><span class="font28 bigNum color_red">6</span>台</div>
                         </div>
                         <div class="font12 marginL30" style="line-height: 50px;">
-                            <div><span class="bgcStyle bgcStyle_a">未工作</span><span class="font28 bigNum">6</span>台</div>
+                            <div><span class="bgcStyle bgcStyle_a">未工作</span><span class="font28 bigNum  color_green" style="vertical-align: bottom;">6</span>台</div>
                         </div>
                         <div class="font12 marginL30" style="line-height: 50px;">
-                            <div><span class="bgcStyle bgcStyle_b">故障</span><span class="font28 bigNum">6</span>台</div>
+                            <div><span class="bgcStyle bgcStyle_b">故障</span><span class="font28 bigNum  color_red" style="vertical-align: bottom;">6</span>台</div>
                         </div>
                         <div class="font12 marginL30" style="line-height: 50px;">
-                            <div><span class="bgcStyle bgcStyle_c">维保</span><span class="font28 bigNum">6</span>台</div>
+                            <div><span class="bgcStyle bgcStyle_c">维保</span><span class="font28 bigNum  color_yellow" style="vertical-align: bottom;">6</span>台</div>
                         </div>
                     </div>
                </div>
            </div>
            <div class="top_con_middle">
-               <div style="height:415px;width:100%;background-color:#fff;margin-bottom:10px;"></div>
+               <div style="height:415px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
+                   <div class="top_ul">
+                       <ul>
+                           <li>项目总控</li>
+                           <li>BIM应用</li>
+                           <li>视频监控</li>
+                           <li>无人机</li>
+                           <li>项目简介</li>
+                       </ul>
+                   </div>
+                   <div class="middle_ul">
+                       <ul>
+                           <li>一区进</li>
+                           <li>二区进</li>
+                           <li>三区进</li>
+                           <li>四区进</li>
+                       </ul>
+                   </div>
+                   <div class="bottom_ul">
+                       <ul>
+                           <li style="color:#FC0C59"><i class="i_red"></i>重大风险源1个</li>
+                           <li style="color:#FEDF50"><i class="i_yellow"></i>危险作业3个</li>
+                           <li style="color:#00F7BD"><i class="i_green"></i>质量验收1个</li>
+                       </ul>
+                       <a href="javascript:0;">项目简介</a>
+                   </div>
+                   <!-- 摄像头 -->
+                   <div class="camera">
+                        <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
+                            <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==0" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                        <div class="camera_loc" style="top: 280px;left: 130px;" @click="openPic(1)">
+                            <img v-show="indexItem!=1" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==1" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==1" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                        <div class="camera_loc" style="top: 330px;left: 520px;" @click="openPic(2)">
+                            <img v-show="indexItem!=2" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==2" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==2" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                        <div class="camera_loc" style="top: 160px;left: 560px;" @click="openPic(3)">
+                            <img v-show="indexItem!=3" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==3" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==3" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                   </div>
+                   <!-- 隐患 -->
+                   <div class="hidden">
+                        <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
+                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                   </div>
+               </div>
                <div style="height:235px;width:100%;background-color:#fff;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
@@ -119,8 +220,33 @@
                     </div>
                     <div class="bg padding10">
                         <div style="display:flex;height:190px;">
-                            <div>
-                                <div id="myChartProgress" :style="{width: '160px', height: '160px'}"></div>
+                            <div class="cir_time">
+                                <el-progress type="circle" :percentage="25" color="#00F29F"></el-progress>
+                                <p class="text_center">已施工(天)</p>
+                                <div class="time_size">80</div>
+                            </div>
+                            <div class="progress_time">
+                                <ul>
+                                    <li style="left:-2px;">
+                                        <i class="loading"></i>
+                                        <p>2018.8</p>
+                                        <p>开工时间</p>
+                                    </li>
+                                    <li style="left:200px;">
+                                        <i class="loading"></i>
+                                        <p>2018.8</p>
+                                        <p>开工时间</p>
+                                    </li>
+                                    <li style="left:400px;">
+                                        <i class="loading"></i>
+                                        <p>2018.8</p>
+                                        <p>开工时间</p>
+                                    </li>
+                                </ul>
+                                 <div class="color_time">
+                                     <i class="now_loading"></i>
+                                 </div>
+
                             </div>
                             
                         </div>
@@ -129,17 +255,17 @@
                </div>
            </div>
            <div class="top_con_right green_construct">
-               <div style="height:185px;width:100%;background-color:#fff;margin-bottom:10px;">
+               <div style="height:185px;width:100%;margin-bottom:10px;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         绿色施工
                     </div>
                     <div class="bg padding10 bg_h" >
                         <div style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
-                            <div class="flex1 flex">
+                            <div class="flex1 flex text_center" style="justify-content: space-around;">
                                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                                <div class="flex1" style="font-size:18px;"><span style="font-size:36px;">10</span>℃</div>
-                                <div class="flex1" style="color:#FEDF50;font-size:16px;">多云</div>
+                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">10</span>℃</div>
+                                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
                             </div>
                             <div class="flex1 flex"  style="flex-direction:column;">
                                 <div class="flex">
@@ -213,7 +339,7 @@
                         </div>
                     </div>
                </div>
-               <div style="height:220px;width:100%;background-color:#fff;margin-bottom:10px;">
+               <div style="height:220px;width:100%;margin-bottom:10px;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         质量管理
@@ -221,7 +347,7 @@
                     </div>
                     <div class="bg padding10">
                         <table style="width:100%" class="quality">
-                            <tr class="font12" style="color:#4CBDFE"><th>排名</th><th>分包单位</th><th>通过率（问题数）</th><th>周环比</th></tr>
+                            <tr class="font12" style="color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><th>排名</th><th>分包单位</th><th>通过率（问题数）</th><th>周环比</th></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/frist.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/second.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="down_data">10%↓</td></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/third.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
@@ -230,7 +356,7 @@
                         </table>
                     </div>
                </div>
-               <div style="height:235px;width:100%;background-color:#fff;">
+               <div style="height:235px;width:100%;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         物资验收
@@ -274,15 +400,33 @@
                     <div id="myChart" :style="{width: '100%', height: '162px'}"></div>
                 </div>
            </div>
-           <div style="height:100%;width:calc(100% - 550px);">
-               <div class="bg">
-                    <table style="width:100%;border-collapse:collapse;border:0px solid #31374E" border>
-                        <tr style="color:#4CBDFE;font-size:14px;background:#283664;line-height:40px;border-width:0px:" ><th>序号</th><th>施工区域</th><th colspan="4" style="color:#1CF1C2">今日完成</th><th colspan="4"  style="color:#FEDF50">明日计划</th><th>风险预估</th><th>待处理</th></tr>
-                        <tr class="font12" style="color:#4CBDFE;text-align:center;line-height:46px;"><td></td><td></td><td>工程量</td><td>安全</td><td>质量</td><td>物资</td><td>工程量</td><td>劳务人员</td><td>机械</td><td>物资</td><td></td><td></td></tr>
-                        <tr class="font12" style="text-align:center;line-height:46px;"><td>1</td><td>施工一区</td><td><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4">验收6次 未通过1个</td><td>2345m²</td><td>55</td><td>汽吊进场</td><td rowspan="4">钢筋到场</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12" style="text-align:center;line-height:46px;"><td>2</td><td>施工一区</td><td><i class="i_red"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td>2345m²</td><td>55</td><td>汽吊进场</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12" style="text-align:center;line-height:46px;"><td>3</td><td>施工一区</td><td><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td>2345m²</td><td>55</td><td>汽吊进场</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12" style="text-align:center;line-height:46px;"><td>4</td><td>施工一区</td><td><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td>2345m²</td><td>55</td><td>汽吊进场</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+           <div style="height:100%;width:calc(100% - 1080px);box-sizing: border-box;padding:0 10px;">
+                <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                    <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                    今日完成
+                </div>
+               <div class="bg padding10">
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>工程量</td><td>安全</td><td>质量</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>1</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4"><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>2</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>3</td><td>施工一区</td><td class="color_yellow"><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>4</td><td>施工一区</td><td class="color_green"><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                    </table>
+                </div>
+           </div>
+           <div style="height:100%;width:540px;">
+                <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                    <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                    明日计划
+                </div>
+                <div class="bg padding10">
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>工程量</td><td>劳务人员</td><td>机械</td><td>物资</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td><td rowspan="4">钢筋到场</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
                     </table>
                 </div>
            </div>
@@ -296,15 +440,22 @@
         name: 'homePage',
         data() {
             return {
-                
+                camera:'',
+                indexItem:-1,
+                hiddenIndexItem:-1
             }
         },
         mounted(){
             this.drawLine();
-            this.drawGropress();
             this.goodsChart();
         },
         methods: {
+            openPic(index){
+                this.indexItem = index;
+            },
+            openhidden(index){
+                this.hiddenIndexItem = index;
+            },
            drawLine(){
                 // 基于准备好的dom，初始化echarts实例
                 let myChart = this.$echarts.init(document.getElementById('myChart'))
@@ -380,68 +531,6 @@
                     data: [22, 24, 20, 30]
                     }]
                 });
-            },
-            drawGropress(){
-            // 基于准备好的dom，初始化echarts实例
-                let myChart = this.$echarts.init(document.getElementById('myChartProgress'))
-                // 绘制图表
-                myChart.setOption({
-                title: {
-                    text: '80',
-                    x: 'center',
-                    y: 'center',
-                    textStyle: {
-                        fontWeight: 'normal',
-                        color: '#0580f2',
-                        fontSize: '90'
-                    }
-                },
-                color: ['rgba(29,40,77,1)'],
-            
-                series: [{
-                    name: 'Line 1',
-                    type: 'pie',
-                    clockWise: true,
-                    radius: ['50%', '66%'],
-                    itemStyle: {
-                        normal: {
-                            label: {
-                                show: false
-                            },
-                            labelLine: {
-                                show: false
-                            }
-                        }
-                    },
-                    hoverAnimation: false, 
-                    data: [{
-                        value: 80,
-                        name: '01',
-                        itemStyle: {
-                            normal: {
-                                color: { // 完成的圆环的颜色
-                                    colorStops: [{
-                                        offset: 0,
-                                        color: 'rgba(0,242,159,1)' // 0% 处的颜色
-                                    }, {
-                                        offset: 1,
-                                        color: 'rgba(76,240,254,1)' // 100% 处的颜色
-                                    }]
-                                },
-                                label: {
-                                    show: false
-                                },
-                                labelLine: {
-                                    show: false
-                                }
-                            } 
-                        }
-                    }, {
-                        name: '02',
-                        value: 20
-                    }]
-                }]
-                })
             },
             goodsChart(){
                 // 基于准备好的dom，初始化echarts实例
@@ -590,6 +679,7 @@
       border-top:0; 
   }
   table tr td:first-of-type {
+      border-top:0; 
       border-left:0; 
   }
   table tr td:last-of-type {
@@ -662,5 +752,153 @@
             }
         }
     }
+    .top_con_middle {
+        .middle_bg {
+            position: relative;
+            background: #000 url('../../../assets/bg_img.jpg');
+            background-size: 100%;
+            .top_ul {
+                height: 40px;
+                ul {
+                    li {
+                        float: left;
+                        width:100px;
+                        height:40px;
+                        background:rgba(23,28,51,0.3);
+                        text-align: center;
+                        color: #4CF0FE;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .middle_ul {
+                position: absolute;
+                left: 0;
+                top: 80px;
+                ul {
+                    li {
+                        width:100px;
+                        height:40px;
+                        background:rgba(23,28,51,0.3);
+                        text-align: center;
+                        color: #4CF0FE;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+            .bottom_ul {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                line-height: 50px;
+                width: 100%;
+                background:rgba(23,28,51,0.56);
+                ul {
+                    float: left;
+                    li {
+                        float: left;
+                        height:50px;
+                        text-align: center;
+                        color: #4CF0FE;
+                        margin: 0 10px 0 10px;
+                    }
+                }
+                a {
+                    float: right;
+                    color: #4CF0FE;
+                    margin-right: 15px;
+                }
+            }
+            .camera {
+                .camera_loc {
+                    position: absolute;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+            .hidden {
+                .hidden_loc {
+                    position: absolute;
+                    cursor: pointer;
+                    .icon_hidden {
+                        position: absolute;
+                        width: 17px;
+                        height: 17px;
+                        border-radius: 50%;
+                    }
+                    .alertHidden {
+                        position: absolute;
+                        width: 203px;
+                        height: 125px;
+                        background: transparent url('../../../assets/index/alert_bg.png');
+                        padding: 5px 20px;
+                        box-sizing: border-box;
+                        font-size: 12px;
+                        line-height: 22px;
+                        color: #DFFAFF;
+                        dt {
+                            color: #FEDF50;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cir_time {
+        position: relative;
+        .time_size {
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            background-color: rgba(45,241,215,0.6);
+            color: #fff;
+        }
+    }
+    .progress_time {
+        position: relative;
+        margin-left: 50px;
+        margin-top: 60px;
+        width: 600px;
+        border-top: 4px solid rgba(0,0,0,0.15);
+        li {
+            position: absolute;
+            top: -20px;
+            .loading {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: linear-gradient(180deg,rgba(0,242,159,1) 0%,rgba(76,240,254,1) 100%);
+            }
+        }
+        .color_time {
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            top: -4px;
+            background: linear-gradient(90deg,rgba(0,242,159,0.28) 0%,rgba(76,240,254,1) 100%);
+            .now_loading {
+                position: absolute;
+                right: -5px;
+                top: -10px;
+                width: 14px;
+                height: 14px;
+                background-color: #00F29F;
+                border:4px solid #156064;
+                border-radius: 50%
+            }
+        }
+        
+    }
+    
 }
 </style>

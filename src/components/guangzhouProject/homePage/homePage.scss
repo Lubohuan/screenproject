@@ -32,6 +32,8 @@
     background:rgba(252,12,89,1);
     border:4px solid #4c183c;
     border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2px;
   }
   .i_yellow {
     display: inline-block;
@@ -40,6 +42,8 @@
     background:rgba(254,223,80,1);
     border:4px solid #454339;
     border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2px;
   }
   .i_green {
     display: inline-block;
@@ -48,6 +52,8 @@
     background:rgba(0,247,189,1);
     border:4px solid #12474f;
     border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2px;
   }
 
   .bgcStyle {
@@ -129,4 +135,14 @@
   }
   .padding5 {
     padding: 5px;
+  }
+
+  .color_red {
+      color: #FC0C59;
+  }
+  .color_green {
+    color:#4CF0FE
+  }
+  .color_yellow {
+      color:#FEDF50
   }
