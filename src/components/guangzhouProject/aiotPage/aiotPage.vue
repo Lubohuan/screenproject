@@ -1,5 +1,5 @@
 <template>
-  <div style="height:100%;width:100%;">
+  <div class="huling" style="height:100%;width:100%;">
     <div class="top_con flex_b">
       <div class="top_con_left top_con_left_hll">
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;">
@@ -10,32 +10,32 @@
             </div>
           </div>
           <div class="top_con_left_hll_one_top">
-            <p>累计预警<span style="color: #FEDF50;font-size: 28px">132</span>次</p>
-            <p>今日<span style="color: #FEDF50;font-size: 28px">12</span>次</p>
+            <p>累计预警<span style="color: #FEDF50;font-size: 28px">15</span>次</p>
+            <p>今日<span style="color: #FEDF50;font-size: 28px">1</span>次</p>
           </div>
           <div class="top_con_left_hll_one_bottom" style="margin-top: 20px">
             <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">一级警报</span></p>
-            <p>14:20</p>
-            <p>高温预警，室外作业不宜超过6小时，请大家注意避暑</p>
+            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">一级预警</span></p>
+            <p>08:03</p>
+            <p>1#工区高支模形变超限，请及时查看处理</p>
           </div>
           <div class="top_con_left_hll_one_bottom">
             <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">二级警报</span></p>
-            <p>14:20</p>
-            <p>高温预警，室外作业不宜超过6小时，请大家注意避暑</p>
+            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">二级预警</span></p>
+            <p>07:13</p>
+            <p>1#工区有工人未戴安全帽进入施工区域</p>
           </div>
           <div class="top_con_left_hll_one_bottom">
             <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FC0C59;background: rgba(252,12,89,.2);font-size: 10px">三级警报</span></p>
-            <p>14:20</p>
-            <p>高温预警，室外作业不宜超过6小时，请大家注意避暑</p>
+            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FC0C59;background: rgba(252,12,89,.2);font-size: 10px">三级预警</span></p>
+            <p>07:07</p>
+            <p>预计今日有阵雨，请提前做好相应准备</p>
           </div>
           <div class="top_con_left_hll_one_bottom">
             <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">二级警报</span></p>
-            <p>14:20</p>
-            <p>高温预警，室外作业不宜超过6小时，请大家注意避暑</p>
+            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">一级预警</span></p>
+            <p>06:38</p>
+            <p>4#工区监测到有人进入危险区域，请及时劝阻</p>
           </div>
         </div>
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;position: relative">
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="top_con_left_hll_one_top" style="border-bottom: 0">
-            <p>今日共喷淋<span style="color: #FEDF50;font-size: 28px">132</span>次</p>
+            <p>今日共喷淋<span style="color: #FEDF50;font-size: 28px">0</span>次</p>
           </div>
           <div class="top_con_left_hll_two" style="display: flex;padding: 0 23px">
             <div class="top_con_left_hll_two_left" style="margin-right: 20px">
@@ -54,9 +54,9 @@
                 <img src="../../../assets/Aiot-pm1.png" alt="">
               </div>
               <div class="top_con_left_hll_two_left_word">
-                <p>当前<span style="color: #4CBDFE">120</span></p>
-                <p>最高<span style="color: #4CBDFE">124</span></p>
-                <p>最低<span style="color: #4CBDFE">76</span></p>
+                <p>当前<span style="color: #4CBDFE">21</span></p>
+                <p>最高<span style="color: #4CBDFE">31</span></p>
+                <p>最低<span style="color: #4CBDFE">17</span></p>
               </div>
             </div>
             <div class="top_con_left_hll_two_left">
@@ -64,16 +64,16 @@
                 <img src="../../../assets/Aiot-pm2.png" alt="">
               </div>
               <div class="top_con_left_hll_two_left_word">
-                <p>当前<span style="color: #00F7BD">120</span></p>
-                <p>最高<span style="color: #00F7BD">124</span></p>
-                <p>最低<span style="color: #00F7BD">76</span></p>
+                <p>当前<span style="color: #00F7BD">33</span></p>
+                <p>最高<span style="color: #00F7BD">53</span></p>
+                <p>最低<span style="color: #00F7BD">21</span></p>
               </div>
             </div>
           </div>
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P style="color: #FC0C59">预警提示 : </P>
-            <p>当前PM2.5超过预警值，已启动智能预警方案，请注意查收</p>
+            <p>当前空气质量良好，请继续保持</p>
           </div>
         </div>
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;">
@@ -89,7 +89,7 @@
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P>智能提醒 : </P>
-            <p>今日用电量超出平均值50%，请及时记录</p>
+            <p>水电用量与昨日同期基本持平，处于正常范围</p>
           </div>
         </div>
       </div>
@@ -101,16 +101,16 @@
           <div class="top_con_right_title">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5>物资收量偏差分析</h5>
+              <h5>深基坑监测</h5>
             </div>
-            <div class="timeSelect" id="timeSelect">
-              <p>地下水位</p>
-              <p>土深水平</p>
-              <p>边坡竖向</p>
-              <p>边坡水平</p>
-              <p>地标竖向</p>
-              <p>建筑竖向</p>
-            </div>
+<!--            <div class="timeSelect" id="timeSelect">-->
+<!--              <p>地下水位</p>-->
+<!--              <p>土深水平</p>-->
+<!--              <p>边坡竖向</p>-->
+<!--              <p>边坡水平</p>-->
+<!--              <p>地标竖向</p>-->
+<!--              <p>建筑竖向</p>-->
+<!--            </div>-->
           </div>
           <div class="table" id="scolTab" style="margin-top: 24px;flex: 1;overflow: hidden">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
@@ -119,14 +119,14 @@
                 <th>监测点编号</th>
                 <th>深度（m）</th>
                 <th >初始值（m）</th>
-                <th>上次累计变量（mm）</th>
+                <th>上次累计（mm）</th>
                 <th >本次变化（m）</th>
                 <th >本次累计变化（m）</th>
                 <th>变化速率（mm/d）</th>
               </tr>
               </thead>
               <tbody style="overflow-y: auto;">
-                <tr v-for="(item,index) in 4" :key="index">
+                <tr>
                   <td>To1</td>
                   <td>0.5</td>
                   <td>187</td>
@@ -134,6 +134,33 @@
                   <td>0.29</td>
                   <td>0.14</td>
                   <td><span style="color: #FEDF50">0.15</span></td>
+                </tr>
+                <tr>
+                  <td>To2</td>
+                  <td>0.5</td>
+                  <td>-53</td>
+                  <td>-0.56</td>
+                  <td>-0.4</td>
+                  <td>-0.96</td>
+                  <td><span style="color: #FEDF50">0.2</span></td>
+                </tr>
+                <tr>
+                  <td>To3</td>
+                  <td>0.5</td>
+                  <td>-269</td>
+                  <td>0.85</td>
+                  <td>-1.07</td>
+                  <td>-0.22</td>
+                  <td><span style="color: #FEDF50">0.54</span></td>
+                </tr>
+                <tr>
+                  <td>To4</td>
+                  <td>0.5</td>
+                  <td>-146</td>
+                  <td>0.77</td>
+                  <td>-0.03</td>
+                  <td>0.74</td>
+                  <td><span style="color: #FEDF50">-0.03</span></td>
                 </tr>
               </tbody>
             </table>
@@ -152,18 +179,18 @@
             <div style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
               <div class="flex1 flex text_center" style="justify-content: space-around;">
                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">10</span>℃</div>
+                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
                 <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
               </div>
               <div class="flex1 flex"  style="flex-direction:column;">
                 <div class="flex">
                   <div class="flex1 font12"><img src="../../../assets/index/wind.png" alt=""> 南风2级 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/temperature.png" alt=""> 12℃ </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/rainfall.png" alt=""> 67% </div>
+                  <div class="flex1 font12"><img src="../../../assets/index/temperature.png" alt=""> 26℃ </div>
+                  <div class="flex1 font12"><img src="../../../assets/index/rainfall.png" alt=""> 100% </div>
                 </div>
                 <div class="flex">
-                  <div class="flex1 font12"><img src="../../../assets/index/pm25.png" alt=""> 35 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/pm10.png" alt=""> 78 </div>
+                  <div class="flex1 font12"><img src="../../../assets/index/pm25.png" alt=""> 21 </div>
+                  <div class="flex1 font12"><img src="../../../assets/index/pm10.png" alt=""> 33 </div>
                   <div class="flex1 font12"><img src="../../../assets/index/noise.png" alt=""> 45dB </div>
                 </div>
               </div>
@@ -172,7 +199,7 @@
               <div class="flex1 flex">
                 <div class="flex1 text_center">
                   <p class="font12">明天</p>
-                  <img src="../../../assets/index/sunny.png" alt="" width="34px">
+                  <img src="../../../assets/index/rain.png" alt="" width="34px">
                 </div>
                 <div class="flex1 text_center">
                   <p class="font12">后天</p>
@@ -180,21 +207,21 @@
                 </div>
                 <div class="flex1 text_center">
                   <p class="font12">大后天</p>
-                  <img src="../../../assets/index/cloudy.png" alt="" width="34px">
+                  <img src="../../../assets/index/rain.png" alt="" width="34px">
                 </div>
               </div>
               <div class="flex1 flex">
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">10</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">晴</p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">26</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">14</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">27</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">暴雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">8</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">多云</p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">23</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
                 </div>
               </div>
             </div>
@@ -206,21 +233,21 @@
                 <div class="flex1 flex">
                   <div class="flex1 text_center" style="line-height:25px;">
                     <span class="blank_cir cir"></span>
-                    <p>18</p>
+                    <p>26</p>
                   </div>
                   <div class="flex1 text_center" >
                     <span class="blue_cir cir"></span>
-                    <p>19</p>
+                    <p>27</p>
                   </div>
                 </div>
                 <div class="flex1 flex">
                   <div class="flex1 text_center" >
                     <span class="blue_cir cir"></span>
-                    <p>20</p>
+                    <p>28</p>
                   </div>
                   <div class="flex1 text_center" >
                     <span class="red_cir cir"></span>
-                    <p>21</p>
+                    <p>29</p>
                   </div>
                 </div>
               </div>
@@ -240,13 +267,13 @@
             </div>
           </div>
           <div class="top_con_left_hll_one_top" style="border-bottom: 0;margin: 23px 0 0 46px">
-            <p style="font-size: 12px;color:rgba(219,225,255,1);">今日共预警<span style="color: #FEDF50;font-size: 28px;padding: 0 4px">13</span>次</p>
+            <p style="font-size: 12px;color:rgba(219,225,255,1);">今日共预警<span style="color: #FEDF50;font-size: 28px;padding: 0 4px">1</span>次</p>
           </div>
           <div id="aiot-echart-line" style="width:100%;height:130px"></div>
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P>智能提醒 : </P>
-            <p>30%烟雾感应预警发生在三工区宿舍，请核实</p>
+            <p>施工一区发生烟雾报警次数最多，请关注</p>
           </div>
         </div>
         <div class="top_con_right_hll_one" style="height:305px;width:100%;background-color:#1D284D;">
@@ -262,7 +289,7 @@
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P style="color: #FC0C59">预警提示 : </P>
-            <p>今日出工人数低于计划人数，请及时补充人员</p>
+            <p>今日现场施工人数与计划人数基本相符，劳动力满足要求</p>
           </div>
         </div>
       </div>
@@ -357,7 +384,7 @@ export default {
         series: [{
           name: '水量',
           type: 'bar',
-          data: [20, 50, 80, 58, 83],
+          data: [3.5, 0, 0, 0, 0],
           barWidth: 10, //柱子宽度
           barGap: 1, //柱子之间间距
           itemStyle: {
@@ -375,7 +402,7 @@ export default {
         }, {
           name: '电量',
           type: 'bar',
-          data: [50, 70, 60, 61, 75, 87],
+          data: [21,0, 0, 0, 0, 0],
           barWidth: 10,
           barGap: 1,
           itemStyle: {
@@ -521,7 +548,7 @@ export default {
                 shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
               }
             },
-            data: [8, 36, 6, 30]
+            data: [5, 3, 1, 1]
           }
         ]
       };
@@ -580,15 +607,13 @@ export default {
               }
             },
             data: [
-              "8:00",
-              "10:00",
               "12:00",
-              "14:00",
               "16:00",
-              "18:00",
               "20:00",
-              "22:00",
-              "24:00"
+              "24:00",
+              "4:00",
+              "8:00",
+              "12:00"
             ]
           }
         ],
@@ -687,9 +712,7 @@ export default {
               25,
               18,
               29,
-              26,
-              20,
-              33
+              0
             ]
           },
           {
@@ -755,9 +778,7 @@ export default {
               19,
               35,
               36,
-              28,
-              25,
-              39
+              0
             ]
           }
         ]
