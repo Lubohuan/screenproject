@@ -32,11 +32,11 @@
       <div class="tabtext" style="position:relative;" :class="{'active':activeIndex == index}" v-for="(list,index) in tabData" :key="index" @click="tabChange(list,index)">
         <img src="../../assets/bgtext.png" class="bgtext"/>
         <span class="titletext">{{list.text}}</span>
-        <ul v-if="showTab&& activeIndex == 7&&activeIndex == index" class="aiotTab">
-          <li style="border-bottom:1px solid #283664" @click="AiotTabChange('/',index)">AIOT驾驶舱</li>
-          <li style="border-bottom:1px solid #283664" @click="AiotTabChange('/',index)">环境监测</li>
-          <li style="border-bottom:1px solid #283664" @click="AiotTabChange('/aiotPageContent',index)">塔机监测</li>
-          <li @click="AiotTabChange('/aiotPageMonitoring')">视频监控</li>
+        <ul v-show="index == 7&&showTab"  class="aiotTab">
+          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/',index)">AIOT驾驶舱</li>
+          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/',index)">环境监测</li>
+          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/aiotPageContent',index)">塔机监测</li>
+          <li @click.stop="AiotTabChange('/aiotPageMonitoring')">视频监控</li>
         </ul>
 
       </div>
@@ -81,7 +81,11 @@ export default {
   methods:{
       tabChange(list,index){
         if(index == 7){
-        this.showTab = true;
+          if(this.showTab){
+              this.showTab = false;
+          }else{
+            this.showTab = true;
+          }
         this.activeIndex = index;
         }else{
         this.activeIndex = index;
@@ -90,12 +94,8 @@ export default {
         
       },
       AiotTabChange(list,index){
-        
-        this.showTab = false;
-        console.log(this.showTab&& this.activeIndex == 7&&this.activeIndex == index)
-        debugger
-        this.$router.replace(list);
-       
+          this.showTab = false;
+          this.$router.replace(list);
       },
       suited(){
         let levelheight = 1080;
@@ -131,6 +131,11 @@ export default {
       z-index:999;
       li:hover {
         color: #4cf0fe;
+      }
+    }
+    .tabtext:nth-child(7):hover {
+      .aiotTab {
+        display: block;
       }
     }
   }
