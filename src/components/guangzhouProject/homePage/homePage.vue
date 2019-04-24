@@ -518,10 +518,10 @@
                 <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>物资名称</td><td>发货量（吨）</td><td>验收量（吨）</td><td>验收量（吨）</td><td>偏差率</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
                     </table>
                 </div>
            </div>
@@ -533,10 +533,10 @@
                <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>工程量</td><td>安全</td><td>质量</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>1</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4"><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>2</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>3</td><td>施工一区</td><td class="color_yellow"><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>4</td><td>施工一区</td><td class="color_green"><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4"><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td class="color_yellow"><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td class="color_green"><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                     </table>
                 </div>
            </div>
@@ -548,10 +548,10 @@
                 <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>工程量</td><td>劳务人员</td><td>机械</td><td>物资</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td><td rowspan="4">钢筋到场</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td><td rowspan="4">钢筋到场</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
                     </table>
                 </div>
            </div>

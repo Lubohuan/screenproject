@@ -56,6 +56,22 @@ var mainRouters = [
           return require(['../components/guangzhouProject/aiotPage/aiotPage.vue'], resolve)
         }
       },
+      // 塔机监测
+      {
+        path: '/aiotPageContent',
+        name: 'aiotPageContent',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/aiotPage/aiotPageContent.vue'], resolve)
+        }
+      },
+      // 监控
+      {
+        path: '/aiotPageMonitoring',
+        name: 'aiotPageMonitoring',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/aiotPage/aiotPageMonitoring.vue'], resolve)
+        }
+      },
       {
         path: '/qualityManage',
         name: 'qualityManage',

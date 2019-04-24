@@ -266,7 +266,7 @@
                 </div>
                <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:37px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>劳务单位名称</td><td>已登记人数</td><td>证件已验证</td><td>在场施工</td><td>已进行安全教育者</td><td>已完成技术交底</td><td>刷卡率</td><td>安全教育合格率</td><td>近三天退场</td><td>特殊工种</td></tr>
+                        <tr class="font12 text_center" style="line-height:37px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>劳务单位名称</td><td>已登记人数</td><td>证件已验证</td><td>在场施工</td><td>已进行安全教育者</td><td>已完成技术交底</td><td>刷卡率</td><td>安全教育覆盖率</td><td>近三天退场</td><td>特殊工种</td></tr>
                         <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_red">50%</td><td>4</td><td class="color_red">50%</td><td class="color_red">50%</td><td>4</td><td>12</td></tr>
                         <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_red">80%</td><td>3</td><td class="color_red">50%</td><td class="color_red">50%</td><td>2</td><td>12</td></tr>
                         <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_yellow">50%</td><td>3</td><td class="color_red">50%</td><td class="color_red">50%</td><td>3</td><td>11</td></tr>
