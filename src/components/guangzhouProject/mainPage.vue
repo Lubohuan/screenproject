@@ -56,7 +56,7 @@ export default {
         {text:'质量管理',path:'/qualityManage'},
         {text:'现场安全',path:'/siteSafety'},
         {text:'AIOT',path:'/'},
-        {text:'BIM应用',path:'/'},
+        {text:'BIM应用',path:'/bimApply'},
       ],
       tabactive:0
     }

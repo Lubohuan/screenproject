@@ -49,7 +49,14 @@ var mainRouters = [
           return require(['../components/guangzhouProject/qualityManage/qualityManage.vue'], resolve)
         },
         children:[],
-      }
+      },
+      {
+        path: '/bimApply',
+        name: 'bimApply',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/bimApply/bimApply.vue'], resolve)
+        }
+      },
     ],
   },
 ];
