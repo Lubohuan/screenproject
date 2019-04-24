@@ -15,44 +15,44 @@
                   <dl class="dl-equipment">
                     <dt>塔式起重机</dt>
                     <dd>
-                      <span class="text">24</span>
+                      <span class="text">1</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                   <dl class="dl-equipment">
-                    <dt>塔式起重机</dt>
+                    <dt>履带推土机</dt>
                     <dd>
-                      <span class="text">24</span>
+                      <span class="text">2</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                   <dl class="dl-equipment">
-                    <dt>塔式起重机</dt>
+                    <dt>液压挖掘机</dt>
                     <dd>
-                      <span class="text">24</span>
+                      <span class="text">5</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                 </div>
                 <div class="flex jc-center">
                   <dl class="dl-equipment">
-                    <dt>塔式起重机</dt>
+                    <dt>混凝土喷浆机</dt>
                     <dd>
-                      <span class="text">24</span>
+                      <span class="text">1</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                   <dl class="dl-equipment">
-                    <dt>塔式起重机</dt>
+                    <dt>空气压缩机</dt>
                     <dd>
-                      <span class="text">24</span>
+                      <span class="text">1</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                   <dl class="dl-equipment">
-                    <dt>塔式起重机</dt>
+                    <dt>其他</dt>
                     <dd>
-                      <span class="text">24</span>
+                      <span class="text">0</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
@@ -62,12 +62,12 @@
             </div>
           </div>
         </div>
-        <!-- 设备问题及保养类型统计 -->
+        <!-- 设备隐患及保养类型统计 -->
         <div style="height:215px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
-              <span class="text">设备问题及保养类型统计</span>
+              <span class="text">设备隐患及保养类型统计</span>
             </div>
             <div class="ibox-content">
               <div class="flex allHeight">
@@ -89,16 +89,15 @@
               <span class="text">资料及人员预警</span>
             </div>
             <div class="ibox-content">
-              <table class="table text-center" style="line-height:2;">
+              <table class="table text-center allHeight">
                 <thead>
                   <tr>
                     <th>排名</th>
-                    <th>分包单位</th>
+                    <th>设备类型</th>
                     <th>
-                      通过率
-                      <span>(问题数)</span>
+                      人员证件
                     </th>
-                    <th>周环比</th>
+                    <th>资料缺失</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,11 +107,11 @@
                     </td>
                     <td>
                       <div class="eclipse">
-                        <span>广州市通力建筑劳务派遣有限公司</span>
+                        <span>塔式起重机</span>
                       </div>
                     </td>
                     <td>
-                      <span>100%（10）</span>
+                      <span>合格</span>
                     </td>
                     <td>
                       <div class="good">
@@ -129,11 +128,11 @@
                     </td>
                     <td>
                       <div class="eclipse">
-                        <span>广州市大禹防漏技术开发有限公司</span>
+                        <span>履带推土机</span>
                       </div>
                     </td>
                     <td>
-                      <span>100%（3）</span>
+                      <span>合格</span>
                     </td>
                     <td>
                       <!-- <div class="bad">
@@ -143,72 +142,49 @@
                         </span>
                       </div>-->
                       <div class="good">
-                        <span>10%</span>
+                        <span>33%</span>
                         <span>
                           <i class="iconfont">↑</i>
                         </span>
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                   <tr>
                     <td>
                       <img src="../../../assets/index/third.png" alt>
                     </td>
                     <td>
                       <div class="eclipse">
-                        <span>锚杆班组</span>
+                        <span>液压挖掘机</span>
                       </div>
                     </td>
                     <td>
-                      <span>100%（1）</span>
+                      <span>合格</span>
                     </td>
                     <td>
                       <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
+                       --
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="cixu">4</td>
+                    <td>
+                      4
+                    </td>
                     <td>
                       <div class="eclipse">
-                        <span>牛逼单位额发发阿斯顿发lore</span>
+                        <span>混凝土喷浆机</span>
                       </div>
                     </td>
                     <td>
-                      <span>99%（30）</span>
+                      <span>合格</span>
                     </td>
                     <td>
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
-                      </div>
+                      --
                     </td>
                   </tr>
-                  <tr>
-                    <td class="cixu">5</td>
-                    <td>
-                      <div class="eclipse">
-                        <span>牛逼单位额发发阿斯顿发lore</span>
-                      </div>
-                    </td>
-                    <td>
-                      <span>99%（30）</span>
-                    </td>
-                    <td>
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
+                 
+                 
                 </tbody>
               </table>
             </div>
@@ -224,11 +200,11 @@
             <div class="ibox-content">
               <div class="flex jc-between" style="padding:0px 40px;">
                 <dl class="list-pro">
-                  <dt>今日重大质量问题</dt>
+                  <dt>今日设备隐患数</dt>
                   <dd>0</dd>
                 </dl>
                 <dl class="list-pro">
-                  <dt>产期未整改</dt>
+                  <dt>超期未整改</dt>
                   <dd>0</dd>
                 </dl>
                 <dl class="list-pro">
@@ -236,7 +212,7 @@
                   <dd>0</dd>
                 </dl>
                 <dl class="list-pro">
-                  <dt>未销重大隐患</dt>
+                  <dt>未销项重大隐患</dt>
                   <dd>0</dd>
                 </dl>
               </div>
@@ -248,7 +224,8 @@
       <div class="top_con_middle">
         <!-- 轮播 -->
         <div  class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
-          <div class="swiper-container">
+          <img src="../../../assets/manageMachine/bg.jpg">
+          <div class="swiper-container" style="display:none">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
@@ -469,61 +446,61 @@
               <div class="media">
                 <div class="media-body">
                   <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">底版</span>
+                    <label>设备检查</label>
+                    <span class="inline-block">防脱钩</span>
                   </div>
                   <div class="media-content">
-                    <span>检查人尹鑫检查了底板防水层，无问题</span>
+                    <span>杨建基、吴艺昌于塔吊吊钩部位，进行了防脱钩装置检查</span>
                   </div>
-                  <div class="media-footer">2019-04-18 16:48</div>
+                  <div class="media-footer">2019-04-20</div>
                 </div>
                 <div class="media-right">
-                  <img src alt>
+                  <img src='../../../assets/manageMachine/jx4.jpg' alt>
                 </div>
               </div>
               <div class="media" style="margin:3px 0;">
                 <div class="media-body">
                   <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">地基基础</span>
+                    <label>设备检查</label>
+                    <span class="inline-block">安装</span>
                   </div>
                   <div class="media-content">
-                    <span>检查人杨佳雄检查了抗拔锚杆，无问题</span>
+                    <span>伍时海于塔吊塔身部位，进行了安装可靠性检查</span>
                   </div>
-                  <div class="media-footer">2019-04-17 16:54</div>
+                  <div class="media-footer">2019-04-15</div>
                 </div>
                 <div class="media-right">
-                  <img src alt>
+                  <img src='../../../assets/manageMachine/jx3.jpg' alt>
                 </div>
               </div>
               <div class="media" style="margin:0 0 3px 0;">
                 <div class="media-body">
                   <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">底版</span>
+                    <label>设备检查</label>
+                    <span class="inline-block">材料进场</span>
                   </div>
                   <div class="media-content">
-                    <span>检查人尹鑫检查了底板防水，有问题，一般质量问题</span>
+                    <span>刘鹏于塔吊构件部位，进行了材料进场检查</span>
                   </div>
                   <div class="media-footer">2019-04-16 17:44</div>
                 </div>
                 <div class="media-right">
-                  <img src alt>
+                  <img src='../../../assets/manageMachine/jx2.jpg' alt>
                 </div>
               </div>
               <div class="media">
                 <div class="media-body">
                   <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">底版</span>
+                    <label>设备检查</label>
+                    <span class="inline-block">混凝土强度</span>
                   </div>
                   <div class="media-content">
-                    <span>检查人尹鑫检查了底板防水层，无问题</span>
+                    <span>刘志强于塔吊基础部位，进行了基础混凝土强度检查</span>
                   </div>
                   <div class="media-footer">2019-04-09 14:24</div>
                 </div>
                 <div class="media-right">
-                  <img src alt>
+                  <img src='../../../assets/manageMachine/jx1.jpg' alt>
                 </div>
               </div>
             </div>
@@ -619,9 +596,9 @@ export default {
         yAxis: [
           {
             type: "value",
-            // min: 0,
-            // max: 140,
-            // splitNumber: 7,
+            min: 0,
+            max: 5,
+            splitNumber: 1,
             splitLine: {
               show: false,
               lineStyle: {
@@ -648,7 +625,7 @@ export default {
         ],
         series: [
           {
-            name: "质量问题",
+            name: "设备隐患数",
             type: "line",
             smooth: true,
             itemStyle: { normal: { areaStyle: { type: "default" } } },
@@ -704,7 +681,7 @@ export default {
                 shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
               }
             },
-            data: [1, 2, 5, 3]
+            data: [0, 0, 0, 0]
           }
         ]
       };
@@ -713,21 +690,21 @@ export default {
         myChart.resize();
       });
     },
-    drawPie(domId) {
+    drawPie1(domId) {
       var myChart = this.$echarts.init(document.getElementById(domId));
       var data = [
-        { value: 1, name: "混凝土露筋", color0: "#FF687D", color1: "#FC0C59" },
-        { value: 1, name: "混凝土胀模", color0: "#FCDE54", color1: "#F7BA2A" },
+        { value: 1, name: "无证违章", color0: "#FF687D", color1: "#FC0C59" },
+        { value: 1, name: "作业违章", color0: "#FCDE54", color1: "#F7BA2A" },
         // { value: 3, name: "其他", color0: "#df5cb4", color1: "#e07c76" },
         {
           value: 1,
-          name: "其他",
+          name: "吊索断裂",
           color0: "rgba(13,138,212,1)",
           color1: "rgba(60,181,251,1)"
         },
-        { value: 1, name: "卷材缺陷", color0: "yellow", color1: "yellowgreen" },
+        { value: 1, name: "臂架折断", color0: "yellow", color1: "yellowgreen" },
 
-        { value: 1, name: "混凝土夹渣", color0: "#15E09B", color1: "#1DBD6B" }
+        { value: 1, name: "高处坠落", color0: "#15E09B", color1: "#1DBD6B" }
       ];
 
       // 计算总数
@@ -851,7 +828,7 @@ export default {
       var option = {
         tooltip: {
           trigger: "item",
-          formatter: "{a} <br/>{b} : {c} ({d}%)"
+          formatter: "{a} <br/>{b} : {d}%"
         },
         // legend: {
         //   orient: "vertical",
@@ -875,7 +852,190 @@ export default {
 
         series: [
           {
-            name: "问题类型",
+            name: "隐患类型",
+            type: "pie",
+            radius: ["45%", "70%"],
+            center: ["50%", "55%"],
+            data: data,
+            itemStyle: {
+              emphasis: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(255, 255, 255,1)"
+              }
+            }
+            // animation: false
+          }
+        ]
+      };
+      myChart.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
+    },
+    drawPie2(domId) {
+      var myChart = this.$echarts.init(document.getElementById(domId));
+      var data = [
+        { value: 1, name: "金属结构", color0: "#FF687D", color1: "#FC0C59" },
+        { value: 1, name: "传动结构", color0: "#FCDE54", color1: "#F7BA2A" },
+        // { value: 3, name: "其他", color0: "#df5cb4", color1: "#e07c76" },
+        {
+          value: 1,
+          name: "顶升结构",
+          color0: "rgba(13,138,212,1)",
+          color1: "rgba(60,181,251,1)"
+        },
+        { value: 1, name: "电气系统", color0: "yellow", color1: "yellowgreen" },
+
+        { value: 1, name: "安全装置", color0: "#15E09B", color1: "#1DBD6B" }
+      ];
+
+      // 计算总数
+      var total = data.map(v => v.value).reduce((o, n) => o + n);
+
+      // 计算每一个data的其实角度和末了角度 θ1和θ2
+      data.reduce((o, v) => {
+        v.theta1 = o;
+        v.theta2 = o + v.value / total;
+        return v.theta2;
+      }, 0);
+      // 添加渐变
+      data.forEach((v, i) => {
+        var ops = calc(v.theta1 * 2 * Math.PI, v.theta2 * 2 * Math.PI);
+        if (v.value)
+          v.itemStyle = {
+            color: {
+              type: "radial",
+              x: ops.center[0],
+              y: ops.center[1],
+              r: ops.radius,
+              colorStops: [
+                {
+                  offset: 0,
+                  color: v.color0
+                },
+                {
+                  offset: 0.5,
+                  color: v.color0
+                },
+                {
+                  offset: 0.3,
+                  color: v.color1
+                },
+                {
+                  offset: 1,
+                  color: v.color1
+                }
+              ]
+              // globalCoord: false // 缺省为 false
+            }
+          };
+        v.label = {
+          normal: {
+            show: true,
+            formatter: "{b}\n\n{d}%",
+            textStyle: {
+              fontSize: 12,
+              color: v.color1
+            },
+            position: "outside"
+          },
+          emphasis: {
+            show: true
+          }
+        };
+      });
+
+      // 计算渐变中心以及渐变半径
+      function calc(theta1, theta2) {
+        var r = 0.5; // 半径是0.5 其实表示0.5个直径
+        var inner = 0.6; // 里面镂空部分占60%  option中radius为[33%, 55%]  55 * 0.6 == 33
+
+        var cos = Math.cos;
+        var sin = Math.sin;
+        var PI = Math.PI;
+        var min = Math.min;
+        var max = Math.max;
+
+        var bottom = 0;
+        var left = 2 * r;
+        var right = 0;
+
+        // y0: θ1对应的外部点的y值
+        // y1: θ2对应的外部点的y值
+        // _y0: θ1对应的内部点的y值
+        // _y1: θ2对应的内部点的y值
+        // x0: θ1对应的外部点的x值
+        // x1: θ2对应的外部点的x值
+        // _x0: θ1对应的内部点的x值
+        // _x1: θ2对应的内部点的x值
+        var y0 = r * (1 - cos(theta1));
+        var y1 = r * (1 - cos(theta2));
+
+        var _y0 = r * (1 - inner * cos(theta1));
+        var _y1 = r * (1 - inner * cos(theta2));
+
+        // 如果这个弧经过θ == PI的点  则bottom = 2PI
+        // bottom用于之后的max计算中
+        if (theta1 < PI && theta2 > PI) {
+          bottom = 2 * r;
+        }
+        // 计算这几个点的最大最小值
+        var ymin = min(_y0, _y1, y0, y1);
+        var ymax = max(_y0, _y1, y0, y1, bottom);
+
+        var x0 = r * (1 + sin(theta1));
+        var x1 = r * (1 + sin(theta2));
+
+        var _x0 = r * (1 + inner * sin(theta1));
+        var _x1 = r * (1 + inner * sin(theta2));
+
+        // 如果这个弧经过θ == PI / 2的点  则right = 2PI
+        if (theta1 < PI / 2 && theta2 > PI / 2) {
+          right = 2 * r;
+        }
+        // 如果这个弧经过θ == PI / 2 * 3的点  则left = 0
+        if (theta1 < (PI / 2) * 3 && theta2 > (PI / 2) * 3) {
+          left = 0;
+        }
+        var xmin = min(_x0, _x1, x0, x1, left);
+        var xmax = max(_x0, _x1, x1, x0, right);
+
+        return {
+          // 计算圆心以及半径
+          center: [(r - xmin) / (xmax - xmin), (r - ymin) / (ymax - ymin)],
+          radius: r / min(xmax - xmin, ymax - ymin)
+        };
+      }
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: "{a} <br/>{b} : {d}%"
+        },
+        // legend: {
+        //   orient: "vertical",
+        //   x: "75%",
+        //   y: "25%",
+        //   itemWidth: 14,
+        //   itemHeight: 14,
+        //   align: "left",
+        //   data: [
+        //     "混凝土露筋",
+        //     "混凝土胀模",
+        //     "其他",
+        //     "其他（模板工程）",
+        //     "卷材缺陷",
+        //     "混凝土夹渣"
+        //   ],
+        //   textStyle: {
+        //     color: "#fff"
+        //   }
+        // },
+
+        series: [
+          {
+            name: "保养类型",
             type: "pie",
             radius: ["45%", "70%"],
             center: ["50%", "55%"],
@@ -916,8 +1076,8 @@ export default {
       observeParents: true // 修改swiper的父元素时，自动初始化swiper
     });
     this.drawLine();
-    this.drawPie("echart-pie1");
-    this.drawPie("echart-pie2");
+    this.drawPie1("echart-pie1");
+    this.drawPie2("echart-pie2");
     this.textScroll();
   }
 };

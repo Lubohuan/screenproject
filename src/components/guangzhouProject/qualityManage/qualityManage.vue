@@ -19,21 +19,21 @@
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>建设单位：</span>
                       </span>
-                      <span class="content inline-block">杭州开发投资集团有限公司</span>
+                      <span class="content inline-block">--</span>
                     </li>
                     <li class="flex ai-center">
                       <span class="title">
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>设计单位：</span>
                       </span>
-                      <span class="content inline-block">杭州开发投资集团有限公司</span>
+                      <span class="content inline-block">--</span>
                     </li>
                     <li class="flex ai-center">
                       <span class="title">
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>总包单位：</span>
                       </span>
-                      <span class="content inline-block">杭州开发投资集团有限公司</span>
+                      <span class="content inline-block">--</span>
                     </li>
                   </ul>
                 </div>

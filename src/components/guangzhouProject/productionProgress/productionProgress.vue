@@ -301,7 +301,7 @@
       </div>
       <div class="top_con_middle">
         <!-- 监控 -->
-        <div style="height:415px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
+        <div style="height:410px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
                    <div class="top_ul" >
                        <ul>
                            <li>形象进度</li>
@@ -414,9 +414,9 @@
                    </div>
                </div>
         <!-- 重要工序任务 -->
-        <div style="height:516px;width:100%;margin-bottom:10px;background:rgba(29, 40, 77, 0.5)">
-          <div class="ibox">
-            <img src="../../../assets/manageMachine/task.png" alt width="100%" height="100%">
+        <div style="height:516px;width:100%;background:rgba(29, 40, 77, 0.5)">
+          <div class="ibox" >
+            <img src="../../../assets/manageMachine/task.png" alt width="100%" height="516px">
           </div>
         </div>
       </div>
