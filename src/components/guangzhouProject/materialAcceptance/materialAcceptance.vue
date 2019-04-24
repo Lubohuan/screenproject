@@ -771,6 +771,11 @@ export default {
   #scolTab tbody{
     height: 168px;
     display: block;
+    tr{
+      td{
+        white-space: nowrap;
+      }
+    }
   }
   #scolTab table thead,
   tbody tr {

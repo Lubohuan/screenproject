@@ -37,31 +37,101 @@
 .top_con_right_hll{
   .top_con_right_hll_one{
     position: relative;
-    .top_con_right_one_notice{
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 48px;
-      background:rgba(40,54,100,.2);
-      display: -webkit-flex;
-      align-items: center;
-      img{
-        margin: 0 6px 0 26px;
-      }
-      p:first-of-type{
-        font-size:14px;
-        font-weight:500;
-        color:rgba(0,247,189,1);
-      }
-      p:last-of-type{
-        font-size:14px;
-        font-weight:500;
-        color:rgba(223,250,255,1);
-        margin-left: 4px;
-      }
+  }
+}
+//提醒
+  .top_con_right_one_notice{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    background:rgba(40,54,100,.2);
+    display: -webkit-flex;
+    align-items: center;
+    img{
+      margin: 0 6px 0 26px;
+    }
+    p:first-of-type{
+      font-size:14px;
+      font-weight:500;
+      color:rgba(0,247,189,1);
+    }
+    p:last-of-type{
+      font-size:14px;
+      font-weight:500;
+      color:rgba(223,250,255,1);
+      margin-left: 4px;
+      max-width: 400px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+    }
+  }
+//预警中心
+.top_con_left_hll_one_top{
+  display: -webkit-flex;
+  align-items: center;
+  margin:0 36px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(46,73,112,1);
+  p{
+    font-size:12px;
+    color:rgba(219,225,255,1);
+    margin-right: 40px;
+    span{
+      margin: 0 4px;
     }
   }
 }
-
+.top_con_left_hll_one_bottom{
+  margin:0 36px 10px;
+  display: -webkit-flex;
+  align-items: center;
+  img{
+    margin-right: 20px;
+  }
+  p{
+    font-size:14px;
+    color:rgba(255,255,255,1);
+    margin-right: 30px;
+    span{
+      padding: 0 4px;
+    }
+  }
+  p:last-of-type{
+    max-width: 219px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+//降尘喷淋
+  .top_con_left_hll_two{
+    .top_con_left_hll_two_left{
+      display: -webkit-flex;
+      flex: 1;
+      padding: 20px;
+      background:rgba(40,54,100,.2);
+      .top_con_left_hll_two_left_img{
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        display: flex;align-items: center;
+        justify-content: center
+      }
+      .top_con_left_hll_two_left_word{
+        margin-left: 28px;
+        p{
+          font-size:12px;
+          color:rgba(219,225,255,1);
+          line-height:17px;
+          span{
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
 
