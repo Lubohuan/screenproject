@@ -348,111 +348,113 @@
             </div>
             <div class="ibox-content" style="padding-left:20px;">
               <div class="weather-container flex">
-                <!-- 第一格 -->
-                <div
-                  class="item flex column"
-                  style="width:260px;border-right:1px solid rgba(255,255,255,.1);"
-                >
-                  <!-- 上半部分 -->
-                  <div class="flex top">
-                    <div class="flex-3 flex ai-end" style="height:58px;">
-                      <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
+                  <!-- 第一格 -->
+                  <div
+                    class="item flex column"
+                    style="width:260px;border-right:1px solid rgba(255,255,255,.1);"
+                  >
+                    <!-- 上半部分 -->
+                    <div class="flex top">
+                      <div class="flex-3 flex ai-end" style="height:58px;">
+                        <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
+                      </div>
+                      <div class="flex-3 flex ai-end" style="height:48px;">
+                        <span style="font-size:36px;line-height:35px;">26</span>
+                        <span style="font-size:18px;line-height:18px;">℃</span>
+                      </div>
+                      <div class="flex-2 flex ai-end" style="height:48px;">
+                        <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
+                      </div>
                     </div>
-                    <div class="flex-3 flex ai-end" style="height:48px;">
-                      <span style="font-size:36px;line-height:35px;">10</span>
-                      <span style="font-size:18px;line-height:18px;">℃</span>
-                    </div>
-                    <div class="flex-2 flex ai-end" style="height:48px;">
-                      <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
+                    <!-- 下半部分 -->
+                    <div class="flex bottom wrap">
+                      <div class="font12 flex ai-center" style="width:35%">
+                        <img src="../../../assets/index/wind.png" alt>
+                        <span>南风2级</span>
+                      </div>
+                      <div class="font12 flex ai-center" style="width:34%">
+                        <img src="../../../assets/index/temperature.png" alt>
+                        <span>100℃</span>
+                      </div>
+                      <div class="font12 flex ai-center" style="width:31%">
+                        <img src="../../../assets/index/rainfall.png" alt>
+                        <span>67%</span>
+                      </div>
+                      <div class="font12 flex ai-center" style="width:35%">
+                        <img src="../../../assets/index/pm25.png" alt>
+                        <span>21</span>
+                      </div>
+                      <div class="font12 flex ai-center" style="width:34%">
+                        <img src="../../../assets/index/pm10.png" alt>
+                        <span>33</span>
+                      </div>
+                      <div class="font12 flex ai-center" style="width:31%">
+                        <img src="../../../assets/index/noise.png" alt>
+                        <span>45dB</span>
+                      </div>
                     </div>
                   </div>
-                  <!-- 下半部分 -->
-                  <div class="flex bottom wrap">
-                    <div class="font12 flex ai-center" style="width:35%">
-                      <img src="../../../assets/index/wind.png" alt>
-                      <span>南风2级</span>
+                  <!-- 第二格 -->
+                  <div class="item flex" style="width:260px;padding-top:5px;">
+                    <!-- 明天-->
+                     <div class="flex column ai-center flex-1">
+                      <dl>
+                        <dt class="font12 text-center" style="line-height:13px;">明天</dt>
+                        <dd>
+                          <img src="../../../assets/index/rain.png" alt>
+                        </dd>
+                      </dl>
+                      <p style="font-size:14px;margin:6px 0">
+                        <span class="font28">26</span>℃
+                      </p>
+                      <p
+                        class="font12 text-center"
+                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                      >
+                        雨
+                        <img src="../../../assets/index/warning.png" alt width="20px">
+                      </p>
                     </div>
-                    <div class="font12 flex ai-center" style="width:34%">
-                      <img src="../../../assets/index/temperature.png" alt>
-                      <span>12℃</span>
+                    <!-- 后天 -->
+                    <div class="flex column ai-center flex-1">
+                      <dl>
+                        <dt class="font12 text-center" style="line-height:13px;">后天</dt>
+                        <dd>
+                          <img src="../../../assets/index/rain.png" alt>
+                        </dd>
+                      </dl>
+                      <p style="font-size:14px;margin:6px 0">
+                        <span class="font28">27</span>℃
+                      </p>
+                      <p
+                        class="font12 text-center"
+                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                      >
+                        雨
+                        <img src="../../../assets/index/warning.png" alt width="20px">
+                      </p>
                     </div>
-                    <div class="font12 flex ai-center" style="width:31%">
-                      <img src="../../../assets/index/rainfall.png" alt>
-                      <span>67%</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:35%">
-                      <img src="../../../assets/index/pm25.png" alt>
-                      <span>35</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:34%">
-                      <img src="../../../assets/index/pm10.png" alt>
-                      <span>78</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:31%">
-                      <img src="../../../assets/index/noise.png" alt>
-                      <span>45dB</span>
+                    <!-- 大后天 -->
+                   <div class="flex column ai-center flex-1">
+                      <dl>
+                        <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
+                        <dd>
+                          <img src="../../../assets/index/rain.png" alt>
+                        </dd>
+                      </dl>
+                      <p style="font-size:14px;margin:6px 0">
+                        <span class="font28">23</span>℃
+                      </p>
+                      <p
+                        class="font12 text-center"
+                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                      >
+                        雨
+                        <img src="../../../assets/index/warning.png" alt width="20px">
+                      </p>
                     </div>
                   </div>
                 </div>
-                <!-- 第二格 -->
-                <div
-                  class="item flex"
-                  style="width:260px;padding-top:5px;"
-                >
-                  <!-- 明天-->
-                  <div class="flex column ai-center flex-1">
-                    <dl class>
-                      <dt class="font12 text-center" style="line-height:13px;">明天</dt>
-                      <dd>
-                        <img src="../../../assets/index/sunny.png" alt>
-                      </dd>
-                    </dl>
-                    <p class style="font-size:14px;margin:6px 0">
-                      <span class="font28">10</span>℃
-                    </p>
-                    <p
-                      class="font12 text-center"
-                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >晴</p>
-                  </div>
-                  <!-- 后天 -->
-                  <div class="flex column ai-center flex-1">
-                    <dl>
-                      <dt class="font12 text-center" style="line-height:13px;">后天</dt>
-                      <dd>
-                        <img src="../../../assets/index/rain.png" alt>
-                      </dd>
-                    </dl>
-                    <p style="font-size:14px;margin:6px 0">
-                      <span class="font28">10</span>℃
-                    </p>
-                    <p
-                      class="font12 text-center"
-                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >
-                      雨
-                      <img src="../../../assets/index/warning.png" alt width="20px">
-                    </p>
-                  </div>
-                  <!-- 大后天 -->
-                  <div class="flex column ai-center flex-1">
-                    <dl>
-                      <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
-                      <dd>
-                        <img src="../../../assets/index/cloudy.png" alt>
-                      </dd>
-                    </dl>
-                    <p style="font-size:14px;margin:6px 0">
-                      <span class="font28">10</span>℃
-                    </p>
-                    <p
-                      class="font12 text-center"
-                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >多云</p>
-                  </div>
-                </div>
-           
-              </div>
             </div>
           </div>
         </div>

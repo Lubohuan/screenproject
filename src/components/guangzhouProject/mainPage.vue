@@ -17,12 +17,12 @@
         <img src="../../assets/timer.png" style="height:16px;margin-right:10px;" />
         <span style="font-size:16px;">2019/4/19 14:00:00</span>
         <span style="font-size:14px;margin:0 15px;">安全生产</span>
-        <span class="timerday" style="font-size:18px;">1</span>
+        <span class="timerday" style="font-size:18px;">2</span>
         <span class="timerday" style="font-size:18px;">0</span>
-        <span class="timerday" style="font-size:18px;">8</span>
+        <span class="timerday" style="font-size:18px;">3</span>
         <span style="font-size:14px;margin:0 10px;">天</span>
         <span class="timerday" style="font-size:18px;">1</span>
-        <span class="timerday" style="font-size:18px;">4</span>
+        <span class="timerday" style="font-size:18px;">0</span>
         <span style="font-size:14px;margin-left:10px;">小时</span>
         <img src="../../assets/position.png" style="height:20px;margin:0 15px;" />
         <span style="font-size:14px;">广州</span>

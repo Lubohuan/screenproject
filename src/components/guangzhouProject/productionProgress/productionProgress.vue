@@ -60,7 +60,7 @@
                         <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
                       </div>
                       <div class="flex-3 flex ai-end" style="height:48px;">
-                        <span style="font-size:36px;line-height:35px;">10</span>
+                        <span style="font-size:36px;line-height:35px;">26</span>
                         <span style="font-size:18px;line-height:18px;">℃</span>
                       </div>
                       <div class="flex-2 flex ai-end" style="height:48px;">
@@ -75,7 +75,7 @@
                       </div>
                       <div class="font12 flex ai-center" style="width:34%">
                         <img src="../../../assets/index/temperature.png" alt>
-                        <span>12℃</span>
+                        <span>100℃</span>
                       </div>
                       <div class="font12 flex ai-center" style="width:31%">
                         <img src="../../../assets/index/rainfall.png" alt>
@@ -83,11 +83,11 @@
                       </div>
                       <div class="font12 flex ai-center" style="width:35%">
                         <img src="../../../assets/index/pm25.png" alt>
-                        <span>35</span>
+                        <span>21</span>
                       </div>
                       <div class="font12 flex ai-center" style="width:34%">
                         <img src="../../../assets/index/pm10.png" alt>
-                        <span>78</span>
+                        <span>33</span>
                       </div>
                       <div class="font12 flex ai-center" style="width:31%">
                         <img src="../../../assets/index/noise.png" alt>
@@ -98,20 +98,23 @@
                   <!-- 第二格 -->
                   <div class="item flex" style="width:260px;padding-top:5px;">
                     <!-- 明天-->
-                    <div class="flex column ai-center flex-1">
-                      <dl class>
+                     <div class="flex column ai-center flex-1">
+                      <dl>
                         <dt class="font12 text-center" style="line-height:13px;">明天</dt>
                         <dd>
-                          <img src="../../../assets/index/sunny.png" alt>
+                          <img src="../../../assets/index/rain.png" alt>
                         </dd>
                       </dl>
-                      <p class style="font-size:14px;margin:6px 0">
-                        <span class="font28">10</span>℃
+                      <p style="font-size:14px;margin:6px 0">
+                        <span class="font28">26</span>℃
                       </p>
                       <p
                         class="font12 text-center"
                         style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >晴</p>
+                      >
+                        雨
+                        <img src="../../../assets/index/warning.png" alt width="20px">
+                      </p>
                     </div>
                     <!-- 后天 -->
                     <div class="flex column ai-center flex-1">
@@ -122,7 +125,7 @@
                         </dd>
                       </dl>
                       <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">10</span>℃
+                        <span class="font28">27</span>℃
                       </p>
                       <p
                         class="font12 text-center"
@@ -133,20 +136,23 @@
                       </p>
                     </div>
                     <!-- 大后天 -->
-                    <div class="flex column ai-center flex-1">
+                   <div class="flex column ai-center flex-1">
                       <dl>
                         <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
                         <dd>
-                          <img src="../../../assets/index/cloudy.png" alt>
+                          <img src="../../../assets/index/rain.png" alt>
                         </dd>
                       </dl>
                       <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">10</span>℃
+                        <span class="font28">23</span>℃
                       </p>
                       <p
                         class="font12 text-center"
                         style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >多云</p>
+                      >
+                        雨
+                        <img src="../../../assets/index/warning.png" alt width="20px">
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -310,8 +316,26 @@
                            <li>四区进</li>
                        </ul>
                    </div>
-                   <div class="bottom_ul" style="height:50px;">
-                      
+                   <div class="bottom_ul" style="height:50px;color:rgba(118, 208, 223, 1);font-size:12px;">
+                        <div class="flex jc-center ai-center" style="height:50px;">
+                             <div class="divitem">
+                               <span>计划工期：</span>
+                               <span>938天</span>
+                            </div>
+                            <div class="divitem">
+                               <span>实际工期：</span>
+                               <span>203天</span>
+                            </div>
+                            <div class="divitem" style="margin-right:10px;">
+                               <span>总产值完成情况：</span>
+                               <span>9%</span>
+                            </div>
+                            <div class="divitem">
+                               (<span> 6022.92万元</span>
+                               <i>/</i>
+                               <span>65340.17万元</span>)
+                            </div>
+                        </div>
                    </div>
                    <!-- 摄像头 -->
                    <div class="camera">
@@ -516,7 +540,7 @@
                                  <div class="flex ai-end">
                                    <span class="number">
                                       <span class="real">
-                                          <span class="number">49</span>/
+                                          <span class="number n">49</span>/
                                       </span>
                                    </span>
                                    <span class="total">50</span>
@@ -534,7 +558,7 @@
                                  <div class="flex ai-end">
                                    <span class="number">
                                       <span class="real">
-                                          <span class="number">50</span>/
+                                          <span class="number">80</span>/
                                       </span>
                                    </span>
                                    <span class="total">78</span>
@@ -552,10 +576,10 @@
                                  <div class="flex ai-end">
                                    <span class="number">
                                       <span class="real">
-                                          <span class="number">65</span>/
+                                          <span class="number">71</span>/
                                       </span>
                                    </span>
-                                   <span class="total">71</span>
+                                   <span class="total">65</span>
                                     <span class="unit">台</span>
                                  </div>
                               </dd>
@@ -624,7 +648,7 @@
                                  <div class="flex ai-end">
                                    <span class="number">
                                       <span class="real">
-                                          <span class="number n">0</span>/
+                                          <span class="number">0</span>/
                                       </span>
                                    </span>
                                    <span class="total">0</span>
@@ -1199,6 +1223,9 @@ export default {
                 line-height: 50px;
                 width: 100%;
                 background:rgba(23,28,51,0.56);
+                .divitem{
+                  margin-right:20px;
+                }
                 ul {
                     float: left;
                     li {
