@@ -479,11 +479,10 @@
   padding: 8px 10px;
   overflow: hidden;
 
-  .media-body {
-    margin-right: 154px;
-  }
+ 
 
   .media-body {
+    float: left;
     .media-header {
       margin-bottom: 5px;
 
@@ -521,6 +520,10 @@
     float: right;
     width: 114px;
     height: 78px;
+    img{
+      width:100%;
+      height: 100%;
+    }
   }
 }
 .pannel-container{
@@ -593,6 +596,10 @@
   }
 }
 .hengswiper{
+  img{
+    width: 100%;
+    height: 100%;
+  }
   .swiper-pagination-bullet {
     width: 40px;
     height: 3px;
@@ -618,16 +625,19 @@
 }
 /*设备信息*/
 .dl-equipment{
-  margin:0 30px;
+  margin:0 20px;
+  width: 100px;
   font-size:12px;
   font-weight:500;
   color:rgba(219,225,255,1);
   line-height:17px;
-  text-align: left;
+  text-align: center;
   dt{
     margin-bottom:10px;
   }
   .text{
+    display: inline-block;
+    width: 20px;
     color: #76D0DF;
     font-size:24px;
   }
