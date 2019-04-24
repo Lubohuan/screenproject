@@ -86,19 +86,6 @@
                         </table>
                         <p class="bigNum font12" style="margin-left:18px;">注意：人员偏离较大时，请及时关注！</p>
                     </div>
-                    <div style="position:absolute;left:542px;top:0px;z-index:999;width:710px;background:#283664">
-                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                            <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                            人员列表
-                        </div>
-                        <div class="bg padding10">
-                            <table style="width:100%;border-collapse:collapse;">
-                                <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>物资类型</td><td>内容概述</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
-                                <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>钢材</td><td>151.52</td><td>151.52</td><td>30</td><td class="color_yellow">0%</td></tr>
-                                <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>商品混凝土</td><td>177</td><td>177</td><td>30</td><td class="color_yellow">0%</td></tr>
-                            </table>
-                        </div>
-                    </div>
                     <!-- <div class="bg padding10">
                          <div class="flex" style="height:66px">
                             <div class="flex1 font12 marginL30">
@@ -177,7 +164,7 @@
                             <div><span class="font28 bigNum color_red">6</span>台</div>
                         </div>
                         <div class="font12" style="line-height: 50px;margin:0 15px">
-                            <div><span class="bgcStyle bgcStyle_a">未工作</span> <span class="font28 bigNum  color_green">6</span>台 </div>
+                            <div><span class="bgcStyle bgcStyle_a" style="cursor:pointer;" @click="showMeic">未工作</span> <span class="font28 bigNum  color_green">6</span>台 </div>
                         </div>
                         <div class="font12" style="line-height: 50px;margin:0 15px">
                             <div><span class="bgcStyle bgcStyle_b">故障</span> <span class="font28 bigNum  color_red" >6</span>台 </div>
@@ -201,10 +188,10 @@
                    </div>
                    <div class="middle_ul">
                        <ul>
-                           <li>一区进</li>
-                           <li>二区进</li>
-                           <li>三区进</li>
-                           <li>四区进</li>
+                           <li :class="{active:taskIndex == 1}" @click="changeTask(1)">一区进</li>
+                           <li :class="{active:taskIndex == 2}" @click="changeTask(2)">二区进</li>
+                           <li :class="{active:taskIndex == 3}" @click="changeTask(3)">三区进</li>
+                           <li :class="{active:taskIndex == 4}" @click="changeTask(4)">四区进</li>
                        </ul>
                    </div>
                    <div class="bottom_ul">
@@ -213,36 +200,83 @@
                            <li style="color:#FEDF50"><i class="i_yellow"></i>危险作业3个</li>
                            <li style="color:#00F7BD"><i class="i_green"></i>质量验收1个</li>
                        </ul>
-                       <a href="javascript:0;">项目简介</a>
+                   </div>
+                   <div style="position:absolute;right:0px;top:4px;width:134px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);">
+                       <ul v-if="taskIndex==1">
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/index/pic1.png" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/manageMachine/2.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/manageMachine/1.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                       </ul>
+                       <ul v-if="taskIndex==2">
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/manageMachine/4.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/index/pic1.png" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                       </ul>
+                       <ul v-if="taskIndex==3">
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/manageMachine/1.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/manageMachine/2.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/index/pic1.png" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                       </ul>
+                       <ul v-if="taskIndex==4">
+                           <li style="width:120px;margin:10px">
+                               <img src="../../../assets/manageMachine/3.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           </li>
+                       </ul>
                    </div>
                    <!-- 摄像头 -->
                    <div class="camera">
                         <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
                             <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==0" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==0" src="../../../assets/manageMachine/4.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                         <div class="camera_loc" style="top: 280px;left: 130px;" @click="openPic(1)">
                             <img v-show="indexItem!=1" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==1" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==1" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==1" src="../../../assets/manageMachine/3.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                         <div class="camera_loc" style="top: 330px;left: 520px;" @click="openPic(2)">
                             <img v-show="indexItem!=2" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==2" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==2" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==2" src="../../../assets/manageMachine/2.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                         <div class="camera_loc" style="top: 160px;left: 560px;" @click="openPic(3)">
                             <img v-show="indexItem!=3" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==3" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==3" src="../../../assets/index/pic1.png" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==3" src="../../../assets/manageMachine/1.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                    </div>
                    <!-- 隐患 -->
                    <div class="hidden">
-                        <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
-                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
-                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
+                        <div class="hidden_loc" style="top: 265px;left: 278px;" @mouseenter="openhidden(0)" @mouseleave="closehidden(0)">
+                            <div class="icon_hidden" style="top:0px;left:0px;">
+                                <img src="../../../assets/index/yellow_loc.png" alt="">
+                            </div>
+                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -252,9 +286,11 @@
                                 </dl>
                             </div>
                         </div>
-                        <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
-                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
-                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;">
+                        <div class="hidden_loc" style="top: 290px;left: 348px;" @mouseenter="openhidden(1)" @mouseleave="closehidden(1)">
+                            <div class="icon_hidden" style="top:0px;left:0px;">
+                                <img src="../../../assets/index/yellow_loc.png" alt="">
+                            </div>
+                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -264,9 +300,11 @@
                                 </dl>
                             </div>
                         </div>
-                        <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
-                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
-                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;">
+                        <div class="hidden_loc" style="top: 220px;left: 410px;" @mouseenter="openhidden(2)" @mouseleave="closehidden(2)">
+                            <div class="icon_hidden" style="top:0px;left:0px;">
+                                <img src="../../../assets/index/yellow_loc.png" alt="">
+                            </div>
+                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -277,11 +315,28 @@
                             </div>
                         </div>
                         
-                        <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
-                            <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
-                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
+                        <div class="hidden_loc" style="top: 150px;left: 470px;" @mouseenter="openhidden(3)" @mouseleave="closehidden(3)">
+                            <div class="icon_hidden" style="top:0px;left:0px;">
+                                <img src="../../../assets/index/green_loc.png" alt="">
+                            </div>
+                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
                                 <dl>
-                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dt style="color:#00F29F;"><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden_loc" style="top: 150px;left: 270px;" @mouseenter="openhidden(4)" @mouseleave="closehidden(4)">
+                            <div class="icon_hidden" style="top:0px;left:0px;">
+                                <img src="../../../assets/index/red_loc.png" alt="">
+                            </div>
+                            <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
+                                <dl>
+                                    <dt style="color:#FF0100;"><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
                                     <dd>整改责任人：张富立</dd>
                                     <dd>复查人：陈力</dd>
@@ -457,7 +512,7 @@
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         质量问题类型统计
                     </div>
-                    <div class="bg padding10">
+                    <div class="bg padding10" style="height:160px;">
                         <!-- <table style="width:100%" class="quality">
                             <tr class="font12" style="color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><th>排名</th><th>分包单位</th><th>通过率（问题数）</th><th>周环比</th></tr>
                             <tr class="font12" style="text-align:center;"><td><img src="../../../assets/index/frist.png" alt=""></td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
@@ -466,7 +521,7 @@
                             <tr class="font12" style="text-align:center;"><td style="color:#7A9BBF;font-size:16px;">4</td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
                             <tr class="font12" style="text-align:center;"><td style="color:#7A9BBF;font-size:16px;">5</td><td>我是分包单位一</td><td>99%（30）</td><td class="up_data">10%↑</td></tr>
                         </table> -->
-                        <div id="echart-pie" style="width:100%;height:160px"></div>
+                        <div id="echart-pie" style="width:100%;height:100%"></div>
                     </div>
                </div>
                <div style="height:235px;width:100%;">
@@ -545,19 +600,19 @@
                     <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                     今日完成
                 </div>
-               <!-- <div class="bg padding10">
+               <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>工程量</td><td>安全</td><td>质量</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>产值</td><td>安全</td><td>质量</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4"><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td class="color_yellow"><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td class="color_green"><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                     </table>
-                </div> -->
-                
-                <div class="bg padding10" style="padding-top:15px">
-                    <div id="goodsChart" style="width:100%;height:200px"></div>
                 </div>
+                
+                <!-- <div class="bg padding10" style="padding-top:15px">
+                    <div id="goodsChart" style="width:100%;height:200px"></div>
+                </div> -->
            </div>
            <div style="height:100%;width:540px;">
                 <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
@@ -566,7 +621,7 @@
                 </div>
                 <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>工程量</td><td>劳务人员</td><td>机械</td><td>物资</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>产值</td><td>劳务人员</td><td>机械</td><td>物资</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td><td rowspan="4">钢筋到场</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
@@ -576,6 +631,84 @@
            </div>
        </div>
         
+        <div v-if="showInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
+            <div style="position:absolute;top:50%;left:50%;height:500px;width:1080px;transform:translate(-50%,-50%);">
+                <div v-if="showInfo" style="position:absolute;left:0px;top:0px;z-index:999;width:540px;background:#283664;border:5px solid #224062;">
+                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                        人员列表
+                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
+                    </div>
+                    <div class="bg padding10" style="height:430px;">
+                        <table style="width:100%;border-collapse:collapse;">
+                            <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>物资类型</td><td>内容概述</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>钢材</td><td>151.52</td><td>151.52</td><td>30</td><td class="color_yellow">0%</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>商品混凝土</td><td>177</td><td>177</td><td>30</td><td class="color_yellow">0%</td></tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div v-if="showInfo" style="position:absolute;left:550px;top:0px;z-index:999;width:540px;background:#283664;border:5px solid #224062;">
+                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                        人员列表    
+                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
+                    
+                    </div>
+                    <div class="bg padding10 font12" style="height:450px;width:100%;box-sizing:border-box;">
+                        <div style="float:left;width:230px;height:100%;margin:0 10px 0 30px;border-right:1px solid rgba(46,73,112,0.5)">
+                            <div style="line-height:35px">
+                                <div style="width:90px;float:left"><img src="../../../assets/aiot/person1.png" alt="" width="60" height="70" style="margin-top:20px"></div>
+                                <div style="width:calc(100% - 90px);float:left">
+                                    <div><span>黎天林</span><span class="color_blue1" style="margin-left:20px;">民族: </span>汉</div>
+                                    <div><span class="color_blue1">性别: </span>男<span class="color_blue1" style="margin-left:20px;">年龄: </span>汉</div>
+                                    <div><span class="color_blue1">出生日期: </span>1973-11-03</div>
+                                </div>
+                            </div>
+                            <div style="line-height:35px"><span class="color_blue1">身份证号码: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">籍贯: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">住址: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">政治面貌: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">入册工龄: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否加入公会: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">文化程度: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否有重大病史: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">联系电话: </span>1973-11-03</div>
+                        </div>
+                        <div style="width:calc(100% - 290px);float:left;padding-left:10px;">
+                            <div style="line-height:35px"><span class="color_blue1">当前工种: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">当前状态: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">所在项目: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">参建单位: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">班组: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">进场日期: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">退场日期: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">人员评分: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">安全教育学时: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">违章记录: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">加分记录: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">体检信息: </span>1973-11-03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)" @click="closeInfo">
+            <div style="position:absolute;top:50%;left:50%;height:300px;width:680px;transform:translate(-50%,-50%);background:#1D284D">
+                <div style="margin:20px;width:300px;float:left">
+                    <img src="../../../assets/meic.png" alt="" height="260">
+                </div>
+                <div style="margin:20px 10px;padding:0 10px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
+                    <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
+                    <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE4635</div>
+                    <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
+                    <div style="line-height:35px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
+                    <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>1973-11-03</div>
+                    <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>1973-11-03</div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -587,17 +720,31 @@
                 camera:'',
                 indexItem:-1,
                 hiddenIndexItem:-1,
-                alertPersonInfoShow:false
+                alertPersonInfoShow:false,
+                showInfo:false,
+                taskIndex:0,
+                showMeicInfo:false
             }
         },
         mounted(){
             this.drawLine();
             this.drawPie();
-            this.goodsChart();
+            // this.goodsChart();
         },
         methods: {
+            showMeic(){
+                this.showMeicInfo = true;
+            },
+            changeTask(index){
+                this.taskIndex = index;
+            },
             alertPersonInfo(){
+                this.showInfo = true;
                 this.alertPersonInfoShow = true;
+            },
+            closeInfo(){
+                this.showInfo = false;
+                this.showMeicInfo = false;
             },
             openPic(index){
                 if(this.indexItem == index){
@@ -613,16 +760,25 @@
                     this.hiddenIndexItem = index;
                 }
             },
+            closehidden(index){
+                this.hiddenIndexItem = -1;
+            },
             drawPie() {
                 var myChart = this.$echarts.init(document.getElementById("echart-pie"));
                
                 var data = [
-                    { value: 20, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
-                    { value: 20, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
-                    { value: 20, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
+                    { value: 1, name: "混凝土露筋", color0: "#FF687D", color1: "#FC0C59" },
+                    { value: 3, name: "混凝土胀模", color0: "#FCDE54", color1: "#F7BA2A" },
+                    { value: 3, name: "其他", color0: "#df5cb4", color1: "#e07c76" },
                     {
-                         value: 20,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
-                    }
+                    value: 1,
+                    name: "其他（模板工程）",
+                    color0: "rgba(13,138,212,1)",
+                    color1: "rgba(60,181,251,1)"
+                    },
+                    { value: 1, name: "卷材缺陷", color0: "yellow", color1: "yellowgreen" },
+
+                    { value: 5, name: "混凝土夹渣", color0: "#15E09B", color1: "#1DBD6B" }
                 ];
 
                 // 计算总数
@@ -668,7 +824,6 @@
                     v.label = {
                     normal: {
                         show: true,
-                        formatter: "{b}\n\n{d}%",
                         textStyle: {
                         fontSize: 12,
                         color: v.color1
@@ -755,7 +910,14 @@
                         itemWidth: 14,
                         itemHeight: 14,
                         align: "left",
-                        data: ["已通过", "通过中", "未开始", "预警"],
+                        data:[
+                            "混凝土露筋",
+                            "混凝土胀模",
+                            "其他",
+                            "其他（模板工程）",
+                            "卷材缺陷",
+                            "混凝土夹渣"
+                        ],
                         textStyle: {
                             color: "#fff"
                         }
@@ -763,7 +925,7 @@
 
                     series: [
                     {
-                        name: "质量问题",
+                        name: "问题类型",
                         type: "pie",
                         radius: ["45%", "70%"],
                         center: ["35%", "50%"],
@@ -853,7 +1015,7 @@
                                     ], false)
                             }
                         },
-                    data: [22, 24, 20, 30]
+                    data: [1, 2, 5, 3]
                     }]
                 });
             },
@@ -1116,12 +1278,22 @@
                 ul {
                     li {
                         width:100px;
-                        height:40px;
+                        line-height:40px;
                         background:rgba(23,28,51,0.3);
                         text-align: center;
                         color: #4CF0FE;
                         margin-bottom: 2px;
+                        
                     }
+                    li:hover {
+                        cursor: pointer;
+                        background-color: rgba(76,240,254,0.7);
+                        color:#fff;
+                    }
+                }
+                .active {
+                    background-color: rgba(76,240,254,0.7);
+                    color:#fff;
                 }
             }
             .bottom_ul {
@@ -1277,3 +1449,4 @@
     
 }
 </style>
+
