@@ -1,6 +1,5 @@
 <template>
   <div class="qualityManage commonClass" style="height:100%;width:100%;">
-
     <div class="top_con flex_b">
       <div class="top_con_left">
         <!-- 质量目标 -->
@@ -107,27 +106,30 @@
       <div class="top_con_middle">
         <!-- 轮播 -->
         <div class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
-          <div class="swiper-container">
+          <div class="swiper-container swiper-no-swiping">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide"  @click="showImage(1)">
                 <img
                   src="../../../assets/qualityManage/l1.jpg"
                   alt="bgImage"
                   class="img-responsive center-block"
+                 
                 >
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" @click="showImage(2)">
                 <img
                   src="../../../assets/qualityManage/l2.jpg"
                   alt="bgImage"
                   class="img-responsive center-block"
+                 
                 >
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide"  @click="showImage(3)">
                 <img
                   src="../../../assets/qualityManage/l3.jpg"
                   alt="bgImage"
                   class="img-responsive center-block"
+                 
                 >
               </div>
             </div>
@@ -692,6 +694,21 @@
       </div>
       <!-- right end -->
     </div>
+    <el-dialog title="提示" :visible.sync="dialogVisible" >
+        <div class="modal" style="height:732px;height:510px;">
+          <div class="modal-title flex jc-between">
+              <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">质量目标</span>
+              </div>
+              <div class="all-height flex ai-center close" @click="dialogVisible = false">
+                 <i class="el-icon-close"></i>
+              </div>
+
+          </div>
+          <div class="modal-content"></div>
+        </div>
+    </el-dialog>
   </div>
 </template>
 <script>
@@ -704,9 +721,14 @@ export default {
     return {
       intervalTimer:"",
       showScroll:false,
+      dialogVisible: false
     };
   },
   methods: {
+    showImage(type){
+      this.dialogVisible = true
+    },
+  
     textScroll(){
        var scrollWidth = $('#textPcontainer').width();
         var textWidth = $('#textP').width();

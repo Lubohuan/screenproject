@@ -5,8 +5,43 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
+.el-dialog{
+  background: transparent;
+}
+.v-modal{
+  display: none!important;
+  z-index:-1!important;
+}
+.el-dialog__header{
+  display: none
+}
+.el-dialog__body{
+  padding:0;
+}
+.modal{
+  background: rgba(76, 189, 254, 0.2);
+  padding:5px;
+  .modal-title{
+    background:rgba(40,54,100,1);
+    height:40px;
+    padding:0 15px;
+    .text{
+      display: inline-block;
+      margin-left: 10px;
+      color:rgba(255,255,255,1);
+      font-size: 16px;
+    }
+    .close{
+      font-size: 24px;
+      cursor: pointer;
+      color: rgba(118, 208, 223, 1)
+    }
+  }
+  .modal-content{
+    height: calc(100% - 40px);
+    background: rgba(25,33,64,1);
+  }
+}
 #body {
   font-family: 'myFont', "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
