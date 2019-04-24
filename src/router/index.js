@@ -50,13 +50,29 @@ var mainRouters = [
         },
         children:[],
       },
-      {
+{
         path: '/bimApply',
         name: 'bimApply',
         component: (resolve) => {
           return require(['../components/guangzhouProject/bimApply/bimApply.vue'], resolve)
         }
       },
+      {
+        path: '/manageMachine',
+        name: 'manageMachine',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/manageMachine/manageMachine.vue'], resolve)
+        },
+        children:[],
+      },
+      {
+        path: '/productionProgress',
+        name: 'productionProgress',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/productionProgress/productionProgress.vue'], resolve)
+        },
+        children:[],
+      }
     ],
   },
 ];
