@@ -106,9 +106,9 @@
       <div class="top_con_middle">
         <!-- 轮播 -->
         <div class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
-          <div class="swiper-container swiper-no-swiping">
+          <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"  @click="showImage(1)">
+              <div class="swiper-slide"  @click="showImage(0)">
                 <img
                   src="../../../assets/qualityManage/l1.jpg"
                   alt="bgImage"
@@ -116,7 +116,7 @@
                  
                 >
               </div>
-              <div class="swiper-slide" @click="showImage(2)">
+              <div class="swiper-slide" @click="showImage(1)">
                 <img
                   src="../../../assets/qualityManage/l2.jpg"
                   alt="bgImage"
@@ -124,7 +124,7 @@
                  
                 >
               </div>
-              <div class="swiper-slide"  @click="showImage(3)">
+              <div class="swiper-slide"  @click="showImage(2)">
                 <img
                   src="../../../assets/qualityManage/l3.jpg"
                   alt="bgImage"
@@ -146,8 +146,8 @@
             </div>
             <div class="ibox-content" style="padding:0">
               <div class="flex allHeight">
-                <div style="postion:relative;width:340px;height:100%;">
-                    <img src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
+                <div style="postion:relative;width:340px;height:100%;cursor:pointer">
+                    <img @click="showewm" src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
                 </div>
                 <div c style="width:440px;padding:20px;">
                   <ul class="list-unstyled list-task">
@@ -694,14 +694,81 @@
       </div>
       <!-- right end -->
     </div>
-    <el-dialog title="提示" :visible.sync="dialogVisible" >
+    <!--轮播图详情 -->
+    <el-dialog title="提示"  width='40%' :visible.sync="dialogObj.dialogVisible1" top="25vh" center>
+        <div class="modal" style="height:345px;">
+          <div class="modal-title flex jc-between">
+              <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">图片详情</span>
+              </div>
+              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
+                 <i class="el-icon-close"></i>
+              </div>
+
+          </div>
+          <div class="modal-content">
+              <div class="flex allHeight ai-center">
+                  <div style="padding-left:10px;">
+                    <img v-if="imgType==0" src="../../../assets/qualityManage/l1.jpg">
+                    <img v-else-if="imgType==1" src="../../../assets/qualityManage/l2.jpg">
+                    <img v-else="imgType==2" src="../../../assets/qualityManage/l3.jpg">
+                  </div>
+                  <div class="allHeight" style="padding:40px 20px;">
+                     <dl class="flex allHeight column jc-start;" >
+                       <dt style="margin:20px 0;text-align:center;font-size:18px;color:rgba(223,250,255,1)">{{currentImgItem.imgTitle}}</dt>
+                       <dd style="text-align:left;line-height:2;color:rgba(223,250,255,1)"> 
+                         {{currentImgItem.imgContent}}
+                       </dd>
+                     </dl>
+                  </div>
+                  
+              </div>
+          </div>
+        </div>
+    </el-dialog>
+    <el-dialog title="提示" width="40%" :visible.sync="dialogObj.dialogVisible2" >
+        <div class="modal" style=";height:310px;">
+          <div class="modal-title flex jc-between">
+              <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">详情</span>
+              </div>
+              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible2 = false">
+                 <i class="el-icon-close"></i>
+              </div>
+
+          </div>
+          <div class="modal-content">
+            <div class="flex allHeight ai-center">
+                  <div style="padding-left:10px;">
+                    <img src="../../../assets/qualityManage/ewm.png">
+                  </div>
+                  <div class="allHeight" style="padding:40px 20px;color:rgba(223,250,255,1);line-height:2;font-size:16px;">
+                     钢筋按图纸准确安装，受力钢筋间距偏差±10mm、排距±5mm，保护层厚度±10mm，预埋件中心线位置偏差5mm以内；模板垂直度允许偏差6mm、相邻两板表面高低差2mm，表面平整度5mm；混凝土表面无蜂窝、孔洞、露筋，允许偏差值：位移5mm~15mm，平整度5mm，垂直度5mm，截面尺寸-2~5mm，标高±10mm
+                  </div>
+                  
+              </div>
+           
+          </div>
+        </div>
+    </el-dialog>
+    <el-dialog title="提示" :visible.sync="dialogObj.dialogVisible3" >
         <div class="modal" style="height:732px;height:510px;">
           <div class="modal-title flex jc-between">
               <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
                   <span class="text">质量目标</span>
+                  <div>
+                    <span class="label">检查人：</span>
+                    <span class="val"></span>
+                  </div>
+                  <div>
+                    <span class="label">时间：</span>
+                    <span class="val"></span>
+                  </div>
               </div>
-              <div class="all-height flex ai-center close" @click="dialogVisible = false">
+              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible3 = false">
                  <i class="el-icon-close"></i>
               </div>
 
@@ -721,12 +788,46 @@ export default {
     return {
       intervalTimer:"",
       showScroll:false,
-      dialogVisible: false
+      dialogObj:{
+        dialogVisible1: false,
+        dialogVisible2: false,
+        dialogVisible3: false,
+        
+      },
+      imgType:0,
+      imgObj:[
+        { 
+          imgPath:'../../../assets/qualityManage/l1.jpg',
+          imgTitle:'剪力墙钢筋样板',
+          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
+        },
+        { 
+          imgPath:'../../../assets/qualityManage/l2.jpg',
+          imgTitle:'楼梯样板',
+          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
+        },
+        { 
+          imgPath:'../../../assets/qualityManage/l3.jpg',
+          imgTitle:'剪力墙钢筋样板',
+          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
+        }
+      ],
+      currentImgItem:{
+        imgPath:'../../../assets/qualityManage/l1.jpg',
+        imgTitle:'卫生间样板',
+        imgContent:'施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。'
+      }
     };
   },
   methods: {
+    showewm(){
+      this.dialogObj.dialogVisible2 = true;
+    },
     showImage(type){
-      this.dialogVisible = true
+      this.imgType = type
+      debugger
+      this.currentImgItem = this.imgObj[type];
+      this.dialogObj.dialogVisible1 = true
     },
   
     textScroll(){

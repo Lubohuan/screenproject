@@ -1249,12 +1249,13 @@ export default {
     }
   }
   #scolTab table thead,
-  .huling #scolTab table tbody tr {
+  #scolTab tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;
   }
   #scolTab tbody::-webkit-scrollbar {
+   .huling tbody::-webkit-scrollbar {
     width: 6px!important;
     height: 4px;
     background: transparent;
@@ -1271,6 +1272,7 @@ export default {
     border-radius: 10px;
     background: rgba(76,189,254,1);
   }
+}
 </style>
 <style lang="scss" scoped>
   @import "../homePage/homePage.scss";

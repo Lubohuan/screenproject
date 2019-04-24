@@ -247,8 +247,8 @@
           <div class="top_con_middle_content" style="display: flex;padding: 30px">
             <div class="top_con_middle_content_left" style="display: flex">
               <div class="cir_time" style="margin:20px 20px 0 30px;">
-                <el-progress type="circle" :percentage="25" color="#00F29F"></el-progress>
-                <div class="time_size">60%</div>
+                <el-progress type="circle" :percentage="100" color="#00F29F"></el-progress>
+                <div class="time_size">100%</div>
               </div>
               <div class="top_con_middle_content_word">
                 <p><span class="yi"></span> 已验收</p>
@@ -451,7 +451,7 @@
           </div>
           <div class="safeData">
             <h5>检查率 : <span>100%</span> <img src="../../../assets/safe-sjt.png" width="6" height="10" alt=""></h5>
-            <h5>检查率 : <span>100%</span> <img src="../../../assets/safe-xjt.png" width="6" height="10" alt=""></h5>
+            <h5>检查率 : <span>100%</span> <img src="../../../assets/safe-sjt.png" width="6" height="10" alt=""></h5>
           </div>
           <div class="table" >
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
