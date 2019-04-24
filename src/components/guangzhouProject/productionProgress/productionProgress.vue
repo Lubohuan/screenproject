@@ -13,11 +13,11 @@
               <div class="product-top" style="height:123px">
                 <div class="flex allHeight">
                   <div class="flex-1 flex allHeight jc-center ai-center">
-                    <el-progress type="circle" :percentage="percentage" color="#00F29F" width="75"></el-progress>
+                    <el-progress type="circle" :percentage="percentage" color="#00F29F" :width="75"></el-progress>
                     <div class="jbox flex column jc-between" style="height:70px;margin-left:30px;">
                       <div class="jbox-title">本月完成生产任务</div>
                       <div class="jbox-content">
-                        <span class="number">35</span>
+                        <span class="number">26</span>
                         <span class="unit">个</span>
                       </div>
                     </div>
@@ -26,16 +26,19 @@
                     <dl class="bi flex column jc-between allHeight" style="margin-right:30px;">
                       <dt>月环比</dt>
                       <dd>
-                        <span>12%</span>
-                        <span class="warn">
+                        <span>20%</span>
+                        <!-- <span class="warn">
                           <i class="iconfont">↓</i>
+                        </span> -->
+                        <span class="good">
+                          <i class="iconfont">↑</i>
                         </span>
                       </dd>
                     </dl>
                     <dl class="bi flex column jc-between allHeight">
                       <dt>月同比</dt>
                       <dd>
-                        <span>12%</span>
+                        <span>100%</span>
                         <span class="good">
                           <i class="iconfont">↑</i>
                         </span>
@@ -173,19 +176,17 @@
               </div>
               <div class="title-right flex allHeight ai-center" style="padding-right:10px;">
                 <img src="../../../assets/index/warning.png" alt width="25">
-                <span class="number">5</span>
+                <span class="number">0</span>
                 <span class="eqt">个预警</span>
               </div>
             </div>
             <div class="ibox-content">
-             <table class="table text-center allHeight">
+              <table class="table text-center allHeight">
                 <thead>
                   <tr>
                     <th>计划名称</th>
                     <th>施工区段</th>
-                    <th>
-                      预警原因
-                    </th>
+                    <th>预警原因</th>
                     <th>责任人</th>
                     <th>预警时间</th>
                   </tr>
@@ -194,139 +195,98 @@
                   <tr>
                     <td>
                       <div class="eclipse">
-                        <span>主体结构封顶</span>
+                        <span>基坑土方工程</span>
                       </div>
                     </td>
                     <td>
-                        <span>
-                         施工一区
-                        </span>
+                      <span>Ⅰ区</span>
                     </td>
                     <td>
-                        <span class="bad">
-                            逾期10天
-                        </span>
+                      <span class="good">暂无预警</span>
                     </td>
                     <td>
-                         <span>
-                           里斯
-                        </span>
+                      <span>谭楚才</span>
                     </td>
                     <td>
-                        <span>
-                            2019.3.18
-                        </span>
+                      <span>无</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="eclipse">
-                        <span>主体结构封顶</span>
+                        <span>地基基础及地下室结构工程及防水工程</span>
                       </div>
                     </td>
                     <td>
-                        <span>
-                         施工一区
-                        </span>
+                      <span>Ⅰ区</span>
                     </td>
                     <td>
-                        <span class="bad">
-                            逾期10天
-                        </span>
+                       <span class="good">暂无预警</span>
                     </td>
                     <td>
-                         <span>
-                           里斯
-                        </span>
+                      <span>尹鑫</span>
                     </td>
                     <td>
-                        <span>
-                            2019.3.18
-                        </span>
+                      <span>无</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="eclipse">
-                        <span>主体结构封顶</span>
+                        <span>基坑土方工程</span>
                       </div>
                     </td>
                     <td>
-                        <span>
-                         施工一区
-                        </span>
+                       <span>Ⅱ区</span>
                     </td>
                     <td>
-                        <span class="bad">
-                            逾期10天
-                        </span>
+                      <span class="good">暂无预警</span>
                     </td>
                     <td>
-                         <span>
-                           里斯
-                        </span>
+                      <span>谭楚才</span>
                     </td>
                     <td>
-                        <span>
-                            2019.3.18
-                        </span>
+                      <span>无</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="eclipse">
-                        <span>主体结构封顶</span>
+                        <span>地基基础及地下室结构工程及防水工程</span>
                       </div>
                     </td>
                     <td>
-                        <span>
-                         施工一区
-                        </span>
+                      <span>Ⅱ区</span>
                     </td>
                     <td>
-                        <span class="bad">
-                            逾期10天
-                        </span>
+                       <span class="good">暂无预警</span>
                     </td>
                     <td>
-                         <span>
-                           里斯
-                        </span>
+                      <span>尹鑫</span>
                     </td>
                     <td>
-                        <span>
-                            2019.3.18
-                        </span>
+                      <span>无</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="eclipse">
-                        <span>主体结构封顶</span>
+                        <span>基坑土方工程</span>
                       </div>
                     </td>
                     <td>
-                        <span>
-                         施工一区
-                        </span>
+                      <span>Ⅲ区</span>
                     </td>
                     <td>
-                        <span class="bad">
-                            逾期10天
-                        </span>
+                      <span class="good">暂无预警</span>
                     </td>
                     <td>
-                         <span>
-                           里斯
-                        </span>
+                      <span>谭楚才</span>
                     </td>
                     <td>
-                        <span>
-                            2019.3.18
-                        </span>
+                      <span>无</span>
                     </td>
                   </tr>
-                  
                 </tbody>
               </table>
             </div>
@@ -334,409 +294,420 @@
         </div>
       </div>
       <div class="top_con_middle">
-        <!-- 轮播 -->
-        <div style="height:410px;width:100%;margin-bottom:10px;">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="../../../assets/index/noise.png"
-                  alt="bgImage"
-                  class="img-responsive center-block"
-                >
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="../../../assets/index/frist.png"
-                  alt="bgImage"
-                  class="img-responsive center-block"
-                >
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="../../../assets/position.png"
-                  alt="bgImage"
-                  class="img-responsive center-block"
-                >
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
+        <!-- 监控 -->
+        <div style="height:415px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
+                   <div class="top_ul" >
+                       <ul>
+                           <li>形象进度</li>
+                           <li>无人机</li>
+                       </ul>
+                   </div>
+                   <div class="middle_ul">
+                       <ul>
+                           <li>一区进</li>
+                           <li>二区进</li>
+                           <li>三区进</li>
+                           <li>四区进</li>
+                       </ul>
+                   </div>
+                   <div class="bottom_ul" style="height:50px;">
+                      
+                   </div>
+                   <!-- 摄像头 -->
+                   <div class="camera">
+                        <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
+                            <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==0" src="../../../assets/manageMachine/1.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                        <div class="camera_loc" style="top: 280px;left: 130px;" @click="openPic(1)">
+                            <img v-show="indexItem!=1" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==1" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==1" src="../../../assets/manageMachine/2.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                        <div class="camera_loc" style="top: 330px;left: 520px;" @click="openPic(2)">
+                            <img v-show="indexItem!=2" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==2" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==2" src="../../../assets/manageMachine/3.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                        <div class="camera_loc" style="top: 160px;left: 560px;" @click="openPic(3)">
+                            <img v-show="indexItem!=3" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==3" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
+                            <img v-show="indexItem==3" src="../../../assets/manageMachine/4.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                        </div>
+                   </div>
+                   <!-- 隐患 -->
+                   <div class="hidden" v-if="false">
+                        <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
+                            <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
+                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
+                                <dl>
+                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dd>斜撑梁局部防护缺失</dd>
+                                    <dd>整改责任人：张富立</dd>
+                                    <dd>复查人：陈力</dd>
+                                    <dd>整改期限：2019-05-01</dd>
+                                </dl>
+                            </div>
+                        </div>
+                   </div>
+               </div>
         <!-- 重要工序任务 -->
-        <div style="height:516px;width:100%;margin-bottom:10px;">
+        <div style="height:516px;width:100%;margin-bottom:10px;background:rgba(29, 40, 77, 0.5)">
           <div class="ibox">
-           
+            <img src="../../../assets/manageMachine/task.png" alt width="100%" height="100%">
           </div>
         </div>
       </div>
       <!-- right start -->
       <div class="top_con_right">
-        <!-- 绿色施工 -->
-        <div style="height:185px;width:100%;margin-bottom:10px;">
+        <!-- 施工动态 -->
+        <div style="height:306px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
-              <span class="text">绿色施工</span>
-              <div id="textPcontainer" class="weather-warning">
-                <p id="textP">砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
-              </div>
+              <span class="text">施工动态</span>
             </div>
-            <div class="ibox-content">
-              <div class="weather-container flex">
-                <!-- 第一格 -->
-                <div
-                  class="item flex column"
-                  style="width:200px;border-right:1px solid rgba(255,255,255,.1);"
-                >
-                  <!-- 上半部分 -->
-                  <div class="flex top">
-                    <div class="flex-3 flex ai-end" style="height:58px;">
-                      <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
-                    </div>
-                    <div class="flex-3 flex ai-end" style="height:48px;">
-                      <span style="font-size:36px;line-height:35px;">10</span>
-                      <span style="font-size:18px;line-height:18px;">℃</span>
-                    </div>
-                    <div class="flex-2 flex ai-end" style="height:48px;">
-                      <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
-                    </div>
+            <div class="ibox-content" style="padding:0px;background:transparent">
+              <div class="pannel-container">
+                <div class="pannel">
+                  <div class="pannel-header">
+                    <p class="time">2019年4月22日 星期一  雷阵雨转多云</p>
+                    <p class="text">抗浮锚杆施工成孔45根,累计完成2195根,占总量100%;基坑底板侧砖模砌筑,占总量47%</p>
                   </div>
-                  <!-- 下半部分 -->
-                  <div class="flex bottom wrap">
-                    <div class="font12 flex ai-center" style="width:35%">
-                      <img src="../../../assets/index/wind.png" alt>
-                      <span>南风2级</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:34%">
-                      <img src="../../../assets/index/temperature.png" alt>
-                      <span>12℃</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:31%">
-                      <img src="../../../assets/index/rainfall.png" alt>
-                      <span>67%</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:35%">
-                      <img src="../../../assets/index/pm25.png" alt>
-                      <span>35</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:34%">
-                      <img src="../../../assets/index/pm10.png" alt>
-                      <span>78</span>
-                    </div>
-                    <div class="font12 flex ai-center" style="width:31%">
-                      <img src="../../../assets/index/noise.png" alt>
-                      <span>45dB</span>
-                    </div>
+                  <div class="pannel-content">
+                    <img src="../../../assets/qualityManage/b1.png" alt="">
+                    <img src="../../../assets/qualityManage/b2.png" alt="">
+                    <img src="../../../assets/qualityManage/j1.png" alt="">
+                    <img src="../../../assets/qualityManage/j2.png" alt="">
                   </div>
                 </div>
-                <!-- 第二格 -->
-                <div
-                  class="item flex"
-                  style="width:200px;border-right:1px solid rgba(255,255,255,.1);padding-top:5px;"
-                >
-                  <!-- 明天-->
-                  <div class="flex column ai-center flex-1">
-                    <dl class>
-                      <dt class="font12 text-center" style="line-height:13px;">明天</dt>
-                      <dd>
-                        <img src="../../../assets/index/sunny.png" alt>
-                      </dd>
-                    </dl>
-                    <p class style="font-size:14px;margin:6px 0">
-                      <span class="font28">10</span>℃
-                    </p>
-                    <p
-                      class="font12 text-center"
-                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >晴</p>
+                <div class="pannel">
+                  <div class="pannel-header">
+                    <p class="time">2019年4月21日 星期日 阴转小雨</p>
+                    <p class="text">抗浮锚杆施工成孔22根,累计完成2150根,占总量98%;基坑底板侧砖模混凝土回填,已完成1区总量60%</p>
                   </div>
-                  <!-- 后天 -->
-                  <div class="flex column ai-center flex-1">
-                    <dl>
-                      <dt class="font12 text-center" style="line-height:13px;">后天</dt>
-                      <dd>
-                        <img src="../../../assets/index/rain.png" alt>
-                      </dd>
-                    </dl>
-                    <p style="font-size:14px;margin:6px 0">
-                      <span class="font28">10</span>℃
-                    </p>
-                    <p
-                      class="font12 text-center"
-                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >
-                      雨
-                      <img src="../../../assets/index/warning.png" alt width="20px">
-                    </p>
+                  <div class="pannel-content">
+                     <img src="../../../assets/qualityManage/t1.png" alt="">
+                    <img src="../../../assets/qualityManage/t2.png" alt="">
+                     <img src="../../../assets/qualityManage/j3.png" alt="">
                   </div>
-                  <!-- 大后天 -->
-                  <div class="flex column ai-center flex-1">
-                    <dl>
-                      <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
-                      <dd>
-                        <img src="../../../assets/index/cloudy.png" alt>
-                      </dd>
-                    </dl>
-                    <p style="font-size:14px;margin:6px 0">
-                      <span class="font28">10</span>℃
-                    </p>
-                    <p
-                      class="font12 text-center"
-                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >多云</p>
-                  </div>
-                </div>
-                <!-- 第三格 -->
-                <div class="item flex" style="width:120px;padding-top:5px;">
-                  <dl style="width:100%">
-                    <dt class="font12 text-center" style="line-height:14px;">
-                      <span class="text-center">晴雨表</span>
-                    </dt>
-                    <dd>
-                      <div class="flex wrap jc-between ai-center">
-                        <div class="div-c flex column jc-center" style="width:50%;">
-                          <div class="c-top" style>
-                            <span class="thumb black"></span>
-                          </div>
-                          <div class="c-bottom">
-                            <span>12</span>
-                          </div>
-                        </div>
-                        <div class="div-c flex column jc-center" style="width:50%;">
-                          <div class="c-top" style>
-                            <span class="thumb black"></span>
-                          </div>
-                          <div class="c-bottom">
-                            <span>12</span>
-                          </div>
-                        </div>
-                        <div class="div-c flex column jc-center" style="width:50%;">
-                          <div class="c-top" style>
-                            <span class="thumb red"></span>
-                          </div>
-                          <div class="c-bottom">
-                            <span>12</span>
-                          </div>
-                        </div>
-                        <div class="div-c flex column jc-center" style="width:50%;">
-                          <div class="c-top" style>
-                            <span class="thumb blue"></span>
-                          </div>
-                          <div class="c-bottom">
-                            <span>12</span>
-                          </div>
-                        </div>
-                      </div>
-                    </dd>
-                  </dl>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- 工作动态 -->
-        <div style="height:457px;width:100%;margin-bottom:10px;">
+        <!-- 劳务资源 -->
+        <div style="height:305px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
-              <span class="text">工作动态</span>
+              <span class="text">劳务资源</span>
             </div>
-            <div class="ibox-content flex column" style="background: transparent;padding:0;">
-              <div class="media">
-                <div class="media-body">
-                  <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">底版</span>
-                  </div>
-                  <div class="media-content">
-                    <span>检查人尹鑫检查了底板防水层，无问题</span>
-                  </div>
-                  <div class="media-footer">2019-04-18 16:48</div>
+            <div class="ibox-content">
+              <div id="echart-bar" style="width:100%;height:100%"></div>
+              <!-- <div class="swiper-box">
+                <div class="swiper-title">
+
                 </div>
-                <div class="media-right">
-                  <img src alt>
-                </div>
-              </div>
-              <div class="media" style="margin:3px 0;">
-                <div class="media-body">
-                  <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">地基基础</span>
+                <div class="swiper-content">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="flex column">
+                            <div class="flex">
+                                <div class="title"></div>
+                                <div class="bar"></div>
+                                <div class="number"></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                  <div class="media-content">
-                    <span>检查人杨佳雄检查了抗拔锚杆，无问题</span>
-                  </div>
-                  <div class="media-footer">2019-04-17 16:54</div>
                 </div>
-                <div class="media-right">
-                  <img src alt>
-                </div>
-              </div>
-              <div class="media" style="margin:0 0 3px 0;">
-                <div class="media-body">
-                  <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">底版</span>
-                  </div>
-                  <div class="media-content">
-                    <span>检查人尹鑫检查了底板防水，有问题，一般质量问题</span>
-                  </div>
-                  <div class="media-footer">2019-04-16 17:44</div>
-                </div>
-                <div class="media-right">
-                  <img src alt>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <div class="media-header">
-                    <label>质量检查</label>
-                    <span class="inline-block">底版</span>
-                  </div>
-                  <div class="media-content">
-                    <span>检查人尹鑫检查了底板防水层，无问题</span>
-                  </div>
-                  <div class="media-footer">2019-04-09 14:24</div>
-                </div>
-                <div class="media-right">
-                  <img src alt>
-                </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <!-- 分包单位排行榜 -->
-        <div style="height:274px;width:100%">
+        <!-- 机械资源 -->
+        <div style="height:305px;width:100%">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
-              <span class="text">分包单位排行榜</span>
+              <span class="text">机械资源</span>
             </div>
-            <div class="ibox-content">
-              <table class="table text-center">
-                <thead>
-                  <tr>
-                    <th>排名</th>
-                    <th>分包单位</th>
-                    <th>
-                      通过率
-                      <span>(问题数)</span>
-                    </th>
-                    <th>周环比</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <img src="../../../assets/index/frist.png" alt>
-                    </td>
-                    <td>
-                      <div class="eclipse">
-                        <span>主体结构封顶</span>
+            <div class="ibox-content" style="padding:0;">
+              <div class="ybox allHeight">
+                <div class="ybox-title">
+                  <div class="config">
+                     <div class="config-detail flex jc-between ai-center">
+                        <i class="el-icon-caret-left"></i>
+                        <span>2019</span>
+                        <i class="el-icon-caret-right"></i>
+                     </div>
+                  </div>
+                </div>
+                <div class="ybox-content">
+                  <div class="flex wrap">
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>一月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">44</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">43</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                    <td>
-                      <span>100%（10）</span>
-                    </td>
-                    <td>
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>二月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">49</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">50</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="../../../assets/index/second.png" alt>
-                    </td>
-                    <td>
-                      <div class="eclipse">
-                        <span>广州市大禹防漏技术开发有限公司</span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>三月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">50</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">78</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                    <td>
-                      <span>100%（3）</span>
-                    </td>
-                    <td>
-                      <!-- <div class="bad">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↓</i>
-                        </span>
-                      </div>-->
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>四月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">65</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">71</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="../../../assets/index/third.png" alt>
-                    </td>
-                    <td>
-                      <div class="eclipse">
-                        <span>锚杆班组</span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>五月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                    <td>
-                      <span>100%（1）</span>
-                    </td>
-                    <td>
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>六月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="cixu">4</td>
-                    <td>
-                      <div class="eclipse">
-                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>七月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                    <td>
-                      <span>99%（30）</span>
-                    </td>
-                    <td>
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>八月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number n">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="cixu">5</td>
-                    <td>
-                      <div class="eclipse">
-                        <span>牛逼单位额发发阿斯顿发lore</span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>九月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                    <td>
-                      <span>99%（30）</span>
-                    </td>
-                    <td>
-                      <div class="good">
-                        <span>10%</span>
-                        <span>
-                          <i class="iconfont">↑</i>
-                        </span>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>十月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>十一月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
+                      </div>
+                      <div class="month-item">
+                          <dl class="month-item-dl flex column jc-center ai-center">
+                              <dt>
+                                <span>十二月</span>
+                              </dt>
+                              <dd>
+                                 <div class="flex ai-end">
+                                   <span class="number">
+                                      <span class="real">
+                                          <span class="number">0</span>/
+                                      </span>
+                                   </span>
+                                   <span class="total">0</span>
+                                    <span class="unit">台</span>
+                                 </div>
+                              </dd>
+                          </dl>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -755,7 +726,10 @@ export default {
     return {
       intervalTimer: "",
       showScroll: false,
-      percentage: 0
+      percentage: 0,
+       camera:'',
+        indexItem:-1,
+        hiddenIndexItem:-1
     };
   },
   methods: {
@@ -774,6 +748,20 @@ export default {
     textLeave() {
       // this.marquee()
     },
+     openPic(index){
+                if(this.indexItem == index){
+                    this.indexItem = -1;
+                }else{
+                    this.indexItem = index;
+                }
+            },
+            openhidden(index){
+                if(this.hiddenIndexItem == index){
+                    this.hiddenIndexItem = -1;
+                }else{
+                    this.hiddenIndexItem = index;
+                }
+            },
     drawTwoLine() {
       var myChart = this.$echarts.init(
         document.getElementById("echart-twoline")
@@ -789,6 +777,7 @@ export default {
         },
         legend: {
           icon: "rect",
+          //align:'right',
           itemWidth: 14,
           itemHeight: 10,
           itemGap: 13,
@@ -827,21 +816,14 @@ export default {
               "1月",
               "2月",
               "3月",
-              "4月",
-              "5月",
-              "6月",
-              "7月",
-              "8月",
-              "9月",
-              "10月",
-              "11月",
-              "12月"
+              "4月"
             ]
           }
         ],
         yAxis: [
           {
             type: "value",
+            name: "单位：万元",
             axisTick: {
               show: false
             },
@@ -857,7 +839,7 @@ export default {
               textStyle: {
                 color: "#DBE1FF",
                 //fontSize: 14,
-                margin: 15
+                margin: 0
               }
             },
             splitLine: {
@@ -926,18 +908,10 @@ export default {
             //   }
             // },
             data: [
-              97.3,
-              99.2,
-              99.3,
-              100.0,
-              99.6,
-              90.6,
-              80.0,
-              91.5,
-              69.8,
-              67.5,
-              90.4,
-              84.9
+              1080.20,
+              875.38,
+              875.38,
+              1143.60
             ]
           },
           {
@@ -997,22 +971,135 @@ export default {
             // }
             //},
             data: [
-              96.3,
-              96.4,
-              97.5,
-              95.6,
-              98.1,
-              94.8,
-              89.6,
-              94.1,
-              80.1,
-              52.4,
-              75.8,
-              94.7
+              1293,
+              670,
+              883.10,
+              888.66
             ]
           }
         ]
       };
+      myChart.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
+    },
+    drawVbar(){
+      var myChart = this.$echarts.init(
+        document.getElementById("echart-bar")
+      );
+      var option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            data: ['计划劳务资源', "实际劳务资源"],
+            //align: 'right',
+            right: 10,
+            textStyle: {
+                color: "#fff"
+            },
+            itemWidth: 14,
+            itemHeight: 10,
+            itemGap: 13,
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [{
+            type: 'category',
+            data: ['1月','2月','3月', '4月'
+            ],
+            axisLine: {
+                show: true,
+                lineStyle: {
+                    color: "rgba(219,225,255,1)",
+                    width: 0,
+                    type: "solid"
+                }
+            },
+            axisTick: {
+                show: false,
+            },
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: "rgba(219,225,255,1)",
+                }
+            },
+        }],
+        yAxis: [{
+            type: 'value',
+            name:"单位：人",
+            axisLabel: {
+                textStyle: {
+                     color: "rgba(219,225,255,1)",
+                     margin: 15
+                },
+               // formatter: '{value} %'
+            },
+            axisTick: {
+                show: false,
+            },
+            axisLine: {
+                show: false,
+                lineStyle: {
+                    color: "rgba(219,225,255,1)",
+                    width: 1,
+                    type: "solid"
+                },
+            },
+            splitLine: {
+                show:false,
+                lineStyle: {
+                    color: "rgba(219,225,255,1)",
+                }
+            }
+        }],
+        series: [{
+            name: '计划劳务资源',
+            type: 'bar',
+            data: [38,38,42,48],
+            barWidth: 10, //柱子宽度
+            barGap: .5, //柱子之间间距
+            itemStyle: {
+                normal: {
+                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(0, 153, 239, 0.8)'
+                    }, {
+                        offset: 1,
+                        color: 'rgba(66, 187, 255, 1)'
+                    }]),
+                    opacity: 1,
+                }
+            }
+        }, {
+            name: '实际劳务资源',
+            type: 'bar',
+            data: [40, 30, 42, 50],
+            barWidth: 10,
+            barGap: .5,
+            itemStyle: {
+                normal: {
+                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(0, 242, 159, 1)'
+                    }, {
+                        offset: 1,
+                        color: 'rgba(76, 240, 254, 1)'
+                    }]),
+                    opacity: 1,
+                }
+            }
+        }]
+    };
       myChart.setOption(option);
       window.addEventListener("resize", () => {
         myChart.resize();
@@ -1022,6 +1109,8 @@ export default {
   created() {},
   mounted() {
     var mySwiper = new Swiper(".swiper-container", {
+      direction: "vertical",
+      grabCursor: true,
       loopAdditionalSlides: 3,
       loop: true,
       autoplay: {
@@ -1038,8 +1127,9 @@ export default {
       observeParents: true // 修改swiper的父元素时，自动初始化swiper
     });
     this.drawTwoLine();
-    this.textScroll();
-    this.percentage = 60;
+    this.drawVbar();
+    // this.textScroll();
+    this.percentage = 81;
   }
 };
 </script>
@@ -1068,5 +1158,99 @@ export default {
   -webkit-align-items: center;
   align-items: center;
 }
+.top_con_middle {
+        .middle_bg {
+            position: relative;
+            background: #000 url('../../../assets/bg_img.jpg');
+            background-size: 100%;
+            .top_ul {
+                height: 40px;
+                ul {
+                    li {
+                        float: left;
+                        width:100px;
+                        height:40px;
+                        background:rgba(23,28,51,0.3);
+                        text-align: center;
+                        color: #4CF0FE;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .middle_ul {
+                position: absolute;
+                left: 0;
+                top: 80px;
+                ul {
+                    li {
+                        width:100px;
+                        height:40px;
+                        background:rgba(23,28,51,0.3);
+                        text-align: center;
+                        color: #4CF0FE;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+            .bottom_ul {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                line-height: 50px;
+                width: 100%;
+                background:rgba(23,28,51,0.56);
+                ul {
+                    float: left;
+                    li {
+                        float: left;
+                        height:50px;
+                        text-align: center;
+                        color: #4CF0FE;
+                        margin: 0 10px 0 10px;
+                    }
+                }
+                a {
+                    float: right;
+                    color: #4CF0FE;
+                    margin-right: 15px;
+                }
+            }
+            .camera {
+                .camera_loc {
+                    position: absolute;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+            .hidden {
+                .hidden_loc {
+                    position: absolute;
+                    cursor: pointer;
+                    .icon_hidden {
+                        position: absolute;
+                        width: 17px;
+                        height: 17px;
+                        border-radius: 50%;
+                    }
+                    .alertHidden {
+                        position: absolute;
+                        width: 203px;
+                        height: 125px;
+                        background: transparent url('../../../assets/index/alert_bg.png');
+                        padding: 5px 20px;
+                        box-sizing: border-box;
+                        font-size: 12px;
+                        line-height: 22px;
+                        color: #DFFAFF;
+                        dt {
+                            color: #FEDF50;
+                        }
+                    }
+                }
+            }
+        }
+    }
 </style>
 
