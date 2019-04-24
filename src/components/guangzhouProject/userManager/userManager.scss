@@ -1,5 +1,5 @@
 .top_con{
-    height:680px;
+    height:664px;
     width:100%;
     box-sizing: border-box;
     padding:10px 0;
@@ -19,7 +19,7 @@
     }
 }
 .bottom_con{
-    height:275px;
+    height:313px;
     width:100%;
     box-sizing: border-box;
     margin-bottom:10px;
@@ -118,9 +118,7 @@
         line-height: 24px;
     }
     .marginR30 {
-        margin: 5px 5px 0 10px;
-        // margin-right: 15px;
-        // margin-top: 5px;
+      margin: 5px 5px 0 10px;
     }
     .padding10 {
         padding: 10px;
@@ -135,9 +133,12 @@
     .bigNum {
         color: #76D0DF;
     }
-  .margin10 {
-    margin: 0px 5px;
-  }
+    .margin10 {
+      margin: 0px 5px;
+    }
+    .marginB10 {
+      margin-bottom: 10px;
+    }
   .padding5 {
     padding: 5px;
   }
@@ -147,6 +148,9 @@
   }
   .color_green {
     color:#4CF0FE
+  }
+  .color_green1 {
+    color:#00F7BD
   }
   .color_yellow {
       color:#FEDF50

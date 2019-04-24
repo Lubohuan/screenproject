@@ -282,27 +282,61 @@
                     </div>
                     <div class="bg padding10">
                         <div style="display:flex;height:174px;">
-                            <div class="cir_time" style="margin:20px 0px 0 30px;">
-                                <el-progress type="circle" :percentage="25" color="#00F29F"></el-progress>
+                            <div class="cir_time" style="margin:10px 0px 0 30px;">
+                                <el-progress type="circle" :percentage="80" color="#0dd3ae"  style="transform:rotateZ(-180deg)"></el-progress>
                                 <p class="text_center">已施工(天)</p>
                                 <div class="time_size">80</div>
                             </div>
                             <div class="progress_time">
-                                <ul>
-                                    <li style="left:-2px;">
+                                <ul class="flex">
+                                    <li>
                                         <i class="loading"></i>
-                                        <p>2018.8</p>
-                                        <p>开工时间</p>
+                                       <div>
+                                            <p>2018.8</p>
+                                            <p>开工时间</p>
+                                       </div>
                                     </li>
-                                    <li style="left:200px;">
+                                    <li>
                                         <i class="loading"></i>
-                                        <p>2018.8</p>
-                                        <p>开工时间</p>
+                                        <div>
+                                            <p>2019.1</p>
+                                            <p>基坑开挖</p>
+                                        </div>
                                     </li>
-                                    <li style="left:400px;">
+                                    <li>
                                         <i class="loading"></i>
-                                        <p>2018.8</p>
-                                        <p>开工时间</p>
+                                        <div>
+                                            <p>2019.4</p>
+                                            <p>地下室底板完成</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="loading"></i>
+                                        <div>
+                                            <p>2019.8</p>
+                                            <p>地下室-5～1F结构封顶</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="loading"></i>
+                                        <div>
+                                            <p>2020.2</p>
+                                            <p>22F结构完成</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="loading"></i>
+                                        <div>
+                                            <p>2020.4</p>
+                                            <p>主体封顶</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="loading"></i>
+                                        <div>
+                                            <p>2021.3</p>
+                                            <p>整体竣工</p>
+                                        </div>
                                     </li>
                                 </ul>
                                 <div class="color_time">
@@ -484,10 +518,10 @@
                 <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>物资名称</td><td>发货量（吨）</td><td>验收量（吨）</td><td>验收量（吨）</td><td>偏差率</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:42px;"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
                     </table>
                 </div>
            </div>
@@ -1121,6 +1155,7 @@
             text-align: center;
             line-height: 100px;
             background-color: rgba(45,241,215,0.6);
+            box-shadow:0px 2px 8px 15px rgba(36,158,154,0.18);
             color: #fff;
         }
         .time_size1 {
@@ -1151,8 +1186,24 @@
         width: 600px;
         border-top: 4px solid rgba(0,0,0,0.15);
         li {
-            position: absolute;
-            top: -20px;
+            position: relative;
+            flex:1;
+            font-size: 12px;
+            padding: 10px;
+            i {
+                position: absolute;
+                top: -7px; 
+                left: -5px;
+            }
+            div {
+                position: relative;
+                top: 6px; 
+                left: -20px;
+                p {
+                    line-height: 24px;
+                    padding-right: 5px;
+                }
+            }
             .loading {
                 display: inline-block;
                 width: 10px;
@@ -1173,8 +1224,8 @@
                 top: -10px;
                 width: 14px;
                 height: 14px;
-                background-color: #00F29F;
-                border:4px solid #156064;
+                background:linear-gradient(180deg,rgba(0,242,159,1) 0%,rgba(76,240,254,1) 100%);
+                border:4px solid #224875;
                 border-radius: 50%
             }
         }
