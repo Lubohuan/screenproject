@@ -700,6 +700,11 @@
               <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
                   <span class="text">质量目标</span>
+                  <div>
+                    <span></span>
+                  </div>
+                  <span class="">质量目标</span>
+                  <span class="text">质量目标</span>
               </div>
               <div class="all-height flex ai-center close" @click="dialogVisible = false">
                  <i class="el-icon-close"></i>
@@ -1228,7 +1233,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../homePage/homePage.scss";
+// @import "../homePage/homePage.scss";
 .swiper-container {
   width: 100%;
   height: 100%;

@@ -855,61 +855,7 @@ export default {
         myChart.resize();
       });
     },
-    drawLinetwo () {
-      var myChart1 = this.$echarts.init(document.getElementById("echart-linetwo"));
-      var option = {
-        color: ['#3398DB'],
-        tooltip : {
-          trigger: 'axis',
-          axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-          }
-        },
-        legend: {
-          data: ['验收金额'],
-          align: 'left',
-          left: 10,
-          textStyle: {
-            color: "#DBE1FF"
-          },
-          itemWidth: 20,
-          itemHeight: 10,
-          itemGap: 35
-        },
-        grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
-          containLabel: true
-        },
-        xAxis : [
-          {
-            type : 'category',
-            data : ['混凝土', '设备', '小五金', '钢材', '家具', '小五金', '配电箱'],
-            axisTick: {
-              alignWithLabel: true
-            }
-          }
-        ],
-        yAxis : [
-          {
-            type : 'value'
-          }
-        ],
-        series : [
-          {
-            name:'验收金额',
-            type:'bar',
-            barWidth: '30',
-            data:[160.97, 90.07, 60.89, 46.46, 18.94, 15.43, 11.60],
-          }
-        ]
-      };
-      myChart1.setOption(option);
-      window.addEventListener("resize", () => {
-        myChart.resize();
-      });
-    },
+    
     drawTwoLine () {
       var myChart = this.$echarts.init(
         document.getElementById("echart-twoline")
@@ -1201,7 +1147,7 @@ export default {
     this.drawTwoLine()
     this.drawLine()
     this.drawLinesss()
-    this.drawLinetwo()
+   // this.drawLinetwo()
   }
 }
 </script>
@@ -1227,13 +1173,13 @@ export default {
       }
     }
   }
-  #scolTab table thead,
-  tbody tr {
+  .huling #scolTab table thead,
+  .huling tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;
   }
-  tbody::-webkit-scrollbar {
+   .huling tbody::-webkit-scrollbar {
     width: 6px!important;
     height: 4px;
     background: transparent;
