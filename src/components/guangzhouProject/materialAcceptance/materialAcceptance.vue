@@ -18,19 +18,19 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">70</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">15</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">102</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">2</span>单</td>
                   <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px"></span></td>
                 </tr>
                 <tr>
                   <td>验收数</td>
                   <td>今日</td>
-                  <td>发料数</td>
+                  <td>累计</td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">70</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">15</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">700</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">2</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
                 </tr>
               </table>
             </div>
@@ -43,19 +43,19 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">120</span>万</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">13</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>万</td>
                   <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
                 </tr>
                 <tr>
                   <td>验收金额</td>
-                  <td>今日</td>
+                  <td>合同总数</td>
                   <td>供应商总数</td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">608</span>万</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">19</span>万</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">68</span>家</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">424.89</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">22</span>份</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">18</span>家</td>
                 </tr>
               </table>
             </div>
@@ -748,10 +748,127 @@ export default {
       window.addEventListener("resize", () => {
         myChart.resize()
       })
-    }
+    },
+    goodsChart (){
+      // 基于准备好的dom，初始化echarts实例
+      let myChart = this.$echarts.init(document.getElementById('goodsChart'))
+      // 绘制图表
+      myChart.setOption({
+        backgroundColor: '#1D284D',
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
+        },
+        legend: {
+          data: ['重大隐患', '隐患统计'],
+          align: 'left',
+          left: 10,
+          textStyle: {
+            color: "#fff"
+          },
+          itemWidth: 10,
+          itemHeight: 10,
+          itemGap: 35
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: [{
+          type: 'category',
+          data: ['工区一',
+            '工区二',
+            '工区三',
+            'AA隧道',
+            'BB隧道'
+          ],
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: "#063374",
+              width: 1,
+              type: "solid"
+            }
+          },
+          axisTick: {
+            show: false,
+          },
+          axisLabel: {
+            show: true,
+            textStyle: {
+              color: "#00c7ff",
+            }
+          },
+        }],
+        yAxis: [{
+          type: 'value',
+          axisLabel: {
+            formatter: '{value}'
+          },
+          axisTick: {
+            show: false,
+          },
+          axisLine: {
+            show: false,
+            lineStyle: {
+              color: "#00c7ff",
+              width: 1,
+              type: "solid"
+            },
+          },
+          splitLine: {
+            lineStyle: {
+              color: "#063374",
+            }
+          }
+        }],
+        series: [{
+          name: '重大隐患',
+          type: 'bar',
+          data: [5, 10, 8, 4, 2],
+          barWidth: 10, //柱子宽度
+          barGap: 1, //柱子之间间距
+          itemStyle: {
+            normal: {
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 1,
+                color: '#3db0fe'
+              }, {
+                offset: 0,
+                color: '#0a81d4'
+              }]),
+              opacity: 1,
+            }
+          }
+        }, {
+          name: '隐患统计',
+          type: 'bar',
+          data: [50, 70, 60, 61, 75, 87],
+          barWidth: 10,
+          barGap: 1,
+          itemStyle: {
+            normal: {
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 1,
+                color: '#4af0fc'
+              }, {
+                offset: 0,
+                color: '#03f2a3'
+              }]),
+              opacity: 1,
+            }
+          }
+        }]
+      })
+    },
   },
   mounted () {
     this.drawLine();
+    this.goodsChart()
   }
 }
 </script>
@@ -771,6 +888,11 @@ export default {
   #scolTab tbody{
     height: 168px;
     display: block;
+    tr{
+      td{
+        white-space: nowrap;
+      }
+    }
   }
   #scolTab table thead,
   tbody tr {

@@ -43,6 +43,13 @@ var mainRouters = [
         }
       },
       {
+        path: '/aiotEnvironment',
+        name: 'aiotEnvironment',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/aiotEnvironment/aiotEnvironment.vue'], resolve)
+        }
+      },
+      {
         path: '/aiotPage',
         name: 'aiotPage',
         component: (resolve) => {
