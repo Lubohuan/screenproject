@@ -11,33 +11,33 @@
             </div>
             <div class="bg padding10 bg_h">
                 <div style="border-bottom:1px solid rgba(46,73,112,1);height:58px">
-                    <p class="font12"  style="line-height:30px;padding-left:10px;">累计预警 <span style="font-size:24px;" class="color_yellow">15</span> 次 &nbsp;&nbsp;&nbsp;&nbsp;今日 <span style="font-size:24px;" class="color_yellow">1</span> 次</p>
+                    <p class="font12"  style="line-height:30px;padding-left:10px;">累计预警 <span style="font-size:24px;" class="color_yellow">35</span> 次 &nbsp;&nbsp;&nbsp;&nbsp;今日 <span style="font-size:24px;" class="color_yellow">4</span> 次</p>
                 </div>
                 <div style="padding:20px" class="warning">
                     <table class="font12"  width="100%">
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning3.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_c">一级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">06:38</td>
+                            <td style="padding-left:10px">1#塔机幅度超限预警，请提醒驾驶员规范操作</td>
                         </tr>
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning1.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_a">二级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">06:57</td>
+                            <td style="padding-left:10px">1#塔机吊重超限，请提醒驾驶员规范操作</td>
                         </tr>
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning2.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_b">三级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">07:26</td>
+                            <td style="padding-left:10px">1#塔机力矩超限，请请提醒驾驶员规范操作</td>
                         </tr>
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning3.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_c">一级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">08:31</td>
+                            <td style="padding-left:10px">1#塔机力矩超限，请请提醒驾驶员规范操作</td>
                         </tr>
                     </table>
                 </div>
@@ -49,17 +49,41 @@
                 <img src="../../../assets/safe-time.png" alt="">
                     <h5>驾驶员信息</h5>
                 </div>
-                <div class="font12 float_r color_blue">总人数: <span style="font-size:24px">5</span></div>
+                <div class="font12 float_r color_blue">总人数: <span style="font-size:24px">4</span></div>
 
             </div>
             <div class="bg padding10 bg_h font12">
                 <ul>
-                    <li v-for="(item,index) in 5" :key="index" style="width:calc(100% - 60px);height:108px;border-bottom:1px solid rgba(46,73,112,0.5);margin:0 30px;">
-                        <div style="width:90px;" class="float_l"><img src="../../../assets/index/pic1.png" alt="" width="60" height="60" style="margin-top:20px"></div>
+                    <li style="width:calc(100% - 60px);height:108px;border-bottom:1px solid rgba(46,73,112,0.5);margin:0 30px;">
+                        <div style="width:90px;" class="float_l"><img src="../../../assets/aiot/person1.png" alt="" width="60" height="70" style="margin-top:20px"></div>
                         <div style="width:calc(100% - 90px)" class="float_l">
-                            <div><span>张三</span><span class="float_r color_blue">1#塔机</span></div>
+                            <div><span>黎天林</span><span class="float_r color_blue">1#塔机</span></div>
                             <div style="color:#FFFEFF;"><span style="margin-right:34px;">特种作业证</span ><span class="btn_Style btn_Style_d" style="margin-right:44px;">已录入</span><span class="btn_Style btn_Style_d">已验证</span></div>
-                            <div style="color:#8EA6D7;display:flex;"><span style="flex:1">安全教育</span><span style="flex:1">32学时</span><span style="flex:1">安全技术交底</span><span style="flex:1">11次</span></div>
+                            <div style="color:#8EA6D7;display:flex;"><span style="flex:1">安全教育</span><span style="flex:1">23学时</span><span style="flex:1">安全技术交底</span><span style="flex:1">9次</span></div>
+                        </div>
+                    </li>
+                    <li style="width:calc(100% - 60px);height:108px;border-bottom:1px solid rgba(46,73,112,0.5);margin:0 30px;">
+                        <div style="width:90px;" class="float_l"><img src="../../../assets/aiot/person2.png" alt="" width="60" height="70" style="margin-top:20px"></div>
+                        <div style="width:calc(100% - 90px)" class="float_l">
+                            <div><span>曾德胜</span><span class="float_r color_blue">1#塔机</span></div>
+                            <div style="color:#FFFEFF;"><span style="margin-right:34px;">特种作业证</span ><span class="btn_Style btn_Style_d" style="margin-right:44px;">已录入</span><span class="btn_Style btn_Style_d">已验证</span></div>
+                            <div style="color:#8EA6D7;display:flex;"><span style="flex:1">安全教育</span><span style="flex:1">41学时</span><span style="flex:1">安全技术交底</span><span style="flex:1">11次</span></div>
+                        </div>
+                    </li>
+                    <li style="width:calc(100% - 60px);height:108px;border-bottom:1px solid rgba(46,73,112,0.5);margin:0 30px;">
+                        <div style="width:90px;" class="float_l"><img src="../../../assets/aiot/person3.png" alt="" width="60" height="70" style="margin-top:20px"></div>
+                        <div style="width:calc(100% - 90px)" class="float_l">
+                            <div><span>郑德明</span><span class="float_r color_blue">1#塔机</span></div>
+                            <div style="color:#FFFEFF;"><span style="margin-right:34px;">特种作业证</span ><span class="btn_Style btn_Style_d" style="margin-right:44px;">已录入</span><span class="btn_Style btn_Style_d">已验证</span></div>
+                            <div style="color:#8EA6D7;display:flex;"><span style="flex:1">安全教育</span><span style="flex:1">27学时</span><span style="flex:1">安全技术交底</span><span style="flex:1">13次</span></div>
+                        </div>
+                    </li>
+                    <li style="width:calc(100% - 60px);height:108px;border-bottom:1px solid rgba(46,73,112,0.5);margin:0 30px;">
+                        <div style="width:90px;" class="float_l"><img src="../../../assets/aiot/person4.png" alt="" width="60" height="70" style="margin-top:20px"></div>
+                        <div style="width:calc(100% - 90px)" class="float_l">
+                            <div><span>唐成明</span><span class="float_r color_blue">1#塔机</span></div>
+                            <div style="color:#FFFEFF;"><span style="margin-right:34px;">特种作业证</span ><span class="btn_Style btn_Style_d" style="margin-right:44px;">已录入</span><span class="btn_Style btn_Style_d">已验证</span></div>
+                            <div style="color:#8EA6D7;display:flex;"><span style="flex:1">安全教育</span><span style="flex:1">235学时</span><span style="flex:1">安全技术交底</span><span style="flex:1">9次</span></div>
                         </div>
                     </li>
                 </ul>
@@ -115,28 +139,12 @@
               </tr>
               </thead>
               <tr style="line-height:68px">
-                <td>1#</td>
-                <td>平台塔</td>
-                <td>广州智博特种设备租赁</td>
-                <td>3688小时</td>
-                <td>14小时</td>
-                <td>张三</td>
-              </tr>
-              <tr style="line-height:68px">
-                <td>1#</td>
-                <td>平台塔</td>
-                <td>广州智博特种设备租赁</td>
-                <td>3688小时</td>
-                <td>14小时</td>
-                <td>张三</td>
-              </tr>
-              <tr style="line-height:68px">
-                <td>1#</td>
-                <td>平台塔</td>
-                <td>广州智博特种设备租赁</td>
-                <td>3688小时</td>
-                <td>14小时</td>
-                <td>张三</td>
+                <td>1#塔机</td>
+                <td>锤头塔</td>
+                <td style="display:inline-block;width:160px;">广州智博特种设备租赁公司</td>
+                <td>631小时</td>
+                <td>34小时</td>
+                <td>黎天林</td>
               </tr>
             </table>
           </div>
@@ -185,6 +193,11 @@ export default {
   name: 'aiotPage',
   data () {
     return {
+      aiotList:[
+        {
+          imgUrl:'../../../assets/aiot/person1.png'
+        }
+      ]
     }
   },
   methods: {

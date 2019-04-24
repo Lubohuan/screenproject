@@ -18,26 +18,26 @@
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning3.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_c">一级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">06:38</td>
+                            <td style="padding-left:10px">4#工区监测到有人进入危险区域，请及时劝阻</td>
                         </tr>
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning1.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_a">二级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">07:13</td>
+                            <td style="padding-left:10px">3#工区有工人未戴安全帽进入施工区域</td>
                         </tr>
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning2.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_b">三级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">07:21</td>
+                            <td style="padding-left:10px">3#工区有工人未戴安全帽进入施工区域</td>
                         </tr>
                         <tr >
                             <td class="center" ><img src="../../../assets/index/warning3.png" alt="" width="18"> </td>
                             <td class="center btn_Style btn_Style_c">一级预警</td>
-                            <td class="center">14:20</td>
-                            <td class="center">高温预警，室外作业不宜超过6小…</td>
+                            <td class="center">08:21</td>
+                            <td style="padding-left:10px">3#工区有工人未戴安全帽进入施工区域</td>
                         </tr>
                     </table>
                 </div>
@@ -157,7 +157,7 @@ export default {
         itemWidth: 14,
         itemHeight: 5,
         itemGap: 13,
-        data: ['PM2.5', 'PM10'],
+        data: ['未戴安全帽','危险区域','土地未苫盖','火焰监测'],
         left:'2%',
         textStyle: {
             fontSize: 12,
@@ -178,7 +178,7 @@ export default {
                 color: '#57617B'
             }
         },
-        data: ['13:00', '13:05', '13:10', '13:15', '13:20', '13:25', '13:30', '13:35', '13:40', '13:45', '13:50', '13:55']
+        data: ['12：00',  '16:00'  ,'20:00' , '24:00' , '4;00' ,  '8:00' , '12：00']
     },
     yAxis: [{
         type: 'value',
@@ -202,7 +202,7 @@ export default {
         },
     }],
     series: [{
-        name: 'PM2.5',
+        name: '未戴安全帽',
         type: 'line',
         symbol: 'circle',
         symbolSize: 5,
@@ -233,9 +233,9 @@ export default {
 
             }
         },
-        data: [220, 182, 191, 134, 150, 120, 110, 125, 145, 122, 165, 122]
+        data: [1,3,5, 7,9]
     }, {
-        name: 'PM10',
+        name: '危险区域',
         type: 'line',
         symbol: 'circle',
         symbolSize: 5,
@@ -266,7 +266,73 @@ export default {
 
             }
         },
-        data: [120, 110, 125, 145, 122, 165, 122, 220, 182, 191, 134, 150]
+        data: [1,3,5, 7,9]
+    }, {
+        name: '土地未苫盖',
+        type: 'line',
+        symbol: 'circle',
+        symbolSize: 5,
+        showSymbol: false,
+        lineStyle: {
+            normal: {
+                width: 1
+            }
+        },
+        areaStyle: {
+            normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(0, 136, 212, 0.3)'
+                }, {
+                    offset: 0.8,
+                    color: 'rgba(0, 136, 212, 0)'
+                }], false),
+                shadowColor: 'rgba(0, 0, 0, 0.1)',
+                shadowBlur: 10
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'rgb(0,136,212)',
+                borderColor: 'rgba(0,136,212,0.2)',
+                borderWidth: 12
+
+            }
+        },
+        data: [1,3,5, 7,9]
+    }, {
+        name: '火焰监测',
+        type: 'line',
+        symbol: 'circle',
+        symbolSize: 5,
+        showSymbol: false,
+        lineStyle: {
+            normal: {
+                width: 1
+            }
+        },
+        areaStyle: {
+            normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(0, 136, 212, 0.3)'
+                }, {
+                    offset: 0.8,
+                    color: 'rgba(0, 136, 212, 0)'
+                }], false),
+                shadowColor: 'rgba(0, 0, 0, 0.1)',
+                shadowBlur: 10
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'rgb(0,136,212)',
+                borderColor: 'rgba(0,136,212,0.2)',
+                borderWidth: 12
+
+            }
+        },
+        data: [1,3,5, 7,9]
     }]
 };
  myChart.setOption(option)
