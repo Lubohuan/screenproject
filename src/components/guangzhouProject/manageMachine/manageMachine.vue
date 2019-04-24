@@ -247,7 +247,7 @@
       </div>
       <div class="top_con_middle">
         <!-- 轮播 -->
-        <div style="height:410px;width:100%;margin-bottom:10px;">
+        <div  class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">

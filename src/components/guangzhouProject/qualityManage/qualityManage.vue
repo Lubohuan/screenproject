@@ -106,7 +106,7 @@
       </div>
       <div class="top_con_middle">
         <!-- 轮播 -->
-        <div style="height:410px;width:100%;margin-bottom:10px;">
+        <div class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -176,7 +176,7 @@
           </div>
         </div>
         <!-- 表格今日完成 -->
-        <div style="height:274px;width:100%;">
+        <div style="height:274px;width:100%;display:none">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -344,6 +344,18 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+        <!-- 实测实量合格率统计 -->
+        <div style="height:274px;width:100%;">
+          <div class="ibox">
+            <div class="ibox-title flex ai-center">
+              <img src="../../../assets/index/icon.png" alt width="16px">
+              <span class="text">实测实量合格率统计</span>
+            </div>
+            <div class="ibox-content">
+                <div id="echart-bar" style="width:100%;height:100%"></div>
             </div>
           </div>
         </div>
@@ -887,109 +899,6 @@ export default {
     },
     drawPie() {
       var myChart = this.$echarts.init(document.getElementById("echart-pie"));
-      //   var option = {
-      //     tooltip: {
-      //       trigger: "item",
-      //       formatter: "{a} <br/>{b}: {c} ({d}%)"
-      //     },
-      //     legend: {
-      //       orient: "vertical",
-      //       x: "right",
-      //       itemWidth: 14,
-      //       itemHeight: 14,
-      //       align: "left",
-
-      //       data: [
-      //         "2D线",
-      //         "3D线",
-      //         "资源类",
-      //         "采集类",
-      //         "宝宝大全",
-      //         "2D视频",
-      //         "3D视频"
-      //       ],
-      //       textStyle: {
-      //         color: "#fff"
-      //       }
-      //     },
-      //     series: [
-      //       {
-      //         name: "访问来源",
-      //         type: "pie",
-      //         hoverAnimation: false,
-      //         legendHoverLink: false,
-      //         radius: ["33%", "75%"],
-      //         color: [
-      //           "#915872",
-      //           "#3077b7",
-      //           "#9a8169",
-      //           "#3f8797",
-      //           "#5b8144",
-      //           "#307889",
-      //           "#9c6a79"
-      //         ],
-      //         label: {
-      //           normal: {
-      //             position: "inner"
-      //           }
-      //         },
-      //         labelLine: {
-      //           normal: {
-      //             show: false
-      //           }
-      //         },
-      //         tooltip: {
-      //           show: false
-      //         },
-
-      //         data: [
-      //           { value: 435, name: "" },
-      //           { value: 679, name: "" },
-      //           { value: 848, name: "" },
-      //           { value: 348, name: "" },
-      //           { value: 679, name: "" },
-      //           { value: 848, name: "" },
-      //           { value: 348, name: "" }
-      //         ]
-      //       },
-      //       {
-      //         name: "访问来源",
-      //         type: "pie",
-      //         radius: ["33%", "75%"],
-      //         color: [
-      //           "#d74e67",
-      //           "#0092ff",
-      //           "#eba954",
-      //           "#21b6b9",
-      //           "#60a900",
-      //           "#01949b",
-      //           " #f17677"
-      //         ],
-      //         label: {
-      //           normal: {
-      //             formatter: "{b}\n{d}%"
-      //           }
-      //         },
-      //         data: [
-      //           { value: 435, name: "2D线" },
-      //           { value: 679, name: "3D线" },
-      //           { value: 848, name: "资源类" },
-      //           { value: 348, name: "采集类" },
-      //           { value: 679, name: "宝宝大全" },
-      //           { value: 848, name: "2D视频" },
-      //           { value: 348, name: "3D视频" }
-      //         ]
-      //       }
-      //     ]
-      //   };
-      // Echarts的Pie图的径向渐变不是很方便, 如果有人需要指向圆心的径向渐变可以直接用
-      // 需要注意的是:
-      // 1.legend会变得很奇怪, 最好自己重写
-      // 2.legend在点击之后(少了一个弧之后)也会不对, 最后在点击之后重新用calc来计算
-      //   (或者)干脆别让他点...
-      /*
-      
-      linear-gradient(270deg, #df5cb4 0%, #e07c76 100%)*/
       var data = [
         { value: 1, name: "混凝土露筋", color0: "#FF687D", color1: "#FC0C59" },
         { value: 3, name: "混凝土胀模", color0: "#FCDE54", color1: "#F7BA2A" },
@@ -1170,6 +1079,150 @@ export default {
       window.addEventListener("resize", () => {
         myChart.resize();
       });
+    },
+    drawBar(){
+       var myChart = this.$echarts.init(document.getElementById("echart-bar"));
+      var option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            data: ['接入率', '在线率', '完好率'],
+            //align: 'right',
+            right: 10,
+            textStyle: {
+                color: "#fff"
+            },
+            itemWidth: 10,
+            itemHeight: 10,
+            itemGap: 35
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [{
+            type: 'category',
+            data: ['喀什市',
+                '疏附县',
+                '疏勒县',
+                '英吉沙县',
+                '泽普县',
+                '岳普湖县',
+                '巴楚县',
+                '伽师县',
+                '叶城县',
+                '莎车县 ',
+            ],
+           axisLine: {
+                show: true,
+                lineStyle: {
+                    color: "rgba(219,225,255,1)",
+                    width: 0,
+                    type: "solid"
+                }
+            },
+            axisTick: {
+                show: false,
+            },
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: "rgba(219,225,255,1)",
+                }
+            },
+        }],
+        yAxis: [{
+            type: 'value',
+            axisLabel: {
+                formatter: '{value} %',
+                textStyle: {
+                    color: "rgba(219,225,255,1)",
+                }
+            },
+           axisLine: {
+                show: true,
+                lineStyle: {
+                    color: "rgba(219,225,255,1)",
+                    width: 0,
+                    type: "solid"
+                }
+            },
+            axisTick: {
+                show: false,
+            },
+            splitLine: {
+                lineStyle: {
+                    color: "#063374",
+                },
+                show:false
+            }
+        }],
+        series: [{
+            name: '接入率',
+            type: 'bar',
+            data: [20, 50, 80, 58, 83, 68, 57, 80, 42, 66],
+            barWidth: 10, //柱子宽度
+            barGap: 1, //柱子之间间距
+            itemStyle: {
+                normal: {
+                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#008cff'
+                    }, {
+                        offset: 1,
+                        color: '#005193'
+                    }]),
+                    opacity: 1,
+                }
+            }
+        }, {
+            name: '在线率',
+            type: 'bar',
+            data: [50, 70, 60, 61, 75, 87, 60, 62, 86, 46],
+            barWidth: 10,
+            barGap: 1,
+            itemStyle: {
+                normal: {
+                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#00da9c'
+                    }, {
+                        offset: 1,
+                        color: '#007a55'
+                    }]),
+                    opacity: 1,
+                }
+            }
+        }, {
+            name: '完好率',
+            type: 'bar',
+            data: [70, 48, 73, 68, 53, 47, 50, 72, 96, 86],
+            barWidth: 10,
+            barGap: 1,
+            itemStyle: {
+                normal: {
+                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#c4e300'
+                    }, {
+                        offset: 1,
+                        color: '#728400'
+                    }]),
+                    opacity: 1,
+                }
+            }
+        }]
+      };
+      myChart.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
     }
   },
   created() {
@@ -1193,6 +1246,7 @@ export default {
     });
     this.drawLine();
     this.drawPie();
+    this.drawBar();
     this.textScroll();
   }
  
