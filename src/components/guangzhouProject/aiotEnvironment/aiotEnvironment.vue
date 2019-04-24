@@ -124,10 +124,20 @@
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P>智能提醒 : </P>
-            <p>30%烟雾感应预警发生在三工区宿舍，请核实</p>
+            <p>2台环境测试设备离线，请检查设备网络和现场情况</p>
           </div>
         </div>
-        <div style="height:305px;width:100%;background-color:#fff;"></div>
+        <div style="height:305px;width:100%;background-color:#1D284D;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5>近24小时空气质量变化趋势</h5>
+            </div>
+          </div>
+          <div class="table" style="padding-top: 10px">
+            <div id="echartsline" style="width:100%;height:240px"></div>
+          </div>
+        </div>
       </div>
       <div class="top_con_right">
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;">
@@ -723,12 +733,144 @@ export default {
       window.addEventListener("resize", () => {
         myChart.resize();
       });
+    },
+    echartsline(){
+      let myChart = this.$echarts.init(document.getElementById('echartsline'))
+      var option = {
+        backgroundColor: '#1D284D',
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            lineStyle: {
+              color: '#57617B'
+            }
+          }
+        },
+        legend: {
+          icon: 'rect',
+          itemWidth: 14,
+          itemHeight: 5,
+          itemGap: 13,
+          data: ['PM2.5', 'PM10'],
+          left:'2%',
+          textStyle: {
+            fontSize: 12,
+            color: '#F1F1F3'
+          }
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: {
+          type: 'category',
+          boundaryGap: false,
+          axisLine: {
+            lineStyle: {
+              color: '#57617B'
+            }
+          },
+          data: ['01:00', '03:00', '05:00', '07:00', '09:00', '11:00', '13:00', '15:00', '17:00', '19:00', '21:00', '23:00']
+        },
+        yAxis: [{
+          type: 'value',
+
+          splitLine: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          },
+          axisLine: {
+            lineStyle: {
+              color: '#57617B'
+            }
+          },
+          axisLabel: {
+            margin: 10,
+            textStyle: {
+              fontSize: 14
+            }
+          },
+        }],
+        series: [{
+          name: 'PM2.5',
+          type: 'line',
+          symbol: 'circle',
+          symbolSize: 5,
+          showSymbol: false,
+          lineStyle: {
+            normal: {
+              width: 1
+            }
+          },
+          areaStyle: {
+            normal: {
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: 'rgba(219, 50, 51, 0.3)'
+              }, {
+                offset: 1,
+                color: 'rgba(219, 50, 51, 0)'
+              }], false),
+              shadowColor: 'rgba(0, 0, 0, 0.1)',
+              shadowBlur: 10
+            }
+          },
+          itemStyle: {
+            normal: {
+              color: 'rgb(219,50,51)',
+              borderColor: 'rgba(219,50,51,0.2)',
+              borderWidth: 12
+
+            }
+          },
+          data: [220, 182, 191, 134, 150, 120, 110, 125, 145, 122, 165, 122]
+        }, {
+          name: 'PM10',
+          type: 'line',
+          symbol: 'circle',
+          symbolSize: 5,
+          showSymbol: false,
+          lineStyle: {
+            normal: {
+              width: 1
+            }
+          },
+          areaStyle: {
+            normal: {
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: 'rgba(0, 136, 212, 0.3)'
+              }, {
+                offset: 0.8,
+                color: 'rgba(0, 136, 212, 0)'
+              }], false),
+              shadowColor: 'rgba(0, 0, 0, 0.1)',
+              shadowBlur: 10
+            }
+          },
+          itemStyle: {
+            normal: {
+              color: 'rgb(0,136,212)',
+              borderColor: 'rgba(0,136,212,0.2)',
+              borderWidth: 12
+
+            }
+          },
+          data: [120, 110, 125, 145, 122, 165, 122, 220, 182, 191, 134, 150]
+        }]
+      };
+      myChart.setOption(option)
     }
   },
   mounted () {
     this.drawLine();
     this.drawTwoLine();
     this.aiotDrawLine();
+    this.echartsline();
   }
 }
 </script>
