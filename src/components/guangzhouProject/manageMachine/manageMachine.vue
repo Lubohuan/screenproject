@@ -115,10 +115,11 @@
                     </td>
                     <td>
                       <div class="good">
-                        <span>10%</span>
+                        0
+                        <!-- <span>10%</span>
                         <span>
                           <i class="iconfont">↑</i>
-                        </span>
+                        </span> -->
                       </div>
                     </td>
                   </tr>
@@ -142,10 +143,11 @@
                         </span>
                       </div>-->
                       <div class="good">
-                        <span>33%</span>
+                        0
+                        <!-- <span>33%</span>
                         <span>
                           <i class="iconfont">↑</i>
-                        </span>
+                        </span> -->
                       </div>
                     </td>
                   </tr>
@@ -163,7 +165,7 @@
                     </td>
                     <td>
                       <div class="good">
-                       --
+                      0
                       </div>
                     </td>
                   </tr>
@@ -180,7 +182,9 @@
                       <span>合格</span>
                     </td>
                     <td>
-                      --
+                    <div class="good">
+                      0
+                      </div>
                     </td>
                   </tr>
                  

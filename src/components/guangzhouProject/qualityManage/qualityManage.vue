@@ -571,7 +571,7 @@
                     <th>排名</th>
                     <th>分包单位</th>
                     <th>
-                      通过率
+                      整改率
                       <span>(问题数)</span>
                     </th>
                     <th>周环比</th>
@@ -801,12 +801,12 @@ export default {
         },
         { 
           imgPath:'../../../assets/qualityManage/l2.jpg',
-          imgTitle:'楼梯样板',
+          imgTitle:'卫生间',
           imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
         },
         { 
           imgPath:'../../../assets/qualityManage/l3.jpg',
-          imgTitle:'剪力墙钢筋样板',
+          imgTitle:'楼梯样板',
           imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
         }
       ],
