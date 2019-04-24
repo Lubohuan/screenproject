@@ -11,26 +11,26 @@
                         <div class="flex" style="height:80px">
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">工程造价</div>
-                                <div><span class="font28 bigNum">11000</span>亿</div>
+                                <div><span class="font28 bigNum">6.53</span>亿</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">合同工期</div>
-                                <div><span class="font28 bigNum">11000</span>天</div>
+                                <div><span class="font28 bigNum">938</span>天</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">建筑面积</div>
-                                <div><span class="font28 bigNum">11000</span>万㎡</div>
+                                <div><span class="font28 bigNum">11.96</span>万㎡</div>
                             </div>
                         </div>
                         <div class="flex" style="flex-wrap:wrap;margin-bottom:8px;" >
                             <div class="font12 marginL30">
-                                <div><img src="../../../assets/index/icon_li.png" alt=""><span class="bigNum"> 建设单位：</span><span>杭州开区开发投资集团有限公司</span></div>
+                                <div><img src="../../../assets/index/icon_li.png" alt=""><span class="bigNum"> 建设单位：</span><span>广州金融控股集团有限公司</span></div>
                             </div>
                             <div class="font12 marginL30">
-                                <div><img src="../../../assets/index/icon_li.png" alt=""><span class="bigNum"> 设计单位：</span><span>杭州开区开发投资集团有限公司</span></div>
+                                <div><img src="../../../assets/index/icon_li.png" alt=""><span class="bigNum"> 设计单位：</span><span>广州市设计院</span></div>
                             </div>
                             <div class="font12 marginL30">
-                                <div><img src="../../../assets/index/icon_li.png" alt=""><span class="bigNum"> 总包单位：</span><span>杭州开区开发投资集团有限公司</span></div>
+                                <div><img src="../../../assets/index/icon_li.png" alt=""><span class="bigNum"> 总包单位：</span><span>广州建筑股份有限公司</span></div>
                             </div>
                             </div>
                             <div class="flex" style="justify-content: space-around;">
@@ -61,30 +61,30 @@
                     </div>
                     <div class="bg padding10">
                         <table class="font12" style="width:100%;color:#DBE1FF">
-                            <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue">33</span> 人</td><td >人员偏量</td><td><span class="font28 color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 color_blue">35</span>人</td></tr>
-                            <tr style="background:rgba(255,255,255,0.15);text-align:center"><td class="color_blue1">累计用工</td><td>35人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
+                            <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue">35</span> 人</td><td >用工计划偏差量</td><td><span class="font28 color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 color_blue">35</span>人</td></tr>
+                            <tr style="background:rgba(255,255,255,0.15);text-align:center"><td class="color_blue1">累计用工</td><td>700人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
                             <tr style="text-align:center"><td >一区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_a" style="width:110%"></div>
                                 </div>
-                                </td><td>无</td><td></td></tr>
+                                </td><td>15</td><td></td></tr>
                             <tr style="text-align:center"><td >二区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_c" style="width:100%"></div>
                                 </div>
-                                </td><td>无</td><td></td></tr>
+                                </td><td>8</td><td></td></tr>
                             <tr style="text-align:center"><td >三区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_d" style="width:90%"></div>
                                 </div>
-                                </td><td>无</td><td></td></tr>
+                                </td><td>7</td><td></td></tr>
                             <tr style="text-align:center"><td >四区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_b" style="width:75%"></div>
                                 </div>
-                                </td><td>无</td><td></td></tr>
+                                </td><td>5</td><td></td></tr>
                         </table>
-                        <p class="bigNum font12" style="margin-left:18px;">注意：人员偏离较大时，请及时关注！</p>
+                        <p class="bigNum font12" style="margin-left:18px;">注意：计划用工数与实际出勤人数一致！</p>
                     </div>
                     <!-- <div class="bg padding10">
                          <div class="flex" style="height:66px">
@@ -155,43 +155,44 @@
                         机械管理
                     </div>
                     <div class="bg flex" style="padding:17px 10px">
-                        <div class="flex1 font12 marginL30 text_center">
+                        <div class="flex1 font12 marginL30 text_center;" style="cursor:pointer;" @click="showMeic">
                             <div>正常运行</div>
-                            <div><span class="font28 bigNum">6</span>台</div>
+                            <div><span class="font28 bigNum">1</span>台</div>
                         </div>
                         <div class="flex1 font12 marginL30 text_center">
                             <div>离线</div>
-                            <div><span class="font28 bigNum color_red">6</span>台</div>
+                            <div><span class="font28 bigNum color_red">0</span>台</div>
                         </div>
                         <div class="font12" style="line-height: 50px;margin:0 15px">
-                            <div><span class="bgcStyle bgcStyle_a" style="cursor:pointer;" @click="showMeic">未工作</span> <span class="font28 bigNum  color_green">6</span>台 </div>
+                            <div><span class="bgcStyle bgcStyle_a" style="">未工作</span> <span class="font28 bigNum  color_green">0</span>台 </div>
                         </div>
                         <div class="font12" style="line-height: 50px;margin:0 15px">
-                            <div><span class="bgcStyle bgcStyle_b">故障</span> <span class="font28 bigNum  color_red" >6</span>台 </div>
+                            <div><span class="bgcStyle bgcStyle_b">故障</span> <span class="font28 bigNum  color_red" >0</span>台 </div>
                         </div>
                         <div class="font12" style="line-height: 50px;margin:0 15px">
-                            <div><span class="bgcStyle bgcStyle_c">维保</span> <span class="font28 bigNum  color_yellow">6</span>台 </div>
+                            <div><span class="bgcStyle bgcStyle_c">维保</span> <span class="font28 bigNum  color_yellow">0</span>台 </div>
                         </div>
                     </div>
                </div>
            </div>
            <div class="top_con_middle">
                <div style="height:415px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
-                   <div class="top_ul">
+                   <div class="top_ul" style="z-index:1000;">
                        <ul>
-                           <li>项目总控</li>
-                           <li>BIM应用</li>
-                           <li>视频监控</li>
-                           <li>无人机</li>
-                           <li>项目简介</li>
+                           <li :class="{active:topListIndex == 1}" @click="changetopList(0)">项目总控</li>
+                           <li :class="{active:topListIndex == 2}" @click="changetopList(2)">BIM应用</li>
+                           <li :class="{active:topListIndex == 2}" @click="changetopList(3)">宣传片</li>
+                           <!-- <li :class="{active:topListIndex == 3}" @click="changetopList(3)">视频监控</li>
+                           <li :class="{active:topListIndex == 4}" @click="changetopList(4)">无人机</li> -->
+                           <!-- <li :class="{active:topListIndex == 5}" @click="changetopList(5)">项目简介</li> -->
                        </ul>
                    </div>
                    <div class="middle_ul">
                        <ul>
-                           <li :class="{active:taskIndex == 1}" @click="changeTask(1)">一区进</li>
-                           <li :class="{active:taskIndex == 2}" @click="changeTask(2)">二区进</li>
-                           <li :class="{active:taskIndex == 3}" @click="changeTask(3)">三区进</li>
-                           <li :class="{active:taskIndex == 4}" @click="changeTask(4)">四区进</li>
+                           <li :class="{active:taskIndex == 1}" @click="changeTask(1)">一区进度</li>
+                           <li :class="{active:taskIndex == 2}" @click="changeTask(2)">二区进度</li>
+                           <li :class="{active:taskIndex == 3}" @click="changeTask(3)">三区进度</li>
+                           <li :class="{active:taskIndex == 4}" @click="changeTask(4)">四区进度</li>
                        </ul>
                    </div>
                    <div class="bottom_ul">
@@ -248,7 +249,7 @@
                        </ul>
                    </div>
                    <!-- 摄像头 -->
-                   <div class="camera">
+                   <div class="camera" v-if="topListIndex==0">
                         <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
                             <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
@@ -271,7 +272,7 @@
                         </div>
                    </div>
                    <!-- 隐患 -->
-                   <div class="hidden">
+                   <div class="hidden"  v-if="topListIndex==0">
                         <div class="hidden_loc" style="top: 265px;left: 278px;" @mouseenter="openhidden(0)" @mouseleave="closehidden(0)">
                             <div class="icon_hidden" style="top:0px;left:0px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
@@ -345,19 +346,37 @@
                             </div>
                         </div>
                    </div>
+                   <div v-if="topListIndex==5" style="position:absolute;top:0px;left:0px;background:#1D284D;width:100%;height:100%">
+                       <div style="padding:60px 20px;">
+                           <p style="line-height:40px;text-indent:2em;">广州金控总部大楼项目位于广州市天河区国际金融城起步区AT090938地块，用地面积约8423m²，总建筑面积约11.96万m²，地上31层，地下5层，建筑高度143m.</p>
+                           <p style="line-height:40px;text-indent:2em;">本工程主体结构为超高层写字楼为31层，结构高度135.9米，建筑高度142.7米；商业裙房为5层，主要屋面标高为26.50米，采用钢筋混凝土框架结构。地下共5层，人防分布在地下五层。采用钢筋混凝土框架-核心筒结构；</p>
+                           <p style="line-height:40px;text-indent:2em;">工程计划开工时间为2018年7月25日，竣工时间为2021年1月18日，工程造价6.5亿，工期共938个日历天。</p>
+                       </div>
+                   </div>
+                   
+                   <div v-if="topListIndex==2" style="position:absolute;top:0px;left:0px;background:#1D284D;width:100%;height:100%">
+                       <video src="https://autobuild-img.oss-cn-beijing.aliyuncs.com/videos/videos/%E5%B9%BF%E5%B7%9E%E9%87%91%E6%8E%A7%E9%A1%B9%E7%9B%AE%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F2019.1.2.mp4" style="width:100%;height:100%;" class="raveal_right_bottom_video" id="main_video" poster="" controls="" playsinline="" webkit-playsinline="" autoplay="autoplay" loop="loop">
+                            <source src="https://autobuild-img.oss-cn-beijing.aliyuncs.com/videos/videos/%E5%B9%BF%E5%B7%9E%E9%87%91%E6%8E%A7%E9%A1%B9%E7%9B%AE%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F2019.1.2.mp4" type="mp4">
+                        </video>
+                   </div>
+                   <div v-if="topListIndex==3" style="position:absolute;top:0px;left:0px;background:#1D284D;width:100%;height:100%">
+                        <video src="https://autobuild-img.oss-cn-beijing.aliyuncs.com/videos/videos/%E5%B9%BF%E5%B7%9E%E5%9B%BD%E9%99%85%E9%87%91%E8%9E%8D%E5%9F%8E%E8%B5%B7%E6%AD%A5%E5%8C%BA%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8Bbm%E6%BC%AB%E6%B8%B8.mp4" style="width:100%;height:100%;" class="raveal_right_bottom_video" id="main_video" poster="" controls="" playsinline="" webkit-playsinline="" autoplay="autoplay" loop="loop">
+                            <source src="https://autobuild-img.oss-cn-beijing.aliyuncs.com/videos/videos/%E5%B9%BF%E5%B7%9E%E5%9B%BD%E9%99%85%E9%87%91%E8%9E%8D%E5%9F%8E%E8%B5%B7%E6%AD%A5%E5%8C%BA%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8Bbm%E6%BC%AB%E6%B8%B8.mp4" type="mp4">
+                        </video>
+                   </div>
                </div>
                <div style="height:235px;width:100%;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         工程进度
-                        <span class="font12" style="color:#76D0DF;margin-left:15px;">剩余工期：420天 最近里程碑：完成基工程（12天）</span>
+                        <span class="font12" style="color:#76D0DF;margin-left:15px;">计划工期： 938天实际工期： 203天总产值完成情况： 9%( 6022.92万元 / 65340.17万元)</span>
                     </div>
                     <div class="bg padding10">
                         <div style="display:flex;height:174px;">
                             <div class="cir_time" style="margin:10px 0px 0 30px;">
-                                <el-progress type="circle" :percentage="80" color="#0dd3ae"  style="transform:rotateZ(-180deg)"></el-progress>
+                                <el-progress type="circle" :percentage="30" color="#0dd3ae"  style="transform:rotateZ(-180deg)"></el-progress>
                                 <p class="text_center">已施工(天)</p>
-                                <div class="time_size">80</div>
+                                <div class="time_size">203</div>
                             </div>
                             <div class="progress_time">
                                 <ul class="flex">
@@ -432,18 +451,18 @@
                         <div style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
                             <div class="flex1 flex text_center" style="justify-content: space-around;">
                                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">10</span>℃</div>
+                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
                                 <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
                             </div>
                             <div class="flex1 flex"  style="flex-direction:column;">
                                 <div class="flex">
                                     <div class="flex1 font12"><img src="../../../assets/index/wind.png" alt=""> 南风2级 </div>
-                                    <div class="flex1 font12"><img src="../../../assets/index/temperature.png" alt=""> 12℃ </div>
+                                    <div class="flex1 font12"><img src="../../../assets/index/temperature.png" alt=""> 100% </div>
                                     <div class="flex1 font12"><img src="../../../assets/index/rainfall.png" alt=""> 67% </div>
                                 </div>
                                 <div class="flex">
-                                    <div class="flex1 font12"><img src="../../../assets/index/pm25.png" alt=""> 35 </div>
-                                    <div class="flex1 font12"><img src="../../../assets/index/pm10.png" alt=""> 78 </div>
+                                    <div class="flex1 font12"><img src="../../../assets/index/pm25.png" alt=""> 21 </div>
+                                    <div class="flex1 font12"><img src="../../../assets/index/pm10.png" alt=""> 33 </div>
                                     <div class="flex1 font12"><img src="../../../assets/index/noise.png" alt=""> 45dB </div>
                                 </div>
                             </div>
@@ -452,7 +471,7 @@
                             <div class="flex1 flex">
                                 <div class="flex1 text_center">
                                     <p class="font12">明天</p>
-                                    <img src="../../../assets/index/sunny.png" alt="" width="34px">
+                                    <img src="../../../assets/index/rain.png" alt="" width="34px">
                                 </div>
                                 <div class="flex1 text_center">
                                     <p class="font12">后天</p>
@@ -460,21 +479,21 @@
                                 </div>
                                 <div class="flex1 text_center">
                                     <p class="font12">大后天</p>
-                                    <img src="../../../assets/index/cloudy.png" alt="" width="34px">
+                                    <img src="../../../assets/index/rain.png" alt="" width="34px">
                                 </div>
                             </div>
                             <div class="flex1 flex">
                                 <div class="flex1 text_center">
-                                    <p style="font-size:14px;margin:8px 0"><span class="font28">10</span>℃</p>
-                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">晴</p>
-                                </div>
-                                <div class="flex1 text_center">
-                                    <p style="font-size:14px;margin:8px 0"><span class="font28">14</span>℃</p>
+                                    <p style="font-size:14px;margin:8px 0"><span class="font28">26</span>℃</p>
                                     <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                                 </div>
                                 <div class="flex1 text_center">
-                                    <p style="font-size:14px;margin:8px 0"><span class="font28">8</span>℃</p>
-                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">多云</p>
+                                    <p style="font-size:14px;margin:8px 0"><span class="font28">27</span>℃</p>
+                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                                </div>
+                                <div class="flex1 text_center">
+                                    <p style="font-size:14px;margin:8px 0"><span class="font28">23</span>℃</p>
+                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                                 </div>
                             </div>
                         </div>
@@ -486,21 +505,21 @@
                                 <div class="flex1 flex">
                                     <div class="flex1 text_center" style="line-height:25px;">
                                         <span class="blank_cir cir"></span>
-                                        <p>18</p>
+                                        <p>22</p>
                                     </div>
                                     <div class="flex1 text_center" >
                                         <span class="blue_cir cir"></span>
-                                        <p>19</p>
+                                        <p>23</p>
                                     </div>
                                 </div>
                                 <div class="flex1 flex">
                                     <div class="flex1 text_center" >
                                         <span class="blue_cir cir"></span>
-                                        <p>20</p>
+                                        <p>24</p>
                                     </div>
                                     <div class="flex1 text_center" >
                                         <span class="red_cir cir"></span>
-                                        <p>21</p>
+                                        <p>25</p>
                                     </div>
                                 </div>
                             </div>
@@ -534,11 +553,11 @@
                         <div class="flex">
                             <div class="flex1 font12 marginL30">
                             <div>今日重大危险源</div>
-                            <div><span class="font28 bigNum">2</span></div>
+                            <div><span class="font28 bigNum">1</span></div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div>今日危险作业</div>
-                            <div><span class="font28 bigNum">2</span></div>
+                            <div><span class="font28 bigNum">0</span></div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div>超期隐患</div>
@@ -598,15 +617,15 @@
            <div style="height:100%;width:calc(100% - 1080px);box-sizing: border-box;padding:0 10px;">
                 <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                     <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                    今日完成
+                    昨日完成
                 </div>
                <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>产值</td><td>安全</td><td>质量</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4"><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td class="color_yellow"><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td class="color_green"><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>计划完成比</td><td>安全</td><td>质量</td><td>物资</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>95%</td><td><i class="i_yellow"></i>检查3次 未消项1个</td><td><i class="i_green"></i>验收1次 通过</td><td rowspan="4"><i class="i_green"></i>验收1次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查4次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>98%</td><td><i class="i_green"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收4次 通过</td></tr>
                     </table>
                 </div>
                 
@@ -621,11 +640,11 @@
                 </div>
                 <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>产值</td><td>劳务人员</td><td>机械</td><td>物资</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td><td rowspan="4">钢筋到场</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2345m²</td><td>55</td><td>汽吊进场</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>劳务人员数量</td><td>机械</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>15</td><td>-</td><td rowspan="4">物资进场1次</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>8</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_red"></i>重大危险源 雨</td><td>-</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>7</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>5</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
                     </table>
                 </div>
            </div>
@@ -639,67 +658,104 @@
                         人员列表
                         <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                     </div>
-                    <div class="bg padding10" style="height:430px;">
-                        <table style="width:100%;border-collapse:collapse;">
-                            <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>物资类型</td><td>内容概述</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>钢材</td><td>151.52</td><td>151.52</td><td>30</td><td class="color_yellow">0%</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>商品混凝土</td><td>177</td><td>177</td><td>30</td><td class="color_yellow">0%</td></tr>
+                    <div class="bg padding10" style="height:440px;">
+                        <div style="height:410px">
+
+                        <table style="width:100%;border-collapse:collapse;" v-if="tableOffset==1" >
+                            <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>教育类型</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
                         </table>
+                        <table style="width:100%;border-collapse:collapse;" v-if="tableOffset==2">
+                            <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>教育类型</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                        </table>
+                        
+                        </div>
+                        <el-pagination
+                        small
+                        layout="prev, pager, next"
+                        :total="18"
+                        @current-change="handleCurrentChange"
+                        style="margin-top:4px;">
+                        </el-pagination>
                     </div>
                 </div>
                 
                 <div v-if="showInfo" style="position:absolute;left:550px;top:0px;z-index:999;width:540px;background:#283664;border:5px solid #224062;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                        人员列表    
+                        人员信息    
                         <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                     
                     </div>
-                    <div class="bg padding10 font12" style="height:450px;width:100%;box-sizing:border-box;">
+                    <div class="bg padding10 font12" style="height:460px;width:100%;box-sizing:border-box;">
                         <div style="float:left;width:230px;height:100%;margin:0 10px 0 30px;border-right:1px solid rgba(46,73,112,0.5)">
                             <div style="line-height:35px">
-                                <div style="width:90px;float:left"><img src="../../../assets/aiot/person1.png" alt="" width="60" height="70" style="margin-top:20px"></div>
+                                <div style="width:90px;float:left"><img :src="list.url" alt="" width="60" height="70" style="margin-top:20px"></div>
                                 <div style="width:calc(100% - 90px);float:left">
-                                    <div><span>黎天林</span><span class="color_blue1" style="margin-left:20px;">民族: </span>汉</div>
-                                    <div><span class="color_blue1">性别: </span>男<span class="color_blue1" style="margin-left:20px;">年龄: </span>汉</div>
-                                    <div><span class="color_blue1">出生日期: </span>1973-11-03</div>
+                                    <div><span>{{list.name}}</span><span class="color_blue1" style="margin-left:20px;">民族: </span>{{list.page01}}</div>
+                                    <div><span class="color_blue1">性别: </span>{{list.page02}}<span class="color_blue1" style="margin-left:20px;">年龄: </span>{{list.page03}}</div>
+                                    <div><span class="color_blue1">出生日期: </span>{{list.page04}}</div>
                                 </div>
                             </div>
-                            <div style="line-height:35px"><span class="color_blue1">身份证号码: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">籍贯: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">住址: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">政治面貌: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">入册工龄: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">是否加入公会: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">文化程度: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">是否有重大病史: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">联系电话: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">身份证号码: </span>{{list.page05}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">籍贯: </span>{{list.page06}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">住址: </span>{{list.page07}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">政治面貌: </span>{{list.page08}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">入册工龄: </span>{{list.page09}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否加入公会: </span>{{list.page010}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">文化程度: </span>{{list.page011}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否有重大病史: </span>{{list.page012}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">联系电话: </span>{{list.page013}}</div>
                         </div>
                         <div style="width:calc(100% - 290px);float:left;padding-left:10px;">
-                            <div style="line-height:35px"><span class="color_blue1">当前工种: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">当前状态: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">所在项目: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">参建单位: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">班组: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">进场日期: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">退场日期: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">人员评分: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">安全教育学时: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">违章记录: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">加分记录: </span>1973-11-03</div>
-                            <div style="line-height:35px"><span class="color_blue1">体检信息: </span>1973-11-03</div>
+                            <div style="line-height:35px"><span class="color_blue1">当前工种: </span>{{list.page11}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">当前状态: </span>{{list.page12}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">所在项目: </span>{{list.page13}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">参建单位: </span>{{list.page14}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">班组: </span>{{list.page15}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">进场日期: </span>{{list.page16}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">退场日期: </span>{{list.page17}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">人员评分: </span>{{list.page18}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">安全教育学时: </span>{{list.page19}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">违章记录: </span>{{list.page110}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">加分记录: </span>{{list.page111}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">体检信息: </span>{{list.page112}}</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)" @click="closeInfo">
-            <div style="position:absolute;top:50%;left:50%;height:300px;width:680px;transform:translate(-50%,-50%);background:#1D284D">
-                <div style="margin:20px;width:300px;float:left">
-                    <img src="../../../assets/meic.png" alt="" height="260">
+        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
+            
+            <div style="position:absolute;top:50%;left:50%;height:340px;width:1080px;transform:translate(-50%,-50%);background:#1D284D">
+                <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                    <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                    塔机信息    
+                    <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                 </div>
-                <div style="margin:20px 10px;padding:0 10px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
+                <div style="margin:20px;width:660px;float:left">
+                    <img src="../../../assets/manageMachine/jita.png" alt="" height="260">
+                    <div style="position:absolute;">
+
+                    </div>
+                </div>
+                <div style="margin:20px 10px;padding:0 30px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
                     <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
                     <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE4635</div>
                     <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
@@ -723,7 +779,157 @@
                 alertPersonInfoShow:false,
                 showInfo:false,
                 taskIndex:0,
-                showMeicInfo:false
+                showMeicInfo:false,
+                topListIndex:0,
+                listPersons:[
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/Wyya6HnJ53RHSAM5eB.png',
+                        name:'朱锦海',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'34',
+                        page04:'1984-09-29',
+                        page05:'445******1830',
+                        page06:'广东省惠来县',
+                        page07:'广东省惠来县惠城镇元春元春西面直巷17号',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'小学',
+                        page012:'否',
+                        page013:'14714796444',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2018-11-01',
+                        page17:'-',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/dWk5HH5P7z2PMjAxdT.png',
+                        name:'黄国伟',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'41',
+                        page04:'1977-12-29',
+                        page05:'441******7179',
+                        page06:'广东省龙川县',
+                        page07:'广州市芳村区观鹤五巷3号101房',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'小学',
+                        page012:'否',
+                        page013:'13660324073',
+                        page11:'杂工',
+                        page12:'已退场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2019-01-19',
+                        page17:'2019-04-08',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/xjybFBiDtze6Ysnfwt.png',
+                        name:'区伟雄',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'59',
+                        page04:'1960-04-03',
+                        page05:'440******4070',
+                        page06:'广东省广州市东山区',
+                        page07:'广州市东山区区庄村25号902房',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'大专',
+                        page012:'否',
+                        page013:'3850741892',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2019-01-19',
+                        page17:'-',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/6HZr8ZpmpNNQBDHzmS.png',
+                        name:'杨佳雄',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'24',
+                        page04:'1995-04-14',
+                        page05:'441******8838',
+                        page06:'广东省海丰县',
+                        page07:'广东省海丰县海城镇海珠社区居民委员会龙山新村一巷43号',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'高中',
+                        page012:'否',
+                        page013:'18620959337',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2019-01-19',
+                        page17:'-',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/aRFs5teMjGCn7bd7bB.png',
+                        name:'陈师铭',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'29',
+                        page04:'1989-12-16',
+                        page05:'440******0637',
+                        page06:'广东省广州市东山区',
+                        page07:'广州市越秀区执信南路39号702房',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'小学',
+                        page012:'否',
+                        page013:'17502052427',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2018-10-30',
+                        page17:'2019-04-22',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                ],
+                list:{},
+                tableOffset:1,
             }
         },
         mounted(){
@@ -731,16 +937,29 @@
             this.drawPie();
             // this.goodsChart();
         },
+        created(){
+            // this.personInfoList(0);
+        },
         methods: {
+            handleCurrentChange(val){
+                this.tableOffset = val;
+            },
+            personInfoList(index){
+                this.list = this.listPersons[index];
+            },
             showMeic(){
                 this.showMeicInfo = true;
             },
             changeTask(index){
                 this.taskIndex = index;
             },
+            changetopList(index){
+                this.topListIndex = index;
+            },
             alertPersonInfo(){
                 this.showInfo = true;
                 this.alertPersonInfoShow = true;
+                this.personInfoList(0);
             },
             closeInfo(){
                 this.showInfo = false;
@@ -1165,6 +1384,7 @@
   
 </style>
 <style lang="scss" scoped>
+
 .mainIndexText {
   width: 100%;
   height:100%;
@@ -1196,7 +1416,7 @@
   }
   // 进度条
   .progress {
-    width: 80%;
+    width: 95%;
     height: 8px;
     background-color: rgba(255,255,255,0.3);
     .progress-bar {
@@ -1258,16 +1478,27 @@
             background: #000 url('../../../assets/bg_img.jpg');
             background-size: 100%;
             .top_ul {
-                height: 40px;
+                position: absolute;
+                left: 0;
+                top: 0px;
                 ul {
                     li {
                         float: left;
                         width:100px;
-                        height:40px;
+                        line-height:40px;
                         background:rgba(23,28,51,0.3);
                         text-align: center;
                         color: #4CF0FE;
                         margin-right: 2px;
+                    }
+                    li:hover {
+                        cursor: pointer;
+                        background-color: rgba(76,240,254,0.7);
+                        color:#fff;
+                    }
+                    .active {
+                        background-color: rgba(76,240,254,0.7);
+                        color:#fff;
                     }
                 }
             }
@@ -1429,7 +1660,7 @@
         }
         .color_time {
             position: absolute;
-            width: 80%;
+            width: 32%;
             height: 4px;
             top: -4px;
             background: linear-gradient(90deg,rgba(0,242,159,0.28) 0%,rgba(76,240,254,1) 100%);
