@@ -50,9 +50,9 @@ export default {
       tabData:[
         {text:'指挥中心',path:'/'},
         {text:'人员管理',path:'/userManager'},
-        {text:'机械管理',path:'/'},
+        {text:'机械管理',path:'/manageMachine'},
         {text:'物料管理',path:'/materialAcceptance'},
-        {text:'生产进度',path:'/'},
+        {text:'生产进度',path:'/productionProgress'},
         {text:'质量管理',path:'/qualityManage'},
         {text:'现场安全',path:'/siteSafety'},
         {text:'AIOT',path:'/'},

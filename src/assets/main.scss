@@ -229,6 +229,9 @@
   .bad{
     color: #FC0C59;
   }
+  .warn{
+    color: rgba(254, 223, 80, 1);
+  }
   * {
     box-sizing: border-box;
   }
@@ -259,7 +262,9 @@
      font-size: 12px;
 
   }
-
+  .table th{
+    background:rgba(38,44,74,1)
+  }
   .cixu {
     color: rgba(122, 155, 191, 1);
     font-family: DINAlternate-Bold;
@@ -267,7 +272,6 @@
 
   table th {
     color: #4CBDFE;
-   
 
     span {
       color: rgba(76, 189, 254, 0.5);
@@ -321,7 +325,19 @@
     background: rgba(40, 54, 100, 1);
     padding-left: 10px;
     line-height: 40px;
-    
+    .title-right{
+      .number{
+        font-size: 24px;
+        color: rgba(76, 240, 254, 1);
+        margin:0 5px;
+      }
+      .eqt{
+        font-size: 12px;
+        display: inline-block;
+        height:35px;
+        color: rgba(118, 208, 223, 1);
+      }
+    }
 
     .text {
       display: inline-block;
@@ -469,7 +485,7 @@
 
   .media-body {
     .media-header {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
 
       label {
         background: rgba(76, 240, 254, 0.2);
@@ -487,17 +503,16 @@
     .media-content {
       font-size: 12px;
       line-height: 18px;
-      height:40px;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp:1;
       overflow: hidden;
     }
 
     .media-footer {
       font-size: 12px;
       line-height: 17px;
-      margin-top: 10px;
+      margin-top: 5px;
     }
 
   }
@@ -535,15 +550,16 @@
 .weather-warning{
   color: #FEDF50;
   font-size: 12px;
-  width: 300px;
+  width: 350px;
   margin-left: 20px;
   height: 20px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
   p {
     position: absolute;
     top: 0;
-    left: 300px;
+    left: 350px;
     display: block;
     word-break: keep-all;
     text-overflow: ellipsis;
@@ -562,4 +578,78 @@
 .swiper-pagination-bullet-active {
   background: rgba(255, 255, 255, 1);
   opacity: 1;
+}
+/*设备信息*/
+.dl-equipment{
+  margin:0 30px;
+  font-size:12px;
+  font-weight:500;
+  color:rgba(219,225,255,1);
+  line-height:17px;
+  text-align: left;
+  dt{
+    margin-bottom:10px;
+  }
+  .text{
+    color: #76D0DF;
+    font-size:24px;
+  }
+  .unit{
+    margin-left: 10px;
+  }
+}
+/*生产进度*/
+.product-top{
+  font-size: 12px;
+  dl.bi{
+    height: 70px;
+    line-height:17px;
+    color: rgba(219,225,255,1);
+    dd{
+     line-height: 39px;
+     span{
+       margin-right:10px;
+       i{
+         font-size: 12px;
+         font-weight: bold;
+       }
+     }
+    }
+  }
+}
+.jbox{
+  .jbox-title{
+    color:rgba(219,225,255,1);
+    line-height:17px;
+    font-size: 12px;
+  }
+  .jbox-content{
+    color:rgba(255,255,255,1);
+    .number{
+      font-size:36px;
+      font-weight:700;
+    }
+  }
+}
+.productionProgress{
+  .el-progress-circle{
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0,242,159,.7)
+  }
+  .el-progress--circle .el-progress__text {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 19px!important;
+    background: rgba(45, 241, 215, 0.6);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
 }

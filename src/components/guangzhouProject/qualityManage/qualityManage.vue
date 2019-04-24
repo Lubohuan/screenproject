@@ -1,9 +1,10 @@
 <template>
   <div class="qualityManage commonClass" style="height:100%;width:100%;">
+
     <div class="top_con flex_b">
       <div class="top_con_left">
         <!-- 质量目标 -->
-        <div style="height:264px;width:100%;margin-bottom:10px;">
+        <div style="height:262px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -61,7 +62,7 @@
           </div>
         </div>
         <!-- 质量问题分布 -->
-        <div style="height:382px;width:100%;margin-bottom:10px;">
+        <div style="height:380px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -91,7 +92,7 @@
           </div>
         </div>
         <!-- 质量问题统计 -->
-        <div style="height:276px;width:100%;">
+        <div style="height:274px;width:100%;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -104,7 +105,8 @@
         </div>
       </div>
       <div class="top_con_middle">
-        <div style="height:412px;width:100%;margin-bottom:10px;">
+        <!-- 轮播 -->
+        <div style="height:410px;width:100%;margin-bottom:10px;">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -134,37 +136,39 @@
           </div>
         </div>
         <!-- 重要工序任务 -->
-        <div style="height:234px;width:100%;margin-bottom:10px;">
+        <div style="height:232px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
               <span class="text">重要工序任务</span>
             </div>
             <div class="ibox-content" style="padding:0">
-              <div class>
-                <div class="inline-block" style="width:340px;"></div>
-                <div class="inline-block" style="width:440px;padding:20px;">
+              <div class="flex allHeight">
+                <div style="postion:relative;width:340px;height:100%;">
+                    <img src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
+                </div>
+                <div c style="width:440px;padding:20px;">
                   <ul class="list-unstyled list-task">
                     <li>
                       <span class="title">任务一：</span>
-                      <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
+                      <span class="content">4.1号须完成防水样板验收   负责人：工程管理部   谭楚才</span>
                     </li>
                     <li>
                       <span class="title">任务二：</span>
-                      <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
+                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收   负责人：工程管理部  杨佳雄</span>
                     </li>
                     <li>
                       <span class="title">任务三：</span>
-                      <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
+                      <span class="content">4.30须完成锚杆验收    负责人：尹鑫</span>
                     </li>
-                    <li>
+                    <!-- <li>
                       <span class="title">任务四：</span>
                       <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
                     </li>
                     <li>
                       <span class="title">任务五：</span>
                       <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -172,7 +176,7 @@
           </div>
         </div>
         <!-- 表格今日完成 -->
-        <div style="height:276px;width:100%;">
+        <div style="height:274px;width:100%;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -347,13 +351,13 @@
       <!-- right start -->
       <div class="top_con_right">
         <!-- 绿色施工 -->
-        <div style="height:187px;width:100%;margin-bottom:10px;">
+        <div style="height:185px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
               <span class="text">绿色施工</span>
-              <div  id="textPcontainer" class="weather-warning">
-                <p id="textP">砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
+              <div id="textPcontainer" class="weather-warning">
+                <p id="textP"  >砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
               </div>
             </div>
             <div class="ibox-content">
@@ -439,7 +443,7 @@
                     <p
                       class="font12 text-center"
                       style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                    >雨</p>
+                    >雨<img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                   </div>
                   <!-- 大后天 -->
                   <div class="flex column ai-center flex-1">
@@ -507,7 +511,7 @@
           </div>
         </div>
         <!-- 工作动态 -->
-        <div style="height:459px;width:100%;margin-bottom:10px;">
+        <div style="height:457px;width:100%;margin-bottom:10px;">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -544,7 +548,7 @@
                   <img src alt>
                 </div>
               </div>
-              <div class="media">
+              <div class="media" style="margin:0 0 3px 0;">
                 <div class="media-body">
                   <div class="media-header">
                     <label>质量检查</label>
@@ -559,11 +563,26 @@
                   <img src alt>
                 </div>
               </div>
+              <div class="media">
+                <div class="media-body">
+                  <div class="media-header">
+                    <label>质量检查</label>
+                    <span class="inline-block">底版</span>
+                  </div>
+                  <div class="media-content">
+                    <span>检查人尹鑫检查了底板防水层，无问题</span>
+                  </div>
+                  <div class="media-footer">2019-04-09 14:24</div>
+                </div>
+                <div class="media-right">
+                  <img src alt>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <!-- 分包单位排行榜 -->
-        <div style="height:276px;width:100%">
+        <div style="height:274px;width:100%">
           <div class="ibox">
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
@@ -701,7 +720,7 @@
   </div>
 </template>
 <script>
-import $ from 'jquery'
+import scrollfunc from '../../public/all';
 import Swiper from "swiper";
 import { setTimeout } from 'timers';
 export default {
@@ -714,28 +733,21 @@ export default {
   },
   methods: {
     textScroll(){
-     var timer = setTimeout(()=>{
-       this.marquee()
-     },1000)
-    },
-    marquee() {
-        var scrollWidth = $('#textPcontainer').width();
+       var scrollWidth = $('#textPcontainer').width();
         var textWidth = $('#textP').width();
         if(textWidth>scrollWidth){
-          $('#textP').css("left",300);
-          var i = scrollWidth;
-          this.intervalTimer = setInterval(function() {
-              i--;
-              if(i < -textWidth ) {
-                  i = scrollWidth;
-              }
-              $('#textP').animate({'left': i+'px'}, 20);
-          }, 20);
+           $("#textPcontainer").textScroll()
         }else{
-          $('#textP').css("left",0);
+           $('#textP').css("left",0);
         }
-        
     },
+    textEnter(){
+      //clearInterval(this.intervalTimer);
+    },
+    textLeave(){
+     // this.marquee()
+    },
+   
     drawLine() {
       var myChart = this.$echarts.init(document.getElementById("echart-line"));
       var option = {
@@ -1161,7 +1173,6 @@ export default {
     }
   },
   created() {
-    
   },
   mounted() {
     var mySwiper = new Swiper(".swiper-container", {
@@ -1182,11 +1193,9 @@ export default {
     });
     this.drawLine();
     this.drawPie();
-    this.textScroll()
-  },
-  beforeDestroy () {
-   clearInterval(this.intervalTimer)
+    this.textScroll();
   }
+ 
 };
 </script>
 <style lang="scss" scoped>
