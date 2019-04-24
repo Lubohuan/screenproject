@@ -49,40 +49,57 @@
                         </div>
                     </div>
                </div>
-               <div style="height:235px;width:100%;margin-bottom:10px;">
+               <div style="height:235px;width:100%;margin-bottom:10px;position:relative;">
                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         人员管理
                         <span class="font12" style="color:#FEDF50;margin-left:12px;">注意：假期提醒（5.1劳动节，注意劳务稳定性）</span>
+                        
+                        <div style="float:right;line-height:28px;margin-top:6px;margin-right:18px;">
+                            <span style="padding:1px 16px;background-color: #4cbdfe;color: #000;border: 0;color:#fff;cursor:pointer" @click="alertPersonInfo()">详情</span>
+                        </div>
                     </div>
-                    <!-- <div class="bg padding10">
+                    <div class="bg padding10">
                         <table class="font12" style="width:100%;color:#DBE1FF">
-                            <tr style="text-align:center"><td >人员偏量</td><td>少5人</td><td>在场人数</td><td>50人</td><td>计划人数</td><td>45人</td></tr>
-                            <tr style="background:rgba(255,255,255,0.15);text-align:center"><td >累计用工</td><td>1500人/日</td><td>人效同比昨日</td><td class="down_data">5%↓</td><td>连续7日工效</td><td class="up_data">2%↑</td></tr>
-                            <tr style="text-align:center"><td >A区偏量</td><td colspan="3">
+                            <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue">33</span> 人</td><td >人员偏量</td><td><span class="font28 color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 color_blue">35</span>人</td></tr>
+                            <tr style="background:rgba(255,255,255,0.15);text-align:center"><td class="color_blue1">累计用工</td><td>35人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
+                            <tr style="text-align:center"><td >一区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_a" style="width:110%"></div>
                                 </div>
-                                </td><td>多2人</td><td></td></tr>
-                            <tr style="text-align:center"><td >B区偏量</td><td colspan="3">
+                                </td><td>无</td><td></td></tr>
+                            <tr style="text-align:center"><td >二区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_c" style="width:100%"></div>
                                 </div>
                                 </td><td>无</td><td></td></tr>
-                            <tr style="text-align:center"><td >C区偏量</td><td colspan="3">
+                            <tr style="text-align:center"><td >三区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_d" style="width:90%"></div>
                                 </div>
-                                </td><td>少2人</td><td></td></tr>
-                            <tr style="text-align:center"><td >D区偏量</td><td colspan="3">
+                                </td><td>无</td><td></td></tr>
+                            <tr style="text-align:center"><td >四区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_b" style="width:75%"></div>
                                 </div>
-                                </td><td>多5人</td><td></td></tr>
+                                </td><td>无</td><td></td></tr>
                         </table>
-                        <p class="bigNum font12" style="margin-left:18px;">注意：D区人员偏离较大，请及时关注！</p>
-                    </div> -->
-                    <div class="bg padding10">
+                        <p class="bigNum font12" style="margin-left:18px;">注意：人员偏离较大时，请及时关注！</p>
+                    </div>
+                    <div style="position:absolute;left:542px;top:0px;z-index:999;width:710px;background:#283664">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                            人员列表
+                        </div>
+                        <div class="bg padding10">
+                            <table style="width:100%;border-collapse:collapse;">
+                                <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>物资类型</td><td>内容概述</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
+                                <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>钢材</td><td>151.52</td><td>151.52</td><td>30</td><td class="color_yellow">0%</td></tr>
+                                <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>商品混凝土</td><td>177</td><td>177</td><td>30</td><td class="color_yellow">0%</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <div class="bg padding10">
                          <div class="flex" style="height:66px">
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">在册人数</div>
@@ -143,7 +160,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                </div>
                <div style="height:130px;width:100%;">
                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
@@ -456,17 +473,17 @@
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         安全管理
-                        <span class="font12" style="color:#4CF0FE;margin-left:12px;">整改率：90% +3% 累计检查：18590次</span>
+                        <span class="font12" style="color:#4CF0FE;margin-left:12px;">整改率：100% 累计检查：131次</span>
                     </div>
                     <div class="bg padding10">
                         <div class="flex">
                             <div class="flex1 font12 marginL30">
                             <div>今日重大危险源</div>
-                            <div><span class="font28 bigNum">6</span></div>
+                            <div><span class="font28 bigNum">2</span></div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div>今日危险作业</div>
-                            <div><span class="font28 bigNum">6</span></div>
+                            <div><span class="font28 bigNum">2</span></div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div>超期隐患</div>
@@ -474,7 +491,7 @@
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div>未销重大隐患</div>
-                            <div><span class="font28 bigNum">60</span></div>
+                            <div><span class="font28 bigNum">0</span></div>
                             </div>
                         </div>
                         <!-- <div id="goodsChart" :style="{width: '100%', height: '175px'}"></div> -->
@@ -515,13 +532,11 @@
                     <div id="myChart" :style="{width: '100%', height: '162px'}"></div>
                 </div> -->
                 
-                <div class="bg padding10">
+                <div class="bg padding10" style="height:204px">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>物资名称</td><td>发货量（吨）</td><td>验收量（吨）</td><td>验收量（吨）</td><td>偏差率</td></tr>
-                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>作业类型1</td><td>5</td><td>30</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>物资名称</td><td>发货量（吨）</td><td>验收量（吨）</td><td>偏差率</td></tr>
+                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>钢材</td><td>151.52</td><td>151.52</td><td class="color_yellow">0%</td></tr>
+                        <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>商品混凝土</td><td>177</td><td>177</td><td class="color_yellow">0%</td></tr>
                     </table>
                 </div>
            </div>
@@ -530,7 +545,7 @@
                     <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                     今日完成
                 </div>
-               <div class="bg padding10">
+               <!-- <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>工程量</td><td>安全</td><td>质量</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td class="color_red"><i class="i_red"></i>2345m²</td><td><i class="i_yellow"></i>检查6次 未消项1个</td><td><i class="i_red"></i>验收6次 未通过1个</td><td rowspan="4"><i class="i_red"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
@@ -538,6 +553,10 @@
                         <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td class="color_yellow"><i class="i_yellow"></i>2345m²</td><td><i class="i_green"></i>检查6次 未消项1个</td><td><i class="i_yellow"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td class="color_green"><i class="i_green"></i>2345m²</td><td><i class="i_red"></i>检查6次 未消项1个</td><td><i class="i_green"></i>验收6次 未通过1个</td><td><i class="i_red"></i>重大风险源 监理验收</td><td>缺少劳务人6人</td></tr>
                     </table>
+                </div> -->
+                
+                <div class="bg padding10" style="padding-top:15px">
+                    <div id="goodsChart" style="width:100%;height:200px"></div>
                 </div>
            </div>
            <div style="height:100%;width:540px;">
@@ -567,15 +586,19 @@
             return {
                 camera:'',
                 indexItem:-1,
-                hiddenIndexItem:-1
+                hiddenIndexItem:-1,
+                alertPersonInfoShow:false
             }
         },
         mounted(){
             this.drawLine();
             this.drawPie();
-            // this.goodsChart();
+            this.goodsChart();
         },
         methods: {
+            alertPersonInfo(){
+                this.alertPersonInfoShow = true;
+            },
             openPic(index){
                 if(this.indexItem == index){
                     this.indexItem = -1;
@@ -847,7 +870,7 @@
                         }
                     },
                     legend: {
-                        data: ['发货量', '收料量'],
+                        data: ['平整度', '垂直度', '截面尺寸'],
                         align: 'left',
                         left: 10,
                         textStyle: {
@@ -865,14 +888,10 @@
                     },
                     xAxis: [{
                         type: 'category',
-                        data: ['钢筋',
-                            '螺纹钢',
+                        data: [
                             '混凝土',
                             '砂子',
-                            '模版',
-                            '砂子',
-                            '砌块',
-                            '砖块',
+                            '模版'
                         ],
                         axisLine: {
                             show: true,
@@ -893,6 +912,7 @@
                         },
                     }],
                     yAxis: [{
+                        name:'(合格率)',
                         type: 'value',
                         axisLabel: {
                             formatter: '{value}'
@@ -915,7 +935,7 @@
                         }
                     }],
                     series: [{
-                        name: '发货量',
+                        name: '平整度',
                         type: 'bar',
                         data: [20, 50, 80, 58, 83, 68, 57, 80],
                         barWidth: 10, //柱子宽度
@@ -933,7 +953,7 @@
                             }
                         }
                     }, {
-                        name: '收料量',
+                        name: '垂直度',
                         type: 'bar',
                         data: [50, 70, 60, 61, 75, 87, 60, 62],
                         barWidth: 10,
@@ -946,6 +966,24 @@
                                 }, {
                                     offset: 0,
                                     color: '#03f2a3'
+                                }]),
+                                opacity: 1,
+                            }
+                        }
+                    }, {
+                        name: '截面尺寸',
+                        type: 'bar',
+                        data: [50, 70, 60, 61, 75, 87, 60, 62],
+                        barWidth: 10,
+                        barGap: 1,
+                        itemStyle: {
+                            normal: {
+                                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                    offset: 1,
+                                    color: '#E07C76'
+                                }, {
+                                    offset: 0,
+                                    color: '#DF5CB4'
                                 }]),
                                 opacity: 1,
                             }

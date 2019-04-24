@@ -408,6 +408,20 @@ export default {
     }
   },
   methods: {
+    openPic(index){
+        if(this.indexItem == index){
+            this.indexItem = -1;
+        }else{
+            this.indexItem = index;
+        }
+    },
+    openhidden(index){
+        if(this.hiddenIndexItem == index){
+            this.hiddenIndexItem = -1;
+        }else{
+            this.hiddenIndexItem = index;
+        }
+    },
     drawPie () {
       var myChart = this.$echarts.init(document.getElementById("echart-pie"));
 
