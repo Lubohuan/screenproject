@@ -113,11 +113,15 @@
     display: flex;
     align-items: center;
     padding: 0 45px;
+    margin: 50px 0;
     justify-content: space-between;
     .top_con_middle_bar_each_text{
       font-size:14px;
       font-weight:500;
-      color:rgba(219,225,255,1)
+      color:rgba(219,225,255,1);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
 }

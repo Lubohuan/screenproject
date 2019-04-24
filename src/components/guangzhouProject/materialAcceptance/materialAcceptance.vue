@@ -1,5 +1,5 @@
 <template>
-  <div style="height:100%;width:100%;">
+  <div class="huling" style="height:100%;width:100%;">
     <div class="top_con flex_b">
       <div class="top_con_left">
         <div style="height:185px;width:100%;background-color:#1D284D;margin-bottom:10px;">
@@ -69,7 +69,9 @@
             </div>
           </div>
           <div style="padding: 11px 15px">
-            <img src="../../../assets/mate-one.png" alt="">
+            <div class="ibox-content" style="margin-top: 10px">
+              <div id="echart-twoline" style="width:100%;height:150px"></div>
+            </div>
           </div>
         </div>
         <div style="height:248px;width:100%;background-color:#1D284D;margin-bottom:10px;">
@@ -78,44 +80,35 @@
               <img src="../../../assets/safe-time.png" alt="">
               <h5>物资收量偏差分析</h5>
             </div>
-            <div class="timeSelect">
-              <p>本月</p>
-              <p>累计</p>
-            </div>
+<!--            <div class="timeSelect">-->
+<!--              <p>本月</p>-->
+<!--              <p>累计</p>-->
+<!--            </div>-->
           </div>
           <div class="table" style="margin-top: 10px">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
               <thead>
                 <tr>
                   <th>物资名称</th>
-                  <th >发货量（吨）</th>
-                  <th>验收量（吨）</th>
+                  <th >单位</th>
+                  <th >发货量</th>
+                  <th>验收量</th>
                   <th>偏差率<p class="triangle"></p></th>
                 </tr>
               </thead>
               <tr>
-                <td>作业类型1</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
+                <td>钢材</td>
+                <td>吨</td>
+                <td>151.52</td>
+                <td>151.52</td>
+                <td><span style="color: #FEDF50">0%</span></td>
               </tr>
               <tr>
-                <td>作业类型1</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
-              </tr>
-              <tr>
-                <td>作业类型1</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
-              </tr>
-              <tr>
-                <td>作业类型1</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
+                <td>商品混凝土</td>
+                <td>立方米</td>
+                <td>177</td>
+                <td>177</td>
+                <td><span style="color: #FEDF50">0%</span></td>
               </tr>
             </table>
           </div>
@@ -124,7 +117,7 @@
           <div class="top_con_right_title">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5>工作考核统计分析</h5>
+              <h5>工作考勤数据</h5>
             </div>
           </div>
           <div class="table" style="margin-top: 10px">
@@ -137,29 +130,11 @@
                   <th>滞签率<p class="triangle"></p></th>
                 </tr>
               </thead>
-              <tr>
-                <td>螺旋丸</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
-              </tr>
-              <tr>
-                <td>螺旋丸</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
-              </tr>
-              <tr>
-                <td>螺旋丸</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
-              </tr>
-              <tr>
-                <td>螺旋丸</td>
-                <td>5</td>
-                <td>30</td>
-                <td><span style="color: #FEDF50">0.2%</span></td>
+              <tr v-for="(item,index) in value2" :key="index">
+                <td>{{item.title}}</td>
+                <td>{{item.ysd}}</td>
+                <td>{{item.zqd}}</td>
+                <td><span style="color: #FEDF50">{{item.zql}}</span></td>
               </tr>
             </table>
           </div>
@@ -174,14 +149,15 @@
               <h5 style="height: 39px;line-height: 39px" v-bind:class="{ active: !boxOne }" @click="boxOne=false">物资使用趋势</h5>
             </div>
           </div>
-          <div class="top_con_middle_bar" v-show="boxOne">
+          <div class="top_con_middle_bar" v-show="boxOne" style="margin-top: 50px">
             <div class="top_con_middle_bar_each" v-for="(item, index) in progressData" :key="index">
-              <div class="top_con_middle_bar_each_text" style="width: 60px">{{item.title}}</div>
+              <div class="top_con_middle_bar_each_text" style="width: 120px">{{item.title}}</div>
               <el-progress :percentage="item.progress" :stroke-width="10" :show-text="false" :color="item.color" style="flex: 1;margin-right: 30px"></el-progress>
-              <div class="top_con_middle_bar_each_text">{{item.total}}</div>
+              <div class="top_con_middle_bar_each_text" style="width: 80px">{{item.total}}</div>
             </div>
           </div>
-          <div id="echart-line" style="width:790px;height:320px" v-show="!boxOne"></div>
+          <div id="echart-line" style="width:790px;height:320px" v-show="!boxOne">
+          </div>
         </div>
         <div style="height:308px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="table" style="padding-top: 20px">
@@ -190,52 +166,59 @@
                 <tr>
                   <th>物资名称</th>
                   <th>规格型号</th>
-                  <th >入库总量（吨）</th>
-                  <th>出库总（吨）</th>
-                  <th>库存余量（吨）</th>
+                  <th >单位</th>
+                  <th >入库总量</th>
+                  <th>出库总</th>
+                  <th>库存余量</th>
                 </tr>
               </thead>
               <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>300</td>
-                <td>120</td>
-                <td><span style="color: #00F7BD">180</span></td>
+                <td>商品混凝土</td>
+                <td>C20</td>
+                <td>立方米</td>
+                <td>2357</td>
+                <td>2357</td>
+                <td><span style="color: #00F7BD">0</span></td>
               </tr>
               <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>300</td>
-                <td>120</td>
-                <td><span style="color: #00F7BD">180</span></td>
+                <td>商品混凝土</td>
+                <td>C20细石</td>
+                <td>立方米</td>
+                <td>96</td>
+                <td>96</td>
+                <td><span style="color: #00F7BD">0</span></td>
               </tr>
               <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>300</td>
-                <td>120</td>
-                <td><span style="color: #00F7BD">180</span></td>
+                <td>商品混凝土</td>
+                <td>C30</td>
+                <td>立方米</td>
+                <td>381</td>
+                <td>381</td>
+                <td><span style="color: #00F7BD">0</span></td>
               </tr>
               <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>300</td>
-                <td>120</td>
-                <td><span style="color: #00F7BD">180</span></td>
+                <td>商品混凝土</td>
+                <td>润管砂浆</td>
+                <td>立方米</td>
+                <td>11</td>
+                <td>11</td>
+                <td><span style="color: #00F7BD">0</span></td>
               </tr>
               <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>300</td>
-                <td>120</td>
-                <td><span style="color: #00F7BD">180</span></td>
+                <td>三级盘螺</td>
+                <td>C8</td>
+                <td>吨</td>
+                <td>1.97</td>
+                <td>1.97</td>
+                <td><span style="color: #00F7BD">0</span></td>
               </tr>
               <tr>
-                <td>抗震螺纹钢</td>
-                <td>HRB400ESO</td>
-                <td>300</td>
-                <td>120</td>
-                <td><span style="color: #00F7BD">180</span></td>
+                <td>三级螺纹钢</td>
+                <td>C12</td>
+                <td>吨</td>
+                <td>13.58</td>
+                <td>13.58</td>
+                <td><span style="color: #00F7BD">0</span></td>
               </tr>
             </table>
           </div>
@@ -247,16 +230,9 @@
               <h5>物资消耗情况</h5>
             </div>
             <div class="title_right" style="display: flex;align-items: center;">
-              <el-select v-model="value" placeholder="钢材" id="title_right">
-                <el-option
-                  id="selectBox"
-                  v-for="item in options"
-                  :key="item.value"
-                  :label="item.label"
-                  :value="item.value">
-                </el-option>
-              </el-select>
-              <div style="font-size: 12px;margin-left: 10px">单位 : 吨</div>
+<!--              <el-select v-model="value" placeholder="钢材" id="title_right">-->
+<!--              </el-select>-->
+              <div style="font-size: 12px;margin-left: 10px;display: flex;align-items: center"><p style="border: 1px solid rgba(118,208,223,1);padding: 4px">物资类型 : 钢材</p>&nbsp;&nbsp;&nbsp;&nbsp; 单位 : 吨</div>
             </div>
           </div>
           <div class="table" id="scolTab" style="margin-top: 10px;flex: 1;overflow: hidden">
@@ -274,15 +250,15 @@
                 </tr>
               </thead>
               <tbody style="overflow-y: auto;">
-                <tr v-for="(item,index) in 15" :key="index">
-                  <td>抗震螺纹钢</td>
-                  <td>HRB400ESO</td>
-                  <td>30</td>
-                  <td>30</td>
-                  <td>12</td>
-                  <td>4</td>
-                  <td><span style="color: #FEDF50">30%</span></td>
-                  <td><span style="color: #FC0C59">30%</span></td>
+                <tr v-for="(item,index) in value1" :key="index">
+                  <td>{{item.title}}</td>
+                  <td>{{item.xh}}</td>
+                  <td>{{item.lyl}}</td>
+                  <td>{{item.jhl}}</td>
+                  <td>{{item.tzl}}</td>
+                  <td>{{item.cl}}</td>
+                  <td><span style="color: #FEDF50">{{item.lyb}}</span></td>
+                  <td><span style="color: #FC0C59">{{item.clb}}</span></td>
                 </tr>
               </tbody>
             </table>
@@ -298,61 +274,61 @@
             </div>
           </div>
           <div class="ibox-content flex column" style="background: transparent;padding:0;">
-            <div class="media">
+            <div class="media" style="position: relative;padding: 18px 10px">
               <div class="media-body">
                 <div class="media-header">
                   <label>物资验收</label>
-                  <span class="inline-block">施工一区</span>
+                  <span class="inline-block">广州金控总部大楼项目</span>
                 </div>
                 <div class="media-content">
                             <span>
-                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
+                                广州金控总部大楼项目收料员孙宗瑞和龙震江验收了钢筋等物资
                             </span>
                 </div>
                 <div class="media-footer">
-                  2019.01.10 23:23
+                  2019.04.12 11:20
                 </div>
               </div>
-              <div class="media-right">
-                <img src="" alt="">
+              <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
+                <img src="../../../assets/mate-gz1.png" height="80" alt="">
               </div>
             </div>
-            <div class="media">
+            <div class="media" style="position: relative;padding: 18px 10px">
               <div class="media-body">
                 <div class="media-header">
                   <label>物资验收</label>
-                  <span class="inline-block">施工一区</span>
+                  <span class="inline-block">广州金控总部大楼项目</span>
                 </div>
                 <div class="media-content">
                             <span>
-                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
+                                广州金控总部大楼项目收料员孙宗瑞和龙震江验收了钢筋等物资
                             </span>
                 </div>
                 <div class="media-footer">
-                  2019.01.10 23:23
+                  2019.04.12 11:20
                 </div>
               </div>
-              <div class="media-right">
-                <img src="" alt="">
+              <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
+                <img src="../../../assets/mate-gz1.png" height="80" alt="">
               </div>
             </div>
-            <div class="media">
+            <div class="media" style="position: relative;padding: 18px 10px">
               <div class="media-body">
                 <div class="media-header">
                   <label>物资验收</label>
-                  <span class="inline-block">施工一区</span>
+                  <span class="inline-block">广州金控总部大楼项目</span>
                 </div>
                 <div class="media-content">
                             <span>
-                                检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查了盾构区间 无问题。检查人胡光耀检查了盾构区间，无问题。检查人胡光耀检查。
+                                广州金控总部大楼项目收料员孙宗瑞和龙震江验收了钢筋等物资
                             </span>
                 </div>
                 <div class="media-footer">
-                  2019.01.10 23:23
+                  2019.04.12 11:20
                 </div>
               </div>
-              <div class="media-right">
-                <img src="" alt="">
+              <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
+                <img src="../../../assets/mate-gz1.png" height="80" alt="">
               </div>
             </div>
           </div>
@@ -366,18 +342,43 @@
             </div>
           </div>
           <div style="padding: 40px 26px 0;" v-if="boxTwo">
-            <img src="../../../assets/mate-two.png" alt="">
+            <div class="flex1 flex" style="justify-content: space-around">
+              <div class="cir_time marginR30">
+                <el-progress type="circle" :percentage="0" color="#42BBFF" :width="100" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                <div class="text_loc text_center font12" style="top: 74px;">供应商数</div>
+                <div class="time_size1" style="font-size: 12px;top:18px;left: 26px">1星-2星</div>
+                <div class="night_process" style="text-align: center;color: #42BBFF">0</div>
+              </div>
+              <div class="cir_time marginR30">
+                <el-progress type="circle" :percentage="0" color="#E07C76" :width="100" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                <div class="text_loc text_center font12" style="top: 74px;">供应商数 </div>
+                <div class="time_size1" style="font-size: 12px;top:18px;left: 26px">2星-3星</div>
+                <div class="night_process" style="text-align: center;color: #E07C76">0</div>
+              </div>
+              <div class="cir_time marginR30">
+                <el-progress type="circle" :percentage="100" color="#FFC400" :width="100" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                <div class="text_loc text_center font12" style="top: 74px;">供应商数</div>
+                <div class="time_size1" style="font-size: 12px;top:18px;left: 26px">3星-4星</div>
+                <div class="night_process" style="text-align: center;color: #FFC400">14</div>
+              </div>
+              <div class="cir_time marginR30">
+                <el-progress type="circle" :percentage="0" color="#2FD695" :width="100" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                <div class="text_loc text_center font12" style="top: 74px;">供应商数 </div>
+                <div class="time_size1" style="font-size: 12px;top:18px;left: 26px">4星-5星</div>
+                <div class="night_process" style="text-align: center;color: #2FD695">0</div>
+              </div>
+            </div>
           </div>
           <div class="pactStatus" v-if="!boxTwo">
             <div class="table" id="myTable4">
-              <table width="180" cellpadding="0" cellspacing="0" style="table-layout: auto;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
                 <tr>
-                  <td>合同验收金额</td>
-                  <td>结算金额</td>
+                  <td  style="text-align: center">合同验收金额</td>
+                  <td  style="text-align: center">结算金额</td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">120</span>万</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">60</span>万</td>
+                  <td  style="text-align: center"><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">424.89</span>万</td>
+                  <td  style="text-align: center"><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">160.97</span>万</td>
                 </tr>
               </table>
             </div>
@@ -406,7 +407,7 @@
             </div>
           </div>
           <div style="padding: 23px 16px 0;" v-if="boxThree">
-            <img src="../../../assets/mate-three.png" alt="">
+            <div id="echart-linesss" style="width:500px;height:180px"></div>
           </div>
           <div style="padding: 23px 16px 0;" v-if="!boxThree">
             <img src="../../../assets/mate-three-a.png" alt="">
@@ -421,67 +422,90 @@ export default {
   name: 'materialAcceptance',
   data () {
     return {
-      options: [{
-        value: '选项1',
-        label: '水管'
-      }, {
-        value: '选项2',
-        label: '模板'
-      }, {
-        value: '选项3',
-        label: '砂子'
-      }, {
-        value: '选项4',
-        label: '混凝土'
-      }, {
-        value: '选项5',
-        label: '圆钢'
-      }],
+      options: [],
       value: '',
       //控制本页视窗容器切换
       boxOne: true,
       boxTwo: true,
       boxThree: true,
+      value1: [
+        {title: '自粘聚合物',
+          xh: '3.0MM*1M*10M',
+          lyl: 1500,
+          jhl: 1500,
+          tzl: 0,
+          cl: 0,
+          lyb: '100%',
+          clb: '0%'
+        }, {title: '自粘聚合物',
+          xh: '4.0MM*1M*8M',
+          lyl: 1000,
+          jhl: 1000,
+          tzl: 0,
+          cl: 0,
+          lyb: '100%',
+          clb: '0%'
+        }, {title: '自粘聚合物',
+          xh: '3.0MM*1M*10M',
+          lyl: 500,
+          jhl: 500,
+          tzl: 0,
+          cl: 0,
+          lyb: '100%',
+          clb: '0%'
+        }, {title: '自粘聚合物',
+          xh: '3.0MM*1M*10M',
+          lyl: 2000,
+          jhl: 2000,
+          tzl: 0,
+          cl: 0,
+          lyb: '100%',
+          clb: '0%'
+        }
+      ],
+      value2: [
+        {title: '尹鑫',
+          ysd: '50',
+          zqd: 0,
+          zql: '0%'
+        }, {title: '孙宗瑞',
+          ysd: '3',
+          zqd: 0,
+          zql: '0%'
+        }, {title: '龙震江',
+          ysd: '1',
+          zqd: 0,
+          zql: '0%'
+        }
+      ],
       pactData: [
         {title: '合同禁用数',
           color: '#E07C76',
-          total: '5（次）',
-          progress: 60
+          total: '0（次）',
+          progress: 0
         }, {title: '合同超额数',
           color: '#2FD695',
-          total: '7（次）',
-          progress: 80
+          total: '0（次）',
+          progress: 0
         }, {title: '合同总数',
           color: '#FFC400',
-          total: '25（份）',
-          progress: 100
+          total: '22（份）',
+          progress: 20
         }
       ],
       progressData: [
-        {title: '钢筋',
+        {title: '三级螺纹钢',
           color: '#42BBFF',
-          total: '50/100（吨）',
+          total: '吨',
           progress: 60
-        }, {title: '螺纹钢',
+        }, {title: '商品混凝土',
           color: '#2FD695',
-          total: '50/100（吨）',
+          total: '立方米',
           progress: 80
-        }, {title: '砂子',
+        }, {title: '自粘聚合物性沥青防水卷材单面',
           color: '#FFC400',
-          total: '50/100（吨）',
+          total: '平方米',
           progress: 40
-        }, {title: '模板',
-          color: '#E07C76',
-          total: '50/100（吨）',
-          progress: 60
-        }, {title: '混凝土',
-          color: '#8BC644',
-          total: '50/100（吨）',
-          progress: 20
-        }, {title: '圆钢',
-          color: '#51F6F0',
-          total: '50/100（吨）',
-          progress: 90
         }
       ]
     }
@@ -497,7 +521,7 @@ export default {
           }
         },
         legend: {
-          data: ['钢筋', '螺纹钢', '砂子', '模板', '混凝土', '圆钢'],
+          data: ['商品混凝土', '钢筋', '防水卷材'],
           align: 'left',
           left: 20,
           top:10,
@@ -516,7 +540,7 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+          data: ['1月', '2月', '3月', '4月'],
           axisLine: {
             show: true,
             lineStyle: {
@@ -605,15 +629,9 @@ export default {
           }
         }],
         series: [{
-          name: '钢筋',
+          name: '商品混凝土',
           type: 'line',
-          data: (function() {
-            var d = [];
-            for (let i = 0; i < 12; i++) {
-              d.push(parseInt(Math.random() * (100 - 50 + 1) + 50, 10));
-            }
-            return d;
-          })(),
+          data: [1968, 3000, 816, 177],
           itemStyle: {
             normal: {
               color: '#FC0C59',
@@ -628,15 +646,9 @@ export default {
             }
           }
         }, {
-          name: '螺纹钢',
+          name: '钢筋',
           type: 'line',
-          data: (function() {
-            var d = [];
-            for (let i = 0; i < 12; i++) {
-              d.push(parseInt(Math.random() * (90 - 40) + 40, 10));
-            }
-            return d;
-          })(),
+          data: [0, 81.3, 27.22, 131.57],
           itemStyle: {
             normal: {
               color: '#28AB81',
@@ -651,15 +663,9 @@ export default {
             }
           },
         }, {
-          name: '砂子',
+          name: '防水卷材',
           type: 'line',
-          data: (function() {
-            var d = [];
-            for (let i = 0; i < 12; i++) {
-              d.push(parseInt(Math.random() * (80 - 30 + 1) + 30, 10));
-            }
-            return d;
-          })(),
+          data: [50, 40, 30, 20],
           itemStyle: {
             normal: {
               color: '#FEDF50',
@@ -674,64 +680,12 @@ export default {
             }
           }
         }, {
-          name: '模板',
+          name: '总金额',
           type: 'line',
-          data: (function() {
-            var d = [];
-            for (let i = 0; i < 12; i++) {
-              d.push(parseInt(Math.random() * (70 - 20 + 1) + 20, 10));
-            }
-            return d;
-          })(),
+          data: [ 118.8, 34.8, 54.77, 115.28 ],
           itemStyle: {
             normal: {
               color: '#E0699B',
-            }
-          },
-          lineStyle: {
-            normal: {
-              width: 2,
-              shadowColor: 'rgba(0,0,0,0.4)',
-              shadowBlur: 10,
-              shadowOffsetY: 10
-            }
-          }
-        },{
-          name: '混凝土',
-          type: 'line',
-          data: (function() {
-            var d = [];
-            for (let i = 0; i < 12; i++) {
-              d.push(parseInt(Math.random() * (80 - 30 + 1) + 30, 10));
-            }
-            return d;
-          })(),
-          itemStyle: {
-            normal: {
-              color: '#A1D35B',
-            }
-          },
-          lineStyle: {
-            normal: {
-              width: 2,
-              shadowColor: 'rgba(0,0,0,0.4)',
-              shadowBlur: 10,
-              shadowOffsetY: 10
-            }
-          }
-        },{
-          name: '圆钢',
-          type: 'line',
-          data: (function () {
-            var d = []
-            for (let i = 0; i < 12; i++) {
-              d.push(parseInt(Math.random() * (80 - 30 + 1) + 30, 10));
-            }
-            return d
-          })(),
-          itemStyle: {
-            normal: {
-              color: '#4CF0FE'
             }
           },
           lineStyle: {
@@ -749,12 +703,9 @@ export default {
         myChart.resize()
       })
     },
-    goodsChart (){
-      // 基于准备好的dom，初始化echarts实例
-      let myChart = this.$echarts.init(document.getElementById('goodsChart'))
-      // 绘制图表
-      myChart.setOption({
-        backgroundColor: '#1D284D',
+    drawLinesss () {
+      var myChart = this.$echarts.init(document.getElementById("echart-linesss"));
+      var option = {
         tooltip: {
           trigger: 'axis',
           axisPointer: {
@@ -762,9 +713,9 @@ export default {
           }
         },
         legend: {
-          data: ['重大隐患', '隐患统计'],
-          align: 'left',
-          left: 10,
+          data: ['收料预警数', '滞签预警数', '合同预警数','供应商预警数'],
+          align: 'right',
+          right: 10,
           textStyle: {
             color: "#fff"
           },
@@ -780,11 +731,10 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['工区一',
-            '工区二',
-            '工区三',
-            'AA隧道',
-            'BB隧道'
+          data: ['1月',
+            '2月',
+            '3月',
+            '4月'
           ],
           axisLine: {
             show: true,
@@ -827,48 +777,431 @@ export default {
           }
         }],
         series: [{
-          name: '重大隐患',
+          name: '收料预警数',
           type: 'bar',
-          data: [5, 10, 8, 4, 2],
+          data: [0, 0, 0, 0],
           barWidth: 10, //柱子宽度
           barGap: 1, //柱子之间间距
           itemStyle: {
             normal: {
               color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                offset: 1,
-                color: '#3db0fe'
-              }, {
                 offset: 0,
-                color: '#0a81d4'
+                color: 'rgba(0,153,239,0.8)'
+              }, {
+                offset: 1,
+                color: 'rgba(66,187,255,1)'
               }]),
               opacity: 1,
             }
           }
         }, {
-          name: '隐患统计',
+          name: '滞签预警数',
           type: 'bar',
-          data: [50, 70, 60, 61, 75, 87],
+          data: [0, 0, 0, 0],
           barWidth: 10,
           barGap: 1,
           itemStyle: {
             normal: {
               color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                offset: 1,
-                color: '#4af0fc'
-              }, {
                 offset: 0,
-                color: '#03f2a3'
+                color: 'rgba(39,161,125,1)'
+              }, {
+                offset: 1,
+                color: 'rgba(47,214,149,1)'
+              }]),
+              opacity: 1,
+            }
+          }
+        }, {
+          name: '合同预警数',
+          type: 'bar',
+          data: [0, 0, 0, 0],
+          barWidth: 10,
+          barGap: 1,
+          itemStyle: {
+            normal: {
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: 'rgba(216,185,42,1)'
+              }, {
+                offset: 1,
+                color: 'rgba(255,196,0,1)'
+              }]),
+              opacity: 1,
+            }
+          }
+        },{
+          name: '供应商预警数',
+          type: 'bar',
+          data: [0, 0, 0, 0],
+          barWidth: 10,
+          barGap: 1,
+          itemStyle: {
+            normal: {
+              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: 'rgba(223,92,180,1)'
+              }, {
+                offset: 1,
+                color: 'rgba(224,124,118,1)'
               }]),
               opacity: 1,
             }
           }
         }]
-      })
+      };
+      myChart.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
     },
+    drawLinetwo () {
+      var myChart1 = this.$echarts.init(document.getElementById("echart-linetwo"));
+      var option = {
+        color: ['#3398DB'],
+        tooltip : {
+          trigger: 'axis',
+          axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+          }
+        },
+        legend: {
+          data: ['验收金额'],
+          align: 'left',
+          left: 10,
+          textStyle: {
+            color: "#DBE1FF"
+          },
+          itemWidth: 20,
+          itemHeight: 10,
+          itemGap: 35
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis : [
+          {
+            type : 'category',
+            data : ['混凝土', '设备', '小五金', '钢材', '家具', '小五金', '配电箱'],
+            axisTick: {
+              alignWithLabel: true
+            }
+          }
+        ],
+        yAxis : [
+          {
+            type : 'value'
+          }
+        ],
+        series : [
+          {
+            name:'验收金额',
+            type:'bar',
+            barWidth: '30',
+            data:[160.97, 90.07, 60.89, 46.46, 18.94, 15.43, 11.60],
+          }
+        ]
+      };
+      myChart1.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
+    },
+    drawTwoLine () {
+      var myChart = this.$echarts.init(
+        document.getElementById("echart-twoline")
+      );
+      var option = {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            lineStyle: {
+              color: "#57617B"
+            }
+          }
+        },
+        legend: {
+          icon: "rect",
+          align: 'left',
+          left: 10,
+          itemWidth: 14,
+          itemHeight: 10,
+          itemGap: 13,
+          data: ["发料单数", "验收单数","验收金额（万）"],
+          right: "4%",
+          textStyle: {
+            fontSize: 12,
+            color: "#F1F1F3"
+          }
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true
+        },
+        xAxis: [
+          {
+            type: "category",
+            boundaryGap: false,
+            axisLine: {
+              //设置x轴的线
+              show: true,
+              lineStyle: {
+                //color: "#DBE1FF"
+              }
+            },
+            axisLabel: {
+              //设置x轴的字
+              textStyle: {
+                color: "#DBE1FF",
+                margin: 15
+              }
+            },
+            data: [
+              "1月",
+              "2月",
+              "3月",
+              "4月"
+            ]
+          }
+        ],
+        yAxis: [
+          {
+            type: "value",
+            axisTick: {
+              show: false
+            },
+            min: 0,
+            max: 350,
+            axisLine: {
+              //设置y轴的线
+              show: false,
+              lineStyle: {
+                color: "#DBE1FF"
+              }
+            },
+            axisLabel: {
+              //设置y轴的字
+              textStyle: {
+                color: "#DBE1FF",
+                //fontSize: 14,
+                margin: 15
+              }
+            },
+            splitLine: {
+              show: false,
+              lineStyle: {
+                color: "#57617B"
+              }
+            }
+          }
+        ],
+        series: [
+          {
+            name: "发料单数",
+            type: "line",
+            //smooth: true,
+            symbol: "circle",
+            symbolSize: 8,
+            lineStyle: {
+              normal: {
+                width: 0.5
+              }
+            },
+            areaStyle: {
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(
+                  0,
+                  0,
+                  0,
+                  1,
+                  [
+                    {
+                      offset: 0,
+                      color: "rgba(223,92,180,1)"
+                    },
+                    {
+                      offset: 0.8,
+                      color: "rgba(224,124,118,1)"
+                    }
+                  ],
+                  false
+                ),
+                shadowColor: "rgba(0, 0, 0, 0.1)",
+                shadowBlur: 10
+              }
+            },
+            itemStyle: {
+              normal: {
+                color: "rgba(223,92,180,1)"
+              }
+            },
+            // itemStyle: {
+            //     normal: {
+            //         color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            //             offset: 0,
+            //             color: 'rgba(252, 12, 89, 0.64)'
+            //         }, {
+            //             offset: 1,
+            //             color: 'rgba(252, 12, 89, 0)'
+            //         }])
+            //     },
+            //     emphasis: {
+            //     color: 'rgb(99,250,235)',
+            //     borderColor: 'rgba(99,250,235,0.2)',
+            //     extraCssText: 'box-shadow: 8px 8px 8px rgba(0, 0, 0, 1);',
+            //     borderWidth: 99
+            //   }
+            // },
+            data: [
+              9,
+              0,
+              32,
+              12
+            ]
+          },
+          {
+            name: "验收单数",
+            type: "line",
+            //smooth: true,
+            symbol: "circle",
+            symbolSize: 8,
+            lineStyle: {
+              normal: {
+                width: 0.5
+              }
+            },
+            areaStyle: {
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(
+                  0,
+                  0,
+                  0,
+                  1,
+                  [
+                    {
+                      offset: 0,
+                      color: "rgba(0,153,239,0.8)"
+                    },
+                    {
+                      offset: 0.8,
+                      color: "rgba(66,187,255,1)"
+                    }
+                  ],
+                  false
+                ),
+                shadowColor: "rgba(0, 0, 0, 0.1)",
+                shadowBlur: 10
+              }
+            },
+            itemStyle: {
+              normal: {
+                color: "rgba(0,153,239,0.8)"
+              }
+            },
+            // itemStyle: {
+            //     normal: {
+            //         color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            //             offset: 0,
+            //             color: 'rgba(116, 206, 214,.64)'
+            //         }, {
+            //             offset: 1,
+            //             color: 'rgba(116, 206, 214,0)'
+            //         }])
+            //     },
+            //     emphasis: {
+            //     color: 'rgb(99,250,235)',
+            //     borderColor: 'rgba(99,250,235,0.2)',
+            //     extraCssText: 'box-shadow: 8px 8px 8px rgba(0, 0, 0, 1);',
+            //     borderWidth: 10
+            // }
+            //},
+            data: [
+              9,
+              0,
+              32,
+              12
+            ]
+          },{
+            name: "验收金额（万）",
+            type: "line",
+            //smooth: true,
+            symbol: "circle",
+            symbolSize: 8,
+            lineStyle: {
+              normal: {
+                width: 0.5
+              }
+            },
+            areaStyle: {
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(
+                  0,
+                  0,
+                  0,
+                  1,
+                  [
+                    {
+                      offset: 0,
+                      color: "rgba(254,223,80,.6)"
+                    },
+                    {
+                      offset: 0.8,
+                      color: "rgba(254,223,80,.2)"
+                    }
+                  ],
+                  false
+                ),
+                shadowColor: "rgba(0, 0, 0, 0.1)",
+                shadowBlur: 10
+              }
+            },
+            itemStyle: {
+              normal: {
+                color: "rgba(254,223,80,.6)"
+              }
+            },
+            // itemStyle: {
+            //     normal: {
+            //         color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            //             offset: 0,
+            //             color: 'rgba(116, 206, 214,.64)'
+            //         }, {
+            //             offset: 1,
+            //             color: 'rgba(116, 206, 214,0)'
+            //         }])
+            //     },
+            //     emphasis: {
+            //     color: 'rgb(99,250,235)',
+            //     borderColor: 'rgba(99,250,235,0.2)',
+            //     extraCssText: 'box-shadow: 8px 8px 8px rgba(0, 0, 0, 1);',
+            //     borderWidth: 10
+            // }
+            //},
+            data: [
+              37.6,
+              0,
+              329.32,
+              46.46
+            ]
+          }
+        ]
+      };
+      myChart.setOption(option);
+      window.addEventListener("resize", () => {
+        myChart.resize();
+      });
+    }
   },
   mounted () {
-    this.drawLine();
-    this.goodsChart()
+    this.drawTwoLine()
+    this.drawLine()
+    this.drawLinesss()
+    this.drawLinetwo()
   }
 }
 </script>
@@ -905,13 +1238,13 @@ export default {
     height: 4px;
     background: transparent;
   }
-  tbody::-webkit-scrollbar-thumb {
+  #scolTab tbody::-webkit-scrollbar-thumb {
     width: 12px!important;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 0px rgba(76,189,254,1);
     background: rgba(76,189,254,1);
   }
-  tbody::-webkit-scrollbar-track {
+  #scolTab tbody::-webkit-scrollbar-track {
     display: none;
     -webkit-box-shadow: inset 0 0 5px rgba(76,189,254,1);
     border-radius: 10px;

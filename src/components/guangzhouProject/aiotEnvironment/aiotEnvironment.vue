@@ -1,5 +1,5 @@
 <template>
-  <div style="height:100%;width:100%;">
+  <div class="huling" style="height:100%;width:100%;">
     <div class="top_con flex_b">
       <div class="top_con_left">
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;">
@@ -13,19 +13,19 @@
             <div style="height:125px;width:100%;float:left;display:flex; flex-direction: column;">
               <div class="flex1 flex text_center" style="justify-content: space-around;">
                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">10</span>℃</div>
+                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
                 <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
               </div>
               <div class="flex1 flex"  style="flex-direction:column;">
                 <div class="flex">
-                  <div class="flex1 font12"><img src="../../../assets/index/wind.png" alt=""> 南风2级 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/temperature.png" alt=""> 12℃ </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/rainfall.png" alt=""> 67% </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/wind.png" alt=""> 南风2级 </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/temperature.png" alt=""> 26℃ </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/rainfall.png" alt=""> 100% </div>
                 </div>
                 <div class="flex">
-                  <div class="flex1 font12"><img src="../../../assets/index/pm25.png" alt=""> 35 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/pm10.png" alt=""> 78 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/noise.png" alt=""> 45dB </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/pm25.png" alt=""> 21 </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/pm10.png" alt=""> 33 </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/noise.png" alt=""> 45dB </div>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@
               <div class="flex1 flex">
                 <div class="flex1 text_center">
                   <p class="font12">明天</p>
-                  <img src="../../../assets/index/sunny.png" alt="" width="34px">
+                  <img src="../../../assets/index/rain.png" alt="" width="34px">
                 </div>
                 <div class="flex1 text_center">
                   <p class="font12">后天</p>
@@ -51,21 +51,21 @@
                 </div>
                 <div class="flex1 text_center">
                   <p class="font12">大后天</p>
-                  <img src="../../../assets/index/cloudy.png" alt="" width="34px">
+                  <img src="../../../assets/index/rain.png" alt="" width="34px">
                 </div>
               </div>
               <div class="flex1 flex">
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">10</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">晴</p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">26</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">14</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">27</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">暴雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">8</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">多云</p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">23</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
                 </div>
               </div>
             </div>
@@ -77,21 +77,21 @@
                 <div class="flex1 flex">
                   <div class="flex1 text_center" style="line-height:25px;">
                     <span class="blank_cir cir"></span>
-                    <p>18</p>
+                    <p>25</p>
                   </div>
                   <div class="flex1 text_center" >
                     <span class="blue_cir cir"></span>
-                    <p>19</p>
+                    <p>26</p>
                   </div>
                 </div>
                 <div class="flex1 flex">
                   <div class="flex1 text_center" >
                     <span class="blue_cir cir"></span>
-                    <p>20</p>
+                    <p>27</p>
                   </div>
                   <div class="flex1 text_center" >
                     <span class="red_cir cir"></span>
-                    <p>21</p>
+                    <p>28</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P>智能提醒 : </P>
-            <p>今日温度偏高，可能超过36度，请注意</p>
+            <p>高温三级预警，室外作业请注意防晒</p>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P>智能提示 : </P>
-            <p>大风二级预警，请停止高空作业</p>
+            <p>当前风力2级，南风，对施工无影响</p>
           </div>
         </div>
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px">
@@ -170,7 +170,7 @@
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P>智能提醒 : </P>
-            <p>30%噪音感应预警发生在三工区宿舍，请核实</p>
+            <p>当前噪音接近预警值，请注意文明施工</p>
           </div>
         </div>
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;">
@@ -181,7 +181,7 @@
             </div>
           </div>
           <div class="top_con_left_hll_one_top" style="border-bottom: 0">
-            <p>今日共喷淋<span style="color: #FEDF50;font-size: 28px">132</span>次</p>
+            <p>今日共喷淋<span style="color: #FEDF50;font-size: 28px">0</span>次</p>
           </div>
           <div class="top_con_left_hll_two" style="display: flex;padding: 0 23px">
             <div class="top_con_left_hll_two_left" style="margin-right: 20px">
@@ -189,9 +189,9 @@
                 <img src="../../../assets/Aiot-pm1.png" alt="">
               </div>
               <div class="top_con_left_hll_two_left_word">
-                <p>当前<span style="color: #4CBDFE">120</span></p>
-                <p>最高<span style="color: #4CBDFE">124</span></p>
-                <p>最低<span style="color: #4CBDFE">76</span></p>
+                <p>当前<span style="color: #4CBDFE">21</span></p>
+                <p>最高<span style="color: #4CBDFE">31</span></p>
+                <p>最低<span style="color: #4CBDFE">17</span></p>
               </div>
             </div>
             <div class="top_con_left_hll_two_left">
@@ -199,16 +199,16 @@
                 <img src="../../../assets/Aiot-pm2.png" alt="">
               </div>
               <div class="top_con_left_hll_two_left_word">
-                <p>当前<span style="color: #00F7BD">120</span></p>
-                <p>最高<span style="color: #00F7BD">124</span></p>
-                <p>最低<span style="color: #00F7BD">76</span></p>
+                <p>当前<span style="color: #00F7BD">33</span></p>
+                <p>最高<span style="color: #00F7BD">53</span></p>
+                <p>最低<span style="color: #00F7BD">21</span></p>
               </div>
             </div>
           </div>
           <div class="top_con_right_one_notice">
             <img src="../../../assets/Aiot-laba.png" alt="">
             <P style="color: #FC0C59">预警提示 : </P>
-            <p>当前PM2.5超过预警值，已启动智能预警方案，请注意查收</p>
+            <p>当前空气质量良好，请继续保持</p>
           </div>
         </div>
       </div>
@@ -260,14 +260,22 @@ export default {
               }
             },
             axisTick: { show: false },
-            data: ["施工一区", "施工二区", "施工三区", "施工四区"]
+            data: [
+              "12:00",
+              "16:00",
+              "20:00",
+              "24:00",
+              "4:00",
+              "8:00",
+              "12:00"
+            ]
           }
         ],
         yAxis: [
           {
             type: "value",
             min: 0,
-            max: 40,
+            max: 100,
             // splitNumber: 7,
             splitLine: {
               show: false,
@@ -295,7 +303,7 @@ export default {
         ],
         series: [
           {
-            name: "烟雾感应预警",
+            name: "实时噪音",
             type: "line",
             smooth: true,
             itemStyle: { normal: { areaStyle: { type: "default" } } },
@@ -351,7 +359,15 @@ export default {
                 shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
               }
             },
-            data: [8, 36, 6, 30]
+            data: [
+              50,
+              70,
+              60,
+              40,
+              20,
+              60,
+              80
+            ]
           }
         ]
       };
@@ -397,7 +413,15 @@ export default {
               }
             },
             axisTick: { show: false },
-            data: ["施工一区", "施工二区", "施工三区", "施工四区"]
+            data: [
+              "12:00",
+              "16:00",
+              "20:00",
+              "24:00",
+              "4:00",
+              "8:00",
+              "12:00"
+            ]
           }
         ],
         yAxis: [
@@ -432,7 +456,7 @@ export default {
         ],
         series: [
           {
-            name: "烟雾感应预警",
+            name: "实时温度",
             type: "line",
             smooth: true,
             itemStyle: { normal: { areaStyle: { type: "default" } } },
@@ -488,7 +512,7 @@ export default {
                 shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
               }
             },
-            data: [8, 36, 6, 30]
+            data: [26, 27, 23, 19, 17, 16, 22, 27]
           }
         ]
       };
@@ -547,15 +571,13 @@ export default {
               }
             },
             data: [
-              "8:00",
-              "10:00",
               "12:00",
-              "14:00",
               "16:00",
-              "18:00",
               "20:00",
-              "22:00",
-              "24:00"
+              "24:00",
+              "4:00",
+              "8:00",
+              "12:00"
             ]
           }
         ],
@@ -592,7 +614,7 @@ export default {
         ],
         series: [
           {
-            // name: "管理人员",
+            name: "风力",
             type: "line",
             //smooth: true,
             symbol: "circle",
@@ -654,9 +676,7 @@ export default {
               25,
               18,
               29,
-              26,
-              20,
-              33
+              26
             ]
           },
           // {

@@ -56,36 +56,39 @@
     }
   }
 }
-.table{
-  padding: 0 13px;
-  font-size: 12px;
-  //margin-top: 56px;
-  table{
-    thead{
-      tr:first-child{
-        width: 100%;
-        text-align: center;
-        background-color: #262C4A;
-        color: #4CBDFE;
-        border: 0;
+.huling{
+  .table{
+    padding: 0 13px;
+    font-size: 12px;
+    //margin-top: 56px;
+    table{
+      thead{
+        tr:first-child{
+          width: 100%;
+          text-align: center;
+          background-color: #262C4A;
+          color: #4CBDFE;
+          border: 0;
+        }
       }
-    }
-    tr{
-      height: 40px;
-      line-height: 40px;
-      td{
-        text-align: center;
-        color: #DFFAFF;
-        border-bottom: 1px solid #2E4970;
+      tr{
+        height: 40px;
+        line-height: 40px;
+        td{
+          text-align: center;
+          color: #DFFAFF;
+          border-bottom: 1px solid #2E4970;
+        }
       }
-    }
-    tr:last-child{
-      td{
-        border-bottom: 0;
+      tr:last-child{
+        td{
+          border-bottom: 0;
+        }
       }
     }
   }
 }
+
 .safeData{
   height: 55px;
   display: -webkit-flex;
