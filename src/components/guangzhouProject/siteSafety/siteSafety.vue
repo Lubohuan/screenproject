@@ -391,6 +391,9 @@ export default {
   name: 'siteSafety',
   data () {
     return {
+      camera:'',
+      indexItem:-1,
+      hiddenIndexItem:-1
     }
   },
   methods: {
