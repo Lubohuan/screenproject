@@ -1233,7 +1233,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-// @import "../homePage/homePage.scss";
+@import "../homePage/homePage.scss";
 .swiper-container {
   width: 100%;
   height: 100%;
