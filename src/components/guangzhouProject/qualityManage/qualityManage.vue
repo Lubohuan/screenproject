@@ -1192,15 +1192,15 @@ export default {
         },
         xAxis: [{
             type: 'category',
-            data: ['装饰装修-墙砖','装饰装修-地砖','砌筑工程','砌体','混凝土','模板', '一般抹灰'],
-           axisLine: {
-                show: true,
-                lineStyle: {
-                    color: "rgba(219,225,255,1)",
-                    width: 0,
-                    type: "solid"
-                }
-            },
+            data: ['装修-墙砖','装修-地砖','砌筑','砌体','混凝土','模板', '抹灰'],
+            axisLine: {
+                  show: true,
+                  lineStyle: {
+                      color: "rgba(219,225,255,1)",
+                      width: 0,
+                      type: "solid"
+                  }
+              },
             axisTick: {
                 show: false,
             },
