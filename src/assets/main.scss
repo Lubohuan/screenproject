@@ -47,6 +47,27 @@
     height: calc(100% - 40px);
     background: rgba(25,33,64,1);
   }
+
+.mainIndexText{
+  .el-pagination .btn-next, .el-pagination .btn-prev {
+    background:transparent!important;
+   background-size: 16px;
+   cursor: pointer;
+   margin: 0;
+   color: #fff;
+ }
+ .el-pagination button:disabled {
+   color: #fff;
+   background:transparent!important;
+   cursor: not-allowed;
+ }
+  .el-pager li{
+   background: transparent;
+   color: #DFFAFF;
+ }
+ .el-pager li.active{
+color: #409EFF;
+ }
 }
 #body {
   font-family: 'myFont', "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
