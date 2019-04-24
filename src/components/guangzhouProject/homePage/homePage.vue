@@ -106,17 +106,17 @@
                                 <div class="font12 marginL30"><img src="../../../assets/index/gli.png" alt=""> 管理人员</div>
                                 <div class="flex">
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
@@ -126,17 +126,17 @@
                                 <div class="font12 marginL30"><img src="../../../assets/index/lwu.png" alt=""> 劳务人员</div>
                                 <div class="flex1 flex">
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数</div>
                                         <div class="time_size1">80人</div>
                                     </div>
@@ -577,10 +577,18 @@
         },
         methods: {
             openPic(index){
-                this.indexItem = index;
+                if(this.indexItem == index){
+                    this.indexItem = -1;
+                }else{
+                    this.indexItem = index;
+                }
             },
             openhidden(index){
-                this.hiddenIndexItem = index;
+                if(this.hiddenIndexItem == index){
+                    this.hiddenIndexItem = -1;
+                }else{
+                    this.hiddenIndexItem = index;
+                }
             },
             drawPie() {
                 var myChart = this.$echarts.init(document.getElementById("echart-pie"));
@@ -756,47 +764,47 @@
            drawLine(){
                 // 基于准备好的dom，初始化echarts实例
                 let myChart = this.$echarts.init(document.getElementById('myChart'))
+
+                
                 // 绘制图表
                 myChart.setOption({
                     backgroundColor: "#1D284D",
                     tooltip: {
-                    },
+                        },
                     grid: {
-                    top: '8%',
-                    left: '5%',
-                    right: '5%',
-                    bottom: '8%',
-                    containLabel: true,
+                        top: '8%',
+                        left: '5%',
+                        right: '5%',
+                        bottom: '8%',
+                        containLabel: true,
                     },
-                    xAxis: [{
-                    type: 'category',
-                    boundaryGap: false,
-                    axisLabel: { //坐标轴刻度标签的相关设置
-                        textStyle: {
-                        color: '#6a9cd5',
-                        margin:15,
+                    xAxis: {
+                        type: 'category',
+                        boundaryGap: false,
+                        axisLine: {
+                            lineStyle: {
+                                color: '#fff'
+                            }
                         },
+                        axisTick: { show: false,},
+                        data: ['施工一区', '施工二区', '施工三区', '施工四区'],
                     },
-                    axisTick: { show: false,},
-                    data: ['施工一区', '施工二区', '施工三区', '施工四区'],
-                    }],
-                    yAxis: [{
-                    name : '(次)',
-                    type: 'value',
-                    min: 0,
-                    splitLine: {
-                        show: false
-                    },
-                    axisLine: {show: false,},
-                    axisLabel: {
-                        margin:20,
-                        textStyle: {
-                        color: '#6a9cd5',
-                        
+                    yAxis: {
+                        name : '(次)',
+                        type: 'value',
+                        min: 0,
+                        splitNumber:3,
+                        splitLine: {
+                            show: false
                         },
+                        axisLine: {show: false,},
+                        axisLine: {
+                            lineStyle: {
+                                color: '#fff'
+                            }
+                        },
+                        axisTick: { show: false,},  
                     },
-                    axisTick: { show: false,},  
-                    }],
                     series: [{
                     name: '安全检查',
                     type: 'line',
@@ -810,19 +818,16 @@
                     },
                     lineStyle: {
                         normal: {
-                        color: "#3deaff"   // 线条颜色
+                        color: "rgba(84,97,187, 1)"   // 线条颜色
                         }
                     },
                     areaStyle: { //区域填充样式
                                 normal: {
                                 //线性渐变，前4个参数分别是x0,y0,x2,y2(范围0~1);相当于图形包围盒中的百分比。如果最后一个参数是‘true’，则该四个值是绝对像素位置。
                                 color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                    { offset: 0,  color: 'rgba(61,234,255, 0.9)'}, 
-                                    { offset: 0.7,  color: 'rgba(61,234,255, 0)'}
-                                    ], false),
-
-                                shadowColor: 'rgba(53,142,215, 0.9)', //阴影颜色
-                                shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
+                                    { offset: 0.7,  color: 'rgba(84,97,187, 1)'}, 
+                                    { offset: 1,  color: 'rgba(74,208,181, 1)'}
+                                    ], false)
                             }
                         },
                     data: [22, 24, 20, 30]
@@ -1214,7 +1219,7 @@
         }
         .color_time {
             position: absolute;
-            width: 60%;
+            width: 80%;
             height: 4px;
             top: -4px;
             background: linear-gradient(90deg,rgba(0,242,159,0.28) 0%,rgba(76,240,254,1) 100%);
