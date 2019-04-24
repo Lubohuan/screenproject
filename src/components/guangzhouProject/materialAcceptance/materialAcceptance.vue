@@ -150,7 +150,7 @@
             </div>
           </div>
           <div class="top_con_middle_bar" v-show="boxOne" style="margin-top: 50px">
-            <div class="top_con_middle_bar_each" v-for="(item, index) in progressData" :key="index">
+            <div class="top_con_middle_bar_each" v-for="(item, index) in progressData" :key="index" @click="handleClick(index)">
               <div class="top_con_middle_bar_each_text" style="width: 120px">{{item.title}}</div>
               <el-progress :percentage="item.progress" :stroke-width="10" :show-text="false" :color="item.color" style="flex: 1;margin-right: 30px"></el-progress>
               <div class="top_con_middle_bar_each_text" style="width: 80px">{{item.total}}</div>
@@ -158,6 +158,28 @@
           </div>
           <div id="echart-line" style="width:790px;height:320px" v-show="!boxOne">
           </div>
+          <el-dialog title="提示" :visible.sync="dialogVisibleOne" >
+            <div class="modal hulingModal" style="height:300px;width:350px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">物资消耗情况</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleOne = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>物资名称:<span>{{current.title}}</span></p>
+                  <p>单位:<span>{{current.dw}}</span></p>
+                  <p>入库总量:<span>{{current.rkzl}}</span></p>
+                  <p>出库总量:<span>{{current.ckzl}}</span></p>
+                  <p>库存余量:<span>{{current.kcyl}}</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
         </div>
         <div style="height:308px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="table" style="padding-top: 20px">
@@ -232,7 +254,7 @@
             <div class="title_right" style="display: flex;align-items: center;">
 <!--              <el-select v-model="value" placeholder="钢材" id="title_right">-->
 <!--              </el-select>-->
-              <div style="font-size: 12px;margin-left: 10px;display: flex;align-items: center"><p style="border: 1px solid rgba(118,208,223,1);padding: 4px">物资类型 : 钢材</p>&nbsp;&nbsp;&nbsp;&nbsp; 单位 : 吨</div>
+              <div style="font-size: 12px;margin-left: 10px;display: flex;align-items: center" @click="dialogVisible=true"><p style="border: 1px solid rgba(118,208,223,1);padding: 4px">物资类型 : 商品混凝土</p>&nbsp;&nbsp;&nbsp;&nbsp; 单位 : 立方米</div>
             </div>
           </div>
           <div class="table" id="scolTab" style="margin-top: 10px;flex: 1;overflow: hidden">
@@ -263,6 +285,30 @@
               </tbody>
             </table>
           </div>
+          <el-dialog title="提示" :visible.sync="dialogVisible" >
+            <div class="modal hulingModal" style="height:300px;width: 300px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">物资消耗情况</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisible = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>物资类型:<span>商品混凝土</span></p>
+                  <p>单位:<span>立方米</span></p>
+                  <p>总领用量:<span>2862</span></p>
+                  <p>总计划量:<span>2862</span></p>
+                  <p>总图纸计算量:<span>0</span></p>
+                  <p>领用比:<span>0%</span></p>
+                  <p>超量比:<span>0%</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
         </div>
       </div>
       <div class="top_con_right">
@@ -422,41 +468,68 @@ export default {
   name: 'materialAcceptance',
   data () {
     return {
+      dialogVisible: false,
+      dialogVisibleOne: false,
       options: [],
       value: '',
       //控制本页视窗容器切换
       boxOne: true,
       boxTwo: true,
       boxThree: true,
+      current:{
+        title: '三级螺纹钢',
+        dw: '吨',
+        rkzl: 206.101,
+        ckzl: 2016.101,
+        kcyl: 0
+      },
+      allobj: [
+        {title: '三级螺纹钢',
+          dw: '吨',
+          rkzl: 206.101,
+          ckzl: 2016.101,
+          kcyl: 0
+        }, {title: '商品混凝土',
+          dw: '立方米',
+          rkzl: 3473,
+          ckzl: 3473,
+          kcyl: 0
+        }, {title: '自粘聚合物改性沥青防水卷材单面',
+          dw: '平方米',
+          rkzl: 23000,
+          ckzl: 23000,
+          kcyl: 0
+        }
+      ],
       value1: [
-        {title: '自粘聚合物',
-          xh: '3.0MM*1M*10M',
-          lyl: 1500,
-          jhl: 1500,
+        {title: '商品混凝土',
+          xh: 'C20',
+          lyl: 2357,
+          jhl: 2357,
           tzl: 0,
           cl: 0,
           lyb: '100%',
           clb: '0%'
-        }, {title: '自粘聚合物',
-          xh: '4.0MM*1M*8M',
-          lyl: 1000,
-          jhl: 1000,
+        }, {title: '商品混凝土',
+          xh: 'C20细石',
+          lyl: 96,
+          jhl: 96,
           tzl: 0,
           cl: 0,
           lyb: '100%',
           clb: '0%'
-        }, {title: '自粘聚合物',
-          xh: '3.0MM*1M*10M',
-          lyl: 500,
-          jhl: 500,
+        }, {title: '商品混凝土',
+          xh: 'C30',
+          lyl: 381,
+          jhl: 381,
           tzl: 0,
           cl: 0,
           lyb: '100%',
           clb: '0%'
-        }, {title: '自粘聚合物',
-          xh: '3.0MM*1M*10M',
-          lyl: 2000,
-          jhl: 2000,
+        }, {title: '商品混凝土',
+          xh: 'C35P8',
+          lyl: 28,
+          jhl: 28,
           tzl: 0,
           cl: 0,
           lyb: '100%',
@@ -511,6 +584,10 @@ export default {
     }
   },
   methods: {
+    handleClick (index) {
+      this.current = this.allobj[index]
+      this.dialogVisibleOne = true
+    },
     drawLine () {
       var myChart = this.$echarts.init(document.getElementById('echart-line'))
       var option = {
@@ -855,61 +932,6 @@ export default {
         myChart.resize();
       });
     },
-    drawLinetwo () {
-      var myChart1 = this.$echarts.init(document.getElementById("echart-linetwo"));
-      var option = {
-        color: ['#3398DB'],
-        tooltip : {
-          trigger: 'axis',
-          axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-          }
-        },
-        legend: {
-          data: ['验收金额'],
-          align: 'left',
-          left: 10,
-          textStyle: {
-            color: "#DBE1FF"
-          },
-          itemWidth: 20,
-          itemHeight: 10,
-          itemGap: 35
-        },
-        grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
-          containLabel: true
-        },
-        xAxis : [
-          {
-            type : 'category',
-            data : ['混凝土', '设备', '小五金', '钢材', '家具', '小五金', '配电箱'],
-            axisTick: {
-              alignWithLabel: true
-            }
-          }
-        ],
-        yAxis : [
-          {
-            type : 'value'
-          }
-        ],
-        series : [
-          {
-            name:'验收金额',
-            type:'bar',
-            barWidth: '30',
-            data:[160.97, 90.07, 60.89, 46.46, 18.94, 15.43, 11.60],
-          }
-        ]
-      };
-      myChart1.setOption(option);
-      window.addEventListener("resize", () => {
-        myChart.resize();
-      });
-    },
     drawTwoLine () {
       var myChart = this.$echarts.init(
         document.getElementById("echart-twoline")
@@ -1201,7 +1223,6 @@ export default {
     this.drawTwoLine()
     this.drawLine()
     this.drawLinesss()
-    this.drawLinetwo()
   }
 }
 </script>
@@ -1228,12 +1249,12 @@ export default {
     }
   }
   #scolTab table thead,
-  tbody tr {
+  .huling #scolTab table tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;
   }
-  tbody::-webkit-scrollbar {
+  #scolTab tbody::-webkit-scrollbar {
     width: 6px!important;
     height: 4px;
     background: transparent;
@@ -1278,5 +1299,20 @@ export default {
   }
   .active{
     border-bottom: 1px solid #4CF0FE
+  }
+  .huling .modal-content-datail{
+    padding: 20px 0px 0px 40px;
+    p{
+      font-size:14px;
+      font-weight:600;
+      color:rgba(118,208,223,1);
+      line-height: 30px;
+      span{
+        font-size:14px;
+        font-weight:600;
+        color:rgba(223,250,255,1);
+        margin-left: 4px;
+      }
+    }
   }
 </style>

@@ -34,38 +34,113 @@
           </div>
           <div class="table" id="myTable">
             <table cellpadding="0" cellspacing="0" style="border: none;">
-              <tr>
+              <tr @click="dialogVisible=true">
                 <th>吴艺昌（安全部）</th>
                 <th>提交于 : 2019-04-24 10:11:22</th>
                 <th>广州金控总部大楼项目</th>
               </tr>
-              <tr>
+              <tr @click="dialogVisible=true">
                 <th><span style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(254,223,80,1);box-shadow:0px 0px 0px 4px rgba(254,223,80,0.1);margin-right: 10px"></span>违章</th>
                 <th>文明施工</th>
                 <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已整改</span></th>
               </tr>
-              <tr>
+              <tr @click="dialogVisibleOne=true">
                 <th>吴艺昌（安全部）</th>
                 <th>提交于 : 2019-04-25 16:23:36</th>
                 <th>广州金控总部大楼项目</th>
               </tr>
-              <tr>
+              <tr @click="dialogVisibleOne=true">
                 <th><span  style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(252,12,89,1);box-shadow:0px 0px 0px 4px rgba(252,12,89,0.1);margin-right: 10px"></span>一般隐患</th>
                 <th>施工用电</th>
                 <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已整改</span></th>
               </tr>
-              <tr>
+              <tr @click="dialogVisibleTwo=true">
                 <th>吴艺昌（安全部）</th>
                 <th>提交于 : 2019-04-23 11:15:22</th>
                 <th>广州金控总部大楼项目</th>
               </tr>
-              <tr>
+              <tr @click="dialogVisibleTwo=true">
                 <th><span  style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(252,12,89,1);box-shadow:0px 0px 0px 4px rgba(252,12,89,0.1);margin-right: 10px"></span>一般隐患</th>
                 <th>文明施工</th>
                 <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已整改</span></th>
               </tr>
             </table>
           </div>
+          <el-dialog title="提示" :visible.sync="dialogVisible" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">隐患记录</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisible = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                  <p>检查部位:<span>基坑</span></p>
+                  <p>隐患类型:<span>文明施工</span></p>
+                  <p>隐患等级:<span>违章</span></p>
+                  <p>所属区域:<span>-3F</span></p>
+                  <p>状态:<span>已整改</span></p>
+                  <p>检查人:<span>吴艺昌（安全部）</span></p>
+                  <p>提交时间:<span>2019-04-25 16:23:36</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+          <el-dialog title="提示" :visible.sync="dialogVisibleOne" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">隐患记录</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleOne = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                  <p>检查部位:<span>施工现场临时用电</span></p>
+                  <p>隐患类型:<span>施工用电</span></p>
+                  <p>隐患等级:<span>一般隐患</span></p>
+                  <p>所属区域:<span>03-地基基础</span></p>
+                  <p>状态:<span>已整改</span></p>
+                  <p>检查人:<span>吴艺昌（安全部）</span></p>
+                  <p>提交时间:<span>2019-04-23 11:15:22</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+          <el-dialog title="提示" :visible.sync="dialogVisibleTwo" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">隐患记录</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleTwo = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                  <p>检查部位:<span>基坑</span></p>
+                  <p>隐患类型:<span>文明施工</span></p>
+                  <p>隐患等级:<span>一般隐患</span></p>
+                  <p>所属区域:<span>02-深基坑区域</span></p>
+                  <p>状态:<span>已整改</span></p>
+                  <p>检查人:<span>吴艺昌（安全部）</span></p>
+                  <p>提交时间:<span>2019-04-23 11:15:22</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
         </div>
       </div>
       <div class="top_con_middle">
@@ -234,7 +309,7 @@
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
               <tr>
                 <td>重大危险源</td>
-                <td>重大危险源预警</td>
+                <td @click="dialogVisibleThree = true">重大危险源预警</td>
                 <td></td>
                 <td>进场人数</td>
                 <td></td>
@@ -242,7 +317,7 @@
               </tr>
               <tr>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">9</span>个</td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">1</span>个</td>
+                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px" @click="dialogVisibleThree = true">1</span>个</td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
                 <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">37</span>人</td>
                 <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
@@ -282,6 +357,28 @@
               </tr>
             </table>
           </div>
+          <el-dialog title="提示" :visible.sync="dialogVisibleThree" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">重大危险源预警</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleThree = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>危险源名称:<span>模板工程及支持体系</span></p>
+                  <p>等级:<span>一级</span></p>
+                  <p>施工责任人:<span>刘鹏</span></p>
+                  <p>主要事故类型:<span>坍塌</span></p>
+                  <p>管控措施:<span>A:做到先设计后施工 B:组织整体验收，设计人员参与验收 C:精心设计浇砼方案，确保模板支持均衡受载</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
         </div>
         <div class="safeContent" style="height:313px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="top_con_right_title">
@@ -366,21 +463,21 @@
                   <th>监管人</th>
                 </tr>
               </thead>
-              <tr>
+              <tr @click="dialogVisibleFour=true">
                 <td>动火作业</td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(254,223,80,.2);font-size: 10px">已验收</span></td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">已检查</span></td>
                 <td>刘鹏</td>
                 <td>刘鹏</td>
               </tr>
-              <tr>
+              <tr @click="dialogVisibleFive=true">
                 <td>吊装作业</td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">已检查</span></td>
                 <td>刘鹏</td>
                 <td>刘鹏</td>
               </tr>
-              <tr>
+              <tr @click="dialogVisibleSix=true">
                 <td>设备检维修作业</td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">已检查</span></td>
@@ -389,6 +486,87 @@
               </tr>
             </table>
           </div>
+          <el-dialog title="提示" :visible.sync="dialogVisibleFour" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">危险作业详情</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleFour = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>危险源名称:<span>广州金控总部大楼项目</span></p>
+                  <p>作业类型:<span>吊装作业</span></p>
+                  <p>提交时间:<span>2019-04-16 16:32</span></p>
+                  <p>使用设备:<span>塔吊</span></p>
+                  <p>责任单位:<span>金控项目总承包</span></p>
+                  <p>作业开始时间:<span>2019-04-17 10:36</span></p>
+                  <p>作业结束时间:<span>2019-04-14 12:33</span></p>
+                  <p>作业人:<span>吴艺昌</span></p>
+                  <p>施工责任人:<span>刘鹏</span></p>
+                  <p>安全监管人:<span>刘鹏</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+          <el-dialog title="提示" :visible.sync="dialogVisibleFive" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">危险作业详情</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleFive = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>危险源名称:<span>广州金控总部大楼项目</span></p>
+                  <p>作业类型:<span>设备检维修作业</span></p>
+                  <p>提交时间:<span>2019-04-16 16:32</span></p>
+                  <p>使用设备:<span>维修工具</span></p>
+                  <p>责任单位:<span>金控项目总承包</span></p>
+                  <p>作业开始时间:<span>2019-04-16 16:36</span></p>
+                  <p>作业结束时间:<span>2019-04-16 18:36</span></p>
+                  <p>作业人:<span>吴艺昌</span></p>
+                  <p>施工责任人:<span>刘鹏</span></p>
+                  <p>安全监管人:<span>刘鹏</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+          <el-dialog title="提示" :visible.sync="dialogVisibleSix" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">危险作业详情</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisibleSix = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>危险源名称:<span>广州金控总部大楼项目</span></p>
+                  <p>作业类型:<span>动火作业</span></p>
+                  <p>提交时间:<span>2019-04-16 16:32</span></p>
+                  <p>使用设备:<span>电焊机</span></p>
+                  <p>责任单位:<span>金控项目总承包</span></p>
+                  <p>作业开始时间:<span>2019-04-18 18:26</span></p>
+                  <p>作业结束时间:<span>2019-04-18 21:22</span></p>
+                  <p>作业人:<span>吴艺昌</span></p>
+                  <p>施工责任人:<span>刘鹏</span></p>
+                  <p>安全监管人:<span>刘志强</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
         </div>
       </div>
     </div>
@@ -399,6 +577,13 @@ export default {
   name: 'siteSafety',
   data () {
     return {
+      dialogVisible: false,
+      dialogVisibleOne: false,
+      dialogVisibleTwo: false,
+      dialogVisibleThree: false,
+      dialogVisibleFour: false,
+      dialogVisibleFive: false,
+      dialogVisibleSix: false,
       camera:'',
       indexItem:-1,
       hiddenIndexItem:-1
@@ -1315,5 +1500,28 @@ export default {
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 4px;
+  }
+  .huling .modal-content-datail{
+    padding: 20px 0px 0px 40px;
+    p{
+      font-size:14px;
+      font-weight:600;
+      color:rgba(118,208,223,1);
+      line-height: 30px;
+      span{
+        font-size:14px;
+        font-weight:600;
+        color:rgba(223,250,255,1);
+        margin-left: 4px;
+      }
+    }
+  }
+  .huling .hulingModal{
+    position: fixed;
+    top: 400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
   }
 </style>
