@@ -32,17 +32,17 @@
                                 <div class="font12 marginL30" style="margin-bottom:20px"><img src="../../../assets/index/gli.png" alt=""> 管理人员</div>
                                 <div class="flex">
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
@@ -52,17 +52,17 @@
                                 <div class="font12 marginL30"  style="margin-bottom:20px"><img src="../../../assets/index/lwu.png" alt=""> 劳务人员</div>
                                 <div class="flex1 flex">
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
                                         <div class="time_size1">80人</div>
                                     </div>
                                     <div class="cir_time marginR30">
-                                        <el-progress type="circle" :percentage="65" color="#00F29F" width="70" stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                                        <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数</div>
                                         <div class="time_size1">80人</div>
                                     </div>
