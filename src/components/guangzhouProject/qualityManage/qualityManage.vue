@@ -150,18 +150,18 @@
                     <img @click="showewm" src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
                 </div>
                 <div c style="width:440px;padding:20px;">
-                  <ul class="list-unstyled list-task">
+                   <ul class="list-unstyled list-task">
                     <li>
                       <span class="title">任务一：</span>
-                      <span class="content">4.1须完成塔机月度检查 负责人：安全部 杨建基</span>
+                      <span class="content">4.1号须完成防水样板验收   负责人：工程管理部   谭楚才</span>
                     </li>
                     <li>
                       <span class="title">任务二：</span>
-                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收 负责人：工程管理部 杨佳雄</span>
+                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收   负责人：工程管理部  杨佳雄</span>
                     </li>
                     <li>
                       <span class="title">任务三：</span>
-                      <span class="content">4.30须完成塔机正常保养 负责人：安全部 杨建基</span>
+                      <span class="content">4.30须完成锚杆验收    负责人：尹鑫</span>
                     </li>
                     <!-- <li>
                       <span class="title">任务四：</span>
