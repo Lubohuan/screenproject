@@ -89,7 +89,7 @@
               <span class="text">资料及人员预警</span>
             </div>
             <div class="ibox-content">
-              <table class="table text-center allHeight">
+              <table class="table text-center allHeight" @click="showPdf()">
                 <thead>
                   <tr>
                     <th>排名</th>
@@ -522,6 +522,34 @@
       </div>
       <!-- right end -->
     </div>
+    <el-dialog title="提示" width="73%" :visible.sync="dialogObj.dialogVisible1" >
+        <div class="modal">
+          <div class="modal-title flex jc-between">
+              <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">详情</span>
+              </div>
+              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
+                 <i class="el-icon-close"></i>
+              </div>
+
+          </div>
+          <div class="modal-content" style="padding:10px;">
+            <div class="allHeight flex jc-between" >
+              <div>
+                <img src="../../../assets/manageMachine/pdf1.jpg" width="450" height="650">
+              </div>
+              <div>
+                <img src="../../../assets/manageMachine/pdf2.jpg"  width="450" height="650">
+              </div>
+              <div>
+                <img src="../../../assets/manageMachine/pdf3.jpg"  width="450" height="650">
+              </div>
+             
+            </div>
+          </div>
+        </div>
+    </el-dialog>
   </div>
 </template>
 <script>
@@ -533,10 +561,16 @@ export default {
   data() {
     return {
       intervalTimer: "",
-      showScroll: false
+      showScroll: false,
+      dialogObj:{
+        dialogVisible1:false
+      }
     };
   },
   methods: {
+    showPdf(){
+      this.dialogObj.dialogVisible1 = true;
+    },
     textScroll() {
       var scrollWidth = $("#textPcontainer").width();
       var textWidth = $("#textP").width();

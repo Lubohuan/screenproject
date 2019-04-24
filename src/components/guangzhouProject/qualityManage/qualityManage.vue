@@ -747,9 +747,7 @@
                   <div class="allHeight" style="padding:40px 20px;color:rgba(223,250,255,1);line-height:2;font-size:16px;">
                      钢筋按图纸准确安装，受力钢筋间距偏差±10mm、排距±5mm，保护层厚度±10mm，预埋件中心线位置偏差5mm以内；模板垂直度允许偏差6mm、相邻两板表面高低差2mm，表面平整度5mm；混凝土表面无蜂窝、孔洞、露筋，允许偏差值：位移5mm~15mm，平整度5mm，垂直度5mm，截面尺寸-2~5mm，标高±10mm
                   </div>
-                  
               </div>
-           
           </div>
         </div>
     </el-dialog>

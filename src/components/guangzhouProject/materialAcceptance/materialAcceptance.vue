@@ -1179,7 +1179,7 @@ export default {
     width: 100%;
     table-layout: fixed;
   }
-   .huling tbody::-webkit-scrollbar {
+  .huling tbody::-webkit-scrollbar {
     width: 6px!important;
     height: 4px;
     background: transparent;
