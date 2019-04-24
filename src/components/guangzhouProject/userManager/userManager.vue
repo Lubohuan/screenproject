@@ -12,19 +12,19 @@
                          <div class="flex" style="height:77px">
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">在册人数</div>
-                                <div><span class="font28 bigNum">5522</span>人</div>
+                                <div><span class="font28 bigNum">23</span>人</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">在场人数</div>
-                                <div><span class="font28 bigNum">2451</span>人</div>
+                                <div><span class="font28 bigNum">33</span>人</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">管理人员</div>
-                                <div><span class="font28 bigNum">41</span>人</div>
+                                <div><span class="font28 bigNum">33</span>人</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                                 <div style="margin-bottom:10px;">特种工种</div>
-                                <div><span class="font28 bigNum">444</span>人</div>
+                                <div><span class="font28 bigNum">3</span>人</div>
                             </div>
                         </div>
                         <div class="flex" style="padding-bottom:20px">
@@ -34,17 +34,17 @@
                                     <div class="cir_time marginR30">
                                         <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
-                                        <div class="time_size1">80人</div>
+                                        <div class="time_size1">33人</div>
                                     </div>
                                     <div class="cir_time marginR30">
                                         <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
-                                        <div class="text_loc text_center font12">在场人数 </div>
-                                        <div class="time_size1">80人</div>
+                                        <div class="text_loc text_center font12">出勤人数 </div>
+                                        <div class="time_size1">33人</div>
                                     </div>
                                     <div class="cir_time marginR30">
                                         <el-progress type="circle" :percentage="65" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
-                                        <div class="text_loc text_center font12">在场人数 </div>
-                                        <div class="time_size1">80人</div>
+                                        <div class="text_loc text_center font12">在岗人数 </div>
+                                        <div class="time_size1">33人</div>
                                     </div>
                                 </div>
                             </div>
@@ -54,17 +54,17 @@
                                     <div class="cir_time marginR30">
                                         <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
                                         <div class="text_loc text_center font12">在场人数 </div>
-                                        <div class="time_size1">80人</div>
+                                        <div class="time_size1">35人</div>
                                     </div>
                                     <div class="cir_time marginR30">
                                         <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
-                                        <div class="text_loc text_center font12">在场人数 </div>
-                                        <div class="time_size1">80人</div>
+                                        <div class="text_loc text_center font12">出勤人数 </div>
+                                        <div class="time_size1">35人</div>
                                     </div>
                                     <div class="cir_time marginR30">
                                         <el-progress type="circle" :percentage="65" color="#00F29F" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
-                                        <div class="text_loc text_center font12">在场人数</div>
-                                        <div class="time_size1">80人</div>
+                                        <div class="text_loc text_center font12">在岗人数</div>
+                                        <div class="time_size1">35人</div>
                                     </div>
                                 </div>
                             </div>
@@ -109,12 +109,11 @@
                     </div>
                     <div class="bg padding10" style="padding-bottom:13px;">
                        <table style="width:100%;border-collapse:collapse;color:#DFFAFF">
-                            <tr class="font12 text_center" style="line-height:46px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>班组名称</td><td>应到人数</td><td>实到人数</td><td>缺勤人数</td><td>出勤率</td></tr>
-                            <tr class="font12 text_center" style="line-height:46px;border-bottom:1px solid #2E4970"><td>劳务班组1</td><td>60</td><td>30</td><td>30</td><td class="color_green1">60.0%</td></tr>
-                            <tr class="font12 text_center" style="line-height:46px;border-bottom:1px solid #2E4970"><td>劳务班组1</td><td>60</td><td>30</td><td>30</td><td class="color_green1">50.0%</td></tr>
-                            <tr class="font12 text_center" style="line-height:46px;border-bottom:1px solid #2E4970"><td>劳务班组1</td><td>60</td><td>30</td><td>30</td><td class="color_red">20.0%</td></tr>
-                            <tr class="font12 text_center" style="line-height:46px;border-bottom:1px solid #2E4970"><td>劳务班组1</td><td>60</td><td>30</td><td>30</td><td class="color_green1">50.0%</td></tr>
-                            <tr class="font12 text_center" style="line-height:46px;border-bottom:1px solid #2E4970"><td>劳务班组1</td><td>60</td><td>30</td><td>30</td><td class="color_green1">50.0%</td></tr>
+                            <tr class="font12 text_center" style="line-height:56px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>班组名称</td><td>应到人数</td><td>实到人数</td><td>缺勤人数</td><td>出勤率</td></tr>
+                            <tr class="font12 text_center" style="line-height:56px;border-bottom:1px solid #2E4970"><td>防水班组</td><td>4</td><td>4</td><td>0</td><td class="color_green1">100%</td></tr>
+                            <tr class="font12 text_center" style="line-height:56px;border-bottom:1px solid #2E4970"><td>地锚班组</td><td>17</td><td>17</td><td>0</td><td class="color_green1">100%</td></tr>
+                            <tr class="font12 text_center" style="line-height:56px;border-bottom:1px solid #2E4970"><td>普工班组</td><td>11</td><td>11</td><td>0</td><td class="color_green1">100%</td></tr>
+                            <tr class="font12 text_center" style="line-height:56px;border-bottom:1px solid #2E4970"><td>塔吊班组</td><td>3</td><td>3</td><td>0</td><td class="color_green1">100%</td></tr>
                         </table>
                     </div>
                 
@@ -157,40 +156,40 @@
                     <div class="bg padding10 dynamic" style="height:125px;">
                         <ul>
                             <li>
-                                <img src="../../../assets/index/pic1.png" alt="">
+                                <img src="../../../assets/person/person1.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>某某某</span><span>木工</span></div>
-                                    <div><span>2019-04-20</span></div>
+                                    <div><span>董二九</span><span>杂工</span></div>
+                                    <div><span>2019/1/18</span></div>
                                 </div>
                                 <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_a">登记入册</span>
+                                    <span class="btn_Style btn_Style_b">已进场</span>
                                 </div>
                             </li>
                             <li>
-                                <img src="../../../assets/index/pic1.png" alt="">
+                                <img src="../../../assets/person/person2.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>某某某</span><span>木工</span></div>
-                                    <div><span>2019-04-20</span></div>
+                                    <div><span>承玉芳</span><span>杂工</span></div>
+                                    <div><span>2019/4/8</span></div>
                                 </div>
                                 <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_b">已入场</span>
+                                    <span class="btn_Style btn_Style_b">已进场</span>
                                 </div>
                             </li>
                             <li>
-                                <img src="../../../assets/index/pic1.png" alt="">
+                                <img src="../../../assets/person/person3.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>某某某</span><span>木工</span></div>
-                                    <div><span>2019-04-20</span></div>
+                                    <div><span>李顺国</span><span>杂工</span></div>
+                                    <div><span>2019/4/8</span></div>
                                 </div>
                                 <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_b">已入场</span>
+                                    <span class="btn_Style btn_Style_b">已进场</span>
                                 </div>
                             </li>
                             <li>
-                                <img src="../../../assets/index/pic1.png" alt="">
+                                <img src="../../../assets/person/person4.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>某某某</span><span>木工</span></div>
-                                    <div><span>2019-04-20</span></div>
+                                    <div><span>系正玉</span><span>杂工</span></div>
+                                    <div><span>2018/10/29</span></div>
                                 </div>
                                 <div class="dynamic_btn">
                                     <span class="btn_Style btn_Style_c">已退场</span>
@@ -208,11 +207,11 @@
                         <div class="flex" style="height:80px">
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">人员预警</div>
-                            <div><span class="font28 bigNum">6</span>个</div>
+                            <div><span class="font28 bigNum">0</span>个</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">证件预警</div>
-                            <div><span class="font28 bigNum">6</span>项</div>
+                            <div><span class="font28 bigNum">0</span>项</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">合同预警</div>
@@ -220,17 +219,17 @@
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">考勤预警</div>
-                            <div><span class="font28 bigNum">60</span>项</div>
+                            <div><span class="font28 bigNum">0</span>项</div>
                             </div>
                         </div>
                         <div class="flex">
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">安全教育培训预警</div>
-                            <div><span class="font28 color_yellow">16</span>项</div>
+                            <div><span class="font28 color_yellow">0</span>项</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">安全交底预警</div>
-                            <div><span class="font28 color_yellow">26</span>项</div>
+                            <div><span class="font28 color_yellow">0</span>项</div>
                             </div>
                             <div class="flex1 font12 marginL30">
                             </div>
@@ -250,28 +249,26 @@
                 
                 <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:37px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>班组名称</td><td>应发工资</td><td>实发工资</td><td>发放比例</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>螺旋丸</td><td>5</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>螺旋丸</td><td>5</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>螺旋丸</td><td>5</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>螺旋丸</td><td>5</td><td>30</td><td class="color_yellow">0.2%</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>螺旋丸</td><td>5</td><td>30</td><td class="color_yellow">0.2%</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>班组名称</td><td>应发工资</td><td>实发工资</td><td>发放比例</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>防水班组</td><td>14000</td><td>14000</td><td class="color_yellow">100%</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>地锚班组</td><td>82000</td><td>82000</td><td class="color_yellow">100%</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>普工班组</td><td>49000</td><td>49000</td><td class="color_yellow">100%</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>塔吊班组</td><td>22000</td><td>22000</td><td class="color_yellow">100%</td></tr>
                     </table>
                 </div>
            </div>
            <div style="height:100%;width:calc(100% - 540px);box-sizing: border-box;padding-left:10px;">
                 <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                     <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                    班组人员概况
+                    劳务人员概况
                 </div>
                <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
-                        <tr class="font12 text_center" style="line-height:37px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>劳务单位名称</td><td>已登记人数</td><td>证件已验证</td><td>在场施工</td><td>已进行安全教育者</td><td>已完成技术交底</td><td>刷卡率</td><td>安全教育覆盖率</td><td>近三天退场</td><td>特殊工种</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_red">50%</td><td>4</td><td class="color_red">50%</td><td class="color_red">50%</td><td>4</td><td>12</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_red">80%</td><td>3</td><td class="color_red">50%</td><td class="color_red">50%</td><td>2</td><td>12</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_yellow">50%</td><td>3</td><td class="color_red">50%</td><td class="color_red">50%</td><td>3</td><td>11</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_green">30%</td><td>1</td><td class="color_red">50%</td><td class="color_red">50%</td><td>5</td><td>4</td></tr>
-                        <tr class="font12 text_center" style="line-height:37px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>广州大禹防</td><td>12</td><td>5</td><td>7</td><td class="color_green">30%</td><td>1</td><td class="color_red">50%</td><td class="color_red">50%</td><td>5</td><td>4</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>劳务单位名称</td><td>已登记人数</td><td>证件已验证</td><td>在场施工</td><td>已进行安全教育者</td><td>已完成技术交底</td><td>刷卡率</td><td>安全教育覆盖率</td><td>近三天退场</td><td>特殊工种</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>防水班组</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>地锚班组</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>普工班组</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>塔吊班组</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
                     </table>
                 </div>
            </div>
@@ -307,13 +304,10 @@
                 var myChart = this.$echarts.init(document.getElementById("echart-pie1"));
                
                 var data = [
-                    { value: 20, name: "钢筋工", color0: "#FF687D", color1: "#FC0C59" },
-                    { value: 20, name: "水泥工", color0: "#FCDE54", color1: "#F7BA2A" },
-                    { value: 20, name: "木工", color0: "#15E09B", color1: "#1DBD6B" },
-                    { value: 20, name: "特种工", color0: "#BFE579", color1: "#8BC644" },
-                    {
-                         value: 20,name: "砌筑工",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
-                    }
+                    { value: 4, name: "防水班组", color0: "#FF687D", color1: "#FC0C59" },
+                    { value: 17, name: "地锚班组", color0: "#FCDE54", color1: "#F7BA2A" },
+                    { value: 11, name: "普工班组", color0: "#15E09B", color1: "#1DBD6B" },
+                    { value: 3, name: "塔吊班组", color0: "#BFE579", color1: "#8BC644" }
                 ];
 
                 // 计算总数
@@ -465,13 +459,12 @@
                 var myChart = this.$echarts.init(document.getElementById("echart-pie2"));
                
                 var data = [
-                    { value: 20, name: "18岁以下:20人 20%", color0: "#FF687D", color1: "#FC0C59" },
-                    { value: 20, name: "水泥工", color0: "#FCDE54", color1: "#F7BA2A" },
-                    { value: 20, name: "木工", color0: "#15E09B", color1: "#1DBD6B" },
-                    { value: 20, name: "55岁以上:10人 10%", color0: "#BFE579", color1: "#8BC644" },
-                    {
-                         value: 20,name: "砌筑工",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
-                    }
+                    { value: 0, name: "18岁以下", color0: "#FF687D", color1: "#FC0C59" },
+                    { value: 5, name: "18-29岁", color0: "#FCDE54", color1: "#F7BA2A" },
+                    { value: 12, name: "30-39岁", color0: "#15E09B", color1: "#1DBD6B" },
+                    { value: 12, name: "40-49岁", color0: "#BFE579", color1: "#8BC644" },
+                    {value: 6,name: "50-55岁",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"},
+                    {value: 0,name: "60岁以上",color0: "#FF687D", color1: "#FC0C59"},
                 ];
 
                 // 计算总数
@@ -517,10 +510,9 @@
                     v.label = {
                     normal: {
                         show: true,
-                        formatter: "{b}\n\n{d}%",
                         textStyle: {
-                        fontSize: 12,
-                        color: v.color1
+                            fontSize: 12,
+                            color: v.color1
                         },
                         position: "outside"
                     },
@@ -600,7 +592,7 @@
 
                     series: [
                     {
-                        name: "质量问题",
+                        name: "年龄问题",
                         type: "pie",
                         radius: ["45%", "70%"],
                         center: ["50%", "50%"],
@@ -728,13 +720,13 @@
                     },
                     xAxis: [{
                         type: 'category',
-                        data: ['4月17日',
-                            '4月18日',
-                            '4月19日',
-                            '4月20日',
+                        data: ['4月20日',
                             '4月21日',
                             '4月22日',
-                            '4月23日'
+                            '4月23日',
+                            '4月24日',
+                            '4月25日',
+                            '4月26日'
                         ],
                         axisLine: {
                             show: true,
@@ -779,7 +771,7 @@
                     series: [{
                         name: '管理人员出勤人数',
                         type: 'bar',
-                        data: [20, 50, 80, 58, 83, 68, 57],
+                        data: [16,15,33,33,33,33,33],
                         barWidth: 10, //柱子宽度
                         barGap: 1, //柱子之间间距
                         itemStyle: {
@@ -797,7 +789,7 @@
                     }, {
                         name: '班组人员出勤人数',
                         type: 'bar',
-                        data: [50, 70, 60, 61, 75, 87, 60, 62],
+                        data: [18,15,35,35,35,35,35],
                         barWidth: 10,
                         barGap: 1,
                         itemStyle: {

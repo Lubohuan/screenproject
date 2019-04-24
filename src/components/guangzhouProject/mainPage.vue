@@ -29,9 +29,16 @@
       </div>
     </section>
     <section class="header_tab flex_b">
-      <div class="tabtext" :class="{'active':activeIndex == index}" v-for="(list,index) in tabData" :key="index" @click="tabChange(list,index)">
+      <div class="tabtext" style="position:relative;" :class="{'active':activeIndex == index}" v-for="(list,index) in tabData" :key="index" @click="tabChange(list,index)">
         <img src="../../assets/bgtext.png" class="bgtext"/>
         <span class="titletext">{{list.text}}</span>
+        <ul v-if="showTab&& activeIndex == 7&&activeIndex == index" class="aiotTab">
+          <li style="border-bottom:1px solid #283664" @click="AiotTabChange('/',index)">AIOT驾驶舱</li>
+          <li style="border-bottom:1px solid #283664" @click="AiotTabChange('/',index)">环境监测</li>
+          <li style="border-bottom:1px solid #283664" @click="AiotTabChange('/aiotPageContent',index)">塔机监测</li>
+          <li @click="AiotTabChange('/aiotPageMonitoring')">视频监控</li>
+        </ul>
+
       </div>
      
     </section>
@@ -55,12 +62,11 @@ export default {
         {text:'生产进度',path:'/productionProgress'},
         {text:'质量管理',path:'/qualityManage'},
         {text:'现场安全',path:'/siteSafety'},
-        {text:'AIOT',path:'/aiotPage'},
-        {text:'BIM应用',path:'/'},
         {text:'AIOT',path:'/'},
-        {text:'BIM应用',path:'/bimApply'},
+        {text:'BIM应用',path:'/bimApply'}
       ],
-      tabactive:0
+      tabactive:0,
+      showTab:false
     }
   },
   async created(){
@@ -74,8 +80,22 @@ export default {
   },
   methods:{
       tabChange(list,index){
+        if(index == 7){
+        this.showTab = true;
+        this.activeIndex = index;
+        }else{
         this.activeIndex = index;
         this.$router.replace(list.path);
+        }
+        
+      },
+      AiotTabChange(list,index){
+        
+        this.showTab = false;
+        console.log(this.showTab&& this.activeIndex == 7&&this.activeIndex == index)
+        debugger
+        this.$router.replace(list);
+       
       },
       suited(){
         let levelheight = 1080;
@@ -102,4 +122,16 @@ export default {
 </script>
 <style lang="scss" >
   @import "mainPage.scss";
+  #maincontainer {
+    .aiotTab {
+      position:absolute;
+      top:50px;
+      width:100%;
+      background:#1D284D;
+      z-index:999;
+      li:hover {
+        color: #4cf0fe;
+      }
+    }
+  }
 </style>
