@@ -33,8 +33,8 @@
         <img src="../../assets/bgtext.png" class="bgtext"/>
         <span class="titletext">{{list.text}}</span>
         <ul v-show="index == 7&&showTab"  class="aiotTab">
-          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/',index)">AIOT驾驶舱</li>
-          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/',index)">环境监测</li>
+          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/aiotPage',index)">AIOT驾驶舱</li>
+          <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/aiotEnvironment',index)">环境监测</li>
           <li style="border-bottom:1px solid #283664" @click.stop="AiotTabChange('/aiotPageContent',index)">塔机监测</li>
           <li @click.stop="AiotTabChange('/aiotPageMonitoring')">视频监控</li>
         </ul>
