@@ -55,7 +55,7 @@ export default {
         {text:'生产进度',path:'/'},
         {text:'质量管理',path:'/qualityManage'},
         {text:'现场安全',path:'/siteSafety'},
-        {text:'AIOT',path:'/'},
+        {text:'AIOT',path:'/aiotPage'},
         {text:'BIM应用',path:'/'},
       ],
       tabactive:0

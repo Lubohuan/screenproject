@@ -170,13 +170,18 @@
           <div class="top_con_right_title">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;border-bottom: 1px solid #4CF0FE">物料库存</h5>
-              <h5 style="height: 39px;line-height: 39px">物资使用趋势</h5>
+              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;" v-bind:class="{active: boxOne }" @click="boxOne=true">物料库存</h5>
+              <h5 style="height: 39px;line-height: 39px" v-bind:class="{ active: !boxOne }" @click="boxOne=false">物资使用趋势</h5>
             </div>
           </div>
-<!--          <div class="drawTuQu" style="padding-right: 40px">-->
-<!--            <div id="chartmainbar" style="width:100%; height:320px;"></div>-->
-<!--          </div>-->
+          <div class="top_con_middle_bar" v-show="boxOne">
+            <div class="top_con_middle_bar_each" v-for="(item, index) in progressData" :key="index">
+              <div class="top_con_middle_bar_each_text" style="width: 60px">{{item.title}}</div>
+              <el-progress :percentage="item.progress" :stroke-width="10" :show-text="false" :color="item.color" style="flex: 1;margin-right: 30px"></el-progress>
+              <div class="top_con_middle_bar_each_text">{{item.total}}</div>
+            </div>
+          </div>
+          <div id="echart-line" style="width:790px;height:320px" v-show="!boxOne"></div>
         </div>
         <div style="height:308px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="table" style="padding-top: 20px">
@@ -296,7 +301,7 @@
             <div class="media">
               <div class="media-body">
                 <div class="media-header">
-                  <label>质量检查</label>
+                  <label>物资验收</label>
                   <span class="inline-block">施工一区</span>
                 </div>
                 <div class="media-content">
@@ -315,7 +320,7 @@
             <div class="media">
               <div class="media-body">
                 <div class="media-header">
-                  <label>质量检查</label>
+                  <label>物资验收</label>
                   <span class="inline-block">施工一区</span>
                 </div>
                 <div class="media-content">
@@ -334,7 +339,7 @@
             <div class="media">
               <div class="media-body">
                 <div class="media-header">
-                  <label>质量检查</label>
+                  <label>物资验收</label>
                   <span class="inline-block">施工一区</span>
                 </div>
                 <div class="media-content">
@@ -356,24 +361,55 @@
           <div class="top_con_right_title">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;border-bottom: 1px solid #4CF0FE">供应商评价统计</h5>
-              <h5 style="height: 39px;line-height: 39px">合同使用情况分析</h5>
+              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;" v-bind:class="{ active: boxTwo }" @click="boxTwo=true">供应商评价统计</h5>
+              <h5 style="height: 39px;line-height: 39px" v-bind:class="{ active: !boxTwo }" @click="boxTwo=false">合同使用情况分析</h5>
             </div>
           </div>
-          <div style="padding: 40px 26px 0">
+          <div style="padding: 40px 26px 0;" v-if="boxTwo">
             <img src="../../../assets/mate-two.png" alt="">
+          </div>
+          <div class="pactStatus" v-if="!boxTwo">
+            <div class="table" id="myTable4">
+              <table width="180" cellpadding="0" cellspacing="0" style="table-layout: auto;">
+                <tr>
+                  <td>合同验收金额</td>
+                  <td>结算金额</td>
+                </tr>
+                <tr>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">120</span>万</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">60</span>万</td>
+                </tr>
+              </table>
+            </div>
+            <div class="pactStatus_datail" style="display: flex;padding: 0 30px">
+              <div class="cir_time marginR30" style="margin-top: 16px">
+                <el-progress type="circle" :percentage="50" :width="70" :stroke-width='4' style="transform:rotateZ(-180deg)"></el-progress>
+                <div class="text_loc text_center" style="font-size: 12px;color: #dbe1ff;">结算率 </div>
+                <div class="time_size1">50%</div>
+              </div>
+              <div class="top_con_middle_bar" style="margin-top: 0">
+                <div class="top_con_middle_bar_each" v-for="(item, index) in pactData" :key="index" style="padding: 0">
+                  <div class="top_con_middle_bar_each_text" style="width: 80px">{{item.title}}</div>
+                  <el-progress :percentage="item.progress" :stroke-width="10" :show-text="false" :color="item.color" style="flex: 1;margin-right: 30px"></el-progress>
+                  <div class="top_con_middle_bar_each_text" style="width: 45px">{{item.total}}</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div style="height:248px;width:100%;background-color:#1D284D;">
           <div class="top_con_right_title">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;border-bottom: 1px solid #4CF0FE">预警情况分析</h5>
-              <h5 style="height: 39px;line-height: 39px">物资资金使用情况</h5>
+              <h5 style="margin-right: 28px;height: 39px;line-height: 39px;" v-bind:class="{ active: boxThree }" @click="boxThree=true">预警情况分析</h5>
+              <h5 style="height: 39px;line-height: 39px" v-bind:class="{ active: !boxThree }" @click="boxThree=false">物资资金使用情况</h5>
             </div>
           </div>
-          <div style="padding: 23px 16px 0">
+          <div style="padding: 23px 16px 0;" v-if="boxThree">
             <img src="../../../assets/mate-three.png" alt="">
+          </div>
+          <div style="padding: 23px 16px 0;" v-if="!boxThree">
+            <img src="../../../assets/mate-three-a.png" alt="">
           </div>
         </div>
       </div>
@@ -387,220 +423,350 @@ export default {
     return {
       options: [{
         value: '选项1',
-        label: '黄金糕'
+        label: '水管'
       }, {
         value: '选项2',
-        label: '双皮奶'
+        label: '模板'
       }, {
         value: '选项3',
-        label: '蚵仔煎'
+        label: '砂子'
       }, {
         value: '选项4',
-        label: '龙须面'
+        label: '混凝土'
       }, {
         value: '选项5',
-        label: '北京烤鸭'
+        label: '圆钢'
       }],
-      value: ''
+      value: '',
+      //控制本页视窗容器切换
+      boxOne: true,
+      boxTwo: true,
+      boxThree: true,
+      pactData: [
+        {title: '合同禁用数',
+          color: '#E07C76',
+          total: '5（次）',
+          progress: 60
+        }, {title: '合同超额数',
+          color: '#2FD695',
+          total: '7（次）',
+          progress: 80
+        }, {title: '合同总数',
+          color: '#FFC400',
+          total: '25（份）',
+          progress: 100
+        }
+      ],
+      progressData: [
+        {title: '钢筋',
+          color: '#42BBFF',
+          total: '50/100（吨）',
+          progress: 60
+        }, {title: '螺纹钢',
+          color: '#2FD695',
+          total: '50/100（吨）',
+          progress: 80
+        }, {title: '砂子',
+          color: '#FFC400',
+          total: '50/100（吨）',
+          progress: 40
+        }, {title: '模板',
+          color: '#E07C76',
+          total: '50/100（吨）',
+          progress: 60
+        }, {title: '混凝土',
+          color: '#8BC644',
+          total: '50/100（吨）',
+          progress: 20
+        }, {title: '圆钢',
+          color: '#51F6F0',
+          total: '50/100（吨）',
+          progress: 90
+        }
+      ]
     }
   },
   methods: {
     drawLine () {
-      let myChart = this.$echarts.init(document.getElementById('chartmainbar'))
+      var myChart = this.$echarts.init(document.getElementById('echart-line'))
       var option = {
-        xAxis: {
-          show: false
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
         },
-        yAxis: [{
-          show: true,
+        legend: {
           data: ['钢筋', '螺纹钢', '砂子', '模板', '混凝土', '圆钢'],
-          inverse: true,
+          align: 'left',
+          left: 20,
+          top:10,
+          textStyle: {
+            color: "#fff"
+          },
+          itemGap: 30,
+          itemWidth: 30,
+          itemHeight: 10,
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: [{
+          type: 'category',
+          data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
           axisLine: {
-            show: false
-          },
-          splitLine: {
-            show: false
-          },
-          axisTick: {
-            show: false
-          },
-          axisLabel: {
-            textStyle: {
-              color: '#DBE1FF'
-            },
-            formatter: function(value, index) {
-              return [
-                '{title|' + value + '} '
-              ].join('\n')
-            },
-            rich: {}
-          },
-
-        }, {
-          show: true,
-          inverse: true,
-          data: ['50/100（吨）','50/100（吨）', '50/100（吨）', '50/100（吨）', '50/100（吨）','50/100（吨）'],
-          axisLabel: {
-            textStyle: {
-              color: '#DBE1FF'
+            show: true,
+            lineStyle: {
+              color: "#2E4970",
+              width: 2,
+              type: "solid"
             }
           },
+          axisTick: {
+            show: false,
+          },
+          axisLabel: {
+            show: true,
+            textStyle: {
+              color: "#DBE1FF",
+              fontSize: 12
+            }
+          },
+        }],
+        yAxis: [{
+          type: 'value',
+          name: '(单)',
+          nameTextStyle: {
+            color: "#DBE1FF"
+          },
+          axisLabel: {
+            formatter: '{value}',
+            textStyle: {
+              color: "#DBE1FF",
+              fontSize: 12
+            }
+          },
+          min: 0, max: 100,
+          axisTick: {
+            show: false,
+          },
           axisLine: {
-            show: false
+            show: true,
+            lineStyle: {
+              color: "#2E4970",
+              width: 2,
+              type: "solid"
+            },
           },
           splitLine: {
-            show: false
+            show: false,
+            lineStyle: {
+              color: "#034e90",
+              width: 2,
+              type: "solid"
+            }
+          }
+        },{
+          type: 'value',
+          name: '(万)',
+          nameTextStyle: {
+            color: "#DBE1FF"
           },
+          position: "right",
+          axisLabel: {
+            formatter: '{value}',
+            textStyle: {
+              color: "#DBE1FF",
+              fontSize: 12
+            }
+          },
+          min: 0, max: 100,
           axisTick: {
-            show: false
+            show: false,
+          },
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: "#2E4970",
+              width: 2,
+              type: "solid"
+            },
+          },
+          splitLine: {
+            show: false,
+            lineStyle: {
+              color: "#034e90",
+              width: 2,
+              type: "solid"
+            }
           }
         }],
         series: [{
-          name: '条',
-          type: 'bar',
-          yAxisIndex: 0,
-          data: [{
-            value: 53,
-            itemStyle: {
-              normal: {
-                color: {
-                  type: 'bar',
-                  colorStops: [{
-                    offset: 0,
-                    color: 'rgba(0,153,239,0.8)' // 0% 处的颜色
-                  }, {
-                    offset: 1,
-                    color: 'rgba(66,187,255,1)' // 100% 处的颜色
-                  }],
-                  globalCoord: false // 缺省为 false
-                }
-              }
+          name: '钢筋',
+          type: 'line',
+          data: (function() {
+            var d = [];
+            for (let i = 0; i < 12; i++) {
+              d.push(parseInt(Math.random() * (100 - 50 + 1) + 50, 10));
             }
-          }, {
-            value: 80,
-            itemStyle: {
-              // normal:{color:'#b250ff',barBorderRadius:[0,10,10,0],}
-              normal: {
-                color: {
-                  type: 'bar',
-                  colorStops: [{
-                    offset: 0,
-                    color: 'rgba(39,161,125,1)' // 0% 处的颜色
-                  }, {
-                    offset: 1,
-                    color: 'rgba(39,161,125,1)' // 100% 处的颜色
-                  }],
-                  globalCoord: false // 缺省为 false
-                }
-              }
-            }
-          }, {
-            value: 20,
-            itemStyle: {
-              // normal:{color:'#4f9aff',barBorderRadius:[0,10,10,0],}
-              normal: {
-                color: {
-                  type: 'bar',
-                  colorStops: [{
-                    offset: 0,
-                    color: 'rgba(216,185,42,1)' // 0% 处的颜色
-                  }, {
-                    offset: 1,
-                    color: 'rgba(216,185,42,1)' // 100% 处的颜色
-                  }],
-                  globalCoord: false // 缺省为 false
-                }
-              }
-            }
-          }, {
-            value: 40,
-            itemStyle: {
-              // normal:{color:'#4bf3ff',barBorderRadius:[0,10,10,0],  },
-              normal: {
-                color: {
-                  type: 'bar',
-                  colorStops: [{
-                    offset: 0,
-                    color: 'rgba(223,92,180,1)' // 0% 处的颜色
-                  }, {
-                    offset: 1,
-                    color: 'rgba(224,124,118,1)' // 100% 处的颜色
-                  }],
-                  globalCoord: false // 缺省为 false
-                }
-              }
-
-            }
-          },{
-            value: 53,
-            itemStyle: {
-              // normal:{color:'#4bf3ff',barBorderRadius:[0,10,10,0],  },
-              normal: {
-                color: {
-                  type: 'bar',
-                  colorStops: [{
-                    offset: 0,
-                    color: 'rgba(191,229,121,1)' // 0% 处的颜色
-                  }, {
-                    offset: 1,
-                    color: 'rgba(139,198,68,1)' // 100% 处的颜色
-                  }],
-                  globalCoord: false // 缺省为 false
-                }
-              }
-
-            }
-          },{
-            value: 53,
-            itemStyle: {
-              // normal:{color:'#4bf3ff',barBorderRadius:[0,10,10,0],  },
-              normal: {
-                color: {
-                  type: 'bar',
-                  colorStops: [{
-                    offset: 0,
-                    color: 'rgba(81,246,240,1)' // 0% 处的颜色
-                  }, {
-                    offset: 1,
-                    color: 'rgba(2,199,249,1)' // 100% 处的颜色
-                  }],
-                  globalCoord: false // 缺省为 false
-                }
-              }
-
-            }
-          }],
-          barWidth: 10,
+            return d;
+          })(),
           itemStyle: {
             normal: {
-              barBorderRadius: 0,
-              color: 'rgba(255,255,255,0.3)'
-              // color: function(params) {
-              //   var num = myColor.length;
-              //   return myColor[params.dataIndex % num]
-              // },
+              color: '#FC0C59',
             }
           },
-          label: {
+          lineStyle: {
             normal: {
-              show: false,
-              position: 'inside',
-              formatter: '{c}%'
+              width: 2,
+              shadowColor: 'rgba(0,0,0,0.4)',
+              shadowBlur: 10,
+              shadowOffsetY: 10
+            }
+          }
+        }, {
+          name: '螺纹钢',
+          type: 'line',
+          data: (function() {
+            var d = [];
+            for (let i = 0; i < 12; i++) {
+              d.push(parseInt(Math.random() * (90 - 40) + 40, 10));
+            }
+            return d;
+          })(),
+          itemStyle: {
+            normal: {
+              color: '#28AB81',
             }
           },
+          lineStyle: {
+            normal: {
+              width: 2,
+              shadowColor: 'rgba(0,0,0,0.4)',
+              shadowBlur: 10,
+              shadowOffsetY: 10
+            }
+          },
+        }, {
+          name: '砂子',
+          type: 'line',
+          data: (function() {
+            var d = [];
+            for (let i = 0; i < 12; i++) {
+              d.push(parseInt(Math.random() * (80 - 30 + 1) + 30, 10));
+            }
+            return d;
+          })(),
+          itemStyle: {
+            normal: {
+              color: '#FEDF50',
+            }
+          },
+          lineStyle: {
+            normal: {
+              width: 2,
+              shadowColor: 'rgba(0,0,0,0.4)',
+              shadowBlur: 10,
+              shadowOffsetY: 10
+            }
+          }
+        }, {
+          name: '模板',
+          type: 'line',
+          data: (function() {
+            var d = [];
+            for (let i = 0; i < 12; i++) {
+              d.push(parseInt(Math.random() * (70 - 20 + 1) + 20, 10));
+            }
+            return d;
+          })(),
+          itemStyle: {
+            normal: {
+              color: '#E0699B',
+            }
+          },
+          lineStyle: {
+            normal: {
+              width: 2,
+              shadowColor: 'rgba(0,0,0,0.4)',
+              shadowBlur: 10,
+              shadowOffsetY: 10
+            }
+          }
+        },{
+          name: '混凝土',
+          type: 'line',
+          data: (function() {
+            var d = [];
+            for (let i = 0; i < 12; i++) {
+              d.push(parseInt(Math.random() * (80 - 30 + 1) + 30, 10));
+            }
+            return d;
+          })(),
+          itemStyle: {
+            normal: {
+              color: '#A1D35B',
+            }
+          },
+          lineStyle: {
+            normal: {
+              width: 2,
+              shadowColor: 'rgba(0,0,0,0.4)',
+              shadowBlur: 10,
+              shadowOffsetY: 10
+            }
+          }
+        },{
+          name: '圆钢',
+          type: 'line',
+          data: (function () {
+            var d = []
+            for (let i = 0; i < 12; i++) {
+              d.push(parseInt(Math.random() * (80 - 30 + 1) + 30, 10));
+            }
+            return d
+          })(),
+          itemStyle: {
+            normal: {
+              color: '#4CF0FE'
+            }
+          },
+          lineStyle: {
+            normal: {
+              width: 2,
+              shadowColor: 'rgba(0,0,0,0.4)',
+              shadowBlur: 10,
+              shadowOffsetY: 10
+            }
+          }
         }]
-      };
-      myChart.setOption(option);
+      }
+      myChart.setOption(option)
+      window.addEventListener("resize", () => {
+        myChart.resize()
+      })
     }
   },
   mounted () {
-    this.drawLine()
+    this.drawLine();
   }
 }
 </script>
 <style lang="scss">
+  .el-progress .el-progress-bar__outer{
+    background:rgba(255,255,255,0.3)!important;
+    border-radius: 0!important;
+  }
+  .el-progress-bar__inner{
+    border-radius: 0!important;
+  }
   #title_right{
     height: 24px!important;
+    background: #283664;
+    border:1px solid rgba(118,208,223,.2) !important;
   }
   #scolTab tbody{
     height: 168px;
@@ -651,5 +817,11 @@ export default {
   }
   #scolTab::-webkit-scrollbar {
     display: none;
+  }
+  .show{
+    border-bottom: 1px solid #4CF0FE
+  }
+  .active{
+    border-bottom: 1px solid #4CF0FE
   }
 </style>

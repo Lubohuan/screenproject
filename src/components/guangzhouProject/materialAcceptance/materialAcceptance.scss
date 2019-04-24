@@ -96,3 +96,65 @@
     }
   }
 }
+#myTable4{
+  margin: 20px 0 12px 0;
+  tr{
+    height: 28px;
+    line-height: 28px;
+    td{
+      border-bottom: 0;
+    }
+  }
+}
+.top_con_middle_bar{
+  margin-top: 45px;
+  flex: 1;
+  .top_con_middle_bar_each{
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    justify-content: space-between;
+    .top_con_middle_bar_each_text{
+      font-size:14px;
+      font-weight:500;
+      color:rgba(219,225,255,1)
+    }
+  }
+}
+.cir_time {
+  position: relative;
+  .time_size {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(45,241,215,0.6);
+    color: #fff;
+  }
+  .time_size1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    background-color: #1D284D;
+    color: #4CF0FE;
+  }
+  .text_loc  {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    background-color: #1D284D;
+  }
+}

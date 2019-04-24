@@ -43,6 +43,13 @@ var mainRouters = [
         }
       },
       {
+        path: '/aiotPage',
+        name: 'aiotPage',
+        component: (resolve) => {
+          return require(['../components/guangzhouProject/aiotPage/aiotPage.vue'], resolve)
+        }
+      },
+      {
         path: '/qualityManage',
         name: 'qualityManage',
         component: (resolve) => {
