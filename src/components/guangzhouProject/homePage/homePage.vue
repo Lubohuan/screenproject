@@ -666,7 +666,7 @@
            </div>
        </div>
         <!-- 人员列表弹框 -->
-        <div v-if="showInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
+        <div v-if="showInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
             <div style="position:absolute;top:50%;left:50%;height:500px;width:1080px;transform:translate(-50%,-50%);">
                 <div v-if="showInfo" style="position:absolute;left:0px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
@@ -757,7 +757,7 @@
             </div>
         </div>
         <!-- 塔机信息弹框 -->
-        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
+        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
             
             <div style="position:absolute;top:50%;left:50%;height:340px;width:680px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
                 <div style="background:#1D284D;height:340px">
