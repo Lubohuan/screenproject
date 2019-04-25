@@ -308,7 +308,7 @@
                            <li>无人机</li>
                        </ul>
                    </div>
-                   <div class="middle_ul">
+                   <div class="middle_ul" v-if="false">
                        <ul>
                            <li>一区进</li>
                            <li>二区进</li>
