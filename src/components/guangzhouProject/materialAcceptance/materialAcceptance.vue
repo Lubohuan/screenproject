@@ -9,55 +9,87 @@
               <h5>项目层级</h5>
             </div>
           </div>
-          <div class="doubleTable" style="display: flex">
-            <div class="table" id="myTable1">
-              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
-                <tr>
-                  <td>发料数</td>
-                  <td>今日</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">0</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px"></span></td>
-                </tr>
-                <tr>
-                  <td>验收数</td>
-                  <td>今日</td>
-                  <td>累计</td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">0</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
-                </tr>
-              </table>
+          <div class="doubleTable" style="display: flex;padding-top: 16px;">
+            <div class="table" id="myTable1" style="display: flex;flex-direction: column;">
+              <div style="flex: 1;">
+                <span style="font-size: 16px">发料单数</span>
+                <b style="color: #FFDB00;font-size: 26px;margin:0 24px;">70</b>
+                <span style="font-size: 16px">今日</span>
+                <b style="color: #FFDB00;font-size: 26px;margin:0 14px;">3</b>
+              </div>
+              <div style="flex: 1">
+                <span style="font-size: 16px">验收单数</span>
+                <b style="color: #FFDB00;font-size: 26px;margin:0 24px;">70</b>
+                <span style="font-size: 16px">今日</span>
+                <b style="color: #FFDB00;font-size: 26px;margin:0 14px;">3</b>
+              </div>
+              <div style="flex: 1">
+                <span style="font-size: 16px">合同总数 (份)</span>
+                <b style="color: #FFDB00;font-size: 26px;margin:0 16px;">1000</b>
+              </div>
+              <!--<table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">-->
+                <!--<tr>-->
+                  <!--<td>发料数</td>-->
+                  <!--<td>今日</td>-->
+                  <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>-->
+                  <!--<td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">0</span>单</td>-->
+                  <!--<td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px"></span></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td>验收数</td>-->
+                  <!--<td>今日</td>-->
+                  <!--<td>累计</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>-->
+                  <!--<td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">0</span>单</td>-->
+                  <!--<td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>-->
+                <!--</tr>-->
+              <!--</table>-->
             </div>
             <div class="tableLine" style="width: 1px;height: 113px;background: #2E4970;margin-top: 10px;margin-right: 28px;"></div>
-            <div class="table" id="myTable3">
-              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
-                <tr>
-                  <td>发料金额</td>
-                  <td>今日</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">424.89</span>万</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>万</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
-                </tr>
-                <tr>
-                  <td>验收金额</td>
-                  <td>合同总数</td>
-                  <td>供应商总数</td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">424.89</span>万</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">22</span>份</td>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">18</span>家</td>
-                </tr>
-              </table>
+            <div class="table" id="myTable3" style="display: flex;flex-direction: column;padding: 0">
+              <div style="flex: 1;">
+                <span style="font-size: 16px">发料金额 (万)</span>
+                <b style="color: #02F2FF;font-size: 26px;margin:0 16px;">65</b>
+                <span style="font-size: 18px">今日</span>
+                <b style="color: #02F2FF;font-size: 26px;margin:0 0 0 10px;">3</b>
+              </div>
+              <div style="flex: 1">
+                <span style="font-size: 16px">验收金额 (万)</span>
+                <b style="color: #02F2FF;font-size: 26px;margin:0 16px;">65</b>
+                <span style="font-size: 18px">今日</span>
+                <b style="color: #02F2FF;font-size: 26px;margin:0 0 0 10px;">3</b>
+              </div>
+              <div style="flex: 1">
+                <span style="font-size: 16px">供应商总数(家)</span>
+                <b style="color: #02F2FF;font-size: 26px;margin:0 16px;">70</b>
+              </div>
+              <!--<table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">-->
+                <!--<tr>-->
+                  <!--<td>发料金额</td>-->
+                  <!--<td>今日</td>-->
+                  <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">424.89</span>万</td>-->
+                  <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>万</td>-->
+                  <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td>验收金额</td>-->
+                  <!--<td>合同总数</td>-->
+                  <!--<td>供应商总数</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">424.89</span>万</td>-->
+                  <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">22</span>份</td>-->
+                  <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">18</span>家</td>-->
+                <!--</tr>-->
+              <!--</table>-->
             </div>
           </div>
         </div>
