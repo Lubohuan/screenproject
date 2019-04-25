@@ -757,28 +757,75 @@
             </div>
         </div>
         <!-- 塔机信息弹框 -->
-        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
+        <div v-if="showMeicInfo" class="tajiInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
             
-            <div style="position:absolute;top:50%;left:50%;height:340px;width:680px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
-                <div style="background:#1D284D;height:340px">
-                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                        塔机信息    
-                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
-                    </div>
-                    <div style="margin:20px;width:260px;float:left">
-                        <img src="../../../assets/index/meic.png" alt="" height="260">
-                        <div style="position:absolute;">
+            <div style="position:absolute;top:50%;left:50%;height:950px;width:980px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
+                <div class="bg" style="height:950px;">
+                    <div style="height:280px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                            塔机信息    
+                            <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
+                        </div>
+                        <div style="margin:20px 0 20 20px;width:260px;float:left">
+                            <img src="../../../assets/index/meic.png" alt="" height="200" style="margin-top:25px">
+                            <div style="position:absolute;">
 
+                            </div>
+                        </div>
+                        <div style="margin:20px 0px;padding:0 30px;height:200px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
+                            <div style="line-height:30px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
+                            <div style="line-height:30px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE-T04635</div>
+                            <div style="line-height:30px"><span class="color_blue1">型号: </span>QTR160</div>
+                            <div style="line-height:30px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
+                            <div style="line-height:30px"><span class="color_blue1">出厂编号: </span>T2019012</div>
+                            <div style="line-height:30px"><span class="color_blue1">出厂日期: </span>2019.02.18</div>
                         </div>
                     </div>
-                    <div style="margin:20px 10px;padding:0 30px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
-                        <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
-                        <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE-T04635</div>
-                        <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
-                        <div style="line-height:35px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
-                        <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>T2019012</div>
-                        <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>2019.02.18</div>
+                    <div class="padding10" style="background:#1D284D;height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">设备进场</span>
+                            <span>进场时间: </span>2019年3月28日晚    
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic2.png" alt="" height="100">
+                            塔吊材料及配件进场
+                        </div>
+                    </div>
+                    
+                    <div class="padding10" style="height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">设备检查</span>
+                            <span>进场时间: </span>2019年4月4日    
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic3.png" alt="" height="100">
+                            组织监理、业主现场验收塔吊
+                        </div>
+                    </div>
+                    
+                    <div class="padding10" style="height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">设备验收</span>
+                            <span>进场时间: </span>2019年4月18日    
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic4.png" alt="" height="100">
+                            <img src="../../../assets/index/pic5.png" alt="" height="100">
+                            项目部组织塔吊自检，自检结论：合格
+                        </div>
+                    </div>
+                    
+                    <div class="padding10" style="height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">维保</span>
+                            <span>进场时间: </span>2019年4月25日   
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic6.png" alt="" height="100">
+                            <img src="../../../assets/index/pic7.png" alt="" height="100">
+                            塔吊租赁单位组织塔吊维保
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1775,6 +1822,9 @@
   
     .el-carousel__item:nth-child(2n+1) {
         background-color: #d3dce6;
+    }
+    .tajiInfo img {
+        margin:0 20px;
     }
 }
 </style>
