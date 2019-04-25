@@ -22,14 +22,14 @@
                   <dl class="dl-equipment">
                     <dt>履带推土机</dt>
                     <dd>
-                      <span class="text">2</span>
+                      <span class="text">0</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                   <dl class="dl-equipment">
                     <dt>液压挖掘机</dt>
                     <dd>
-                      <span class="text">5</span>
+                      <span class="text">0</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
@@ -38,14 +38,14 @@
                   <dl class="dl-equipment">
                     <dt>混凝土喷浆机</dt>
                     <dd>
-                      <span class="text">1</span>
+                      <span class="text">0</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
                   <dl class="dl-equipment">
                     <dt>空气压缩机</dt>
                     <dd>
-                      <span class="text">1</span>
+                      <span class="text">0</span>
                       <span class="unit">台</span>
                     </dd>
                   </dl>
@@ -129,11 +129,11 @@
                     </td>
                     <td>
                       <div class="eclipse">
-                        <span>履带推土机</span>
+                        <span>-</span>
                       </div>
                     </td>
                     <td>
-                      <span>合格</span>
+                      <span>-</span>
                     </td>
                     <td>
                       <!-- <div class="bad">
@@ -143,7 +143,7 @@
                         </span>
                       </div>-->
                       <div class="good">
-                        0
+                        -
                         <!-- <span>33%</span>
                         <span>
                           <i class="iconfont">↑</i>
@@ -157,15 +157,15 @@
                     </td>
                     <td>
                       <div class="eclipse">
-                        <span>液压挖掘机</span>
+                        <span>-</span>
                       </div>
                     </td>
                     <td>
-                      <span>合格</span>
+                      <span>-</span>
                     </td>
                     <td>
                       <div class="good">
-                      0
+                      -
                       </div>
                     </td>
                   </tr>
@@ -175,15 +175,15 @@
                     </td>
                     <td>
                       <div class="eclipse">
-                        <span>混凝土喷浆机</span>
+                        <span>-</span>
                       </div>
                     </td>
                     <td>
-                      <span>合格</span>
+                      <span>-</span>
                     </td>
                     <td>
                     <div class="good">
-                      0
+                      -
                       </div>
                     </td>
                   </tr>
