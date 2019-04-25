@@ -190,7 +190,7 @@
               <div class="modal">
                 <div class="modal-title flex jc-between">
                   <div class="all-height flex ai-center">
-                    <span class="text">进度详情</span>
+                    <span class="text">详情</span>
                   </div>
                   <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
                     <i class="el-icon-close"></i>
