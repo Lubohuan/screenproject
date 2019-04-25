@@ -18,8 +18,8 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">102</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">2</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">0</span>单</td>
                   <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px"></span></td>
                 </tr>
                 <tr>
@@ -29,7 +29,7 @@
                 </tr>
                 <tr>
                   <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
-                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">2</span>单</td>
+                  <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">0</span>单</td>
                   <td><span style="font-size: 28px;color: #FEDF50;margin-right: 5px">108</span>单</td>
                 </tr>
               </table>
@@ -43,7 +43,7 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>万</td>
+                  <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">424.89</span>万</td>
                   <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>万</td>
                   <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
                 </tr>
@@ -351,7 +351,7 @@
                             </span>
                 </div>
                 <div class="media-footer">
-                  2019.04.12 11:20
+                  2019.04.13 21:01
                 </div>
               </div>
               <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
@@ -370,7 +370,7 @@
                             </span>
                 </div>
                 <div class="media-footer">
-                  2019.04.12 11:20
+                  2019.04.13 00:00
                 </div>
               </div>
               <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
@@ -506,7 +506,7 @@ export default {
           xh: 'C20',
           lyl: 2357,
           jhl: 2357,
-          tzl: 0,
+          tzl: 2400,
           cl: 0,
           lyb: '100%',
           clb: '0%'
@@ -514,7 +514,7 @@ export default {
           xh: 'C20细石',
           lyl: 96,
           jhl: 96,
-          tzl: 0,
+          tzl: 380,
           cl: 0,
           lyb: '100%',
           clb: '0%'
@@ -522,7 +522,7 @@ export default {
           xh: 'C30',
           lyl: 381,
           jhl: 381,
-          tzl: 0,
+          tzl: 400,
           cl: 0,
           lyb: '100%',
           clb: '0%'
@@ -530,7 +530,7 @@ export default {
           xh: 'C35P8',
           lyl: 28,
           jhl: 28,
-          tzl: 0,
+          tzl: 358,
           cl: 0,
           lyb: '100%',
           clb: '0%'
@@ -598,7 +598,7 @@ export default {
           }
         },
         legend: {
-          data: ['商品混凝土', '钢筋', '防水卷材'],
+          data: ['商品混凝土', '钢筋'],
           align: 'left',
           left: 20,
           top:10,
@@ -705,24 +705,26 @@ export default {
               shadowOffsetY: 10
             }
           },
-        }, {
-          name: '防水卷材',
-          type: 'line',
-          data: [60.47, 0, 302.37, 0],
-          itemStyle: {
-            normal: {
-              color: '#FEDF50',
-            }
-          },
-          lineStyle: {
-            normal: {
-              width: 2,
-              shadowColor: 'rgba(0,0,0,0.4)',
-              shadowBlur: 10,
-              shadowOffsetY: 10
-            }
-          }
-        }]
+        }, 
+        // {
+        //   name: '防水卷材',
+        //   type: 'line',
+        //   data: [60.47, 0, 302.37, 0],
+        //   itemStyle: {
+        //     normal: {
+        //       color: '#FEDF50',
+        //     }
+        //   },
+        //   lineStyle: {
+        //     normal: {
+        //       width: 2,
+        //       shadowColor: 'rgba(0,0,0,0.4)',
+        //       shadowBlur: 10,
+        //       shadowOffsetY: 10
+        //     }
+        //   }
+        // }
+        ]
       }
       myChart.setOption(option)
       window.addEventListener("resize", () => {
@@ -1029,10 +1031,10 @@ export default {
             //   }
             // },
             data: [
-              9,
-              0,
-              32,
-              12
+              39,
+              5,
+              15,
+              23
             ]
           },
           {
@@ -1092,10 +1094,10 @@ export default {
             // }
             //},
             data: [
-              9,
-              0,
-              32,
-              12
+              39,
+              5,
+              15,
+              23
             ]
           },{
             name: "验收金额（万）",
@@ -1154,10 +1156,10 @@ export default {
             // }
             //},
             data: [
-              37.6,
-              0,
-              329.32,
-              46.46
+              118.82,
+              40.30,
+              53.62,
+              81.80
             ]
           }
         ]

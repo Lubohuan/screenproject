@@ -433,25 +433,21 @@
               <div class="pannel-container">
                 <div class="pannel">
                   <div class="pannel-header">
-                    <p class="time">2019年4月22日 星期一  雷阵雨转多云</p>
-                    <p class="text">抗浮锚杆施工成孔45根,累计完成2195根,占总量100%;基坑底板侧砖模砌筑,占总量47%</p>
+                    <p class="time">2019年4月24日 星期三 多云</p>
+                    <p class="text">基坑底板侧砖模砌筑（防水保护墙，占重量55%），基坑核心筒测砖模批灰（占总量100%）</p>
                   </div>
                   <div class="pannel-content">
                     <img src="../../../assets/qualityManage/b1.png" alt="">
                     <img src="../../../assets/qualityManage/b2.png" alt="">
-                    <img src="../../../assets/qualityManage/j1.png" alt="">
-                    <img src="../../../assets/qualityManage/j2.png" alt="">
                   </div>
                 </div>
                 <div class="pannel">
                   <div class="pannel-header">
-                    <p class="time">2019年4月21日 星期日 阴转小雨</p>
-                    <p class="text">抗浮锚杆施工成孔22根,累计完成2150根,占总量98%;基坑底板侧砖模混凝土回填,已完成1区总量60%</p>
+                    <p class="time">2019年4月24日 星期三 多云</p>
+                    <p class="text">1区防水层混凝土浇筑，占1区总量80%</p>
                   </div>
                   <div class="pannel-content">
                      <img src="../../../assets/qualityManage/t1.png" alt="">
-                    <img src="../../../assets/qualityManage/t2.png" alt="">
-                     <img src="../../../assets/qualityManage/j3.png" alt="">
                   </div>
                 </div>
               </div>
@@ -738,7 +734,9 @@
       </div>
       <!-- right end -->
     </div>
+    
   </div>
+
 </template>
 <script>
 import scrollfunc from "../../public/all";
