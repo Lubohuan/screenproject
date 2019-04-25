@@ -201,12 +201,12 @@
         <div style="height:410px;width:100%;background-color:#1D284D;margin-bottom:10px;" class="middle_bg">
           <div class="bottom_ul">
             <ul>
-              <li style="color:#FC0C59"><i class="i_red"></i>重大危险源 : 10个</li>
-              <li style="color:#FEDF50"><i class="i_yellow"></i>危险作业: 10个</li>
-              <li style="color:#FC0C59"><i class="i_red"></i>一级1个</li>
+              <li style="color:#FC0C59"><i class="i_red"></i>重大危险源 : 9个</li>
+              <li style="color:#FEDF50"><i class="i_yellow"></i>危险作业: 3个</li>
+              <li style="color:#FC0C59"><i class="i_red"></i>一级9个</li>
               <li style="color:#FEDF50"><i class="i_yellow"></i>二级3个</li>
-              <li style="color:#4CF0FE"><i class="i_blue"></i>三级2个</li>
-              <li style="color:#00F7BD"><i class="i_green"></i>四级1个</li>
+              <li style="color:#4CF0FE"><i class="i_blue"></i>三级0个</li>
+              <li style="color:#00F7BD"><i class="i_green"></i>四级0个</li>
 
             </ul>
 <!--            <a href="javascript:0;">项目简介</a>-->
@@ -238,14 +238,16 @@
           <div class="hidden">
             <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
               <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
-              <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
+              <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;" >
                 <dl>
                   <dt><span>较大隐患</span><span>安全防护</span></dt>
                   <dd>斜撑梁局部防护缺失</dd>
                   <dd>整改责任人：张富立</dd>
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
+
                 </dl>
+                <img src="../../../assets/manageMachine/4.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
             <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
@@ -257,7 +259,9 @@
                   <dd>整改责任人：张富立</dd>
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
+
                 </dl>
+                <img src="../../../assets/manageMachine/3.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
             <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
@@ -270,9 +274,9 @@
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
                 </dl>
+                <img src="../../../assets/manageMachine/2.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
-
             <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
               <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
               <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
@@ -282,72 +286,140 @@
                   <dd>整改责任人：张富立</dd>
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
+
                 </dl>
+                <img src="../../../assets/manageMachine/1.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;" >
+              </div>
+            </div>
+            <div class="hidden_loc" style="top: 130px;left: 380px;" @click="openhidden(4)">
+              <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
+              <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:-94px;bottom:5px;">
+                <dl>
+                  <dt><span>危险作业名称：</span><span>吊装作业</span></dt>
+                  <dd>斜撑梁局部防护缺失</dd>
+                  <dd>责任人：刘鹏</dd>
+                  <dd>现场图片</dd>
+
+                </dl>
+                <img  src="../../../assets/110.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
           </div>
         </div>
         <div style="height:516px;width:100%;background-color:#1D284D;margin-bottom:10px;">
-          <div class="top_con_right_title">
-            <div class="title_left">
+          <div class="top_con_right_title" >
+            <div class="title_left" style="width: 37%">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5>危险作业统计</h5>
+              <h5>危险源状态</h5>
+            </div>
+            <div style="width: 60%;">
+              <img src="../../../assets/safe-time.png" alt="">
+              危险源执行情况
             </div>
 <!--            <div class="timeSelect">-->
 <!--              <p>本周</p>-->
 <!--              <p>本月</p>-->
 <!--            </div>-->
           </div>
-          <div class="top_con_middle_content" style="display: flex;padding: 30px">
-            <div class="top_con_middle_content_left" style="display: flex">
-              <div class="cir_time" style="margin:20px 20px 0 30px;">
-                <el-progress type="circle" :percentage="100" color="#00F29F"></el-progress>
-                <div class="time_size">100%</div>
+          <div class="top_con_middle_content" style="display: flex;padding: 30px;justify-content: space-between">
+            <div class="top_con_middle_content_left" style="width: 37%">
+              <div class="top_con_middle_content_right"  style="height: 100%" >
+                <div id="echart-pie" style="width:100%;height:100%"></div>
               </div>
+            </div>
+            <div class="table" style="width: 60%;float: right">
+              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
+                <thead>
+                <tr>
+                  <th>危险源名称</th>
+                  <th>等级</th>
+                  <th>责任人</th>
+                  <th>状态</th>
+                  <th>已监管次数</th>
+                  <th>需监管天数</th>
+                </tr>
+                </thead>
+                <tr>
+                  <td style="max-width: 60px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap">基坑支护与降水工程</td>
+                  <td>一级</td>
+                  <td>刘鹏</td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>
+                  <td>57</td>
+                  <td><span style="color: #FC0C59;">120</span></td>
+                </tr>
+                <tr>
+                  <td>深基坑</td>
+                  <td>一级</td>
+                  <td>孙宗瑞</td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>
+                  <td>57</td>
+                  <td><span style="color: #FC0C59;">120</span></td>
+                </tr>
+                <tr>
+                  <td>土方开挖工程</td>
+                  <td>一级</td>
+                  <td>刘鹏</td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已通过</span></td>
+                  <td>60</td>
+                  <td><span style="color: #FC0C59;">60</span></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+          <div class="top_con_right_title">
+          <div class="title_left">
+            <img src="../../../assets/safe-time.png" alt="">
+            <h5>安全验收</h5>
+          </div>
+          </div>
+          <div class="table" style="margin-top: 5px;display: flex;justify-content: space-between">
+
+            <div class="cir_time" style="margin:20px 20px 0 30px;display: flex">
+              <el-progress type="circle" :percentage="100" color="#00F29F"></el-progress>
+              <div class="time_size">100%</div>
               <div class="top_con_middle_content_word">
                 <p><span class="yi"></span> 已验收</p>
                 <p><span class="er"></span> 待验收</p>
               </div>
             </div>
-            <div class="top_con_middle_content_right" style="flex: 1">
-              <div id="echart-pie" style="width:100%;height:100%"></div>
-            </div>
-          </div>
-          <div class="table" style="margin-top: 20px">
-            <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <thead>
+            <div style="width: 60%">
+              <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
+                <thead>
                 <tr>
                   <th>验收类型</th>
                   <th >设备名称</th>
                   <th>验收状态</th>
                   <th>验收人</th>
                 </tr>
-              </thead>
-              <tr>
-                <td>一般固定设备</td>
-                <td><span>切割机</span></td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
-                <td>刘鹏</td>
-              </tr>
-              <tr>
-                <td>一般固定设备</td>
-                <td><span>电焊机</span></td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
-                <td>刘鹏</td>
-              </tr>
-              <tr>
-                <td>一般固定设备</td>
-                <td><span>水泵</span></td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
-                <td>刘鹏</td>
-              </tr>
-              <tr>
-                <td>通道口防护</td>
-                <td><span>基坑安全通道</span></td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
-                <td>刘鹏</td>
-              </tr>
-            </table>
+                </thead>
+                <tr>
+                  <td>一般固定设备</td>
+                  <td><span>切割机</span></td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
+                  <td>刘鹏</td>
+                </tr>
+                <tr>
+                  <td>一般固定设备</td>
+                  <td><span>电焊机</span></td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
+                  <td>刘鹏</td>
+                </tr>
+                <tr>
+                  <td>一般固定设备</td>
+                  <td><span>水泵</span></td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
+                  <td>刘鹏</td>
+                </tr>
+                <tr>
+                  <td>通道口防护</td>
+                  <td><span>基坑安全通道</span></td>
+                  <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已验收</span></td>
+                  <td>刘鹏</td>
+                </tr>
+              </table>
+            </div>
+
           </div>
         </div>
       </div>
@@ -359,57 +431,196 @@
               <h5>安全概况</h5>
             </div>
           </div>
-          <div class="table" id="myTable1">
-            <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
-              <tr>
-                <td>重大危险源</td>
-                <td @click="dialogVisibleThree = true">重大危险源预警</td>
-                <td></td>
-                <td>进场人数</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">9</span>个</td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px" @click="dialogVisibleThree = true">1</span>个</td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">37</span>人</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
-              </tr>
-              <tr>
-                <td>超期隐患</td>
-                <td>未销重大隐患</td>
-                <td>隐患预警</td>
-                <td>进行安全教育</td>
-                <td>参加安全教育</td>
-                <td>教育率</td>
-              </tr>
-              <tr>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">4</span>次</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">110</span>人</td>
-                <td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">100%</span></td>
-              </tr>
-              <tr>
-                <td>危大工程</td>
-                <td></td>
-                <td></td>
-                <td>进行班前教育</td>
-                <td>参加班前教育</td>
-                <td>教育率</td>
-              </tr>
-              <tr>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">9</span>个</td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
-                <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>次</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>人</td>
-                <td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">0%</span></td>
-              </tr>
-            </table>
+          <div class="table" id="myTable1"style="display: flex;justify-content: space-around">
+            <div style="width: 55%;margin-top: 10px;line-height: 40px">
+              <div style="display: flex;justify-content: space-between">
+                <div>
+                  重大危险源&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="font-size: 20px;
+                    color:#000000;
+                    margin-right: 5px;
+                    display: inline-block
+                    ;width: 28px;height: 28px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 28px ">8</span> 个
+                </div>
+
+                <div @click="dialogVisibleThree = true">重大危险源预警 &nbsp;&nbsp;<span
+                  style="font-size: 20px;
+                    color:#000000;
+                    margin-right: 5px;
+                    display: inline-block
+                    ;width: 28px;height: 28px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 28px "
+                > 1</span> 个</div>
+              </div>
+              <!--<hr/>-->
+              <div style="display: flex;justify-content: space-between">
+                <div>超期隐患&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="font-size: 20px;
+                    color:#000000;
+                    margin-right: 5px;
+                    display: inline-block
+                    ;width: 28px;height: 28px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 28px ">
+                    7
+                  </span>
+
+                  个</div>
+                <div >未消重大隐患&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="font-size: 20px;
+                    color:#000000;
+                    margin-right: 5px;
+                    display: inline-block
+                    ;width: 28px;height: 28px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 28px "
+                  >
+                    7
+                  </span>
+                  个</div>
+              </div>
+              <div >
+                <div>隐患预警&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="font-size: 20px;
+                    color:#000000;
+                    margin-right: 5px;
+                    display: inline-block
+                    ;width: 28px;height: 28px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 28px ">
+                    1
+                  </span>
+                  个</div>
+              </div>
+              <div >
+                <div>危大工程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="font-size: 20px;
+                    color:#000000;
+                    margin-right: 5px;
+                    display: inline-block
+                    ;width: 28px;height: 28px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 28px ">
+                     8
+                  </span>
+                  个</div>
+              </div>
+            </div>
+            <div style="width: 40%;line-height: 40px;margin-top: 10px">
+              <div >
+                <div> 管理人员 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="font-size: 20px;color: #000000;
+                    display: inline-block;width: 28px;height: 28px;text-align: center;line-height: 28px;background-color:#76D0DF;border-radius: 50%;
+                    margin-right: 5px;">
+                     38
+                  </span>
+                  人
+                </div>
+
+              </div>
+              <div >
+                <div>专业分包 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="font-size: 20px;color: #000000;
+                    display: inline-block;width: 28px;height: 28px;text-align: center;line-height: 28px;background-color:#76D0DF;border-radius: 50%;
+                    margin-right: 5px;"
+
+                  >
+                    3
+                  </span>人</div>
+
+              </div>
+              <div >
+                      <div>班组作业 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span
+                        style="font-size: 20px;color: #000000;
+                         display: inline-block;width: 28px;height: 28px;text-align: center;line-height: 28px;background-color:#76D0DF;border-radius: 50%;
+                         margin-right: 5px;"
+                      >31</span>人</div>
+              </div>
+              <div >
+                      <div>进行安全教育 &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span
+                          style="font-size: 20px;color: #000000;
+                         display: inline-block;width: 28px;height: 28px;text-align: center;line-height: 28px;background-color:#76D0DF;border-radius: 50%;
+                         margin-right: 5px;"
+                        >8</span>人</div>
+              </div>
+              <div >
+                <div>参加安全教育  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 20px;color: #000000;
+                         display: inline-block;width: 28px;height: 28px;text-align: center;line-height: 28px;background-color:#76D0DF;border-radius: 50%;
+                         margin-right: 5px;">
+                  42
+                </span>人</div>
+              </div>
+            </div>
+
+
+
+            <!--<table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">-->
+              <!--<tr>-->
+                <!--<td>重大危险源-->
+                  <!--<span style="font-size: 28px;color: #000000;margin-right: 5px;display: inline-block;width: 30px;height: 30px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 30px " >8</span>个</td>-->
+                <!--<td @click="dialogVisibleThree = true">-->
+                  <!--重大危险源预警-->
+                  <!--<span style="font-size: 28px;color:#000000;margin-right: 5px;display: inline-block;width: 30px;height: 30px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 30px " @click="dialogVisibleThree = true">1</span>个-->
+                <!--</td>-->
+                <!--<td></td>-->
+                <!--<td>管理人数<span style="font-size: 28px;color: #76D0DF;margin-right: 5px">37</span>人</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>-->
+                <!--<td></td>-->
+                <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>-->
+                <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>超期隐患-->
+                  <!--<span style="font-size: 28px;color: #000000;margin-right: 5px;display: inline-block;width: 30px;height: 30px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 30px ">-->
+                    <!--0-->
+                  <!--</span>-->
+                  <!--个</td>-->
+                <!--<td>未销重大隐患 <span style="font-size: 28px;color: #000000;margin-right: 5px;display: inline-block;width: 30px;height: 30px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 30px ">-->
+                    <!--0-->
+                  <!--</span>-->
+                  <!--个</td>-->
+                <!--<td></td>-->
+                <!--<td>专业分包</td>-->
+                <!--<td></td>-->
+                <!--<td>教育率</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>隐患预警-->
+                  <!--<span style="font-size: 28px;color: #000000;margin-right: 5px;display: inline-block;width: 30px;height: 30px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 30px">-->
+                    <!--1-->
+                  <!--</span>-->
+                  <!--次</td>-->
+                <!--<td></td>-->
+                <!--<td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>-->
+                <!--<td></td>-->
+                <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">110</span>人</td>-->
+                <!--<td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">100%</span></td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>危大工程-->
+                  <!--<span style="font-size: 28px;color: #000000;margin-right: 5px;display: inline-block;width: 30px;height: 30px;border-radius: 50%;background-color:#F26565;text-align: center;line-height: 30px">-->
+                    <!--8-->
+                  <!--</span>-->
+                  <!--个</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td>进行班前教育</td>-->
+                <!--<td>参加班前教育</td>-->
+                <!--<td>教育率</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>-->
+                <!--<td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>-->
+                <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>次</td>-->
+                <!--<td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>人</td>-->
+                <!--<td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">0%</span></td>-->
+              <!--</tr>-->
+            <!--</table>-->
           </div>
           <el-dialog title="提示" :visible.sync="dialogVisibleThree" >
             <div class="modal hulingModal" style="height:600px;width: 600px;">
@@ -439,50 +650,86 @@
           <div class="top_con_right_title">
             <div class="title_left">
               <img src="../../../assets/safe-time.png" alt="">
-              <h5>危险源执行情况</h5>
+              <h5>工作状态</h5>
             </div>
 <!--            <div class="timeSelect">-->
 <!--              <p>本周</p>-->
 <!--              <p>本月</p>-->
 <!--            </div>-->
           </div>
-          <div class="table" style="margin-top: 55px">
-            <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-              <thead>
-                <tr>
-                  <th>危险源名称</th>
-                  <th>等级</th>
-                  <th>责任人</th>
-                  <th>状态</th>
-                  <th>已监管次数</th>
-                  <th>需监管天数</th>
-                </tr>
-              </thead>
-              <tr>
-                <td style="max-width: 60px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap">基坑支护与降水工程</td>
-                <td>一级</td>
-                <td>刘鹏</td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>
-                <td>57</td>
-                <td><span style="color: #FC0C59;">120</span></td>
-              </tr>
-              <tr>
-                <td>深基坑</td>
-                <td>一级</td>
-                <td>孙宗瑞</td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>
-                <td>57</td>
-                <td><span style="color: #FC0C59;">120</span></td>
-              </tr>
-              <tr>
-                <td>土方开挖工程</td>
-                <td>一级</td>
-                <td>刘鹏</td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已通过</span></td>
-                <td>60</td>
-                <td><span style="color: #FC0C59;">60</span></td>
-              </tr>
-            </table>
+          <div class="table" style="margin-top: 10px;overflow-y: auto;height: 100%;">
+            <div style="display: flex;justify-content: space-between">
+              <div style="line-height: 25px">
+                <p>标题：上级单位隐患整改 </p>
+                <p>主要内容：天河区质监站谭站对项目进行项目督查</p>
+                <p>时间：2019年4月20日</p>
+                <p>现场图片</p>
+              </div>
+              <div>
+                <img style="width: 100px;height: 70px" src="../../../assets/123.jpg" alt="">
+              </div>
+            </div>
+            <hr/>
+            <div style="display: flex;justify-content: space-between">
+            <div style="line-height: 25px">
+              <p>标题：上级单位隐患整改</p>
+              <p>主要内容：天河区建水局陈志宏局长等领导到项目指导工作。</p>
+              <p>时间：2019年4月11日</p>
+              <p>现场图片</p>
+            </div>
+            <div>
+              <img style="width: 100px;height: 70px" src="../../../assets/345.jpg" alt="">
+            </div>
+            </div>
+            <hr/>
+            <div style="display: flex;justify-content: space-between">
+              <div style="line-height: 25px">
+                <p>标题：上级单位隐患整改</p>
+                <p>主要内容：天河区建水局副局长等领导到现场指导工作</p>
+                <p>时间：2019年4月4日</p>
+                <p>现场图片</p>
+              </div>
+              <div>
+                <img style="width: 100px;height: 70px" src="../../../assets/678.jpg" alt="">
+              </div>
+            </div>
+
+            <!--<table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">-->
+              <!--<thead>-->
+                <!--<tr>-->
+                  <!--<th>危险源名称</th>-->
+                  <!--<th>等级</th>-->
+                  <!--<th>责任人</th>-->
+                  <!--<th>状态</th>-->
+                  <!--<th>已监管次数</th>-->
+                  <!--<th>需监管天数</th>-->
+                <!--</tr>-->
+              <!--</thead>-->
+              <!--<tr>-->
+                <!--<td style="max-width: 60px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap">基坑支护与降水工程</td>-->
+                <!--<td>一级</td>-->
+                <!--<td>刘鹏</td>-->
+                <!--<td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>-->
+                <!--<td>57</td>-->
+                <!--<td><span style="color: #FC0C59;">120</span></td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>深基坑</td>-->
+                <!--<td>一级</td>-->
+                <!--<td>孙宗瑞</td>-->
+                <!--<td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>-->
+                <!--<td>57</td>-->
+                <!--<td><span style="color: #FC0C59;">120</span></td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>土方开挖工程</td>-->
+                <!--<td>一级</td>-->
+                <!--<td>刘鹏</td>-->
+                <!--<td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已通过</span></td>-->
+                <!--<td>60</td>-->
+                <!--<td><span style="color: #FC0C59;">60</span></td>-->
+              <!--</tr>-->
+            <!--</table>-->
           </div>
         </div>
         <div style="height:313px;width:100%;background-color:#1D284D;">
@@ -508,6 +755,7 @@
                   <th colspan="2">状态</th>
                   <th>责任人</th>
                   <th>监管人</th>
+                  <th>提交时间</th>
                 </tr>
               </thead>
               <tr @click="dialogVisibleFour=true">
@@ -516,6 +764,7 @@
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">已检查</span></td>
                 <td>刘鹏</td>
                 <td>刘鹏</td>
+                <td>2019-4-16</td>
               </tr>
               <tr @click="dialogVisibleFive=true">
                 <td>吊装作业</td>
@@ -523,6 +772,7 @@
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">已检查</span></td>
                 <td>刘鹏</td>
                 <td>刘鹏</td>
+                <td>2019-04-22  </td>
               </tr>
               <tr @click="dialogVisibleSix=true">
                 <td>设备检维修作业</td>
@@ -530,6 +780,7 @@
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">已检查</span></td>
                 <td>刘鹏</td>
                 <td>刘志强</td>
+                <td> 2019-04-23 </td>
               </tr>
             </table>
           </div>
@@ -655,11 +906,11 @@ export default {
       var myChart = this.$echarts.init(document.getElementById("echart-pie"));
 
       var data = [
-        { value: 40, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
-        { value: 20, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
-        { value: 15, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
+        { value: 1, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
+        { value: 2, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
+        { value: 11, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
         {
-          value: 10,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
+          value: 1,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
         }
       ];
 
@@ -1081,6 +1332,7 @@ export default {
       var option = {
         tooltip: {
           trigger: "axis",
+          formatter:'{b0}<br />{a0}: {c0}<br />{a1}: {c1}<br />{a2}: {c2}%',
           axisPointer: {
             lineStyle: {
               color: "#57617B"
@@ -1356,13 +1608,14 @@ export default {
             // }
             //},
             data: [
-              '100%',
-              '100%',
-              '100%',
-              '100%',
-              '100%',
-              '100%',
-              '100%'
+              100,
+              100,
+              100,
+              100,
+              100,
+              100,
+              100,
+
             ]
           }
         ]
@@ -1523,7 +1776,7 @@ export default {
         }
         .alertHidden {
           position: absolute;
-          width: 203px;
+          width: 300px;
           height: 125px;
           background: transparent url('../../../assets/index/alert_bg.png');
           padding: 5px 20px;
