@@ -157,7 +157,7 @@
                     </li>
                     <li>
                       <span class="title">任务二：</span>
-                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收   负责人：工程管理部  杨佳雄</span>
+                      <span class="content">4.2号须完成塔吊基础部分的质量检查   负责人：工程管理部  杨佳熊</span>
                     </li>
                     <li>
                       <span class="title">任务三：</span>
