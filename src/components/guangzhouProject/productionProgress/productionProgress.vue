@@ -321,7 +321,7 @@
                    <div class="top_ul" >
                        <ul>
                            <li>形象进度</li>
-                           <li>无人机</li>
+                           <!-- <li>无人机</li> -->
                        </ul>
                    </div>
                    <div class="middle_ul" v-if="false">

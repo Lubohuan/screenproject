@@ -237,7 +237,7 @@
           <!-- 隐患 -->
           <div class="hidden">
             <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
-              <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+              <!-- <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div> -->
               <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
                 <dl>
                   <dt><span>较大隐患</span><span>安全防护</span></dt>
@@ -249,7 +249,7 @@
               </div>
             </div>
             <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
-              <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+              <!-- <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div> -->
               <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;">
                 <dl>
                   <dt><span>较大隐患</span><span>安全防护</span></dt>
@@ -261,7 +261,7 @@
               </div>
             </div>
             <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
-              <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
+              <!-- <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div> -->
               <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;">
                 <dl>
                   <dt><span>较大隐患</span><span>安全防护</span></dt>
@@ -273,16 +273,17 @@
               </div>
             </div>
 
-            <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
+            <div class="hidden_loc" style="top: 150px;left: 370px;" @click="openhidden(3)">
               <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
-              <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
+              <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;width:270px;">
                 <dl>
-                  <dt><span>较大隐患</span><span>安全防护</span></dt>
-                  <dd>斜撑梁局部防护缺失</dd>
-                  <dd>整改责任人：张富立</dd>
-                  <dd>复查人：陈力</dd>
-                  <dd>整改期限：2019-05-01</dd>
+                  <dt><span>危险作业名称</span>:<span>吊装作业</span></dt>
+                  <!-- <dd>斜撑梁局部防护缺失</dd> -->
+                  <dd>责任人：刘鹏</dd>
+                  <dd>监管人：刘志强</dd>
+                  <dd>整现场照片</dd>
                 </dl>
+                <img src="../../../assets/manageMachine/8.png" alt="" width="100" style="position:absolute;top:20px;right:20px;">
               </div>
             </div>
           </div>
@@ -365,7 +366,7 @@
                 <td>重大危险源</td>
                 <td @click="dialogVisibleThree = true">重大危险源预警</td>
                 <td></td>
-                <td>进场人数</td>
+                <td>管理人数</td>
                 <td></td>
                 <td></td>
               </tr>
@@ -373,7 +374,7 @@
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">9</span>个</td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px" @click="dialogVisibleThree = true">1</span>个</td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">37</span>人</td>
+                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">38</span>人</td>
                 <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
                 <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px"></span></td>
               </tr>
@@ -381,33 +382,33 @@
                 <td>超期隐患</td>
                 <td>未销重大隐患</td>
                 <td>隐患预警</td>
-                <td>进行安全教育</td>
-                <td>参加安全教育</td>
+                <td>专业分包</td>
+                <td>班组作业</td>
                 <td>教育率</td>
               </tr>
               <tr>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">0</span>个</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">4</span>次</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">110</span>人</td>
+                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">3</span>人</td>
+                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">31</span>人</td>
                 <td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">100%</span></td>
               </tr>
               <tr>
                 <td>危大工程</td>
                 <td></td>
                 <td></td>
-                <td>进行班前教育</td>
-                <td>参加班前教育</td>
+                <td>进行安全教育</td>
+                <td>参加安全教育</td>
                 <td>教育率</td>
               </tr>
               <tr>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px">9</span>个</td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
                 <td><span style="font-size: 28px;color: #F26565;margin-right: 5px"></span></td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>次</td>
-                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">0</span>人</td>
-                <td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">0%</span></td>
+                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">8</span>次</td>
+                <td><span style="font-size: 28px;color: #76D0DF;margin-right: 5px">42</span>人</td>
+                <td><span style="font-size: 24px;color: #76D0DF;margin-right: 5px">100%</span></td>
               </tr>
             </table>
           </div>

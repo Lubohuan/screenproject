@@ -18,7 +18,7 @@
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>建设单位：</span>
                       </span>
-                      <span class="content inline-block">广州金融控股集团有限公</span>
+                      <span class="content inline-block">广州金融控股集团有限公司</span>
                     </li>
                     <li class="flex ai-center">
                       <span class="title">
@@ -695,8 +695,8 @@
       <!-- right end -->
     </div>
     <!--轮播图详情 -->
-    <el-dialog title="提示"  width='60%' :visible.sync="dialogObj.dialogVisible1" top="300px" center>
-        <div class="modal" style="height:345px;">
+    <el-dialog title="提示"  width='80%' :visible.sync="dialogObj.dialogVisible1" top="100px" center>
+        <div class="modal" style="height:800px;">
           <div class="modal-title flex jc-between">
               <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
@@ -709,12 +709,12 @@
           </div>
           <div class="modal-content" style="padding:25px;">
               <div class="flex allHeight ai-center">
-                  <div style="padding:0 30px 0 10px" >
-                    <img v-if="imgType==0" src="../../../assets/qualityManage/l1.jpg">
-                    <img v-if="imgType==1" src="../../../assets/qualityManage/l2.jpg">
-                    <img v-if="imgType==2" src="../../../assets/qualityManage/l3.jpg">
+                  <div style="padding:0 30px 0 10px;height:500px;width:70%;" >
+                    <img v-if="imgType==0" src="../../../assets/qualityManage/l1.jpg" style="width:100%;margin-top:-30px;">
+                    <img v-if="imgType==1" src="../../../assets/qualityManage/l2.jpg" style="width:100%;margin-top:-30px;">
+                    <img v-if="imgType==2" src="../../../assets/qualityManage/l3.jpg" style="width:100%;margin-top:-30px;">
                   </div>
-                  <div class="allHeight" style="padding:40px 20px;">
+                  <div class="allHeight" style="padding:40px 20px;width:30%;">
                      <dl class="flex allHeight column jc-start;" >
                        <dt style="margin:20px 0;text-align:center;font-size:18px;color:rgba(223,250,255,1)">{{currentImgItem.imgTitle}}</dt>
                        <dd style="text-align:left;line-height:2;color:rgba(223,250,255,1)"> 
@@ -844,7 +844,7 @@ export default {
     },
     showImage(type){
       this.imgType = type
-      debugger
+      
       this.currentImgItem = this.imgObj[type];
       this.dialogObj.dialogVisible1 = true
     },

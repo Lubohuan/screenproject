@@ -257,7 +257,7 @@
                     <div class="bg padding10">
                         <table class="font12 personlistTable" style="width:100%;color:#DBE1FF">
                             <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue">35</span> 人</td><td >用工计划偏差量</td><td><span class="font28 color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 color_blue">35</span>人</td></tr>
-                            <tr style="background:rgba(255,255,255,0.15);text-align:center;"><td class="color_blue1">累计用工</td><td>700人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
+                            <tr style="background:rgba(255,255,255,0.15);text-align:center;"><td class="color_blue1">累计用工</td><td>700人日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
                             <tr style="text-align:center"><td >一区</td><td colspan="4">
                                 <div class="progress">
                                     <div class="progress-bar bg_a" style="width:50%"></div>

@@ -223,7 +223,7 @@
                    </div> -->
                    <div class="bottom_ul">
                        <ul>
-                           <li style="color:#FC0C59"><i class="i_red"></i>重大风险源1个</li>
+                           <li style="color:#FC0C59"><i class="i_red"></i>重大危险源1个</li>
                            <li style="color:#FEDF50"><i class="i_yellow"></i>危险作业3个</li>
                            <li style="color:#00F7BD"><i class="i_green"></i>质量验收1个</li>
                        </ul>
@@ -365,11 +365,11 @@
                             </div>
                             <div v-show="hiddenIndexItem==0"  class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
-                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dt><span>危险作业</span>:<span>吊装作业</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
-                                    <dd>整改责任人：张富立</dd>
-                                    <dd>复查人：陈力</dd>
-                                    <dd>整改期限：2019-05-01</dd>
+                                    <dd>整改责任人：刘鹏</dd>
+                                    <dd>现场图片</dd>
+                                    <!-- <dd>整改期限：2019-05-01</dd> -->
                                 </dl>
                                 <img src="../../../assets/manageMachine/1.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
@@ -380,11 +380,11 @@
                             </div>
                             <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
-                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dt><span>危险作业</span>:<span>设备检维修</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
-                                    <dd>整改责任人：张富立</dd>
-                                    <dd>复查人：陈力</dd>
-                                    <dd>整改期限：2019-05-01</dd>
+                                    <dd>整改责任人：刘鹏</dd>
+                                    <dd>现场图片</dd>
+                                    <!-- <dd>整改期限：2019-05-01</dd> -->
                                 </dl>
                                 <img src="../../../assets/manageMachine/4.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
@@ -395,11 +395,11 @@
                             </div>
                             <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
-                                    <dt><span>较大隐患</span><span>安全防护</span></dt>
+                                    <dt><span>危险作业</span>:<span>吊装作业</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
-                                    <dd>整改责任人：张富立</dd>
-                                    <dd>复查人：陈力</dd>
-                                    <dd>整改期限：2019-05-01</dd>
+                                    <dd>整改责任人：刘鹏</dd>
+                                    <dd>现场图片</dd>
+                                    <!-- <dd>整改期限：2019-05-01</dd> -->
                                 </dl>
                                 <img src="../../../assets/manageMachine/3.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
@@ -412,9 +412,9 @@
                             <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
                                     <dt style="color:#00F29F;"><span>质量验收</span></dt>
-                                    <dd>验收部位:成防水样板验收</dd>
+                                    <dd>验收部位:防水样板验收</dd>
                                     <dd>责任人：谭楚才</dd>
-                                    <dd>验收时间：2019-04-01</dd>
+                                    <!-- <dd>验收时间：2019-04-01</dd> -->
                                 </dl>
                                 <img src="../../../assets/manageMachine/2.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
@@ -426,11 +426,11 @@
                             </div>
                             <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
-                                    <dt style="color:#FF0100;"><span>重大风险源</span><span>立即整改</span></dt>
+                                    <dt style="color:#FF0100;"><span>重大危险源</span><span></span></dt>
                                     <dd>基坑支护与降水工程</dd>
                                     <dd>等级:一级</dd>
                                     <dd>整改责任人:刘鹏</dd>
-                                    <dd>整改期限：2019-05-01</dd>
+                                    <!-- <dd>整改期限：2019-05-01</dd> -->
                                 </dl>
                                 <img src="../../../assets/manageMachine/4.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
@@ -714,10 +714,10 @@
                <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>计划完成比</td><td>安全</td><td>质量</td><td>物资</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>95%</td><td style="cursor:pointer;" @click="dialogVisible = true"><i class="i_yellow"></i>检查3次 未消项1个</td><td><i class="i_green"></i>验收1次 通过</td><td rowspan="4"><i class="i_green"></i>验收1次 通过</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工二区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查4次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工三区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>98%</td><td><i class="i_green"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工四区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收4次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>95%</td><td style="cursor:pointer;" @click="showjianchaop(0)"><i class="i_yellow"></i>检查0次</td><td><i class="i_green"></i>验收1次 通过</td><td rowspan="4"><i class="i_green"></i>验收1次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工二区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td @click="showjianchaop(1)"><i class="i_green"></i>检查2次</td><td><i class="i_green"></i>验收2次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工三区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>98%</td><td @click="showjianchaop(2)"><i class="i_green"></i>检查1次</td><td><i class="i_green"></i>验收2次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工四区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td @click="showjianchaop(3)"><i class="i_green"></i>检查0次</td><td><i class="i_green"></i>验收4次 通过</td></tr>
                     </table>
                 </div>
 
@@ -840,7 +840,7 @@
                     <div style="height:280px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                             <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                            塔机信息
+                            塔吊信息
                             <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                         </div>
                         <div style="margin:20px 0 20 20px;width:260px;float:left">
@@ -871,7 +871,7 @@
 
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                            <span style="margin:0 15px">设备检查</span>
+                            <span style="margin:0 15px">设备验收</span>
                             <span>进场时间: </span>2019年4月4日
                         </div>
                         <div style="padding:10px">
@@ -882,7 +882,7 @@
 
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                            <span style="margin:0 15px">设备验收</span>
+                            <span style="margin:0 15px">设备检查</span>
                             <span>进场时间: </span>2019年4月18日
                         </div>
                         <div style="padding:10px">
@@ -894,7 +894,7 @@
 
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                            <span style="margin:0 15px">维保</span>
+                            <span style="margin:0 15px">设备验收</span>
                             <span>进场时间: </span>2019年4月25日
                         </div>
                         <div style="padding:10px">
@@ -912,7 +912,7 @@
               <div class="modal-title flex jc-between">
                 <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
-                  <span class="text">隐患记录</span>
+                  <span class="text">{{jianchashow.title}}</span>
                 </div>
                 <div class="all-height flex ai-center close" @click="dialogVisible = false">
                   <i class="el-icon-close"></i>
@@ -920,20 +920,28 @@
               </div>
               <div class="modal-content">
                 <div class="modal-content-datail">
-                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
-                  <p>检查部位:<span>基坑</span></p>
-                  <p>隐患类型:<span>文明施工</span></p>
-                  <p>隐患等级:<span>违章</span></p>
-                  <p>所属区域:<span>-3F</span></p>
-                  <p>状态:<span>已整改</span></p>
-                  <p>检查人:<span>吴艺昌（安全部）</span></p>
-                  <p>提交时间:<span>2019-04-25 16:23:36</span></p>
+                    <tr style="text-align:center;color: #dffaff;">
+                        <td>检查</td>
+                        <td style="margin-right:5px;"><span class="font28 color_blue boxFont">{{jianchashow.n1}}</span> 次&nbsp;&nbsp;</td>
+                        <td style="margin-right:5px;">未消</td><td><span class="font28 boxFont color_blue">{{jianchashow.n2}}</span>次 &nbsp;&nbsp;</td>
+                        <td style="margin-right:5px;">验收</td><td><span class="font28 boxFont color_blue">{{jianchashow.n3}}</span>次</td>
+                    </tr>
+                  <p style="margin-top:10px;">检查结果:<span>{{jianchashow.result}}</span></p>
+                  <p>整改时间:<span>{{jianchashow.time}}</span></p>
+                  <p>整改状态:<span>{{jianchashow.status}}</span></p>
+                  <p>项目名称:<span>{{jianchashow.pname}}</span></p>
+                  <p>检查时间:<span>{{jianchashow.ctime}}</span></p>
+                  
+                  <p>复查人:<span>{{jianchashow.cuser}}</span></p>
+                  <p>问题描述:<span>{{jianchashow.des}}</span></p>
+                  <p>整改人:<span>{{jianchashow.ruser}}</span></p>
+                  
                 </div>
               </div>
             </div>
           </el-dialog>
           <el-dialog title="提示" width="20%" top="300px" :visible.sync="dangerShowAlert" >
-            <div class="modal hulingModal" style="height:400px;width: 400px;">
+            <div class="modal hulingModal" style="height:200px;width: 400px;">
               <div class="modal-title flex jc-between">
                 <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
@@ -945,11 +953,21 @@
               </div>
               <div class="modal-content">
                 <div class="modal-content-datail">
-                  <p>危险源名称:<span>模板工程及支持体系</span></p>
+                  <!-- <p>危险源名称:<span>模板工程及支持体系</span></p>
                   <p>等级:<span>一级</span></p>
                   <p>施工责任人:<span>刘鹏</span></p>
                   <p>主要事故类型:<span>坍塌</span></p>
-                  <p style="margin-right:30px;">管控措施:<span>A:做到先设计后施工 B:组织整体验收，设计人员参与验收 C:精心设计浇砼方案，确保模板支持均衡受载</span></p>
+                  <p style="margin-right:30px;">管控措施:<span>A:做到先设计后施工 B:组织整体验收，设计人员参与验收 C:精心设计浇砼方案，确保模板支持均衡受载</span></p> -->
+                  <div  class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
+                    <dl style="font-size:16px;">
+                        <dt style="color:#FF0100;"><span>重大危险源</span><span></span></dt>
+                        <dd style="color:#fff;">基坑支护与降水工程</dd>
+                        <dd style="color:#fff;">等级:一级</dd>
+                        <dd style="color:#fff;">整改责任人:刘鹏</dd>
+                        <!-- <dd>整改期限：2019-05-01</dd> -->
+                    </dl>
+                    <img src="../../../assets/manageMachine/4.jpg" alt="" width="150" style="position:absolute;top:0px;right:20px;">
+                </div>
                 </div>
               </div>
             </div>
@@ -962,6 +980,13 @@
         name: 'homePage',
         data() {
             return {
+                jianchaData:[
+                    {title:'设备检查',n1:'0',n2:'0',n3:'0',result:'-',time:'-',status:'-',pname:'-',ctime:'-',cuser:'-',des:'-',ruser:'-'},
+                    {title:'设备检查',n1:'2',n2:'0',n3:'0',result:'有隐患',time:'2019-04-26 20:00',status:'整改中',pname:'广州金控总部大楼项目',ctime:'2014-04-24 10:18',cuser:'吴艺昌',des:'泥浆池缺少护栏',ruser:'彭泽蠢'},
+                    {title:'设备检查',n1:'1',n2:'0',n3:'0',result:'有隐患',time:'2019-04-25 20:00',status:'整改中',pname:'广州金控总部大楼项目',ctime:'2014-04-23 14:48',cuser:'吴艺昌',des:'泥浆池缺少护栏',ruser:'彭泽蠢'},
+                    {title:'设备检查',n1:'0',n2:'0',n3:'0',result:'-',time:'-',status:'-',pname:'-',ctime:'-',cuser:'-',des:'-',ruser:'-'}
+                ],
+                jianchashow:{},
                 camera:'',
                 indexItem:-1,
                 hiddenIndexItem:-1,
@@ -1138,6 +1163,10 @@
             // this.personInfoList(0);
         },
         methods: {
+            showjianchaop(index){
+                this.dialogVisible = true;
+                this.jianchashow = this.jianchaData[index];
+            },
             showPdf(index){
               this.bigImgPath = require('../../../assets/qualityManage/huwei'+(index+1)+'.jpg')
 
