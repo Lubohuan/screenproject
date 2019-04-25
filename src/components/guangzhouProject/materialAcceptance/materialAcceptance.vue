@@ -452,10 +452,10 @@
               <h5 style="height: 39px;line-height: 39px" v-bind:class="{ active: !boxThree }" @click="boxThree=false">物资资金使用情况</h5>
             </div>
           </div>
-          <div style="padding: 23px 16px 0;" v-if="boxThree">
+          <div style="padding: 23px 16px 0;" v-show="boxThree">
             <div id="echart-linesss" style="width:500px;height:180px"></div>
           </div>
-          <div style="padding: 23px 16px 0;" v-if="!boxThree">
+          <div style="padding: 23px 16px 0;" v-show="!boxThree">
             <img src="../../../assets/mate-three-a.png" alt="">
           </div>
         </div>
@@ -705,7 +705,7 @@ export default {
               shadowOffsetY: 10
             }
           },
-        }, 
+        },
         // {
         //   name: '防水卷材',
         //   type: 'line',
