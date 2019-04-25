@@ -15,7 +15,7 @@
       </div>
       <div class="flex_b">
         <img src="../../assets/timer.png" style="height:16px;margin-right:10px;" />
-        <span style="font-size:16px;">2019/4/19 14:00:00</span>
+        <span style="font-size:16px;">{{timeNow}}</span>
         <span style="font-size:14px;margin:0 15px;">安全生产</span>
         <span class="timerday" style="font-size:18px;">2</span>
         <span class="timerday" style="font-size:18px;">0</span>
@@ -40,7 +40,7 @@
         </ul>
 
       </div>
-     
+
     </section>
     <router-view style="height:calc(100% - 115px);width:100%;"/>
   </div>
@@ -65,6 +65,7 @@ export default {
         {text:'AIOT',path:'/'},
         {text:'BIM应用',path:'/bimApply'}
       ],
+      timeNow:'2019/4/19 14:00:00',
       tabactive:0,
       showTab:false
     }
@@ -79,6 +80,19 @@ export default {
     },0);
   },
   methods:{
+    getRealTime(){
+      let now = '';
+      setInterval(()=>{
+        now = new Date(Date.now());
+        let year = now.getFullYear();
+        let month=now.getMonth()+1<10?'0'+(now.getMonth()+1):now.getMonth()+1;
+        let day = now.getDate();
+        let hour=now.getHours()<10?'0'+now.getHours():now.getHours();
+        let minute=now.getMinutes()<10?'0'+now.getMinutes():now.getMinutes();
+        let seconds=now.getSeconds()<10?'0'+now.getSeconds():now.getSeconds();
+        this.timeNow = year+'/'+month+'/'+day+'  '+hour+':'+minute+':'+seconds
+      },1000)
+    },
       tabChange(list,index){
         if(index == 7){
           if(this.showTab){
@@ -91,7 +105,7 @@ export default {
         this.activeIndex = index;
         this.$router.replace(list.path);
         }
-        
+
       },
       AiotTabChange(list,index){
           this.showTab = false;
@@ -118,6 +132,9 @@ export default {
         }
       },
   },
+  mounted(){
+    this.getRealTime()
+  }
 }
 </script>
 <style lang="scss" >
