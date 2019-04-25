@@ -46,7 +46,7 @@
                   <div class="cardItem cardItem2">
                     <dl>
                       <dt>创优目标</dt>
-                      <dd>广州市建设工程优质奖、广州市建设结构优质奖、广州市建设工程结构优质</dd>
+                      <dd>广州市建设工程优质奖、广州市建设工程结构优质奖</dd>
                     </dl>
                   </div>
                   <div class="cardItem cardItem3">
@@ -695,7 +695,7 @@
       <!-- right end -->
     </div>
     <!--轮播图详情 -->
-    <el-dialog title="提示"  width='40%' :visible.sync="dialogObj.dialogVisible1" top="25vh" center>
+    <el-dialog title="提示"  width='60%' :visible.sync="dialogObj.dialogVisible1" top="300px" center>
         <div class="modal" style="height:345px;">
           <div class="modal-title flex jc-between">
               <div class="all-height flex ai-center">
@@ -707,12 +707,12 @@
               </div>
 
           </div>
-          <div class="modal-content">
+          <div class="modal-content" style="padding:25px;">
               <div class="flex allHeight ai-center">
-                  <div style="padding-left:10px;">
+                  <div style="padding:0 30px 0 10px" >
                     <img v-if="imgType==0" src="../../../assets/qualityManage/l1.jpg">
-                    <img v-else-if="imgType==1" src="../../../assets/qualityManage/l2.jpg">
-                    <img v-else="imgType==2" src="../../../assets/qualityManage/l3.jpg">
+                    <img v-if="imgType==1" src="../../../assets/qualityManage/l2.jpg">
+                    <img v-if="imgType==2" src="../../../assets/qualityManage/l3.jpg">
                   </div>
                   <div class="allHeight" style="padding:40px 20px;">
                      <dl class="flex allHeight column jc-start;" >
@@ -727,25 +727,46 @@
           </div>
         </div>
     </el-dialog>
-    <el-dialog title="提示" width="40%" :visible.sync="dialogObj.dialogVisible2" >
-        <div class="modal" style=";height:310px;">
+    <el-dialog title="提示" width="60%" top="300px" :visible.sync="dialogObj.dialogVisible2" >
+        <div class="modal" style=";height:480px;">
           <div class="modal-title flex jc-between">
               <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
-                  <span class="text">详情</span>
+                  <span class="text">检查任务</span>
               </div>
               <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible2 = false">
                  <i class="el-icon-close"></i>
               </div>
 
           </div>
-          <div class="modal-content">
+          <div class="modal-content" style="padding:25px;">
             <div class="flex allHeight ai-center">
-                  <div style="padding-left:10px;">
+                  <div style="padding-left:10px;width:50%;text-align:center;color:#fff;border-right:1px solid rgba(46, 73, 112, 0.5)">
+                    <h4 style="font-size:30px;margin:0px 0 30px 0">广州建筑股份有限公司</h4>
+                    <p style="color:red;margin:10px 0">质量检测任务点,请勿移动</p>
                     <img src="../../../assets/qualityManage/ewm.png">
+                    <div style="color:#3c95c8;;margin:10px 0;line-height:30px;">
+                      <div>项目名称: 广州金控总部大楼项目</div>
+                      <div>检查部位: 塔吊基础</div>
+                    </div>
+                    <div style="display:flex;justify-content: space-evenly;margin:10px 0">
+                      <div>生成日期:2019-02-28 10:37:42</div>
+                      <div>如需移动请联系:18800001587</div>
+                    </div>
                   </div>
-                  <div class="allHeight" style="padding:40px 20px;color:rgba(223,250,255,1);line-height:2;font-size:16px;">
-                     钢筋按图纸准确安装，受力钢筋间距偏差±10mm、排距±5mm，保护层厚度±10mm，预埋件中心线位置偏差5mm以内；模板垂直度允许偏差6mm、相邻两板表面高低差2mm，表面平整度5mm；混凝土表面无蜂窝、孔洞、露筋，允许偏差值：位移5mm~15mm，平整度5mm，垂直度5mm，截面尺寸-2~5mm，标高±10mm
+                  <div class="allHeight" style="color:rgba(223,250,255,1);font-size:16px;width:50%;padding-left:40px;line-height:30px">
+                     <div style="line-height:30px;text-align:center;">
+                      <div>广州金控总部大楼项目</div>
+                      <div>塔吊基础</div>
+                    </div>
+                      <p style="line-height:26px">所属区域: 底板</p>
+                      <p style="line-height:26px">检查人: 杨佳雄</p>
+                      <p style="line-height:26px">责任人: 系五汉</p>
+                      <p style="line-height:26px">描述:</p>
+                      <p style="line-height:26px">钢筋按图纸准确安装，受力钢筋间距偏差±10mm、排距±5mm，保护层厚度±10mm，预埋件中心线位置偏差5mm以内；模板垂直度允许偏差6mm、相邻两板表面高低差2mm，表面平整度5mm；混凝土表面无蜂窝、孔洞、露筋，允许偏差值：位移5mm~15mm，平整度5mm，垂直度5mm，截面尺寸-2~5mm，标高±10mm</p>
+                      <p style="line-height:26px">检查频率: 2天一次</p>
+                      <p style="line-height:26px">检查率: 70%</p>
+                      <p style="line-height:26px">上次检查时间: 2019-03-18 14:57</p>
                   </div>
               </div>
           </div>
@@ -1197,7 +1218,7 @@ export default {
                   show: true,
                   lineStyle: {
                       color: "rgba(219,225,255,1)",
-                      width: 0,
+                      width: 1,
                       type: "solid"
                   }
               },
@@ -1223,7 +1244,7 @@ export default {
                 show: true,
                 lineStyle: {
                     color: "rgba(219,225,255,1)",
-                    width: 0,
+                    width: 1,
                     type: "solid"
                 }
             },
@@ -1240,7 +1261,7 @@ export default {
         series: [{
             name: '垂直度',
             type: 'bar',
-            data: [100,100,100,100,100,100,100],
+            data: [0,0,0,0,0,0,0],
             barWidth: 10, //柱子宽度
             barGap: 1, //柱子之间间距
             itemStyle: {
@@ -1258,7 +1279,7 @@ export default {
         }, {
             name: '平整度',
             type: 'bar',
-            data: [100,100,100,100,100,100,100],
+            data: [0,0,0,0,0,0,0],
             barWidth: 10,
             barGap: 1,
             itemStyle: {
@@ -1276,7 +1297,7 @@ export default {
         }, {
             name: '轴线位移',
             type: 'bar',
-            data: [100,100,100,100,100,100,100],
+            data: [0,0,0,0,0,0,0],
             barWidth: 10,
             barGap: 1,
             itemStyle: {
