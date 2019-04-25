@@ -1,6 +1,8 @@
 <template>
     <div style="height:100%;width:100%;" class="mainIndexText">
+        <!-- 顶部 -->
        <div class="top_con flex_b">
+           <!-- 上左页面 -->
            <div class="top_con_left">
                <div style="height:275px;width:100%;margin-bottom:10px;">
                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
@@ -175,6 +177,7 @@
                     </div>
                </div>
            </div>
+           <!-- 上中页面 -->
            <div class="top_con_middle">
                <div style="height:415px;width:100%;background-color:#fff;margin-bottom:10px;" class="middle_bg">
                    <div class="top_ul" style="z-index:1000;">
@@ -203,8 +206,10 @@
                            <li style="color:#00F7BD"><i class="i_green"></i>质量验收1个</li>
                        </ul>
                    </div>
-                   <div style="position:absolute;left:0px;bottom:50px;width:800px;height:132px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow:hidden">
-                       <ul v-if="topListIndex==4" style="text-align:center">
+
+                   <div v-if="topListIndex==4" style="position:absolute;left:0px;bottom:50px;width:800px;height:132px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow:hidden">
+                       
+                       <ul style="text-align:center">
                            <li style="width:120px;margin:10px;float:left">
                                <img src="../../../assets/qualityManage/huwei1.jpg" alt="" width="114px">
                                <p class="font12 text-center" style="margin-top:10px;">一区形象进度</p>
@@ -278,11 +283,11 @@
                    </div>
                    <!-- 隐患 -->
                    <div class="hidden"  v-if="topListIndex==0">
-                        <div class="hidden_loc" style="top: 265px;left: 278px;" @mouseenter="openhidden(0)" @mouseleave="closehidden(0)">
-                            <div class="icon_hidden" style="top:0px;left:0px;">
+                        <div class="hidden_loc" style="top: 100px;left: 220px;" @mouseenter="openhidden(0)" @mouseleave="closehidden(0)">
+                            <div class="icon_hidden" style="top: 130px;left: 80px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
+                            <div v-show="hiddenIndexItem==0"  class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -293,11 +298,11 @@
                                 <img src="../../../assets/manageMachine/1.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
-                        <div class="hidden_loc" style="top: 290px;left: 348px;" @mouseenter="openhidden(1)" @mouseleave="closehidden(1)">
-                            <div class="icon_hidden" style="top:0px;left:0px;">
+                        <div class="hidden_loc" style="top: 150px;left: 300px;" @mouseenter="openhidden(1)" @mouseleave="closehidden(1)">
+                            <div class="icon_hidden" style="top:130px;left:80px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
+                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -308,11 +313,11 @@
                                 <img src="../../../assets/manageMachine/4.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
-                        <div class="hidden_loc" style="top: 220px;left: 410px;" @mouseenter="openhidden(2)" @mouseleave="closehidden(2)">
-                            <div class="icon_hidden" style="top:0px;left:0px;">
+                        <div class="hidden_loc" style="top: 110px;left: 340px;" @mouseenter="openhidden(2)" @mouseleave="closehidden(2)">
+                            <div class="icon_hidden" style="top:130px;left:80px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
+                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -324,11 +329,11 @@
                             </div>
                         </div>
                         
-                        <div class="hidden_loc" style="top: 150px;left: 470px;" @mouseenter="openhidden(3)" @mouseleave="closehidden(3)">
-                            <div class="icon_hidden" style="top:0px;left:0px;">
+                        <div class="hidden_loc" style="top: 50px;left: 400px;" @mouseenter="openhidden(3)" @mouseleave="closehidden(3)">
+                            <div class="icon_hidden" style="top:130px;left:80px;">
                                 <img src="../../../assets/index/green_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
+                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
                                     <dt style="color:#00F29F;"><span>质量验收</span></dt>
                                     <dd>验收部位:成防水样板验收</dd>
@@ -339,11 +344,11 @@
                             </div>
                         </div>
                         
-                        <div class="hidden_loc" style="top: 150px;left: 270px;" @mouseenter="openhidden(4)" @mouseleave="closehidden(4)">
-                            <div class="icon_hidden" style="top:0px;left:0px;">
+                        <div class="hidden_loc" style="top: 20px;left: 200px;" @mouseenter="openhidden(4)" @mouseleave="closehidden(4)">
+                            <div class="icon_hidden" style="top:130px;left:80px;">
                                 <img src="../../../assets/index/red_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
+                            <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:0px;bottom:0px;z-index:999;position:relative;">
                                 <dl>
                                     <dt style="color:#FF0100;"><span>重大风险源</span><span>立即整改</span></dt>
                                     <dd>基坑支护与降水工程</dd>
@@ -450,6 +455,7 @@
                 
                </div>
            </div>
+           <!-- 上右页面 -->
            <div class="top_con_right green_construct">
                <div style="height:185px;width:100%;margin-bottom:10px;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
@@ -583,6 +589,7 @@
                 </div>
            </div>
        </div>
+       <!-- 底部页面 -->
        <div class="bottom_con flex_b">
            <div style="height:100%;width:540px;">
                 <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
@@ -658,7 +665,7 @@
                 </div>
            </div>
        </div>
-        
+        <!-- 人员列表弹框 -->
         <div v-if="showInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
             <div style="position:absolute;top:50%;left:50%;height:500px;width:1080px;transform:translate(-50%,-50%);">
                 <div v-if="showInfo" style="position:absolute;left:0px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
@@ -749,7 +756,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- 塔机信息弹框 -->
         <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
             
             <div style="position:absolute;top:50%;left:50%;height:340px;width:680px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
@@ -776,6 +783,7 @@
                 </div>
             </div>
         </div>
+        <!-- 隐患记录 -->
         <el-dialog title="提示" width="20%" top="300px" :visible.sync="dialogVisible" >
             <div class="modal hulingModal" style="height:400px;">
               <div class="modal-title flex jc-between">
@@ -1753,7 +1761,29 @@
       }
     }
   }
-    
+    .el-carousel__item h3 {
+        color: #475669;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 200px;
+        margin: 0;
+    }
+  
+    .el-carousel__item:nth-child(2n) {
+        background-color: #99a9bf;
+    }
+  
+    .el-carousel__item:nth-child(2n+1) {
+        background-color: #d3dce6;
+    }
 }
 </style>
 
+<style lang="scss">
+// .el-carousel__indicators--outside {
+//     display: none;
+// }
+// .el-carousel__item {
+//     height: 120px;
+// }
+</style>
