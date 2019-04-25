@@ -209,7 +209,7 @@
 
                    <div v-if="topListIndex==4" style="position:absolute;left:0px;bottom:50px;width:800px;height:132px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow:hidden">
                        
-                       <ul v-if="topListIndex==4" style="text-align:center">
+                       <ul style="text-align:center">
                            <li style="width:120px;margin:10px;float:left">
                                <img src="../../../assets/qualityManage/huwei1.jpg" alt="" width="114px">
                                <p class="font12 text-center" style="margin-top:10px;">一区形象进度</p>
