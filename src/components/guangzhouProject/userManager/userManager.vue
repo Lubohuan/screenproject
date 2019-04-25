@@ -684,7 +684,7 @@
                 // 绘制图表
                 var option = {
                     title:  {
-                        text: '在册人员结构分析',
+                        text: '在册人员结构',
                         textStyle:{
                             color: '#fff',
                             fontSize:20,
@@ -694,7 +694,7 @@
                     },
                     tooltip: {
                         trigger: 'item',
-                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                        formatter: "{a} <br/>{b} : {c}人 ({d}%)"
                     },
                     legend: {
                         orient: 'horizontal',
@@ -707,7 +707,7 @@
                         data: ['施工岗位', '资料岗位', '技术岗位', '质量岗位', '管理层', '商务成本岗位', '安全岗位', '物资岗位', '综合管理岗位']
                     },
                     series: [{
-                        name: '库存情况',
+                        name: '在线人员结构',
                         type: 'pie',
                         radius: '68%',
                         center: ['50%', '50%'],
@@ -716,7 +716,7 @@
                             name: '施工岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -724,7 +724,7 @@
                             name: '资料岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -732,7 +732,7 @@
                             name: '技术岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -740,7 +740,7 @@
                             name: '质量岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -748,7 +748,7 @@
                             name: '管理层',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -764,7 +764,7 @@
                             name: '安全岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -772,7 +772,7 @@
                             name: '物资岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }, {
@@ -780,7 +780,7 @@
                             name: '综合管理岗位',
                             label: {
                                 normal: {
-                                    formatter: '{d}%'
+                                    formatter: '{d}'
                                 }
                             }
                         }],
@@ -1113,7 +1113,7 @@
 
                     series: [
                     {
-                        name: "年龄问题",
+                        name: "年龄结构",
                         type: "pie",
                         radius: ["45%", "70%"],
                         center: ["50%", "50%"],
