@@ -673,7 +673,7 @@
                     物资收量偏差分析
                     <div style="float:right;line-height:26px;margin-top:6px;margin-right:18px;border:1px solid #33558c;" class="echart_goods">
                         <span style="padding:3px 25px;background-color: #4cbdfe;color: #000;border: 0;">本月</span>
-                        <span style="padding:5px 25px;">累计</span>
+                        <!--<span style="padding:5px 25px;">累计</span>-->
                     </div>
                 </div>
                 <!-- <div class="bg padding10">
@@ -834,13 +834,13 @@
         </div>
         <!-- 塔机信息弹框 -->
         <div v-if="showMeicInfo" class="tajiInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
-            
+
             <div style="position:absolute;top:50%;left:50%;height:950px;width:980px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
                 <div class="bg" style="height:950px;">
                     <div style="height:280px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                             <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                            塔机信息    
+                            塔机信息
                             <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                         </div>
                         <div style="margin:20px 0 20 20px;width:260px;float:left">
@@ -861,29 +861,29 @@
                     <div class="padding10" style="background:#1D284D;height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                             <span style="margin:0 15px">设备进场</span>
-                            <span>进场时间: </span>2019年3月28日晚    
+                            <span>进场时间: </span>2019年3月28日晚
                         </div>
                         <div style="padding:10px">
                             <img src="../../../assets/index/pic2.png" alt="" height="100">
                             塔吊材料及配件进场
                         </div>
                     </div>
-                    
+
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                             <span style="margin:0 15px">设备检查</span>
-                            <span>进场时间: </span>2019年4月4日    
+                            <span>进场时间: </span>2019年4月4日
                         </div>
                         <div style="padding:10px">
                             <img src="../../../assets/index/pic3.png" alt="" height="100">
                             组织监理、业主现场验收塔吊
                         </div>
                     </div>
-                    
+
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                             <span style="margin:0 15px">设备验收</span>
-                            <span>进场时间: </span>2019年4月18日    
+                            <span>进场时间: </span>2019年4月18日
                         </div>
                         <div style="padding:10px">
                             <img src="../../../assets/index/pic4.png" alt="" height="100">
@@ -891,11 +891,11 @@
                             项目部组织塔吊自检，自检结论：合格
                         </div>
                     </div>
-                    
+
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                             <span style="margin:0 15px">维保</span>
-                            <span>进场时间: </span>2019年4月25日   
+                            <span>进场时间: </span>2019年4月25日
                         </div>
                         <div style="padding:10px">
                             <img src="../../../assets/index/pic6.png" alt="" height="100">
