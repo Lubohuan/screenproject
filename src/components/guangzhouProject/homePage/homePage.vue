@@ -627,9 +627,9 @@
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>计划完成比</td><td>安全</td><td>质量</td><td>物资</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>95%</td><td style="cursor:pointer;" @click="dialogVisible = true"><i class="i_yellow"></i>检查3次 未消项1个</td><td><i class="i_green"></i>验收1次 通过</td><td rowspan="4"><i class="i_green"></i>验收1次 通过</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查4次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>98%</td><td><i class="i_green"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收4次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工二区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查4次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工三区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>98%</td><td><i class="i_green"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工四区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收4次 通过</td></tr>
                     </table>
                 </div>
                 

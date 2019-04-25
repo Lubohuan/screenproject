@@ -366,7 +366,7 @@ export default {
               40,
               20,
               60,
-              80
+              0
             ]
           }
         ]
@@ -512,7 +512,7 @@ export default {
                 shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
               }
             },
-            data: [26, 27, 23, 19, 17, 16, 22, 27]
+            data: [26, 27, 23, 19, 17, 16, 22, 0]
           }
         ]
       };
