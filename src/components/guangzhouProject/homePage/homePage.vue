@@ -747,25 +747,27 @@
 
         <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
             
-            <div style="position:absolute;top:50%;left:50%;height:340px;width:1080px;transform:translate(-50%,-50%);background:#1D284D">
-                <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                    <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                    塔机信息    
-                    <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
-                </div>
-                <div style="margin:20px;width:660px;float:left">
-                    <img src="../../../assets/manageMachine/jita.png" alt="" height="260">
-                    <div style="position:absolute;">
-
+            <div style="position:absolute;top:50%;left:50%;height:340px;width:1080px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
+                <div style="background:#1D284D;height:340px">
+                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                        塔机信息    
+                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                     </div>
-                </div>
-                <div style="margin:20px 10px;padding:0 30px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
-                    <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
-                    <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE4635</div>
-                    <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
-                    <div style="line-height:35px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
-                    <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>1973-11-03</div>
-                    <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>1973-11-03</div>
+                    <div style="margin:20px;width:660px;float:left">
+                        <img src="../../../assets/manageMachine/jita.png" alt="" height="260">
+                        <div style="position:absolute;">
+
+                        </div>
+                    </div>
+                    <div style="margin:20px 10px;padding:0 30px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
+                        <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
+                        <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE4635</div>
+                        <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
+                        <div style="line-height:35px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
+                        <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>1973-11-03</div>
+                        <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>1973-11-03</div>
+                    </div>
                 </div>
             </div>
         </div>
