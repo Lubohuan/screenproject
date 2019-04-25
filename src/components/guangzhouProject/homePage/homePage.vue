@@ -182,19 +182,20 @@
                            <li :class="{active:topListIndex == 1}" @click="changetopList(0)">项目总控</li>
                            <li :class="{active:topListIndex == 2}" @click="changetopList(2)">BIM应用</li>
                            <li :class="{active:topListIndex == 2}" @click="changetopList(3)">宣传片</li>
+                           <li :class="{active:topListIndex == 2}" @click="changetopList(4)">形象进度</li>
                            <!-- <li :class="{active:topListIndex == 3}" @click="changetopList(3)">视频监控</li>
                            <li :class="{active:topListIndex == 4}" @click="changetopList(4)">无人机</li> -->
                            <!-- <li :class="{active:topListIndex == 5}" @click="changetopList(5)">项目简介</li> -->
                        </ul>
                    </div>
-                   <div class="middle_ul">
+                   <!-- <div class="middle_ul">
                        <ul>
                            <li :class="{active:taskIndex == 1}" @click="changeTask(1)">一区进度</li>
                            <li :class="{active:taskIndex == 2}" @click="changeTask(2)">二区进度</li>
                            <li :class="{active:taskIndex == 3}" @click="changeTask(3)">三区进度</li>
                            <li :class="{active:taskIndex == 4}" @click="changeTask(4)">四区进度</li>
                        </ul>
-                   </div>
+                   </div> -->
                    <div class="bottom_ul">
                        <ul>
                            <li style="color:#FC0C59"><i class="i_red"></i>重大风险源1个</li>
@@ -202,19 +203,23 @@
                            <li style="color:#00F7BD"><i class="i_green"></i>质量验收1个</li>
                        </ul>
                    </div>
-                   <div style="position:absolute;right:0px;top:4px;width:134px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);">
-                       <ul v-if="taskIndex==1">
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/index/pic1.png" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                   <div style="position:absolute;left:0px;bottom:50px;width:800px;height:132px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow:hidden">
+                       <ul v-if="topListIndex==4" style="text-align:center">
+                           <li style="width:120px;margin:10px;float:left">
+                               <img src="../../../assets/qualityManage/huwei1.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">一区形象进度</p>
                            </li>
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/manageMachine/2.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           <li style="width:120px;margin:10px;float:left">
+                               <img src="../../../assets/qualityManage/huwei2.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">二区形象进度</p>
                            </li>
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/manageMachine/1.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                           <li style="width:120px;margin:10px;float:left">
+                               <img src="../../../assets/qualityManage/huwei3.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">三区形象进度</p>
+                           </li>
+                           <li style="width:120px;margin:10px;float:left">
+                               <img src="../../../assets/qualityManage/huwei4.jpg" alt="" width="114px">
+                               <p class="font12 text-center" style="margin-top:10px;">四区形象进度</p>
                            </li>
                        </ul>
                        <ul v-if="taskIndex==2">
@@ -747,26 +752,26 @@
 
         <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
             
-            <div style="position:absolute;top:50%;left:50%;height:340px;width:1080px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
+            <div style="position:absolute;top:50%;left:50%;height:340px;width:680px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
                 <div style="background:#1D284D;height:340px">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         塔机信息    
                         <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
                     </div>
-                    <div style="margin:20px;width:660px;float:left">
-                        <img src="../../../assets/manageMachine/jita.png" alt="" height="260">
+                    <div style="margin:20px;width:260px;float:left">
+                        <img src="../../../assets/index/meic.png" alt="" height="260">
                         <div style="position:absolute;">
 
                         </div>
                     </div>
                     <div style="margin:20px 10px;padding:0 30px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
                         <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
-                        <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE4635</div>
+                        <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE-T04635</div>
                         <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
                         <div style="line-height:35px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
-                        <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>1973-11-03</div>
-                        <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>1973-11-03</div>
+                        <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>T2019012</div>
+                        <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>2019.02.18</div>
                     </div>
                 </div>
             </div>
