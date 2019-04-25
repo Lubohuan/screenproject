@@ -21,6 +21,12 @@
           </div>
         </div>
         <div style="height:313px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+          <div class="top_con_right_title">
+            <div class="title_left">
+              <img src="../../../assets/safe-time.png" alt="">
+              <h5 style="padding-right: 18px;">安全隐患统计</h5>
+            </div>
+          </div>
           <div class="bg padding10" style="padding-top:10px">
             <div id="goodsChart" style="width:100%;height:223px"></div>
           </div>
@@ -36,38 +42,38 @@
             <table cellpadding="0" cellspacing="0" style="border: none;">
               <tr @click="dialogVisible=true">
                 <th>吴艺昌（安全部）</th>
-                <th>提交于 : 2019-04-24 10:11:22</th>
-                <th>广州金控总部大楼项目</th>
+                <th>提交于 : 2019-04-24 16:51</th>
+                <th>03-地基基础</th>
               </tr>
               <tr @click="dialogVisible=true">
-                <th><span style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(254,223,80,1);box-shadow:0px 0px 0px 4px rgba(254,223,80,0.1);margin-right: 10px"></span>违章</th>
-                <th>文明施工</th>
+                <th><span style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(254,223,80,1);box-shadow:0px 0px 0px 4px rgba(254,223,80,0.1);margin-right: 10px"></span>无隐患</th>
+                <th>施工现场，临时用电</th>
                 <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已整改</span></th>
               </tr>
               <tr @click="dialogVisibleOne=true">
                 <th>吴艺昌（安全部）</th>
-                <th>提交于 : 2019-04-25 16:23:36</th>
-                <th>广州金控总部大楼项目</th>
+                <th>提交于 : 2019-04-24 10:18</th>
+                <th>02-深基坑区域</th>
               </tr>
               <tr @click="dialogVisibleOne=true">
-                <th><span  style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(252,12,89,1);box-shadow:0px 0px 0px 4px rgba(252,12,89,0.1);margin-right: 10px"></span>一般隐患</th>
-                <th>施工用电</th>
-                <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已整改</span></th>
+                <th><span  style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(252,12,89,1);box-shadow:0px 0px 0px 4px rgba(252,12,89,0.1);margin-right: 10px"></span>有隐患</th>
+                <th>基坑</th>
+                <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">整改中</span></th>
               </tr>
               <tr @click="dialogVisibleTwo=true">
                 <th>吴艺昌（安全部）</th>
-                <th>提交于 : 2019-04-23 11:15:22</th>
-                <th>广州金控总部大楼项目</th>
+                <th>提交于 : 2019-04-24 10:18</th>
+                <th>02-深基坑区域</th>
               </tr>
               <tr @click="dialogVisibleTwo=true">
-                <th><span  style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(252,12,89,1);box-shadow:0px 0px 0px 4px rgba(252,12,89,0.1);margin-right: 10px"></span>一般隐患</th>
-                <th>文明施工</th>
-                <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已整改</span></th>
+                <th><span  style="display: inline-block;width: 8px;height: 8px;border-radius: 50px;background:rgba(252,12,89,1);box-shadow:0px 0px 0px 4px rgba(252,12,89,0.1);margin-right: 10px"></span>无隐患</th>
+                <th>基坑周边监边防护</th>
+                <th><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">整改中</span></th>
               </tr>
             </table>
           </div>
           <el-dialog title="提示" :visible.sync="dialogVisible" >
-            <div class="modal hulingModal" style="height:400px;width: 400px;">
+            <div class="modal hulingModal" style="height:800px;width: 600px;">
               <div class="modal-title flex jc-between">
                 <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
@@ -79,20 +85,36 @@
               </div>
               <div class="modal-content">
                 <div class="modal-content-datail">
-                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
-                  <p>检查部位:<span>基坑</span></p>
-                  <p>隐患类型:<span>文明施工</span></p>
-                  <p>隐患等级:<span>违章</span></p>
-                  <p>所属区域:<span>-3F</span></p>
-                  <p>状态:<span>已整改</span></p>
-                  <p>检查人:<span>吴艺昌（安全部）</span></p>
-                  <p>提交时间:<span>2019-04-25 16:23:36</span></p>
+                  <div style="display: flex">
+                    <div style="margin-right: 100px">
+                      <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                      <p>责任单位:<span>锚杆班组</span></p>
+                      <p>检查部位:<span>施工现场，临时用电</span></p>
+                      <p>隐患类型:<span>随机检查</span></p>
+                      <p>隐患描述:<span>泥浆池缺少护栏</span></p>
+                      <p>隐患等级:<span>一般隐患</span></p>
+                      <p>检查类型:<span>随机检查</span></p>
+                      <p>检查结果:<span>有隐患</span></p>
+                      <p>所属区域:<span>03-地基基础</span></p>
+                    </div>
+                    <div>
+                      <p>状态:<span>已整改</span></p>
+                      <p>检查人:<span>吴艺昌（安全部）</span></p>
+                      <p>复查人:<span>吴艺昌（安全部）</span></p>
+                      <p>抄送人:<span>--</span></p>
+                      <p>整改责任人:<span>彭泽纯（参建方）</span></p>
+                      <p>检查时间:<span>2019-04-24 16:51</span></p>
+                      <p>整改要求:<span>立即安排人员进行防护</span></p>
+                      <p>整改期限:<span>2019-04-25 18:00</span></p>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px"><img src="../../../assets/safe-yh1.jpg"  width="300px" alt=""></p>
                 </div>
               </div>
             </div>
           </el-dialog>
           <el-dialog title="提示" :visible.sync="dialogVisibleOne" >
-            <div class="modal hulingModal" style="height:400px;width: 400px;">
+            <div class="modal hulingModal" style="height:800px;width: 600px;">
               <div class="modal-title flex jc-between">
                 <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
@@ -104,20 +126,36 @@
               </div>
               <div class="modal-content">
                 <div class="modal-content-datail">
-                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
-                  <p>检查部位:<span>施工现场临时用电</span></p>
-                  <p>隐患类型:<span>施工用电</span></p>
-                  <p>隐患等级:<span>一般隐患</span></p>
-                  <p>所属区域:<span>03-地基基础</span></p>
-                  <p>状态:<span>已整改</span></p>
-                  <p>检查人:<span>吴艺昌（安全部）</span></p>
-                  <p>提交时间:<span>2019-04-23 11:15:22</span></p>
+                  <div style="display: flex">
+                    <div style="margin-right: 100px">
+                      <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                      <p>责任单位:<span>锚杆班组</span></p>
+                      <p>检查部位:<span>基坑</span></p>
+                      <p>隐患类型:<span>随机检查</span></p>
+                      <p>隐患描述:<span>泥浆池缺少护栏</span></p>
+                      <p>隐患等级:<span>一般隐患</span></p>
+                      <p>检查类型:<span>随机检查</span></p>
+                      <p>检查结果:<span>有隐患</span></p>
+                      <p>所属区域:<span>03-地基基础</span></p>
+                    </div>
+                    <div>
+                      <p>状态:<span>已整改</span></p>
+                      <p>检查人:<span>吴艺昌（安全部）</span></p>
+                      <p>复查人:<span>吴艺昌（安全部）</span></p>
+                      <p>抄送人:<span>--</span></p>
+                      <p>整改责任人:<span>彭泽纯（参建方）</span></p>
+                      <p>检查时间:<span>2019-04-24 16:51</span></p>
+                      <p>整改要求:<span>立即安排人员进行防护</span></p>
+                      <p>整改期限:<span>2019-04-25 18:00</span></p>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px"><img src="../../../assets/safe-yh2.jpg"  width="300px" alt=""></p>
                 </div>
               </div>
             </div>
           </el-dialog>
           <el-dialog title="提示" :visible.sync="dialogVisibleTwo" >
-            <div class="modal hulingModal" style="height:400px;width: 400px;">
+            <div class="modal hulingModal" style="height:800px;width: 600px;">
               <div class="modal-title flex jc-between">
                 <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
@@ -129,14 +167,30 @@
               </div>
               <div class="modal-content">
                 <div class="modal-content-datail">
-                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
-                  <p>检查部位:<span>基坑</span></p>
-                  <p>隐患类型:<span>文明施工</span></p>
-                  <p>隐患等级:<span>一般隐患</span></p>
-                  <p>所属区域:<span>02-深基坑区域</span></p>
-                  <p>状态:<span>已整改</span></p>
-                  <p>检查人:<span>吴艺昌（安全部）</span></p>
-                  <p>提交时间:<span>2019-04-23 11:15:22</span></p>
+                  <div style="display: flex">
+                    <div style="margin-right: 100px">
+                      <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                      <p>责任单位:<span>锚杆班组</span></p>
+                      <p>检查部位:<span>基坑周边监边维护</span></p>
+                      <p>隐患类型:<span>随机检查</span></p>
+                      <p>隐患描述:<span>泥浆池缺少护栏</span></p>
+                      <p>隐患等级:<span>一般隐患</span></p>
+                      <p>检查类型:<span>随机检查</span></p>
+                      <p>检查结果:<span>有隐患</span></p>
+                      <p>所属区域:<span>03-地基基础</span></p>
+                    </div>
+                    <div>
+                      <p>状态:<span>已整改</span></p>
+                      <p>检查人:<span>吴艺昌（安全部）</span></p>
+                      <p>复查人:<span>吴艺昌（安全部）</span></p>
+                      <p>抄送人:<span>--</span></p>
+                      <p>整改责任人:<span>彭泽纯（参建方）</span></p>
+                      <p>检查时间:<span>2019-04-24 16:51</span></p>
+                      <p>整改要求:<span>立即安排人员进行防护</span></p>
+                      <p>整改期限:<span>2019-04-25 18:00</span></p>
+                    </div>
+                  </div>
+                  <p style="margin-top: 20px"><img src="../../../assets/safe-yh1.jpg"  width="300px" alt=""></p>
                 </div>
               </div>
             </div>
@@ -358,7 +412,7 @@
             </table>
           </div>
           <el-dialog title="提示" :visible.sync="dialogVisibleThree" >
-            <div class="modal hulingModal" style="height:400px;width: 400px;">
+            <div class="modal hulingModal" style="height:600px;width: 600px;">
               <div class="modal-title flex jc-between">
                 <div class="all-height flex ai-center">
                   <img src="../../../assets/index/icon.png" alt width="16px">
@@ -375,6 +429,7 @@
                   <p>施工责任人:<span>刘鹏</span></p>
                   <p>主要事故类型:<span>坍塌</span></p>
                   <p>管控措施:<span>A:做到先设计后施工 B:组织整体验收，设计人员参与验收 C:精心设计浇砼方案，确保模板支持均衡受载</span></p>
+                  <p style="margin-top: 20px"><img src="../../../assets/safe-tc.png"  width="350px" alt=""></p>
                 </div>
               </div>
             </div>
@@ -400,19 +455,11 @@
                   <th>责任人</th>
                   <th>状态</th>
                   <th>已监管次数</th>
-                  <th>需监管次数</th>
+                  <th>需监管天数</th>
                 </tr>
               </thead>
               <tr>
-                <td>深基坑</td>
-                <td>一级</td>
-                <td>孙宗瑞</td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">未开始</span></td>
-                <td>57</td>
-                <td><span style="color: #FC0C59;">120</span></td>
-              </tr>
-              <tr>
-                <td>基坑支护</td>
+                <td style="max-width: 60px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap">基坑支护与降水工程</td>
                 <td>一级</td>
                 <td>刘鹏</td>
                 <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>
@@ -423,7 +470,7 @@
                 <td>深基坑</td>
                 <td>一级</td>
                 <td>孙宗瑞</td>
-                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #00F7BD;background: rgba(0,247,189,.2);font-size: 10px">已通过</span></td>
+                <td><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">通过中</span></td>
                 <td>57</td>
                 <td><span style="color: #FC0C59;">120</span></td>
               </tr>
@@ -1079,13 +1126,13 @@ export default {
               }
             },
             data: [
-              "12:00",
-              "16:00",
-              "20:00",
-              "24:00",
-              "4:00",
-              "8:00",
-              "12:00"
+              "4/19",
+              "4/20",
+              "4/21",
+              "4/22",
+              "4/23",
+              "4/24",
+              "4/25"
             ]
           }
         ],
@@ -1309,13 +1356,13 @@ export default {
             // }
             //},
             data: [
-              6,
-              2,
-              4,
-              3,
-              1,
-              1,
-              0
+              '100%',
+              '100%',
+              '100%',
+              '100%',
+              '100%',
+              '100%',
+              '100%'
             ]
           }
         ]
@@ -1518,7 +1565,7 @@ export default {
   }
   .huling .hulingModal{
     position: fixed;
-    top: 400px;
+    top: 200px;
     left: 0;
     right: 0;
     bottom: 0;
