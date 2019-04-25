@@ -238,14 +238,16 @@
           <div class="hidden">
             <div class="hidden_loc" style="top: 265px;left: 278px;" @click="openhidden(0)">
               <div class="icon_hidden" style="top:0px;left:0px;background:#FEDF50"></div>
-              <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;">
+              <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;" >
                 <dl>
                   <dt><span>较大隐患</span><span>安全防护</span></dt>
                   <dd>斜撑梁局部防护缺失</dd>
                   <dd>整改责任人：张富立</dd>
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
+
                 </dl>
+                <img src="../../../assets/manageMachine/4.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
             <div class="hidden_loc" style="top: 290px;left: 348px;" @click="openhidden(1)">
@@ -257,7 +259,9 @@
                   <dd>整改责任人：张富立</dd>
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
+
                 </dl>
+                <img src="../../../assets/manageMachine/3.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
             <div class="hidden_loc" style="top: 220px;left: 410px;" @click="openhidden(2)">
@@ -270,6 +274,7 @@
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
                 </dl>
+                <img src="../../../assets/manageMachine/2.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
             <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
@@ -281,8 +286,9 @@
                   <dd>整改责任人：张富立</dd>
                   <dd>复查人：陈力</dd>
                   <dd>整改期限：2019-05-01</dd>
-                  <img src="" alt="">
+
                 </dl>
+                <img src="../../../assets/manageMachine/1.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;" >
               </div>
             </div>
             <div class="hidden_loc" style="top: 130px;left: 380px;" @click="openhidden(4)">
@@ -293,8 +299,9 @@
                   <dd>斜撑梁局部防护缺失</dd>
                   <dd>责任人：刘鹏</dd>
                   <dd>现场图片</dd>
-                  <img  src="../../../assets/110.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
+
                 </dl>
+                <img  src="../../../assets/110.jpg" alt="" style="width: 120px;height: 100px;float: right;position: absolute;right: 20px;top: 10px;">
               </div>
             </div>
           </div>
@@ -302,10 +309,11 @@
         <div style="height:516px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="top_con_right_title" >
             <div class="title_left" style="width: 37%">
-              <!--<img src="../../../assets/safe-time.png" alt="">-->
+              <img src="../../../assets/safe-time.png" alt="">
               <h5>危险源状态</h5>
             </div>
             <div style="width: 60%;">
+              <img src="../../../assets/safe-time.png" alt="">
               危险源执行情况
             </div>
 <!--            <div class="timeSelect">-->
@@ -361,6 +369,7 @@
           </div>
           <div class="top_con_right_title">
           <div class="title_left">
+            <img src="../../../assets/safe-time.png" alt="">
             <h5>安全验收</h5>
           </div>
           </div>
@@ -418,7 +427,7 @@
         <div style="height:290px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="top_con_right_title">
             <div class="title_left">
-              <!--<img src="../../../assets/safe-time.png" alt="">-->
+              <img src="../../../assets/safe-time.png" alt="">
               <h5>安全概况</h5>
             </div>
           </div>
@@ -640,7 +649,7 @@
         <div class="safeContent" style="height:313px;width:100%;background-color:#1D284D;margin-bottom:10px;">
           <div class="top_con_right_title">
             <div class="title_left">
-              <!--<img src="../../../assets/safe-time.png" alt="">-->
+              <img src="../../../assets/safe-time.png" alt="">
               <h5>工作状态</h5>
             </div>
 <!--            <div class="timeSelect">-->
@@ -726,7 +735,7 @@
         <div style="height:313px;width:100%;background-color:#1D284D;">
           <div class="top_con_right_title">
             <div class="title_left">
-              <!--<img src="../../../assets/safe-time.png" alt="">-->
+              <img src="../../../assets/safe-time.png" alt="">
               <h5>危险作业统计</h5>
             </div>
 <!--            <div class="timeSelect">-->
@@ -897,11 +906,11 @@ export default {
       var myChart = this.$echarts.init(document.getElementById("echart-pie"));
 
       var data = [
-        { value: 40, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
-        { value: 20, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
-        { value: 15, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
+        { value: 1, name: "已通过", color0: "#FF687D", color1: "#FC0C59" },
+        { value: 2, name: "通过中", color0: "#FCDE54", color1: "#F7BA2A" },
+        { value: 11, name: "未开始", color0: "#15E09B", color1: "#1DBD6B" },
         {
-          value: 10,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
+          value: 1,name: "预警",color0: "rgba(13,138,212,1)",color1: "rgba(60,181,251,1)"
         }
       ];
 
@@ -1323,6 +1332,7 @@ export default {
       var option = {
         tooltip: {
           trigger: "axis",
+          formatter:'{b0}<br />{a0}: {c0}<br />{a1}: {c1}<br />{a2}: {c2}%',
           axisPointer: {
             lineStyle: {
               color: "#57617B"
