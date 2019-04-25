@@ -118,10 +118,10 @@
               <tr>
                 <th>监测点编号</th>
                 <th>深度（m）</th>
-                <th >初始值（m）</th>
+                <th >初始值（mm）</th>
                 <th>上次累计（mm）</th>
-                <th >本次变化（m）</th>
-                <th >本次累计变化（m）</th>
+                <th >本次变化（mm）</th>
+                <th >本次累计（mm）</th>
                 <th>变化速率（mm/d）</th>
               </tr>
               </thead>
@@ -575,7 +575,7 @@ export default {
           itemWidth: 14,
           itemHeight: 10,
           itemGap: 13,
-          data: ["管理人员", "党务人员"],
+          data: ["管理人员", "劳务人员"],
           right: "4%",
           textStyle: {
             fontSize: 12,
@@ -716,7 +716,7 @@ export default {
             ]
           },
           {
-            name: "党务人员",
+            name: "劳务人员",
             type: "line",
             //smooth: true,
             symbol: "circle",

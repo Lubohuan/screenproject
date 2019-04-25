@@ -588,7 +588,7 @@ export default {
               show: false
             },
             min: 0,
-            max: 40,
+            max: 5,
             axisLine: {
               //设置y轴的线
               show: false,
@@ -670,13 +670,13 @@ export default {
             //   }
             // },
             data: [
-              23,
-              36,
-              30,
-              25,
-              18,
-              29,
-              26
+              0,
+              1.5,
+              3,
+              2,
+              2.3,
+              1.8,
+              2
             ]
           },
           // {

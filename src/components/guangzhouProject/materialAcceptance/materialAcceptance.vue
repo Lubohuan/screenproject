@@ -347,7 +347,7 @@
                 </div>
                 <div class="media-content">
                             <span>
-                                广州金控总部大楼项目收料员孙宗瑞和龙震江验收了钢筋等物资
+                                广州金控总部大楼项目收料员孙宗瑞验收了钢筋等物资
                             </span>
                 </div>
                 <div class="media-footer">
@@ -355,7 +355,7 @@
                 </div>
               </div>
               <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
-                <img src="../../../assets/mate-gz1.png" height="80" alt="">
+                <img src="../../../assets/mate-gz2.png" height="80" alt="">
               </div>
             </div>
             <div class="media" style="position: relative;padding: 18px 10px">
@@ -366,7 +366,7 @@
                 </div>
                 <div class="media-content">
                             <span>
-                                广州金控总部大楼项目收料员孙宗瑞和龙震江验收了钢筋等物资
+                                广州金控总部大楼项目收料员孙宗瑞验收了钢筋等物资
                             </span>
                 </div>
                 <div class="media-footer">
@@ -374,7 +374,7 @@
                 </div>
               </div>
               <div class="media-right" style="position: absolute;right: 50px;top: 22px;">
-                <img src="../../../assets/mate-gz1.png" height="80" alt="">
+                <img src="../../../assets/mate.gz3.png" height="80" alt="">
               </div>
             </div>
           </div>
@@ -435,10 +435,10 @@
                 <div class="time_size1">50%</div>
               </div>
               <div class="top_con_middle_bar" style="margin-top: 0">
-                <div class="top_con_middle_bar_each" v-for="(item, index) in pactData" :key="index" style="padding: 0">
+                <div class="top_con_middle_bar_each" v-for="(item, index) in pactData" :key="index" style="padding: 0;margin: 0">
                   <div class="top_con_middle_bar_each_text" style="width: 80px">{{item.title}}</div>
-                  <el-progress :percentage="item.progress" :stroke-width="10" :show-text="false" :color="item.color" style="flex: 1;margin-right: 30px"></el-progress>
-                  <div class="top_con_middle_bar_each_text" style="width: 45px">{{item.total}}</div>
+                  <el-progress :percentage="item.progress" :stroke-width="10" :show-text="false" :color="item.color" style="flex: 1;margin-right: 10px"></el-progress>
+                  <div class="top_con_middle_bar_each_text" style="width: 65px">{{item.total}}</div>
                 </div>
               </div>
             </div>
@@ -639,44 +639,10 @@ export default {
         }],
         yAxis: [{
           type: 'value',
-          name: '(单)',
-          nameTextStyle: {
-            color: "#DBE1FF"
-          },
-          axisLabel: {
-            formatter: '{value}',
-            textStyle: {
-              color: "#DBE1FF",
-              fontSize: 12
-            }
-          },
-          min: 0, max: 100,
-          axisTick: {
-            show: false,
-          },
-          axisLine: {
-            show: true,
-            lineStyle: {
-              color: "#2E4970",
-              width: 2,
-              type: "solid"
-            },
-          },
-          splitLine: {
-            show: false,
-            lineStyle: {
-              color: "#034e90",
-              width: 2,
-              type: "solid"
-            }
-          }
-        },{
-          type: 'value',
           name: '(万)',
           nameTextStyle: {
             color: "#DBE1FF"
           },
-          position: "right",
           axisLabel: {
             formatter: '{value}',
             textStyle: {
@@ -684,7 +650,7 @@ export default {
               fontSize: 12
             }
           },
-          min: 0, max: 100,
+          min: 0, max: 350,
           axisTick: {
             show: false,
           },
@@ -708,7 +674,7 @@ export default {
         series: [{
           name: '商品混凝土',
           type: 'line',
-          data: [1968, 3000, 816, 177],
+          data: [118.82, 53.76, 54.77, 9.8],
           itemStyle: {
             normal: {
               color: '#FC0C59',
@@ -725,7 +691,7 @@ export default {
         }, {
           name: '钢筋',
           type: 'line',
-          data: [0, 81.3, 27.22, 131.57],
+          data: [0, 34.89, 11.52, 66.69],
           itemStyle: {
             normal: {
               color: '#28AB81',
@@ -742,27 +708,10 @@ export default {
         }, {
           name: '防水卷材',
           type: 'line',
-          data: [50, 40, 30, 20],
+          data: [60.47, 0, 302.37, 0],
           itemStyle: {
             normal: {
               color: '#FEDF50',
-            }
-          },
-          lineStyle: {
-            normal: {
-              width: 2,
-              shadowColor: 'rgba(0,0,0,0.4)',
-              shadowBlur: 10,
-              shadowOffsetY: 10
-            }
-          }
-        }, {
-          name: '总金额',
-          type: 'line',
-          data: [ 118.8, 34.8, 54.77, 115.28 ],
-          itemStyle: {
-            normal: {
-              color: '#E0699B',
             }
           },
           lineStyle: {
