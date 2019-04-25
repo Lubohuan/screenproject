@@ -65,22 +65,22 @@
                             <tr style="background:rgba(255,255,255,0.15);text-align:center"><td class="color_blue1">累计用工</td><td>700人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
                             <tr style="text-align:center"><td >一区</td><td colspan="4">
                                 <div class="progress">
-                                    <div class="progress-bar bg_a" style="width:110%"></div>
+                                    <div class="progress-bar bg_a" style="width:50%"></div>
                                 </div>
                                 </td><td>15</td><td></td></tr>
                             <tr style="text-align:center"><td >二区</td><td colspan="4">
                                 <div class="progress">
-                                    <div class="progress-bar bg_c" style="width:100%"></div>
+                                    <div class="progress-bar bg_c" style="width:30%"></div>
                                 </div>
                                 </td><td>8</td><td></td></tr>
                             <tr style="text-align:center"><td >三区</td><td colspan="4">
                                 <div class="progress">
-                                    <div class="progress-bar bg_d" style="width:90%"></div>
+                                    <div class="progress-bar bg_d" style="width:26%"></div>
                                 </div>
                                 </td><td>7</td><td></td></tr>
                             <tr style="text-align:center"><td >四区</td><td colspan="4">
                                 <div class="progress">
-                                    <div class="progress-bar bg_b" style="width:75%"></div>
+                                    <div class="progress-bar bg_b" style="width:18%"></div>
                                 </div>
                                 </td><td>5</td><td></td></tr>
                         </table>
@@ -253,22 +253,22 @@
                         <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
                             <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==0" src="../../../assets/manageMachine/4.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <!-- <img v-show="indexItem==0" src="../../../assets/manageMachine/4.jpg" alt="" width="130" height="92" style="border:2px solid rgb(31, 40, 75,0.8);left:-45px;bottom:5px;"> -->
                         </div>
                         <div class="camera_loc" style="top: 280px;left: 130px;" @click="openPic(1)">
                             <img v-show="indexItem!=1" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==1" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==1" src="../../../assets/manageMachine/3.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <!-- <img v-show="indexItem==1" src="../../../assets/manageMachine/3.jpg" alt="" width="130" height="92" style="border:2px solid rgb(31, 40, 75,0.8);left:-45px;bottom:5px;"> -->
                         </div>
                         <div class="camera_loc" style="top: 330px;left: 520px;" @click="openPic(2)">
                             <img v-show="indexItem!=2" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==2" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==2" src="../../../assets/manageMachine/2.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <!-- <img v-show="indexItem==2" src="../../../assets/manageMachine/2.jpg" alt="" width="130" height="92" style="border:2px solid rgb(31, 40, 75,0.8);left:-45px;bottom:5px;"> -->
                         </div>
                         <div class="camera_loc" style="top: 160px;left: 560px;" @click="openPic(3)">
                             <img v-show="indexItem!=3" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==3" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==3" src="../../../assets/manageMachine/1.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <!-- <img v-show="indexItem==3" src="../../../assets/manageMachine/1.jpg" alt="" width="130" height="92" style="border:2px solid rgb(31, 40, 75,0.8);left:-45px;bottom:5px;"> -->
                         </div>
                    </div>
                    <!-- 隐患 -->
@@ -277,7 +277,7 @@
                             <div class="icon_hidden" style="top:0px;left:0px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
+                            <div v-show="hiddenIndexItem==0" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -285,13 +285,14 @@
                                     <dd>复查人：陈力</dd>
                                     <dd>整改期限：2019-05-01</dd>
                                 </dl>
+                                <img src="../../../assets/manageMachine/1.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
                         <div class="hidden_loc" style="top: 290px;left: 348px;" @mouseenter="openhidden(1)" @mouseleave="closehidden(1)">
                             <div class="icon_hidden" style="top:0px;left:0px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
+                            <div v-show="hiddenIndexItem==1" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -299,13 +300,14 @@
                                     <dd>复查人：陈力</dd>
                                     <dd>整改期限：2019-05-01</dd>
                                 </dl>
+                                <img src="../../../assets/manageMachine/4.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
                         <div class="hidden_loc" style="top: 220px;left: 410px;" @mouseenter="openhidden(2)" @mouseleave="closehidden(2)">
                             <div class="icon_hidden" style="top:0px;left:0px;">
                                 <img src="../../../assets/index/yellow_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
+                            <div v-show="hiddenIndexItem==2" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
                                 <dl>
                                     <dt><span>较大隐患</span><span>安全防护</span></dt>
                                     <dd>斜撑梁局部防护缺失</dd>
@@ -313,6 +315,7 @@
                                     <dd>复查人：陈力</dd>
                                     <dd>整改期限：2019-05-01</dd>
                                 </dl>
+                                <img src="../../../assets/manageMachine/3.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
                         
@@ -320,14 +323,14 @@
                             <div class="icon_hidden" style="top:0px;left:0px;">
                                 <img src="../../../assets/index/green_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
+                            <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
                                 <dl>
-                                    <dt style="color:#00F29F;"><span>较大隐患</span><span>安全防护</span></dt>
-                                    <dd>斜撑梁局部防护缺失</dd>
-                                    <dd>整改责任人：张富立</dd>
-                                    <dd>复查人：陈力</dd>
-                                    <dd>整改期限：2019-05-01</dd>
+                                    <dt style="color:#00F29F;"><span>质量验收</span></dt>
+                                    <dd>验收部位:成防水样板验收</dd>
+                                    <dd>责任人：谭楚才</dd>
+                                    <dd>验收时间：2019-04-01</dd>
                                 </dl>
+                                <img src="../../../assets/manageMachine/2.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
                         
@@ -335,14 +338,15 @@
                             <div class="icon_hidden" style="top:0px;left:0px;">
                                 <img src="../../../assets/index/red_loc.png" alt="">
                             </div>
-                            <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:-94px;bottom:5px;z-index:999">
+                            <div v-show="hiddenIndexItem==4" class="alertHidden" style="left:-82px;bottom:125px;z-index:999;position:relative;">
                                 <dl>
-                                    <dt style="color:#FF0100;"><span>较大隐患</span><span>安全防护</span></dt>
-                                    <dd>斜撑梁局部防护缺失</dd>
-                                    <dd>整改责任人：张富立</dd>
-                                    <dd>复查人：陈力</dd>
+                                    <dt style="color:#FF0100;"><span>重大风险源</span><span>立即整改</span></dt>
+                                    <dd>基坑支护与降水工程</dd>
+                                    <dd>等级:一级</dd>
+                                    <dd>整改责任人:刘鹏</dd>
                                     <dd>整改期限：2019-05-01</dd>
                                 </dl>
+                                <img src="../../../assets/manageMachine/4.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
                    </div>
@@ -551,19 +555,19 @@
                     </div>
                     <div class="bg padding10">
                         <div class="flex">
-                            <div class="flex1 font12 marginL30">
-                            <div>今日重大危险源</div>
-                            <div><span class="font28 bigNum">1</span></div>
+                            <div class="flex1 font12 marginL30 text_center" style="cursor:pointer;" @click="dangerShowAlert = true">
+                                <div>今日重大危险源</div>
+                                <div><span class="font28 color_red">1</span></div>
                             </div>
-                            <div class="flex1 font12 marginL30">
+                            <div class="flex1 font12 marginL30 text_center">
                             <div>今日危险作业</div>
                             <div><span class="font28 bigNum">0</span></div>
                             </div>
-                            <div class="flex1 font12 marginL30">
+                            <div class="flex1 font12 marginL30 text_center">
                             <div>超期隐患</div>
                             <div><span class="font28 bigNum">0</span></div>
                             </div>
-                            <div class="flex1 font12 marginL30">
+                            <div class="flex1 font12 marginL30 text_center">
                             <div>未销重大隐患</div>
                             <div><span class="font28 bigNum">0</span></div>
                             </div>
@@ -622,7 +626,7 @@
                <div class="bg padding10">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>序号</td><td>施工区域</td><td>计划完成比</td><td>安全</td><td>质量</td><td>物资</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>95%</td><td><i class="i_yellow"></i>检查3次 未消项1个</td><td><i class="i_green"></i>验收1次 通过</td><td rowspan="4"><i class="i_green"></i>验收1次 通过</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>1</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>95%</td><td style="cursor:pointer;" @click="dialogVisible = true"><i class="i_yellow"></i>检查3次 未消项1个</td><td><i class="i_green"></i>验收1次 通过</td><td rowspan="4"><i class="i_green"></i>验收1次 通过</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>2</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查4次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>3</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_yellow"><i class="i_yellow"></i>98%</td><td><i class="i_green"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收2次 通过</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工一区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收4次 通过</td></tr>
@@ -652,7 +656,7 @@
         
         <div v-if="showInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
             <div style="position:absolute;top:50%;left:50%;height:500px;width:1080px;transform:translate(-50%,-50%);">
-                <div v-if="showInfo" style="position:absolute;left:0px;top:0px;z-index:999;width:540px;background:#283664;border:5px solid #224062;">
+                <div v-if="showInfo" style="position:absolute;left:0px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         人员列表
@@ -663,25 +667,25 @@
 
                         <table style="width:100%;border-collapse:collapse;" v-if="tableOffset==1" >
                             <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>教育类型</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>张国华</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>张国华</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>袁华</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>袁华</td><td>2019-01-19</td></tr>
                         </table>
                         <table style="width:100%;border-collapse:collapse;" v-if="tableOffset==2">
                             <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>教育类型</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2018-11-01</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
-                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李四</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文杰</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>宋珊珊</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>宋珊珊</td><td>2019-01-19</td></tr>
                         </table>
                         
                         </div>
@@ -695,7 +699,7 @@
                     </div>
                 </div>
                 
-                <div v-if="showInfo" style="position:absolute;left:550px;top:0px;z-index:999;width:540px;background:#283664;border:5px solid #224062;">
+                <div v-if="showInfo" style="position:absolute;left:550px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         人员信息    
@@ -765,6 +769,53 @@
                 </div>
             </div>
         </div>
+        <el-dialog title="提示" width="20%" top="300px" :visible.sync="dialogVisible" >
+            <div class="modal hulingModal" style="height:400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">隐患记录</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dialogVisible = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>项目名称:<span>广州金控总部大楼项目</span></p>
+                  <p>检查部位:<span>基坑</span></p>
+                  <p>隐患类型:<span>文明施工</span></p>
+                  <p>隐患等级:<span>违章</span></p>
+                  <p>所属区域:<span>-3F</span></p>
+                  <p>状态:<span>已整改</span></p>
+                  <p>检查人:<span>吴艺昌（安全部）</span></p>
+                  <p>提交时间:<span>2019-04-25 16:23:36</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+          <el-dialog title="提示" width="20%" top="300px" :visible.sync="dangerShowAlert" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">重大危险源预警</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dangerShowAlert = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>危险源名称:<span>模板工程及支持体系</span></p>
+                  <p>等级:<span>一级</span></p>
+                  <p>施工责任人:<span>刘鹏</span></p>
+                  <p>主要事故类型:<span>坍塌</span></p>
+                  <p style="margin-right:30px;">管控措施:<span>A:做到先设计后施工 B:组织整体验收，设计人员参与验收 C:精心设计浇砼方案，确保模板支持均衡受载</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
     </div>
 </template>
 <script>
@@ -780,6 +831,8 @@
                 showInfo:false,
                 taskIndex:0,
                 showMeicInfo:false,
+                dialogVisible: false,
+                dangerShowAlert:false,
                 topListIndex:0,
                 listPersons:[
                     {
@@ -1571,10 +1624,10 @@
                     }
                     .alertHidden {
                         position: absolute;
-                        width: 203px;
-                        height: 125px;
+                        width: 263px;
+                        height: 124px;
                         background: transparent url('../../../assets/index/alert_bg.png');
-                        padding: 5px 20px;
+                        padding: 6px 20px;
                         box-sizing: border-box;
                         font-size: 12px;
                         line-height: 22px;
@@ -1677,6 +1730,22 @@
         }
         
     }
+
+    .modal-content-datail{
+    padding: 20px 0px 0px 40px;
+    p{
+      font-size:14px;
+      font-weight:600;
+      color:rgba(118,208,223,1);
+      line-height: 30px;
+      span{
+        font-size:14px;
+        font-weight:600;
+        color:rgba(223,250,255,1);
+        margin-left: 4px;
+      }
+    }
+  }
     
 }
 </style>

@@ -138,10 +138,10 @@
                 <th >当前驾驶员</th>
               </tr>
               </thead>
-              <tr style="line-height:68px">
+              <tr style="line-height:68px;text-align:center;">
                 <td>1#塔机</td>
                 <td>锤头塔</td>
-                <td style="display:inline-block;width:160px;">广州智博特种设备租赁公司</td>
+                <td>广州智博租赁公司</td>
                 <td>631小时</td>
                 <td>34小时</td>
                 <td>黎天林</td>

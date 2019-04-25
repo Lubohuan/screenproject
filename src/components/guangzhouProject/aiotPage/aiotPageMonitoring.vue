@@ -233,7 +233,7 @@ export default {
 
             }
         },
-        data: [1,3,5, 7,9]
+        data: [5,2,6,4,0]
     }, {
         name: '危险区域',
         type: 'line',
@@ -266,7 +266,7 @@ export default {
 
             }
         },
-        data: [1,3,5, 7,9]
+        data: [9,6,8,2,1]
     }, {
         name: '土地未苫盖',
         type: 'line',
@@ -299,7 +299,7 @@ export default {
 
             }
         },
-        data: [1,3,5, 7,9]
+        data: [3,5,2,1,9]
     }, {
         name: '火焰监测',
         type: 'line',
@@ -332,7 +332,7 @@ export default {
 
             }
         },
-        data: [1,3,5, 7,9]
+        data: [1,9,2, 5,9]
     }]
 };
  myChart.setOption(option)

@@ -158,7 +158,7 @@
                             <li>
                                 <img src="../../../assets/person/person1.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>董二九</span><span>杂工</span></div>
+                                    <div><span>董二九</span><span style="margin-left:15px">杂工</span></div>
                                     <div><span>2019/1/18</span></div>
                                 </div>
                                 <div class="dynamic_btn">
@@ -168,7 +168,7 @@
                             <li>
                                 <img src="../../../assets/person/person2.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>承玉芳</span><span>杂工</span></div>
+                                    <div><span>承玉芳</span><span style="margin-left:15px">杂工</span></div>
                                     <div><span>2019/4/8</span></div>
                                 </div>
                                 <div class="dynamic_btn">
@@ -178,7 +178,7 @@
                             <li>
                                 <img src="../../../assets/person/person3.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>李顺国</span><span>杂工</span></div>
+                                    <div><span>李顺国</span><span style="margin-left:15px">杂工</span></div>
                                     <div><span>2019/4/8</span></div>
                                 </div>
                                 <div class="dynamic_btn">
@@ -188,7 +188,7 @@
                             <li>
                                 <img src="../../../assets/person/person4.png" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>系正玉</span><span>杂工</span></div>
+                                    <div><span>系正玉</span><span style="margin-left:15px">杂工</span></div>
                                     <div><span>2018/10/29</span></div>
                                 </div>
                                 <div class="dynamic_btn">
@@ -268,7 +268,7 @@
                         <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>防水班组</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
                         <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>地锚班组</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
                         <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>普工班组</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
-                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>塔吊班组</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>0</td></tr>
+                        <tr class="font12 text_center" style="line-height:44px;border-bottom:1px solid rgba(46,73,112,0.5)"><td>塔吊班组</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td class="color_green1">100%</td><td class="color_green1">100%</td><td>0</td><td>3</td></tr>
                     </table>
                 </div>
            </div>
@@ -720,13 +720,13 @@
                     },
                     xAxis: [{
                         type: 'category',
-                        data: ['4月20日',
+                        data: [
+                            '4月19日','4月20日',
                             '4月21日',
                             '4月22日',
                             '4月23日',
                             '4月24日',
                             '4月25日',
-                            '4月26日'
                         ],
                         axisLine: {
                             show: true,
@@ -771,7 +771,7 @@
                     series: [{
                         name: '管理人员出勤人数',
                         type: 'bar',
-                        data: [16,15,33,33,33,33,33],
+                        data: [33,16,15,33,33,33,33],
                         barWidth: 10, //柱子宽度
                         barGap: 1, //柱子之间间距
                         itemStyle: {
@@ -789,7 +789,7 @@
                     }, {
                         name: '班组人员出勤人数',
                         type: 'bar',
-                        data: [18,15,35,35,35,35,35],
+                        data: [35,18,15,35,35,35,35],
                         barWidth: 10,
                         barGap: 1,
                         itemStyle: {
