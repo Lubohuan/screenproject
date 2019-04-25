@@ -736,7 +736,7 @@
           </div>
           <div class="safeData">
             <h5>检查率 : <span>100%</span> <img src="../../../assets/safe-sjt.png" width="6" height="10" alt=""></h5>
-            <h5>检查率 : <span>100%</span> <img src="../../../assets/safe-sjt.png" width="6" height="10" alt=""></h5>
+            <h5>验收率： : <span>100%</span> <img src="../../../assets/safe-sjt.png" width="6" height="10" alt=""></h5>
           </div>
           <div class="table" >
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: fixed">

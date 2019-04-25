@@ -56,33 +56,33 @@
                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         人员管理
                         <span class="font12" style="color:#FEDF50;margin-left:12px;">注意：假期提醒（5.1劳动节，注意劳务稳定性）</span>
-                        
+
                         <div style="float:right;line-height:28px;margin-top:6px;margin-right:18px;">
                             <span style="padding:1px 16px;background-color: #4cbdfe;color: #000;border: 0;color:#fff;cursor:pointer" @click="alertPersonInfo()">详情</span>
                         </div>
                     </div>
                     <div class="bg padding10">
                         <table class="font12" style="width:100%;color:#DBE1FF">
-                            <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue">35</span> 人</td><td >用工计划偏差量</td><td><span class="font28 color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 color_blue">35</span>人</td></tr>
-                            <tr style="background:rgba(255,255,255,0.15);text-align:center"><td class="color_blue1">累计用工</td><td>700人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
+                            <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue boxFont">35</span> 人</td><td >用工计划偏差量</td><td><span class="font28 boxFont color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 boxFont color_blue">35</span>人</td></tr>
+                            <tr style="background:rgba(255,255,255,0.15);text-align:center"><td class="color_blue1">累计用工</td><td>700人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>
                             <tr style="text-align:center"><td >一区</td><td colspan="4">
-                                <div class="progress">
-                                    <div class="progress-bar bg_a" style="width:50%"></div>
+                                <div class="progress" style="background: #fb909091;">
+                                    <div class="progress-bar bg_a" style="width:50%;background: #fb9090"></div>
                                 </div>
                                 </td><td>15</td><td></td></tr>
                             <tr style="text-align:center"><td >二区</td><td colspan="4">
-                                <div class="progress">
-                                    <div class="progress-bar bg_c" style="width:30%"></div>
+                                <div class="progress" style="background: #90f4928c;">
+                                    <div class="progress-bar bg_c" style="width:30%;background: #90f492"></div>
                                 </div>
                                 </td><td>8</td><td></td></tr>
                             <tr style="text-align:center"><td >三区</td><td colspan="4">
-                                <div class="progress">
-                                    <div class="progress-bar bg_d" style="width:26%"></div>
+                                <div class="progress" style="background: #8ceceb94;">
+                                    <div class="progress-bar bg_d" style="width:26%;background: #8ceceb"></div>
                                 </div>
                                 </td><td>7</td><td></td></tr>
                             <tr style="text-align:center"><td >四区</td><td colspan="4">
-                                <div class="progress">
-                                    <div class="progress-bar bg_b" style="width:18%"></div>
+                                <div class="progress" style="background: #fcfb9175;">
+                                    <div class="progress-bar bg_b" style="width:18%;background: #fcfb91"></div>
                                 </div>
                                 </td><td>5</td><td></td></tr>
                         </table>
@@ -185,12 +185,34 @@
                            <li :class="{active:topListIndex == 1}" @click="changetopList(0)">项目总控</li>
                            <li :class="{active:topListIndex == 2}" @click="changetopList(2)">BIM应用</li>
                            <li :class="{active:topListIndex == 2}" @click="changetopList(3)">宣传片</li>
-                           <li :class="{active:topListIndex == 2}" @click="changetopList(4)">形象进度</li>
+                           <!--<li :class="{active:topListIndex == 2}" @click="changetopList(4)">形象进度</li>-->
                            <!-- <li :class="{active:topListIndex == 3}" @click="changetopList(3)">视频监控</li>
                            <li :class="{active:topListIndex == 4}" @click="changetopList(4)">无人机</li> -->
                            <!-- <li :class="{active:topListIndex == 5}" @click="changetopList(5)">项目简介</li> -->
                        </ul>
                    </div>
+
+
+                 <el-dialog title="提示" width="50%" :visible.sync="dialogObj.dialogVisible1" >
+                   <div class="modal">
+                     <div class="modal-title flex jc-between">
+                       <div class="all-height flex ai-center">
+                         <span class="text">进度详情</span>
+                       </div>
+                       <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
+                         <i class="el-icon-close"></i>
+                       </div>
+
+                     </div>
+                     <div class="modal-content" style="padding:10px;">
+                       <img :src="bigImgPath" style="width: 100%;height: 600px" alt="">
+                     </div>
+                   </div>
+                 </el-dialog>
+                 <!--<div class="imgView">-->
+                   <!---->
+                 <!--</div>-->
+                 <span :class="{active:topListIndex == 2}" id="leftBtn" @click="changetopList(4)">形象进度</span>
                    <!-- <div class="middle_ul">
                        <ul>
                            <li :class="{active:taskIndex == 1}" @click="changeTask(1)">一区进度</li>
@@ -207,57 +229,111 @@
                        </ul>
                    </div>
 
-                   <div v-if="topListIndex==4" style="position:absolute;left:0px;bottom:50px;width:800px;height:132px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow:hidden">
-                       
-                       <ul style="text-align:center">
-                           <li style="width:120px;margin:10px;float:left">
-                               <img src="../../../assets/qualityManage/huwei1.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区形象进度</p>
-                           </li>
-                           <li style="width:120px;margin:10px;float:left">
-                               <img src="../../../assets/qualityManage/huwei2.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">二区形象进度</p>
-                           </li>
-                           <li style="width:120px;margin:10px;float:left">
-                               <img src="../../../assets/qualityManage/huwei3.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">三区形象进度</p>
-                           </li>
-                           <li style="width:120px;margin:10px;float:left">
-                               <img src="../../../assets/qualityManage/huwei4.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">四区形象进度</p>
-                           </li>
-                       </ul>
-                       <ul v-if="taskIndex==2">
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/manageMachine/4.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
-                           </li>
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/index/pic1.png" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
-                           </li>
-                       </ul>
-                       <ul v-if="taskIndex==3">
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/manageMachine/1.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
-                           </li>
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/manageMachine/2.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
-                           </li>
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/index/pic1.png" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
-                           </li>
-                       </ul>
-                       <ul v-if="taskIndex==4">
-                           <li style="width:120px;margin:10px">
-                               <img src="../../../assets/manageMachine/3.jpg" alt="" width="114px">
-                               <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
-                           </li>
-                       </ul>
-                   </div>
+                   <!--<div v-if="topListIndex==4" style="position:absolute;left:0px;bottom:50px;width:800px;height:132px;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow:hidden">-->
+
+                       <!--<ul style="text-align:center">-->
+                           <!--<li style="width:120px;margin:10px;float:left">-->
+                               <!--<img src="../../../assets/qualityManage/huwei1.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区形象进度</p>-->
+                           <!--</li>-->
+                           <!--<li style="width:120px;margin:10px;float:left">-->
+                               <!--<img src="../../../assets/qualityManage/huwei2.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">二区形象进度</p>-->
+                           <!--</li>-->
+                           <!--<li style="width:120px;margin:10px;float:left">-->
+                               <!--<img src="../../../assets/qualityManage/huwei3.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">三区形象进度</p>-->
+                           <!--</li>-->
+                           <!--<li style="width:120px;margin:10px;float:left">-->
+                               <!--<img src="../../../assets/qualityManage/huwei4.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">四区形象进度</p>-->
+                           <!--</li>-->
+                       <!--</ul>-->
+                       <!--<ul v-if="taskIndex==2">-->
+                           <!--<li style="width:120px;margin:10px">-->
+                               <!--<img src="../../../assets/manageMachine/4.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>-->
+                           <!--</li>-->
+                           <!--<li style="width:120px;margin:10px">-->
+                               <!--<img src="../../../assets/index/pic1.png" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>-->
+                           <!--</li>-->
+                       <!--</ul>-->
+                       <!--<ul v-if="taskIndex==3">-->
+                           <!--<li style="width:120px;margin:10px">-->
+                               <!--<img src="../../../assets/manageMachine/1.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>-->
+                           <!--</li>-->
+                           <!--<li style="width:120px;margin:10px">-->
+                               <!--<img src="../../../assets/manageMachine/2.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>-->
+                           <!--</li>-->
+                           <!--<li style="width:120px;margin:10px">-->
+                               <!--<img src="../../../assets/index/pic1.png" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>-->
+                           <!--</li>-->
+                       <!--</ul>-->
+                       <!--<ul v-if="taskIndex==4">-->
+                           <!--<li style="width:120px;margin:10px">-->
+                               <!--<img src="../../../assets/manageMachine/3.jpg" alt="" width="114px">-->
+                               <!--<p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>-->
+                           <!--</li>-->
+                       <!--</ul>-->
+                   <!--</div>-->
+                 <div v-if="topListIndex==4" style="position:absolute;right:0px;top:0px;width:130px;height:100%!important;background:linear-gradient(179deg,rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);overflow: hidden;">
+
+                   <ul style="text-align:center;height: 100%;position:relative;box-sizing: border-box;padding: 26px 0;">
+                     <div id="toTop" @click="imgShow = false"></div>
+                     <li style="width:120px;margin:0px;" :class="{imgHide:imgShow}">
+                       <img src="../../../assets/qualityManage/huwei1.jpg" @click="showPdf(0,this)" width="130px">
+                       <p class="font12 text-center gold-font" style="margin-top:0px;line-height: 21px">一区形象进度</p>
+                     </li>
+                     <li style="width:120px;margin-bottom:0px;">
+                       <img src="../../../assets/qualityManage/huwei2.jpg" @click="showPdf(1,this)" width="130px">
+                       <p class="font12 text-center gold-font" style="margin-top:0px;line-height: 21px">二区形象进度</p>
+                     </li>
+                     <li style="width:120px;margin-bottom:0px;">
+                       <img src="../../../assets/qualityManage/huwei3.jpg" @click="showPdf(2,this)" width="130px">
+                       <p class="font12 text-center gold-font" style="margin-top:0px;line-height: 21px">三区形象进度</p>
+                     </li>
+                     <li style="width:120px;margin-bottom:0px;"  :class="{imgHide:!imgShow}">
+                       <img src="../../../assets/qualityManage/huwei4.jpg" @click="showPdf(3,this)" width="130px">
+                       <p class="font12 text-center gold-font" style="margin-top:0px;line-height: 21px">四区形象进度</p>
+                     </li>
+                     <div id="toBtm" @click="imgShow = true"></div>
+                   </ul>
+
+                   <ul v-if="taskIndex==2">
+                     <li style="width:120px;margin:10px">
+                       <img src="../../../assets/manageMachine/4.jpg" alt="" width="114px">
+                       <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                     </li>
+                     <li style="width:120px;margin:10px">
+                       <img src="../../../assets/index/pic1.png" alt="" width="114px">
+                       <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                     </li>
+                   </ul>
+                   <ul v-if="taskIndex==3">
+                     <li style="width:120px;margin:10px">
+                       <img src="../../../assets/manageMachine/1.jpg" alt="" width="114px">
+                       <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                     </li>
+                     <li style="width:120px;margin:10px">
+                       <img src="../../../assets/manageMachine/2.jpg" alt="" width="114px">
+                       <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                     </li>
+                     <li style="width:120px;margin:10px">
+                       <img src="../../../assets/index/pic1.png" alt="" width="114px">
+                       <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                     </li>
+                   </ul>
+                   <ul v-if="taskIndex==4">
+                     <li style="width:120px;margin:10px">
+                       <img src="../../../assets/manageMachine/3.jpg" alt="" width="114px">
+                       <p class="font12 text-center" style="margin-top:10px;">一区2019.1.2进度</p>
+                     </li>
+                   </ul>
+                 </div>
                    <!-- 摄像头 -->
                    <div class="camera" v-if="topListIndex==0">
                         <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
@@ -328,7 +404,7 @@
                                 <img src="../../../assets/manageMachine/3.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
-                        
+
                         <div class="hidden_loc" style="top: 50px;left: 400px;" @mouseenter="openhidden(3)" @mouseleave="closehidden(3)">
                             <div class="icon_hidden" style="top:130px;left:80px;">
                                 <img src="../../../assets/index/green_loc.png" alt="">
@@ -343,7 +419,7 @@
                                 <img src="../../../assets/manageMachine/2.jpg" alt="" width="100" style="position:absolute;top:20px;right:20px;">
                             </div>
                         </div>
-                        
+
                         <div class="hidden_loc" style="top: 20px;left: 200px;" @mouseenter="openhidden(4)" @mouseleave="closehidden(4)">
                             <div class="icon_hidden" style="top:130px;left:80px;">
                                 <img src="../../../assets/index/red_loc.png" alt="">
@@ -367,7 +443,7 @@
                            <p style="line-height:40px;text-indent:2em;">工程计划开工时间为2018年7月25日，竣工时间为2021年1月18日，工程造价6.5亿，工期共938个日历天。</p>
                        </div>
                    </div>
-                   
+
                    <div v-if="topListIndex==2" style="position:absolute;top:0px;left:0px;background:#1D284D;width:100%;height:100%">
                        <video src="https://autobuild-img.oss-cn-beijing.aliyuncs.com/videos/videos/%E5%B9%BF%E5%B7%9E%E9%87%91%E6%8E%A7%E9%A1%B9%E7%9B%AE%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F2019.1.2.mp4" style="width:100%;height:100%;" class="raveal_right_bottom_video" id="main_video" poster="" controls="" playsinline="" webkit-playsinline="" autoplay="autoplay" loop="loop">
                             <source src="https://autobuild-img.oss-cn-beijing.aliyuncs.com/videos/videos/%E5%B9%BF%E5%B7%9E%E9%87%91%E6%8E%A7%E9%A1%B9%E7%9B%AE%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F2019.1.2.mp4" type="mp4">
@@ -392,7 +468,7 @@
                                 <p class="text_center">已施工(天)</p>
                                 <div class="time_size">203</div>
                             </div>
-                            <div class="progress_time">
+                            <div class="progress_time" style="border-top: 4px solid rgba(18, 199, 49, 0.64);">
                                 <ul class="flex">
                                     <li>
                                         <i class="loading"></i>
@@ -444,15 +520,15 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="color_time">
+                                <div class="color_time" >
                                      <i class="now_loading"></i>
                                 </div>
 
                             </div>
-                            
+
                         </div>
                     </div>
-                
+
                </div>
            </div>
            <!-- 上右页面 -->
@@ -621,7 +697,7 @@
                     </div>
                     <div id="myChart" :style="{width: '100%', height: '162px'}"></div>
                 </div> -->
-                
+
                 <div class="bg padding10" style="height:204px">
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>物资名称</td><td>发货量（吨）</td><td>验收量（吨）</td><td>偏差率</td></tr>
@@ -644,7 +720,7 @@
                         <tr class="font12 text_center" style="line-height:41px;"><td>4</td><td>施工四区</td><td style="text-align:left;padding-left:25px;" class="color_green"><i class="i_green"></i>100%</td><td><i class="i_red"></i>检查2次 未消项0个</td><td><i class="i_green"></i>验收4次 通过</td></tr>
                     </table>
                 </div>
-                
+
                 <!-- <div class="bg padding10" style="padding-top:15px">
                     <div id="goodsChart" style="width:100%;height:200px"></div>
                 </div> -->
@@ -699,7 +775,7 @@
                             <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>宋珊珊</td><td>2019-01-19</td></tr>
                             <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>宋珊珊</td><td>2019-01-19</td></tr>
                         </table>
-                        
+
                         </div>
                         <el-pagination
                         small
@@ -710,13 +786,13 @@
                         </el-pagination>
                     </div>
                 </div>
-                
+
                 <div v-if="showInfo" style="position:absolute;left:550px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                        人员信息    
+                        人员信息
                         <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
-                    
+
                     </div>
                     <div class="bg padding10 font12" style="height:460px;width:100%;box-sizing:border-box;">
                         <div style="float:left;width:230px;height:100%;margin:0 10px 0 30px;border-right:1px solid rgba(46,73,112,0.5)">
@@ -757,28 +833,75 @@
             </div>
         </div>
         <!-- 塔机信息弹框 -->
-        <div v-if="showMeicInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5)">
+        <div v-if="showMeicInfo" class="tajiInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
             
-            <div style="position:absolute;top:50%;left:50%;height:340px;width:680px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
-                <div style="background:#1D284D;height:340px">
-                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
-                        塔机信息    
-                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
-                    </div>
-                    <div style="margin:20px;width:260px;float:left">
-                        <img src="../../../assets/index/meic.png" alt="" height="260">
-                        <div style="position:absolute;">
+            <div style="position:absolute;top:50%;left:50%;height:950px;width:980px;transform:translate(-50%,-50%);border:5px solid rgba(76, 189, 254, 0.2)">
+                <div class="bg" style="height:950px;">
+                    <div style="height:280px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                            塔机信息    
+                            <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
+                        </div>
+                        <div style="margin:20px 0 20 20px;width:260px;float:left">
+                            <img src="../../../assets/index/meic.png" alt="" height="200" style="margin-top:25px">
+                            <div style="position:absolute;">
 
+                            </div>
+                        </div>
+                        <div style="margin:20px 0px;padding:0 30px;height:200px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
+                            <div style="line-height:30px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
+                            <div style="line-height:30px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE-T04635</div>
+                            <div style="line-height:30px"><span class="color_blue1">型号: </span>QTR160</div>
+                            <div style="line-height:30px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
+                            <div style="line-height:30px"><span class="color_blue1">出厂编号: </span>T2019012</div>
+                            <div style="line-height:30px"><span class="color_blue1">出厂日期: </span>2019.02.18</div>
                         </div>
                     </div>
-                    <div style="margin:20px 10px;padding:0 30px;width:298px;float:left;border-left:1px solid rgba(46,73,112,0.5)">
-                        <div style="line-height:35px"><span class="color_blue1">设备信息: </span>1#塔吊</div>
-                        <div style="line-height:35px"><span class="color_blue1">起重机械登记证登记编号: </span>粤AE-T04635</div>
-                        <div style="line-height:35px"><span class="color_blue1">型号: </span>QTR160</div>
-                        <div style="line-height:35px"><span class="color_blue1">制造单位: </span>东莞市毅新庆江机械制造有限公司</div>
-                        <div style="line-height:35px"><span class="color_blue1">出厂编号: </span>T2019012</div>
-                        <div style="line-height:35px"><span class="color_blue1">出厂日期: </span>2019.02.18</div>
+                    <div class="padding10" style="background:#1D284D;height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">设备进场</span>
+                            <span>进场时间: </span>2019年3月28日晚    
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic2.png" alt="" height="100">
+                            塔吊材料及配件进场
+                        </div>
+                    </div>
+                    
+                    <div class="padding10" style="height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">设备检查</span>
+                            <span>进场时间: </span>2019年4月4日    
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic3.png" alt="" height="100">
+                            组织监理、业主现场验收塔吊
+                        </div>
+                    </div>
+                    
+                    <div class="padding10" style="height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">设备验收</span>
+                            <span>进场时间: </span>2019年4月18日    
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic4.png" alt="" height="100">
+                            <img src="../../../assets/index/pic5.png" alt="" height="100">
+                            项目部组织塔吊自检，自检结论：合格
+                        </div>
+                    </div>
+                    
+                    <div class="padding10" style="height:140px">
+                        <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                            <span style="margin:0 15px">维保</span>
+                            <span>进场时间: </span>2019年4月25日   
+                        </div>
+                        <div style="padding:10px">
+                            <img src="../../../assets/index/pic6.png" alt="" height="100">
+                            <img src="../../../assets/index/pic7.png" alt="" height="100">
+                            塔吊租赁单位组织塔吊维保
+                        </div>
                     </div>
                 </div>
             </div>
@@ -834,7 +957,7 @@
     </div>
 </template>
 <script>
-   
+
     export default {
         name: 'homePage',
         data() {
@@ -998,6 +1121,12 @@
                 ],
                 list:{},
                 tableOffset:1,
+              //形象进度默认第四个不显示
+                imgShow:false,
+                dialogObj:{
+                  dialogVisible1:false
+                },
+                bigImgPath:'',
             }
         },
         mounted(){
@@ -1009,6 +1138,11 @@
             // this.personInfoList(0);
         },
         methods: {
+            showPdf(index){
+              this.bigImgPath = require('../../../assets/qualityManage/huwei'+(index+1)+'.jpg')
+
+              this.dialogObj.dialogVisible1 = true;
+            },
             handleCurrentChange(val){
                 this.tableOffset = val;
             },
@@ -1022,6 +1156,10 @@
                 this.taskIndex = index;
             },
             changetopList(index){
+              if(this.topListIndex==4&&index == 4){
+                this.topListIndex = 0;
+                return
+              }
                 this.topListIndex = index;
             },
             alertPersonInfo(){
@@ -1052,7 +1190,7 @@
             },
             drawPie() {
                 var myChart = this.$echarts.init(document.getElementById("echart-pie"));
-               
+
                 var data = [
                     { value: 1, name: "混凝土露筋", color0: "#FF687D", color1: "#FC0C59" },
                     { value: 3, name: "混凝土胀模", color0: "#FCDE54", color1: "#F7BA2A" },
@@ -1237,7 +1375,7 @@
                 // 基于准备好的dom，初始化echarts实例
                 let myChart = this.$echarts.init(document.getElementById('myChart'))
 
-                
+
                 // 绘制图表
                 myChart.setOption({
                     backgroundColor: "#1D284D",
@@ -1275,7 +1413,7 @@
                                 color: '#fff'
                             }
                         },
-                        axisTick: { show: false,},  
+                        axisTick: { show: false,},
                     },
                     series: [{
                     name: '安全检查',
@@ -1297,7 +1435,7 @@
                                 normal: {
                                 //线性渐变，前4个参数分别是x0,y0,x2,y2(范围0~1);相当于图形包围盒中的百分比。如果最后一个参数是‘true’，则该四个值是绝对像素位置。
                                 color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                    { offset: 0.7,  color: 'rgba(84,97,187, 1)'}, 
+                                    { offset: 0.7,  color: 'rgba(84,97,187, 1)'},
                                     { offset: 1,  color: 'rgba(74,208,181, 1)'}
                                     ], false)
                             }
@@ -1442,14 +1580,14 @@
             }
         },
         created() {
-            
+
         },
     }
-    
+
 </script>
 <style lang="scss" scoped>
   @import "homePage.scss";
-  
+
 </style>
 <style lang="scss" scoped>
 
@@ -1464,17 +1602,17 @@
     line-height: 29px;
   }
   table tr th {
-      border-top:0; 
+      border-top:0;
   }
   table tr td:first-of-type {
-      border-top:0; 
-      border-left:0; 
+      border-top:0;
+      border-left:0;
   }
   table tr td:last-of-type {
-      border-right:0; 
+      border-right:0;
   }
   table tr:last-of-type td {
-      border-bottom:0; 
+      border-bottom:0;
   }
   table tr .up_data {
       color: #00F7BD;
@@ -1491,7 +1629,7 @@
       height: 8px;
     }
   }
-  
+
   .circleProgress {
     font-size: 30px;
     .el-progress__text {
@@ -1582,7 +1720,7 @@
                         text-align: center;
                         color: #4CF0FE;
                         margin-bottom: 2px;
-                        
+
                     }
                     li:hover {
                         cursor: pointer;
@@ -1706,12 +1844,12 @@
             padding: 10px;
             i {
                 position: absolute;
-                top: -7px; 
+                top: -7px;
                 left: -5px;
             }
             div {
                 position: relative;
-                top: 6px; 
+                top: 6px;
                 left: -20px;
                 p {
                     line-height: 24px;
@@ -1743,7 +1881,7 @@
                 border-radius: 50%
             }
         }
-        
+
     }
 
     .modal-content-datail{
@@ -1768,15 +1906,66 @@
         line-height: 200px;
         margin: 0;
     }
-  
+
     .el-carousel__item:nth-child(2n) {
         background-color: #99a9bf;
     }
-  
+
     .el-carousel__item:nth-child(2n+1) {
         background-color: #d3dce6;
     }
+    .tajiInfo img {
+        margin:0 20px;
+    }
 }
+  .boxFont{
+    padding: 0px 10px;
+    margin-right: 4px;
+    background: rgba(255, 255, 255, 0.27);
+  }
+  #leftBtn{
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    width: 100px;
+    line-height: 40px;
+    background: rgba(23, 28, 51, 0.3);
+    text-align: center;
+    cursor: pointer;
+    color: #4CF0FE;
+    margin-right: 2px;
+  }
+  .gold-font{
+    font-weight: bold;
+    color:#facb3d
+  }
+  #toTop{
+    height: 24px;
+    width: 100%;
+    background: rgb(40, 54, 100);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../../assets/to-top.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 34px 24px;
+  }
+  #toBtm{
+    height: 24px;
+    width: 100%;
+    background: rgb(40, 54, 100);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../../assets/to-btm.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 34px 24px;
+  }
+  .imgHide{
+    display: none;
+  }
 </style>
 
 <style lang="scss">

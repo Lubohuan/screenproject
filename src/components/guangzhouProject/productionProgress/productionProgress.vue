@@ -186,6 +186,22 @@
                 <span class="eqt">个预警</span>
               </div>
             </div>
+            <el-dialog title="提示" width="50%" :visible.sync="dialogObj.dialogVisible1" >
+              <div class="modal">
+                <div class="modal-title flex jc-between">
+                  <div class="all-height flex ai-center">
+                    <span class="text">详情</span>
+                  </div>
+                  <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
+                    <i class="el-icon-close"></i>
+                  </div>
+
+                </div>
+                <div class="modal-content" style="padding:10px;">
+                  <img :src="bigImgPath" style="width: 100%;height: 600px" alt="">
+                </div>
+              </div>
+            </el-dialog>
             <div class="ibox-content">
               <table class="table text-center allHeight">
                 <thead>
@@ -342,22 +358,22 @@
                         <div class="camera_loc" style="top: 100px;left: 300px;" @click="openPic(0)">
                             <img v-show="indexItem!=0" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==0" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==0" src="../../../assets/manageMachine/1.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==0" src="../../../assets/manageMachine/1.jpg" @click="showPdf(1,true)" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                         <div class="camera_loc" style="top: 280px;left: 130px;" @click="openPic(1)">
                             <img v-show="indexItem!=1" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==1" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==1" src="../../../assets/manageMachine/2.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==1" src="../../../assets/manageMachine/2.jpg" @click="showPdf(2,true)" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                         <div class="camera_loc" style="top: 330px;left: 520px;" @click="openPic(2)">
                             <img v-show="indexItem!=2" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==2" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==2" src="../../../assets/manageMachine/3.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==2" src="../../../assets/manageMachine/3.jpg" @click="showPdf(3,true)" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                         <div class="camera_loc" style="top: 160px;left: 560px;" @click="openPic(3)">
                             <img v-show="indexItem!=3" src="../../../assets/index/camera_blue.png" alt="" style="top:0;left:0">
                             <img v-show="indexItem==3" src="../../../assets/index/camera_red.png" alt="" style="top:0;left:0">
-                            <img v-show="indexItem==3" src="../../../assets/manageMachine/4.jpg" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
+                            <img v-show="indexItem==3" src="../../../assets/manageMachine/4.jpg" @click="showPdf(4,true)" alt="" width="130" height="92" style="border:2px solid #1F284B;left:-45px;bottom:5px;">
                         </div>
                    </div>
                    <!-- 隐患 -->
@@ -398,7 +414,7 @@
                                 </dl>
                             </div>
                         </div>
-                        
+
                         <div class="hidden_loc" style="top: 150px;left: 470px;" @click="openhidden(3)">
                             <div class="icon_hidden" style="top:0px;left:0px;background:#00F7BD"></div>
                             <div v-show="hiddenIndexItem==3" class="alertHidden" style="left:-94px;bottom:5px;">
@@ -433,25 +449,21 @@
               <div class="pannel-container">
                 <div class="pannel">
                   <div class="pannel-header">
-                    <p class="time">2019年4月22日 星期一  雷阵雨转多云</p>
-                    <p class="text">抗浮锚杆施工成孔45根,累计完成2195根,占总量100%;基坑底板侧砖模砌筑,占总量47%</p>
+                    <p class="time">2019年4月24日 星期三 多云</p>
+                    <p class="text">基坑底板侧砖模砌筑（防水保护墙，占重量55%），基坑核心筒测砖模批灰（占总量100%）</p>
                   </div>
                   <div class="pannel-content">
-                    <img src="../../../assets/qualityManage/b1.png" alt="">
-                    <img src="../../../assets/qualityManage/b2.png" alt="">
-                    <img src="../../../assets/qualityManage/j1.png" alt="">
-                    <img src="../../../assets/qualityManage/j2.png" alt="">
+                    <img src="../../../assets/qualityManage/b1.png" @click="showPdf(1,false)" alt="">
+                    <img src="../../../assets/qualityManage/b2.png" @click="showPdf(2,false)" alt="">
                   </div>
                 </div>
                 <div class="pannel">
                   <div class="pannel-header">
-                    <p class="time">2019年4月21日 星期日 阴转小雨</p>
-                    <p class="text">抗浮锚杆施工成孔22根,累计完成2150根,占总量98%;基坑底板侧砖模混凝土回填,已完成1区总量60%</p>
+                    <p class="time">2019年4月24日 星期三 多云</p>
+                    <p class="text">1区防水层混凝土浇筑，占1区总量80%</p>
                   </div>
                   <div class="pannel-content">
-                     <img src="../../../assets/qualityManage/t1.png" alt="">
-                    <img src="../../../assets/qualityManage/t2.png" alt="">
-                     <img src="../../../assets/qualityManage/j3.png" alt="">
+                     <img src="../../../assets/qualityManage/t1.png" @click="showPdf(3,false)" alt="">
                   </div>
                 </div>
               </div>
@@ -738,7 +750,9 @@
       </div>
       <!-- right end -->
     </div>
+
   </div>
+
 </template>
 <script>
 import scrollfunc from "../../public/all";
@@ -753,10 +767,28 @@ export default {
       percentage: 0,
        camera:'',
         indexItem:-1,
-        hiddenIndexItem:-1
+        hiddenIndexItem:-1,
+      dialogObj:{
+        dialogVisible1:false
+      },
+      bigImgPath:'',
     };
   },
   methods: {
+    showPdf(index,stu){
+      if(stu){
+        this.bigImgPath = require('../../../assets/manageMachine/'+index+'.jpg')
+      }else{
+        if(index == 3){
+          this.bigImgPath = require('../../../assets/qualityManage/t'+1+'.png')
+        }else{
+          this.bigImgPath = require('../../../assets/qualityManage/b'+index+'.png')
+        }
+
+      }
+
+      this.dialogObj.dialogVisible1 = true;
+    },
     textScroll() {
       var scrollWidth = $("#textPcontainer").width();
       var textWidth = $("#textP").width();

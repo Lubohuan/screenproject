@@ -10,7 +10,7 @@
                     </div>
                     <div class="bg padding10">
                          <div class="flex" style="height:77px">
-                            <div class="flex1 font12 marginL30">
+                            <div class="flex1 font12 marginL30" style="cursor:pointer" @click="alertPersonNum()">
                                 <div style="margin-bottom:10px;">在册人数</div>
                                 <div><span class="font28 bigNum">23</span>人</div>
                             </div>
@@ -120,79 +120,50 @@
                </div>
            </div>
            <div class="top_con_right green_construct">
-               <div style="height:185px;width:100%;margin-bottom:10px;">
+               <div style="height:125px;width:100%;margin-bottom:10px;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         天气情况
                     </div>
                     <div class="bg padding10 bg_h" >
-                        <div style="height:125px;width:259px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
+                        <div style="height:65px;width:259px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
                             <div class="flex1 flex text_center" style="justify-content: space-around;">
                                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
                                 <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
                                 <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
                             </div>
-                            <div class="flex1 font12" style="line-height:70px;padding-left:15px">
+                            <!-- <div class="flex1 font12" style="line-height:70px;padding-left:15px">
                                 <img src="../../../assets/index/warning.png" alt=""> 高温预警，室外作业不宜超过6小时
-                            </div>
+                            </div> -->
                         </div>
-                        <div style="height:125px;width:259px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
+                        <div style="height:65px;width:259px;float:left;display:flex; flex-direction: column;">
                             <div class="flex1 flex text_center" style="justify-content: space-around;">
                                 <div class="flex1"><img src="../../../assets/index/feng.png" alt="" width="58px" height="58px"></div>
                                 <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">2</span>级</div>
                                 <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">风力</div>
                             </div>
-                            <div class="flex1 font12" style="line-height:70px;padding-left:15px">
+                            <!-- <div class="flex1 font12" style="line-height:70px;padding-left:15px">
                                 <img src="../../../assets/index/warning.png" alt=""> 大风二级预警：应停止高空作业
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                </div>
-               <div style="height:185px;width:100%;margin-bottom:10px;">
+               <div style="height:258px;width:100%;margin-bottom:10px;">
                     <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         最新动态
                     </div>
-                    <div class="bg padding10 dynamic" style="height:125px;">
+                    <div class="bg padding10 dynamic" style="height:198px;overflow:hidden">
                         <ul>
-                            <li>
-                                <img src="../../../assets/person/person1.png" alt="">
+                            <li v-for="(item,index) in listPersons" :key="index" style="cursor:pointer" @click="personInfoList1(index)">
+                                <img :src="item.url" alt="">
                                 <div class="dynamic_con">
-                                    <div><span>董二九</span><span style="margin-left:15px">杂工</span></div>
-                                    <div><span>2019/1/18</span></div>
+                                    <div><span>{{item.name}}</span><span style="margin-left:15px">{{item.page11}}</span></div>
+                                    <div><span>{{item.page16}}</span></div>
                                 </div>
                                 <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_b">已进场</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../../../assets/person/person2.png" alt="">
-                                <div class="dynamic_con">
-                                    <div><span>承玉芳</span><span style="margin-left:15px">杂工</span></div>
-                                    <div><span>2019/4/8</span></div>
-                                </div>
-                                <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_b">已进场</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../../../assets/person/person3.png" alt="">
-                                <div class="dynamic_con">
-                                    <div><span>李顺国</span><span style="margin-left:15px">杂工</span></div>
-                                    <div><span>2019/4/8</span></div>
-                                </div>
-                                <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_b">已进场</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../../../assets/person/person4.png" alt="">
-                                <div class="dynamic_con">
-                                    <div><span>系正玉</span><span style="margin-left:15px">杂工</span></div>
-                                    <div><span>2018/10/29</span></div>
-                                </div>
-                                <div class="dynamic_btn">
-                                    <span class="btn_Style btn_Style_c">已退场</span>
+                                    <span v-if="item.page12=='已进场'" class="btn_Style btn_Style_b">{{item.page12}}</span>
+                                    <span v-if="item.page12=='已退场'" class="btn_Style btn_Style_c">{{item.page12}}</span>
                                 </div>
                             </li>
                         </ul>
@@ -203,7 +174,7 @@
                         <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                         项目信息
                     </div>
-                    <div class="bg" style="padding:30px 25px 0;height:183px;">
+                    <div class="bg" style="height:176px;padding:25px 25px 0;">
                         <div class="flex" style="height:80px">
                             <div class="flex1 font12 marginL30">
                             <div class="marginB10">人员预警</div>
@@ -257,7 +228,7 @@
                     </table>
                 </div>
            </div>
-           <div style="height:100%;width:calc(100% - 540px);box-sizing: border-box;padding-left:10px;">
+           <div style="height:100%;width:calc(100% - 1080px);box-sizing: border-box;padding:0 10px;">
                 <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
                     <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
                     劳务人员概况
@@ -272,8 +243,234 @@
                     </table>
                 </div>
            </div>
+           
+           <div style="height:100%;width:540px;box-sizing: border-box;">
+                <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                       <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                        人员管理
+                        <span class="font12" style="color:#FEDF50;margin-left:12px;">注意：假期提醒（5.1劳动节，注意劳务稳定性）</span>
+                        
+                        <div style="float:right;line-height:28px;margin-top:6px;margin-right:18px;">
+                            <span style="padding:1px 16px;background-color: #4cbdfe;color: #000;border: 0;color:#fff;cursor:pointer" @click="alertPersonInfo()">详情</span>
+                        </div>
+                    </div>
+                    <div class="bg padding10">
+                        <table class="font12 personlistTable" style="width:100%;color:#DBE1FF">
+                            <tr style="text-align:center"><td>在场人数</td><td><span class="font28 color_blue">35</span> 人</td><td >用工计划偏差量</td><td><span class="font28 color_blue">0</span>人</td><td>计划人数</td><td><span class="font28 color_blue">35</span>人</td></tr>
+                            <tr style="background:rgba(255,255,255,0.15);text-align:center;"><td class="color_blue1">累计用工</td><td>700人/日</td><td class="color_blue1">人效同比昨日</td><td class="color_yellow">--</td><td class="color_blue1">连续7日工效</td><td class="color_blue">2%↑</td></tr>                          
+                            <tr style="text-align:center"><td >一区</td><td colspan="4">
+                                <div class="progress">
+                                    <div class="progress-bar bg_a" style="width:50%"></div>
+                                </div>
+                                </td><td>15</td><td></td></tr>
+                            <tr style="text-align:center"><td >二区</td><td colspan="4">
+                                <div class="progress">
+                                    <div class="progress-bar bg_c" style="width:30%"></div>
+                                </div>
+                                </td><td>8</td><td></td></tr>
+                            <tr style="text-align:center"><td >三区</td><td colspan="4">
+                                <div class="progress">
+                                    <div class="progress-bar bg_d" style="width:26%"></div>
+                                </div>
+                                </td><td>7</td><td></td></tr>
+                            <tr style="text-align:center"><td >四区</td><td colspan="4">
+                                <div class="progress">
+                                    <div class="progress-bar bg_b" style="width:18%"></div>
+                                </div>
+                                </td><td>5</td><td></td></tr>
+                        </table>
+                        <p class="bigNum font12" style="margin-left:18px;height:14px">注意：计划用工数与实际出勤人数一致！</p>
+                    </div>
+           </div>
        </div>
+        <!-- 人员列表弹框 -->
+        <div v-if="showInfo" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.8)">
+            <div style="position:absolute;top:50%;left:50%;height:500px;width:1080px;transform:translate(-50%,-50%);">
+                <div v-if="showInfo" style="position:absolute;left:0px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
+                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                        人员列表
+                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
+                    </div>
+                    <div class="bg padding10" style="height:440px;">
+                        <div style="height:410px">
+
+                        <table style="width:100%;border-collapse:collapse;" v-if="tableOffset==1" >
+                            <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>教育类型</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>张国华</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>张国华</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>袁华</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>袁华</td><td>2019-01-19</td></tr>
+                        </table>
+                        <table style="width:100%;border-collapse:collapse;" v-if="tableOffset==2">
+                            <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>姓名</td><td>教育类型</td><td>受教育单位</td><td>教育负责人</td><td>教育时间</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(4)"><td>陈师铭</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>李文杰</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(0)"><td>朱锦海</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2018-11-01</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(1)"><td>黄国伟</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>何洁文</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(2)"><td>区伟雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>宋珊珊</td><td>2019-01-19</td></tr>
+                            <tr class="font12 text_center" style="line-height:40px;border-bottom:1px solid rgba(46,73,112,0.5);cursor:pointer;" @click="personInfoList(3)"><td>杨佳雄</td><td>三级教育</td><td>广州市通力建筑劳务派遣有限公司</td><td>宋珊珊</td><td>2019-01-19</td></tr>
+                        </table>
+                        
+                        </div>
+                        <el-pagination
+                        small
+                        layout="prev, pager, next"
+                        :total="18"
+                        @current-change="handleCurrentChange"
+                        style="margin-top:4px;">
+                        </el-pagination>
+                    </div>
+                </div>
+                
+                <div v-if="showInfo" style="position:absolute;left:550px;top:0px;z-index:999;width:540px;border:5px solid rgba(76, 189, 254, 0.2);">
+                    <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
+                        <img src="../../../assets/index/icon.png" alt="" width="16px" height="16px" style="margin: -2px 8px 0 12px;">
+                        人员信息    
+                        <span style="float:right;margin-right:10px;cursor:pointer;" @click="closeInfo"><img src="../../../assets/index/close.png" alt=""></span>
+                    
+                    </div>
+                    <div class="bg padding10 font12" style="height:460px;width:100%;box-sizing:border-box;">
+                        <div style="float:left;width:230px;height:100%;margin:0 10px 0 30px;border-right:1px solid rgba(46,73,112,0.5)">
+                            <div style="line-height:35px">
+                                <div style="width:90px;float:left"><img :src="list.url" alt="" width="60" height="70" style="margin-top:20px"></div>
+                                <div style="width:calc(100% - 90px);float:left">
+                                    <div><span>{{list.name}}</span><span class="color_blue1" style="margin-left:20px;">民族: </span>{{list.page01}}</div>
+                                    <div><span class="color_blue1">性别: </span>{{list.page02}}<span class="color_blue1" style="margin-left:20px;">年龄: </span>{{list.page03}}</div>
+                                    <div><span class="color_blue1">出生日期: </span>{{list.page04}}</div>
+                                </div>
+                            </div>
+                            <div style="line-height:35px"><span class="color_blue1">身份证号码: </span>{{list.page05}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">籍贯: </span>{{list.page06}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">住址: </span>{{list.page07}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">政治面貌: </span>{{list.page08}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">入册工龄: </span>{{list.page09}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否加入公会: </span>{{list.page010}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">文化程度: </span>{{list.page011}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否有重大病史: </span>{{list.page012}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">联系电话: </span>{{list.page013}}</div>
+                        </div>
+                        <div style="width:calc(100% - 290px);float:left;padding-left:10px;">
+                            <div style="line-height:35px"><span class="color_blue1">当前工种: </span>{{list.page11}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">当前状态: </span>{{list.page12}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">所在项目: </span>{{list.page13}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">参建单位: </span>{{list.page14}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">班组: </span>{{list.page15}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">进场日期: </span>{{list.page16}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">退场日期: </span>{{list.page17}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">人员评分: </span>{{list.page18}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">安全教育学时: </span>{{list.page19}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">违章记录: </span>{{list.page110}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">加分记录: </span>{{list.page111}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">体检信息: </span>{{list.page112}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <!-- 在册人数 -->    
+        <el-dialog title="提示" width="50%" top="300px" :visible.sync="showPersonNum" >
+            <div class="modal hulingModal" style="height:500px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">在册人数</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="showPersonNum = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                    <div id="pieEcharts" style="width:100%;height:460px"></div>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+          <el-dialog title="提示" width="20%" top="300px" :visible.sync="dangerShowAlert" >
+            <div class="modal hulingModal" style="height:400px;width: 400px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">重大危险源预警</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="dangerShowAlert = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                  <p>危险源名称:<span>模板工程及支持体系</span></p>
+                  <p>等级:<span>一级</span></p>
+                  <p>施工责任人:<span>刘鹏</span></p>
+                  <p>主要事故类型:<span>坍塌</span></p>
+                  <p style="margin-right:30px;">管控措施:<span>A:做到先设计后施工 B:组织整体验收，设计人员参与验收 C:精心设计浇砼方案，确保模板支持均衡受载</span></p>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+
+    <!-- 人员详情 -->
+          <el-dialog title="提示" width="50%" top="300px" :visible.sync="personShowAlert" >
+            <div class="modal hulingModal" style="height:500px;">
+              <div class="modal-title flex jc-between">
+                <div class="all-height flex ai-center">
+                  <img src="../../../assets/index/icon.png" alt width="16px">
+                  <span class="text">人员信息</span>
+                </div>
+                <div class="all-height flex ai-center close" @click="personShowAlert = false">
+                  <i class="el-icon-close"></i>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-datail">
+                    <div class="bg padding10 font12" style="height:460px;width:100%;box-sizing:border-box;color:#fff">
+                        <div style="float:left;width:400px;height:100%;margin:0 10px 0 30px;border-right:1px solid rgba(46,73,112,0.5)">
+                            <div style="line-height:35px">
+                                <div style="width:90px;float:left"><img :src="list.url" alt="" width="60" height="70" style="margin-top:20px"></div>
+                                <div style="width:calc(100% - 90px);float:left">
+                                    <div><span>{{list.name}}</span><span class="color_blue1" style="margin-left:20px;">民族: </span>{{list.page01}}</div>
+                                    <div><span class="color_blue1">性别: </span>{{list.page02}}<span class="color_blue1" style="margin-left:20px;">年龄: </span>{{list.page03}}</div>
+                                    <div><span class="color_blue1">出生日期: </span>{{list.page04}}</div>
+                                </div>
+                            </div>
+                            <div style="line-height:35px"><span class="color_blue1">身份证号码: </span>{{list.page05}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">籍贯: </span>{{list.page06}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">住址: </span>{{list.page07}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">政治面貌: </span>{{list.page08}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">入册工龄: </span>{{list.page09}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否加入公会: </span>{{list.page010}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">文化程度: </span>{{list.page011}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">是否有重大病史: </span>{{list.page012}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">联系电话: </span>{{list.page013}}</div>
+                        </div>
+                        <div style="width:calc(100% - 560px);float:left;padding-left:40px;">
+                            <div style="line-height:35px"><span class="color_blue1">当前工种: </span>{{list.page11}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">当前状态: </span>{{list.page12}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">所在项目: </span>{{list.page13}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">参建单位: </span>{{list.page14}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">班组: </span>{{list.page15}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">进场日期: </span>{{list.page16}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">退场日期: </span>{{list.page17}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">人员评分: </span>{{list.page18}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">安全教育学时: </span>{{list.page19}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">违章记录: </span>{{list.page110}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">加分记录: </span>{{list.page111}}</div>
+                            <div style="line-height:35px"><span class="color_blue1">体检信息: </span>{{list.page112}}</div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </el-dialog>
+    
     </div>
 </template>
 <script>
@@ -284,21 +481,345 @@
             return {
                 camera:'',
                 indexItem:-1,
-                hiddenIndexItem:-1
+                hiddenIndexItem:-1,
+                showInfo:false,
+                listPersons:[
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/Wyya6HnJ53RHSAM5eB.png',
+                        name:'朱锦海',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'34',
+                        page04:'1984-09-29',
+                        page05:'445******1830',
+                        page06:'广东省惠来县',
+                        page07:'广东省惠来县惠城镇元春元春西面直巷17号',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'小学',
+                        page012:'否',
+                        page013:'14714796444',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2018-11-01',
+                        page17:'-',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/dWk5HH5P7z2PMjAxdT.png',
+                        name:'黄国伟',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'41',
+                        page04:'1977-12-29',
+                        page05:'441******7179',
+                        page06:'广东省龙川县',
+                        page07:'广州市芳村区观鹤五巷3号101房',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'小学',
+                        page012:'否',
+                        page013:'13660324073',
+                        page11:'杂工',
+                        page12:'已退场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2019-01-19',
+                        page17:'2019-04-08',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/xjybFBiDtze6Ysnfwt.png',
+                        name:'区伟雄',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'59',
+                        page04:'1960-04-03',
+                        page05:'440******4070',
+                        page06:'广东省广州市东山区',
+                        page07:'广州市东山区区庄村25号902房',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'大专',
+                        page012:'否',
+                        page013:'3850741892',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2019-01-19',
+                        page17:'-',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/6HZr8ZpmpNNQBDHzmS.png',
+                        name:'杨佳雄',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'24',
+                        page04:'1995-04-14',
+                        page05:'441******8838',
+                        page06:'广东省海丰县',
+                        page07:'广东省海丰县海城镇海珠社区居民委员会龙山新村一巷43号',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'高中',
+                        page012:'否',
+                        page013:'18620959337',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2019-01-19',
+                        page17:'-',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                    {
+                        url:'http://autobuild-img.1357.cn/plans/20190425/aRFs5teMjGCn7bd7bB.png',
+                        name:'陈师铭',
+                        page01:'汉族',
+                        page02:'男',
+                        page03:'29',
+                        page04:'1989-12-16',
+                        page05:'440******0637',
+                        page06:'广东省广州市东山区',
+                        page07:'广州市越秀区执信南路39号702房',
+                        page08:'群众',
+                        page09:'1年',
+                        page010:'否',
+                        page011:'小学',
+                        page012:'否',
+                        page013:'17502052427',
+                        page11:'杂工',
+                        page12:'已进场',
+                        page13:'广州金控总部大楼项目',
+                        page14:'广州市通力建筑劳务派遣有限公司',
+                        page15:'岑应威杂工班组',
+                        page16:'2018-10-30',
+                        page17:'2019-04-22',
+                        page18:'60',
+                        page19:'-学时',
+                        page110:'-次',
+                        page111:'-次',
+                        page112:'-',
+                    },
+                ],
+                list:{},
+                tableOffset:1,
+                showPersonNum:false,
+                dangerShowAlert:false,
+                personShowAlert:false
             }
         },
         mounted(){
+            
             // this.drawLine();
             this.drawPie1();
             this.drawPie2();
             this.goodsChart();
         },
         methods: {
+            // 在册人数
+            alertPersonNum(){
+                this.showPersonNum = true;
+                this.$nextTick(_=>{
+                    this.pieEcharts();
+                })
+            },
+            handleCurrentChange(val){
+                this.tableOffset = val;
+            },
             openPic(index){
                 this.indexItem = index;
             },
             openhidden(index){
                 this.hiddenIndexItem = index;
+            },
+            closeInfo(){
+                this.showInfo = false;
+                this.personShowAlert = false;
+            },
+            
+            alertPersonInfo(){
+                this.showInfo = true;
+                this.personInfoList(0);
+            },
+            
+            personInfoList(index){
+                this.list = this.listPersons[index];
+            },
+            personInfoList1(index){
+                this.personShowAlert = true;
+                this.list = this.listPersons[index];
+            },
+            pieEcharts(){
+                // 基于准备好的dom，初始化echarts实例
+                let myChart = this.$echarts.init(document.getElementById('pieEcharts'))
+                // 绘制图表
+                var option = {
+                    title:  {
+                        text: '在册人员结构分析',
+                        textStyle:{
+                            color: '#fff',
+                            fontSize:20,
+                            lineHeight:30
+                        },
+                        left: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        orient: 'horizontal',
+                        icon: 'circle',
+                        bottom: 20,
+                        x: 'center',
+                        textStyle: {
+                            color: '#fff'
+                        },
+                        data: ['施工岗位', '资料岗位', '技术岗位', '质量岗位', '管理层', '商务成本岗位', '安全岗位', '物资岗位', '综合管理岗位']
+                    },
+                    series: [{
+                        name: '库存情况',
+                        type: 'pie',
+                        radius: '68%',
+                        center: ['50%', '50%'],
+                        data: [{
+                            value: 30,
+                            name: '施工岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 18,
+                            name: '资料岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 12,
+                            name: '技术岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 9,
+                            name: '质量岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 9,
+                            name: '管理层',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 9,
+                            name: '商务成本岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 6,
+                            name: '安全岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 3,
+                            name: '物资岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }, {
+                            value: 3,
+                            name: '综合管理岗位',
+                            label: {
+                                normal: {
+                                    formatter: '{d}%'
+                                }
+                            }
+                        }],
+                        label: {
+                            normal: {
+                                textStyle: {
+                                    color: '#999',
+                                    fontSize: 14,
+                                }
+                            }
+                        },
+                        labelLine: {
+                            normal: {
+                                show: false
+                            }
+                        },
+                        itemStyle: {
+                            emphasis: {
+                                borderWidth: 0,
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }],
+                    color: [
+                        '#699ad0',
+                        '#df8244',
+                        '#a5a5a5',
+                        '#f6c143',
+                        '#4d72be',
+                        '#7eab55',
+                        '#335e8d',
+                        '#944c20',
+                        '#636363'
+                    ],
+                    backgroundColor: '#1D284D'
+                };
+                myChart.setOption(option)
             },
             drawPie1() {
                 var myChart = this.$echarts.init(document.getElementById("echart-pie1"));
@@ -720,13 +1241,13 @@
                     },
                     xAxis: [{
                         type: 'category',
-                        data: [
-                            '4月19日','4月20日',
+                        data: ['4月20日',
                             '4月21日',
                             '4月22日',
                             '4月23日',
                             '4月24日',
                             '4月25日',
+                            '4月26日',
                         ],
                         axisLine: {
                             show: true,
@@ -771,7 +1292,7 @@
                     series: [{
                         name: '管理人员出勤人数',
                         type: 'bar',
-                        data: [33,16,15,33,33,33,33],
+                        data: [16,15,33,33,33,33,35],
                         barWidth: 10, //柱子宽度
                         barGap: 1, //柱子之间间距
                         itemStyle: {
@@ -789,7 +1310,7 @@
                     }, {
                         name: '班组人员出勤人数',
                         type: 'bar',
-                        data: [35,18,15,35,35,35,35],
+                        data: [18,15,35,35,35,35,35],
                         barWidth: 10,
                         barGap: 1,
                         itemStyle: {
@@ -987,16 +1508,16 @@
         img {
             float: left;
             width: 60px;
-            height: 40px;
+            height: 76px;
         }
         .dynamic_con {
             float: left;
-            height: 40px;
+            height: 80px;
             width: 110px;
             font-size: 12px;
             padding: 0 0 0 14px;
             div {
-                line-height: 20px;
+                line-height: 30px;
             }
         }
         .dynamic_btn {
@@ -1024,6 +1545,16 @@
                 background-color: rgba(252,12,89,0.2);
             }
         }
+    }
+
+    .personlistTable {
+        td {
+            line-height: 33px;
+        }
+    }
+
+    .color_blue1 {
+        color: #4CBDFE;
     }
     
 }
