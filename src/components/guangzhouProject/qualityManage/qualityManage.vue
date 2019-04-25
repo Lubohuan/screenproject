@@ -18,21 +18,21 @@
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>建设单位：</span>
                       </span>
-                      <span class="content inline-block">--</span>
+                      <span class="content inline-block">广州金融控股集团有限公</span>
                     </li>
                     <li class="flex ai-center">
                       <span class="title">
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>设计单位：</span>
                       </span>
-                      <span class="content inline-block">--</span>
+                      <span class="content inline-block">广州市设计院</span>
                     </li>
                     <li class="flex ai-center">
                       <span class="title">
                         <img src="../../../assets/index/icon_li.png" alt>
                         <span>总包单位：</span>
                       </span>
-                      <span class="content inline-block">--</span>
+                      <span class="content inline-block">广州建筑股份有限公司</span>
                     </li>
                   </ul>
                 </div>
@@ -801,19 +801,19 @@ export default {
         },
         { 
           imgPath:'../../../assets/qualityManage/l2.jpg',
-          imgTitle:'卫生间',
-          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
+          imgTitle:'卫生间样板',
+          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用卫生间样板，经业主及监理单位认可后，方可进行大面积施工。"
         },
         { 
           imgPath:'../../../assets/qualityManage/l3.jpg',
           imgTitle:'楼梯样板',
-          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
+          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用楼梯样板，经业主及监理单位认可后，方可进行大面积施工。"
         }
       ],
       currentImgItem:{
         imgPath:'../../../assets/qualityManage/l1.jpg',
         imgTitle:'卫生间样板',
-        imgContent:'施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。'
+        imgContent:'施工前，落实样板先行，把控实体品质。本项目将采卫生间样板，经业主及监理单位认可后，方可进行大面积施工。'
       }
     };
   },
