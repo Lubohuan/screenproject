@@ -115,10 +115,11 @@
                     </td>
                     <td>
                       <div class="good">
-                        <span>10%</span>
+                        0
+                        <!-- <span>10%</span>
                         <span>
                           <i class="iconfont">↑</i>
-                        </span>
+                        </span> -->
                       </div>
                     </td>
                   </tr>
@@ -142,10 +143,11 @@
                         </span>
                       </div>-->
                       <div class="good">
-                        <span>33%</span>
+                        0
+                        <!-- <span>33%</span>
                         <span>
                           <i class="iconfont">↑</i>
-                        </span>
+                        </span> -->
                       </div>
                     </td>
                   </tr>
@@ -163,7 +165,7 @@
                     </td>
                     <td>
                       <div class="good">
-                       --
+                      0
                       </div>
                     </td>
                   </tr>
@@ -180,7 +182,9 @@
                       <span>合格</span>
                     </td>
                     <td>
-                      --
+                    <div class="good">
+                      0
+                      </div>
                     </td>
                   </tr>
                  
@@ -269,15 +273,15 @@
                   <ul class="list-unstyled list-task">
                     <li>
                       <span class="title">任务一：</span>
-                      <span class="content">4.1号须完成防水样板验收   负责人：工程管理部   谭楚才</span>
+                      <span class="content">4.1须完成塔机月度检查 负责人：安全部 杨建基</span>
                     </li>
                     <li>
                       <span class="title">任务二：</span>
-                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收   负责人：工程管理部  杨佳雄</span>
+                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收 负责人：工程管理部 杨佳雄</span>
                     </li>
                     <li>
                       <span class="title">任务三：</span>
-                      <span class="content">4.30须完成锚杆验收    负责人：尹鑫</span>
+                      <span class="content">4.30须完成塔机正常保养 负责人：安全部 杨建基</span>
                     </li>
                     <!-- <li>
                       <span class="title">任务四：</span>

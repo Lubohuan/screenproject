@@ -150,18 +150,18 @@
                     <img @click="showewm" src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
                 </div>
                 <div c style="width:440px;padding:20px;">
-                  <ul class="list-unstyled list-task">
+                   <ul class="list-unstyled list-task">
                     <li>
                       <span class="title">任务一：</span>
-                      <span class="content">4.1须完成塔机月度检查 负责人：安全部 杨建基</span>
+                      <span class="content">4.1号须完成防水样板验收   负责人：工程管理部   谭楚才</span>
                     </li>
                     <li>
                       <span class="title">任务二：</span>
-                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收 负责人：工程管理部 杨佳雄</span>
+                      <span class="content">4.2号须完成塔吊钢筋隐蔽验收   负责人：工程管理部  杨佳雄</span>
                     </li>
                     <li>
                       <span class="title">任务三：</span>
-                      <span class="content">4.30须完成塔机正常保养 负责人：安全部 杨建基</span>
+                      <span class="content">4.30须完成锚杆验收    负责人：尹鑫</span>
                     </li>
                     <!-- <li>
                       <span class="title">任务四：</span>
@@ -571,7 +571,7 @@
                     <th>排名</th>
                     <th>分包单位</th>
                     <th>
-                      通过率
+                      整改率
                       <span>(问题数)</span>
                     </th>
                     <th>周环比</th>
@@ -801,12 +801,12 @@ export default {
         },
         { 
           imgPath:'../../../assets/qualityManage/l2.jpg',
-          imgTitle:'楼梯样板',
+          imgTitle:'卫生间',
           imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
         },
         { 
           imgPath:'../../../assets/qualityManage/l3.jpg',
-          imgTitle:'剪力墙钢筋样板',
+          imgTitle:'楼梯样板',
           imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
         }
       ],
@@ -1192,15 +1192,15 @@ export default {
         },
         xAxis: [{
             type: 'category',
-            data: ['装饰装修-墙砖','装饰装修-地砖','砌筑工程','砌体','混凝土','模板', '一般抹灰'],
-           axisLine: {
-                show: true,
-                lineStyle: {
-                    color: "rgba(219,225,255,1)",
-                    width: 0,
-                    type: "solid"
-                }
-            },
+            data: ['装修-墙砖','装修-地砖','砌筑','砌体','混凝土','模板', '抹灰'],
+            axisLine: {
+                  show: true,
+                  lineStyle: {
+                      color: "rgba(219,225,255,1)",
+                      width: 0,
+                      type: "solid"
+                  }
+              },
             axisTick: {
                 show: false,
             },
