@@ -519,7 +519,7 @@
             </div>
             <div class="ibox-content">
                 <div style="height:2.5px;"></div>
-                <img src="../../../assets/manageMachine/jita.png" alt="" width="520px;">
+                <img src="../../../assets/manageMachine/jxt.png" alt="" width="520px;">
             </div>
           </div>
         </div>
