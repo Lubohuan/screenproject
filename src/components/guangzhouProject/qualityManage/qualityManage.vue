@@ -108,12 +108,11 @@
         <div class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"  @click="showImage(0)">
+              <div class="swiper-slide" @click="showImage(0)">
                 <img
                   src="../../../assets/qualityManage/l1.jpg"
                   alt="bgImage"
                   class="img-responsive center-block"
-                 
                 >
               </div>
               <div class="swiper-slide" @click="showImage(1)">
@@ -121,15 +120,13 @@
                   src="../../../assets/qualityManage/l2.jpg"
                   alt="bgImage"
                   class="img-responsive center-block"
-                 
                 >
               </div>
-              <div class="swiper-slide"  @click="showImage(2)">
+              <div class="swiper-slide" @click="showImage(2)">
                 <img
                   src="../../../assets/qualityManage/l3.jpg"
                   alt="bgImage"
                   class="img-responsive center-block"
-                 
                 >
               </div>
             </div>
@@ -147,21 +144,26 @@
             <div class="ibox-content" style="padding:0">
               <div class="flex allHeight">
                 <div style="postion:relative;width:340px;height:100%;cursor:pointer">
-                    <img @click="showewm" src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
+                  <img
+                    @click="showewm"
+                    src="../../../assets/manageMachine/candaer.png"
+                    alt
+                    width="100%"
+                  >
                 </div>
                 <div c style="width:440px;padding:20px;">
-                   <ul class="list-unstyled list-task">
+                  <ul class="list-unstyled list-task">
                     <li>
                       <span class="title">任务一：</span>
-                      <span class="content">4.1号须完成防水样板验收   负责人：工程管理部   谭楚才</span>
+                      <span class="content">4.1号须完成防水样板验收 负责人：工程管理部 谭楚才</span>
                     </li>
                     <li>
                       <span class="title">任务二：</span>
-                      <span class="content">4.2号须完成塔吊基础部分的质量检查   负责人：工程管理部  杨佳熊</span>
+                      <span class="content">4.2号须完成塔吊基础部分的质量检查 负责人：工程管理部 杨佳熊</span>
                     </li>
                     <li>
                       <span class="title">任务三：</span>
-                      <span class="content">4.30须完成锚杆验收    负责人：尹鑫</span>
+                      <span class="content">4.30须完成锚杆验收 负责人：尹鑫</span>
                     </li>
                     <!-- <li>
                       <span class="title">任务四：</span>
@@ -170,7 +172,7 @@
                     <li>
                       <span class="title">任务五：</span>
                       <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
-                    </li> -->
+                    </li>-->
                   </ul>
                 </div>
               </div>
@@ -357,7 +359,7 @@
               <span class="text">实测实量合格率统计</span>
             </div>
             <div class="ibox-content">
-                <div id="echart-bar" style="width:100%;height:100%"></div>
+              <div id="echart-bar" style="width:100%;height:100%"></div>
             </div>
           </div>
         </div>
@@ -371,118 +373,118 @@
               <img src="../../../assets/index/icon.png" alt width="16px">
               <span class="text">绿色施工</span>
               <div id="textPcontainer" class="weather-warning">
-                <p id="textP"  >砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
+                <p id="textP">砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
               </div>
             </div>
             <div class="ibox-content">
-             <div class="weather-container flex">
-                  <!-- 第一格 -->
-                  <div
-                    class="item flex column"
-                    style="width:260px;border-right:1px solid rgba(255,255,255,.1);"
-                  >
-                    <!-- 上半部分 -->
-                    <div class="flex top">
-                      <div class="flex-3 flex ai-end" style="height:58px;">
-                        <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
-                      </div>
-                      <div class="flex-3 flex ai-end" style="height:48px;">
-                        <span style="font-size:36px;line-height:35px;">26</span>
-                        <span style="font-size:18px;line-height:18px;">℃</span>
-                      </div>
-                      <div class="flex-2 flex ai-end" style="height:48px;">
-                        <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
-                      </div>
+              <div class="weather-container flex">
+                <!-- 第一格 -->
+                <div
+                  class="item flex column"
+                  style="width:260px;border-right:1px solid rgba(255,255,255,.1);"
+                >
+                  <!-- 上半部分 -->
+                  <div class="flex top">
+                    <div class="flex-3 flex ai-end" style="height:58px;">
+                      <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
                     </div>
-                    <!-- 下半部分 -->
-                    <div class="flex bottom wrap">
-                      <div class="font12 flex ai-center" style="width:35%">
-                        <img src="../../../assets/index/wind.png" alt>
-                        <span>南风2级</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:34%">
-                        <img src="../../../assets/index/temperature.png" alt>
-                        <span>100℃</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:31%">
-                        <img src="../../../assets/index/rainfall.png" alt>
-                        <span>67%</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:35%">
-                        <img src="../../../assets/index/pm25.png" alt>
-                        <span>21</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:34%">
-                        <img src="../../../assets/index/pm10.png" alt>
-                        <span>33</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:31%">
-                        <img src="../../../assets/index/noise.png" alt>
-                        <span>45dB</span>
-                      </div>
+                    <div class="flex-3 flex ai-end" style="height:48px;">
+                      <span style="font-size:36px;line-height:35px;">22</span>
+                      <span style="font-size:18px;line-height:18px;">℃</span>
+                    </div>
+                    <div class="flex-2 flex ai-end" style="height:48px;">
+                      <span style="color:#FEDF50;font-size:16px;line-height:16px;">阴天</span>
                     </div>
                   </div>
-                  <!-- 第二格 -->
-                  <div class="item flex" style="width:260px;padding-top:5px;">
-                    <!-- 明天-->
-                     <div class="flex column ai-center flex-1">
-                      <dl>
-                        <dt class="font12 text-center" style="line-height:13px;">明天</dt>
-                        <dd>
-                          <img src="../../../assets/index/rain.png" alt>
-                        </dd>
-                      </dl>
-                      <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">26</span>℃
-                      </p>
-                      <p
-                        class="font12 text-center"
-                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
-                      </p>
+                  <!-- 下半部分 -->
+                  <div class="flex bottom wrap">
+                    <div class="font12 flex ai-center" style="width:35%">
+                      <img src="../../../assets/index/wind.png" alt>
+                      <span>南风2级</span>
                     </div>
-                    <!-- 后天 -->
-                    <div class="flex column ai-center flex-1">
-                      <dl>
-                        <dt class="font12 text-center" style="line-height:13px;">后天</dt>
-                        <dd>
-                          <img src="../../../assets/index/rain.png" alt>
-                        </dd>
-                      </dl>
-                      <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">27</span>℃
-                      </p>
-                      <p
-                        class="font12 text-center"
-                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
-                      </p>
+                    <div class="font12 flex ai-center" style="width:34%">
+                      <img src="../../../assets/index/temperature.png" alt>
+                      <span>100℃</span>
                     </div>
-                    <!-- 大后天 -->
-                   <div class="flex column ai-center flex-1">
-                      <dl>
-                        <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
-                        <dd>
-                          <img src="../../../assets/index/rain.png" alt>
-                        </dd>
-                      </dl>
-                      <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">23</span>℃
-                      </p>
-                      <p
-                        class="font12 text-center"
-                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
-                      </p>
+                    <div class="font12 flex ai-center" style="width:31%">
+                      <img src="../../../assets/index/rainfall.png" alt>
+                      <span>67%</span>
+                    </div>
+                    <div class="font12 flex ai-center" style="width:35%">
+                      <img src="../../../assets/index/pm25.png" alt>
+                      <span>21</span>
+                    </div>
+                    <div class="font12 flex ai-center" style="width:34%">
+                      <img src="../../../assets/index/pm10.png" alt>
+                      <span>33</span>
+                    </div>
+                    <div class="font12 flex ai-center" style="width:31%">
+                      <img src="../../../assets/index/noise.png" alt>
+                      <span>45dB</span>
                     </div>
                   </div>
                 </div>
+                <!-- 第二格 -->
+                <div class="item flex" style="width:260px;padding-top:5px;">
+                  <!-- 明天-->
+                  <div class="flex column ai-center flex-1">
+                    <dl>
+                      <dt class="font12 text-center" style="line-height:13px;">明天</dt>
+                      <dd>
+                        <img src="../../../assets/index/rain.png" alt>
+                      </dd>
+                    </dl>
+                    <p style="font-size:14px;margin:6px 0">
+                      <span class="font28">29</span>℃
+                    </p>
+                    <p
+                      class="font12 text-center"
+                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                    >
+                      中雨
+                      <img src="../../../assets/index/warning.png" alt width="20px">
+                    </p>
+                  </div>
+                  <!-- 后天 -->
+                  <div class="flex column ai-center flex-1">
+                    <dl>
+                      <dt class="font12 text-center" style="line-height:13px;">后天</dt>
+                      <dd>
+                        <img src="../../../assets/index/lzy.png" alt>
+                      </dd>
+                    </dl>
+                    <p style="font-size:14px;margin:6px 0">
+                      <span class="font28">30</span>℃
+                    </p>
+                    <p
+                      class="font12 text-right"
+                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                    >
+                      雷阵雨
+                      <img src="../../../assets/index/warning.png" alt width="20px">
+                    </p>
+                  </div>
+                  <!-- 大后天 -->
+                  <div class="flex column ai-center flex-1">
+                    <dl>
+                      <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
+                      <dd>
+                        <img src="../../../assets/index/lzy.png" alt>
+                      </dd>
+                    </dl>
+                    <p style="font-size:14px;margin:6px 0">
+                      <span class="font28">30</span>℃
+                    </p>
+                    <p
+                      class="font12 text-center"
+                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                    >
+                      雷阵雨
+                      <img src="../../../assets/index/warning.png" alt width="20px">
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -521,7 +523,7 @@
                   <div class="media-footer">2019-04-17 16:54</div>
                 </div>
                 <div class="media-right">
-                 <img src="../../../assets/qualityManage/gz2.jpg">
+                  <img src="../../../assets/qualityManage/gz2.jpg">
                 </div>
               </div>
               <div class="media" style="margin:0 0 3px 0;">
@@ -536,7 +538,7 @@
                   <div class="media-footer">2019-04-16 17:44</div>
                 </div>
                 <div class="media-right">
-                 <img src="../../../assets/qualityManage/gz3.jpg">
+                  <img src="../../../assets/qualityManage/gz3.jpg">
                 </div>
               </div>
               <div class="media">
@@ -662,7 +664,7 @@
                         <span>--</span>
                         <!-- <span>
                           <i class="iconfont">↑</i>
-                        </span> -->
+                        </span>-->
                       </div>
                     </td>
                   </tr>
@@ -681,11 +683,10 @@
                         <span>--</span>
                         <!-- <span>
                           <i class="iconfont">↑</i>
-                        </span> -->
+                        </span>-->
                       </div>
                     </td>
                   </tr>
-                 
                 </tbody>
               </table>
             </div>
@@ -695,176 +696,196 @@
       <!-- right end -->
     </div>
     <!--轮播图详情 -->
-    <el-dialog title="提示"  width='80%' :visible.sync="dialogObj.dialogVisible1" top="100px" center>
-        <div class="modal" style="height:800px;">
-          <div class="modal-title flex jc-between">
-              <div class="all-height flex ai-center">
-                  <img src="../../../assets/index/icon.png" alt width="16px">
-                  <span class="text">图片详情</span>
-              </div>
-              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
-                 <i class="el-icon-close"></i>
-              </div>
-
+    <el-dialog title="提示" width="80%" :visible.sync="dialogObj.dialogVisible1" top="100px" center>
+      <div class="modal" style="height:800px;">
+        <div class="modal-title flex jc-between">
+          <div class="all-height flex ai-center">
+            <img src="../../../assets/index/icon.png" alt width="16px">
+            <span class="text">图片详情</span>
           </div>
-          <div class="modal-content" style="padding:25px;">
-              <div class="flex allHeight ai-center">
-                  <div style="padding:0 30px 0 10px;height:500px;width:70%;" >
-                    <img v-if="imgType==0" src="../../../assets/qualityManage/l1.jpg" style="width:100%;margin-top:-30px;">
-                    <img v-if="imgType==1" src="../../../assets/qualityManage/l2.jpg" style="width:100%;margin-top:-30px;">
-                    <img v-if="imgType==2" src="../../../assets/qualityManage/l3.jpg" style="width:100%;margin-top:-30px;">
-                  </div>
-                  <div class="allHeight" style="padding:40px 20px;width:30%;">
-                     <dl class="flex allHeight column jc-start;" >
-                       <dt style="margin:20px 0;text-align:center;font-size:18px;color:rgba(223,250,255,1)">{{currentImgItem.imgTitle}}</dt>
-                       <dd style="text-align:left;line-height:2;color:rgba(223,250,255,1)"> 
-                         {{currentImgItem.imgContent}}
-                       </dd>
-                     </dl>
-                  </div>
-                  
-              </div>
+          <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
+            <i class="el-icon-close"></i>
           </div>
         </div>
+        <div class="modal-content" style="padding:25px;">
+          <div class="flex allHeight ai-center">
+            <div style="padding:0 30px 0 10px;height:500px;width:70%;">
+              <img
+                v-if="imgType==0"
+                src="../../../assets/qualityManage/l1.jpg"
+                style="width:100%;margin-top:-30px;"
+              >
+              <img
+                v-if="imgType==1"
+                src="../../../assets/qualityManage/l2.jpg"
+                style="width:100%;margin-top:-30px;"
+              >
+              <img
+                v-if="imgType==2"
+                src="../../../assets/qualityManage/l3.jpg"
+                style="width:100%;margin-top:-30px;"
+              >
+            </div>
+            <div class="allHeight" style="padding:40px 20px;width:30%;">
+              <dl class="flex allHeight column jc-start;">
+                <dt
+                  style="margin:20px 0;text-align:center;font-size:18px;color:rgba(223,250,255,1)"
+                >{{currentImgItem.imgTitle}}</dt>
+                <dd
+                  style="text-align:left;line-height:2;color:rgba(223,250,255,1)"
+                >{{currentImgItem.imgContent}}</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
     </el-dialog>
-    <el-dialog title="提示" width="60%" top="300px" :visible.sync="dialogObj.dialogVisible2" >
-        <div class="modal" style=";height:480px;">
-          <div class="modal-title flex jc-between">
-              <div class="all-height flex ai-center">
-                  <img src="../../../assets/index/icon.png" alt width="16px">
-                  <span class="text">检查任务</span>
-              </div>
-              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible2 = false">
-                 <i class="el-icon-close"></i>
-              </div>
-
+    <el-dialog title="提示" width="60%" top="300px" :visible.sync="dialogObj.dialogVisible2">
+      <div class="modal" style=";height:480px;">
+        <div class="modal-title flex jc-between">
+          <div class="all-height flex ai-center">
+            <img src="../../../assets/index/icon.png" alt width="16px">
+            <span class="text">检查任务</span>
           </div>
-          <div class="modal-content" style="padding:25px;">
-            <div class="flex allHeight ai-center">
-                  <div style="padding-left:10px;width:50%;text-align:center;color:#fff;border-right:1px solid rgba(46, 73, 112, 0.5)">
-                    <h4 style="font-size:30px;margin:0px 0 30px 0">广州建筑股份有限公司</h4>
-                    <p style="color:red;margin:10px 0">质量检测任务点,请勿移动</p>
-                    <img src="../../../assets/qualityManage/ewm.png">
-                    <div style="color:#3c95c8;;margin:10px 0;line-height:30px;">
-                      <div>项目名称: 广州金控总部大楼项目</div>
-                      <div>检查部位: 塔吊基础</div>
-                    </div>
-                    <div style="display:flex;justify-content: space-evenly;margin:10px 0">
-                      <div>生成日期:2019-02-28 10:37:42</div>
-                      <div>如需移动请联系:18800001587</div>
-                    </div>
-                  </div>
-                  <div class="allHeight" style="color:rgba(223,250,255,1);font-size:16px;width:50%;padding-left:40px;line-height:30px">
-                     <div style="line-height:30px;text-align:center;">
-                      <div>广州金控总部大楼项目</div>
-                      <div>塔吊基础</div>
-                    </div>
-                      <p style="line-height:26px">所属区域: 底板</p>
-                      <p style="line-height:26px">检查人: 杨佳雄</p>
-                      <p style="line-height:26px">责任人: 系五汉</p>
-                      <p style="line-height:26px">描述:</p>
-                      <p style="line-height:26px">钢筋按图纸准确安装，受力钢筋间距偏差±10mm、排距±5mm，保护层厚度±10mm，预埋件中心线位置偏差5mm以内；模板垂直度允许偏差6mm、相邻两板表面高低差2mm，表面平整度5mm；混凝土表面无蜂窝、孔洞、露筋，允许偏差值：位移5mm~15mm，平整度5mm，垂直度5mm，截面尺寸-2~5mm，标高±10mm</p>
-                      <p style="line-height:26px">检查频率: 2天一次</p>
-                      <p style="line-height:26px">检查率: 70%</p>
-                      <p style="line-height:26px">上次检查时间: 2019-03-18 14:57</p>
-                  </div>
-              </div>
+          <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible2 = false">
+            <i class="el-icon-close"></i>
           </div>
         </div>
+        <div class="modal-content" style="padding:25px;">
+          <div class="flex allHeight ai-center">
+            <div
+              style="padding-left:10px;width:50%;text-align:center;color:#fff;border-right:1px solid rgba(46, 73, 112, 0.5)"
+            >
+              <h4 style="font-size:30px;margin:0px 0 30px 0">广州建筑股份有限公司</h4>
+              <p style="color:red;margin:10px 0">质量检测任务点,请勿移动</p>
+              <img src="../../../assets/qualityManage/ewm.png">
+              <div style="color:#3c95c8;;margin:10px 0;line-height:30px;">
+                <div>项目名称: 广州金控总部大楼项目</div>
+                <div>检查部位: 塔吊基础</div>
+              </div>
+              <div style="display:flex;justify-content: space-evenly;margin:10px 0">
+                <div>生成日期:2019-02-28 10:37:42</div>
+                <div>如需移动请联系:18800001587</div>
+              </div>
+            </div>
+            <div
+              class="allHeight"
+              style="color:rgba(223,250,255,1);font-size:16px;width:50%;padding-left:40px;line-height:30px"
+            >
+              <div style="line-height:30px;text-align:center;">
+                <div>广州金控总部大楼项目</div>
+                <div>塔吊基础</div>
+              </div>
+              <p style="line-height:26px">所属区域: 底板</p>
+              <p style="line-height:26px">检查人: 杨佳雄</p>
+              <p style="line-height:26px">责任人: 系五汉</p>
+              <p style="line-height:26px">描述:</p>
+              <p
+                style="line-height:26px"
+              >钢筋按图纸准确安装，受力钢筋间距偏差±10mm、排距±5mm，保护层厚度±10mm，预埋件中心线位置偏差5mm以内；模板垂直度允许偏差6mm、相邻两板表面高低差2mm，表面平整度5mm；混凝土表面无蜂窝、孔洞、露筋，允许偏差值：位移5mm~15mm，平整度5mm，垂直度5mm，截面尺寸-2~5mm，标高±10mm</p>
+              <p style="line-height:26px">检查频率: 2天一次</p>
+              <p style="line-height:26px">检查率: 70%</p>
+              <p style="line-height:26px">上次检查时间: 2019-03-18 14:57</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </el-dialog>
-    <el-dialog title="提示" :visible.sync="dialogObj.dialogVisible3" >
-        <div class="modal" style="height:732px;height:510px;">
-          <div class="modal-title flex jc-between">
-              <div class="all-height flex ai-center">
-                  <img src="../../../assets/index/icon.png" alt width="16px">
-                  <span class="text">质量目标</span>
-                  <div>
-                    <span class="label">检查人：</span>
-                    <span class="val"></span>
-                  </div>
-                  <div>
-                    <span class="label">时间：</span>
-                    <span class="val"></span>
-                  </div>
-              </div>
-              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible3 = false">
-                 <i class="el-icon-close"></i>
-              </div>
-
+    <el-dialog title="提示" :visible.sync="dialogObj.dialogVisible3">
+      <div class="modal" style="height:732px;height:510px;">
+        <div class="modal-title flex jc-between">
+          <div class="all-height flex ai-center">
+            <img src="../../../assets/index/icon.png" alt width="16px">
+            <span class="text">质量目标</span>
+            <div>
+              <span class="label">检查人：</span>
+              <span class="val"></span>
+            </div>
+            <div>
+              <span class="label">时间：</span>
+              <span class="val"></span>
+            </div>
           </div>
-          <div class="modal-content"></div>
+          <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible3 = false">
+            <i class="el-icon-close"></i>
+          </div>
         </div>
+        <div class="modal-content"></div>
+      </div>
     </el-dialog>
   </div>
 </template>
 <script>
-import scrollfunc from '../../public/all';
+import scrollfunc from "../../public/all";
 import Swiper from "swiper";
-import { setTimeout } from 'timers';
+import { setTimeout } from "timers";
 export default {
   name: "homePage",
   data() {
     return {
-      intervalTimer:"",
-      showScroll:false,
-      dialogObj:{
+      intervalTimer: "",
+      showScroll: false,
+      dialogObj: {
         dialogVisible1: false,
         dialogVisible2: false,
-        dialogVisible3: false,
-        
+        dialogVisible3: false
       },
-      imgType:0,
-      imgObj:[
-        { 
-          imgPath:'../../../assets/qualityManage/l1.jpg',
-          imgTitle:'剪力墙钢筋样板',
-          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
+      imgType: 0,
+      imgObj: [
+        {
+          imgPath: "../../../assets/qualityManage/l1.jpg",
+          imgTitle: "剪力墙钢筋样板",
+          imgContent:
+            "施工前，落实样板先行，把控实体品质。本项目将采用砌体抹灰样板，经业主及监理单位认可后，方可进行大面积施工。"
         },
-        { 
-          imgPath:'../../../assets/qualityManage/l2.jpg',
-          imgTitle:'卫生间样板',
-          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用卫生间样板，经业主及监理单位认可后，方可进行大面积施工。"
+        {
+          imgPath: "../../../assets/qualityManage/l2.jpg",
+          imgTitle: "卫生间样板",
+          imgContent:
+            "施工前，落实样板先行，把控实体品质。本项目将采用卫生间样板，经业主及监理单位认可后，方可进行大面积施工。"
         },
-        { 
-          imgPath:'../../../assets/qualityManage/l3.jpg',
-          imgTitle:'楼梯样板',
-          imgContent:"施工前，落实样板先行，把控实体品质。本项目将采用楼梯样板，经业主及监理单位认可后，方可进行大面积施工。"
+        {
+          imgPath: "../../../assets/qualityManage/l3.jpg",
+          imgTitle: "楼梯样板",
+          imgContent:
+            "施工前，落实样板先行，把控实体品质。本项目将采用楼梯样板，经业主及监理单位认可后，方可进行大面积施工。"
         }
       ],
-      currentImgItem:{
-        imgPath:'../../../assets/qualityManage/l1.jpg',
-        imgTitle:'卫生间样板',
-        imgContent:'施工前，落实样板先行，把控实体品质。本项目将采卫生间样板，经业主及监理单位认可后，方可进行大面积施工。'
+      currentImgItem: {
+        imgPath: "../../../assets/qualityManage/l1.jpg",
+        imgTitle: "卫生间样板",
+        imgContent:
+          "施工前，落实样板先行，把控实体品质。本项目将采卫生间样板，经业主及监理单位认可后，方可进行大面积施工。"
       }
     };
   },
   methods: {
-    showewm(){
+    showewm() {
       this.dialogObj.dialogVisible2 = true;
     },
-    showImage(type){
-      this.imgType = type
-      
+    showImage(type) {
+      this.imgType = type;
+
       this.currentImgItem = this.imgObj[type];
-      this.dialogObj.dialogVisible1 = true
+      this.dialogObj.dialogVisible1 = true;
     },
-  
-    textScroll(){
-       var scrollWidth = $('#textPcontainer').width();
-        var textWidth = $('#textP').width();
-        if(textWidth>scrollWidth){
-           $("#textPcontainer").textScroll()
-        }else{
-           $('#textP').css("left",0);
-        }
+
+    textScroll() {
+      var scrollWidth = $("#textPcontainer").width();
+      var textWidth = $("#textP").width();
+      if (textWidth > scrollWidth) {
+        $("#textPcontainer").textScroll();
+      } else {
+        $("#textP").css("left", 0);
+      }
     },
-    textEnter(){
+    textEnter() {
       //clearInterval(this.intervalTimer);
     },
-    textLeave(){
-     // this.marquee()
+    textLeave() {
+      // this.marquee()
     },
-   
+
     drawLine() {
       var myChart = this.$echarts.init(document.getElementById("echart-line"));
       var option = {
@@ -1185,134 +1206,159 @@ export default {
         myChart.resize();
       });
     },
-    drawBar(){
-       var myChart = this.$echarts.init(document.getElementById("echart-bar"));
+    drawBar() {
+      var myChart = this.$echarts.init(document.getElementById("echart-bar"));
       var option = {
         tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow'
-            }
+          trigger: "axis",
+          axisPointer: {
+            type: "shadow"
+          }
         },
         legend: {
-            data: ['垂直度', '平整度', '轴线位移'],
-            //align: 'right',
-            right: 10,
-            textStyle: {
-                color: "#fff"
-            },
-            itemWidth: 10,
-            itemHeight: 10,
-            itemGap: 35
+          data: ["垂直度", "平整度", "轴线位移"],
+          //align: 'right',
+          right: 10,
+          textStyle: {
+            color: "#fff"
+          },
+          itemWidth: 10,
+          itemHeight: 10,
+          itemGap: 35
         },
         grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true
         },
-        xAxis: [{
-            type: 'category',
-            data: ['装修-墙砖','装修-地砖','砌筑','砌体','混凝土','模板', '抹灰'],
+        xAxis: [
+          {
+            type: "category",
+            data: [
+              "装修-墙砖",
+              "装修-地砖",
+              "砌筑",
+              "砌体",
+              "混凝土",
+              "模板",
+              "抹灰"
+            ],
             axisLine: {
-                  show: true,
-                  lineStyle: {
-                      color: "rgba(219,225,255,1)",
-                      width: 1,
-                      type: "solid"
-                  }
-              },
-            axisTick: {
-                show: false,
-            },
-            axisLabel: {
-                show: true,
-                textStyle: {
-                    color: "rgba(219,225,255,1)",
-                }
-            },
-        }],
-        yAxis: [{
-            type: 'value',
-            axisLabel: {
-                formatter: '{value} %',
-                textStyle: {
-                    color: "rgba(219,225,255,1)",
-                }
-            },
-           axisLine: {
-                show: true,
-                lineStyle: {
-                    color: "rgba(219,225,255,1)",
-                    width: 1,
-                    type: "solid"
-                }
+              show: true,
+              lineStyle: {
+                color: "rgba(219,225,255,1)",
+                width: 1,
+                type: "solid"
+              }
             },
             axisTick: {
-                show: false,
+              show: false
+            },
+            axisLabel: {
+              show: true,
+              textStyle: {
+                color: "rgba(219,225,255,1)"
+              }
+            }
+          }
+        ],
+        yAxis: [
+          {
+            type: "value",
+            axisLabel: {
+              formatter: "{value} %",
+              textStyle: {
+                color: "rgba(219,225,255,1)"
+              }
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "rgba(219,225,255,1)",
+                width: 1,
+                type: "solid"
+              }
+            },
+            axisTick: {
+              show: false
             },
             splitLine: {
-                lineStyle: {
-                    color: "#063374",
-                },
-                show:false
+              lineStyle: {
+                color: "#063374"
+              },
+              show: false
             }
-        }],
-        series: [{
-            name: '垂直度',
-            type: 'bar',
-            data: [0,0,0,0,0,0,0],
+          }
+        ],
+        series: [
+          {
+            name: "垂直度",
+            type: "bar",
+            data: [0, 0, 0, 0, 0, 0, 0],
             barWidth: 10, //柱子宽度
             barGap: 1, //柱子之间间距
             itemStyle: {
-                normal: {
-                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: '#008cff'
-                    }, {
-                        offset: 1,
-                        color: '#005193'
-                    }]),
-                    opacity: 1,
-                }
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 0,
+                    color: "#008cff"
+                  },
+                  {
+                    offset: 1,
+                    color: "#005193"
+                  }
+                ]),
+                opacity: 1
+              }
             }
-        }, {
-            name: '平整度',
-            type: 'bar',
-            data: [0,0,0,0,0,0,0],
+          },
+          {
+            name: "平整度",
+            type: "bar",
+            data: [0, 0, 0, 0, 0, 0, 0],
             barWidth: 10,
             barGap: 1,
             itemStyle: {
-                normal: {
-                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: '#00da9c'
-                    }, {
-                        offset: 1,
-                        color: '#007a55'
-                    }]),
-                    opacity: 1,
-                }
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 0,
+                    color: "#00da9c"
+                  },
+                  {
+                    offset: 1,
+                    color: "#007a55"
+                  }
+                ]),
+                opacity: 1
+              }
             }
-        }, {
-            name: '轴线位移',
-            type: 'bar',
-            data: [0,0,0,0,0,0,0],
+          },
+          {
+            name: "轴线位移",
+            type: "bar",
+            data: [0, 0, 0, 0, 0, 0, 0],
             barWidth: 10,
             barGap: 1,
             itemStyle: {
-                normal: {
-                    color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: '#c4e300'
-                    }, {
-                        offset: 1,
-                        color: '#728400'
-                    }]),
-                    opacity: 1,
-                }
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 0,
+                    color: "#c4e300"
+                  },
+                  {
+                    offset: 1,
+                    color: "#728400"
+                  }
+                ]),
+                opacity: 1
+              }
             }
-        }]
+          }
+        ]
       };
       myChart.setOption(option);
       window.addEventListener("resize", () => {
@@ -1320,8 +1366,7 @@ export default {
       });
     }
   },
-  created() {
-  },
+  created() {},
   mounted() {
     var mySwiper = new Swiper(".swiper-container", {
       loopAdditionalSlides: 3,
@@ -1344,7 +1389,6 @@ export default {
     this.drawBar();
     this.textScroll();
   }
- 
 };
 </script>
 <style lang="scss" scoped>
@@ -1372,6 +1416,5 @@ export default {
   -webkit-align-items: center;
   align-items: center;
 }
-
 </style>
 

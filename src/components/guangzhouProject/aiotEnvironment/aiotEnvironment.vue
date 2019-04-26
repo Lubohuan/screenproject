@@ -13,13 +13,13 @@
             <div style="height:125px;width:100%;float:left;display:flex; flex-direction: column;">
               <div class="flex1 flex text_center" style="justify-content: space-around;">
                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
-                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
+                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">22</span>℃</div>
+                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">阴天</div>
               </div>
               <div class="flex1 flex"  style="flex-direction:column;">
                 <div class="flex">
                   <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/wind.png" alt=""> 南风2级 </div>
-                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/temperature.png" alt=""> 26℃ </div>
+                  <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/temperature.png" alt=""> 100℃ </div>
                   <div class="flex1 font12" style="text-align: center"><img src="../../../assets/index/rainfall.png" alt=""> 100% </div>
                 </div>
                 <div class="flex">
@@ -56,16 +56,16 @@
               </div>
               <div class="flex1 flex">
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">26</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">29</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">中雨</p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">27</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">暴雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">30</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">雷正雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">23</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
+                  <p style="font-size:14px;margin:8px 0"><span class="font28">30</span>℃</p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">雷正雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                 </div>
               </div>
             </div>

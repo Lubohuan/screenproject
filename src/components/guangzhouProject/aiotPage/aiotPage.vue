@@ -2,84 +2,139 @@
   <div class="huling" style="height:100%;width:100%;">
     <div class="top_con flex_b">
       <div class="top_con_left top_con_left_hll">
-        <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+        <div
+          class="top_con_left_hll_one"
+          style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;"
+        >
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>预警中心</h5>
             </div>
           </div>
           <div class="top_con_left_hll_one_top">
-            <p>累计预警<span style="color: #FEDF50;font-size: 28px">15</span>次</p>
-            <p>今日<span style="color: #FEDF50;font-size: 28px">1</span>次</p>
+            <p>
+              累计预警
+              <span style="color: #FEDF50;font-size: 28px">15</span>次
+            </p>
+            <p>
+              今日
+              <span style="color: #FEDF50;font-size: 28px">1</span>次
+            </p>
           </div>
           <div class="top_con_left_hll_one_bottom" style="margin-top: 20px">
-            <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">一级预警</span></p>
+            <img src="../../../assets/Aiot-red.png" alt>
+            <p>
+              <span
+                style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px"
+              >一级预警</span>
+            </p>
             <p>08:03</p>
             <p>1#工区高支模形变超限，请及时查看处理</p>
           </div>
           <div class="top_con_left_hll_one_bottom">
-            <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px">二级预警</span></p>
+            <img src="../../../assets/Aiot-red.png" alt>
+            <p>
+              <span
+                style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FEDF50;background: rgba(254,223,80,.2);font-size: 10px"
+              >二级预警</span>
+            </p>
             <p>07:13</p>
             <p>1#工区有工人未戴安全帽进入施工区域</p>
           </div>
           <div class="top_con_left_hll_one_bottom">
-            <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FC0C59;background: rgba(252,12,89,.2);font-size: 10px">三级预警</span></p>
+            <img src="../../../assets/Aiot-red.png" alt>
+            <p>
+              <span
+                style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #FC0C59;background: rgba(252,12,89,.2);font-size: 10px"
+              >三级预警</span>
+            </p>
             <p>07:07</p>
             <p>预计今日有阵雨，请提前做好相应准备</p>
           </div>
           <div class="top_con_left_hll_one_bottom">
-            <img src="../../../assets/Aiot-red.png" alt="">
-            <p><span style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px">一级预警</span></p>
+            <img src="../../../assets/Aiot-red.png" alt>
+            <p>
+              <span
+                style="display: inline-block;width: 52px;height: 19px;line-height:19px;color: #4CBDFE;background: rgba(76,189,254,.2);font-size: 10px"
+              >一级预警</span>
+            </p>
             <p>06:38</p>
             <p>4#工区监测到有人进入危险区域，请及时劝阻</p>
           </div>
         </div>
-        <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;position: relative">
+        <div
+          class="top_con_left_hll_one"
+          style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;position: relative"
+        >
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>降尘喷淋</h5>
             </div>
           </div>
           <div class="top_con_left_hll_one_top" style="border-bottom: 0">
-            <p>今日共喷淋<span style="color: #FEDF50;font-size: 28px">0</span>次</p>
+            <p>
+              今日共喷淋
+              <span style="color: #FEDF50;font-size: 28px">0</span>次
+            </p>
           </div>
           <div class="top_con_left_hll_two" style="display: flex;padding: 0 23px">
             <div class="top_con_left_hll_two_left" style="margin-right: 20px">
-              <div class="top_con_left_hll_two_left_img" style="background:linear-gradient(270deg,rgba(0,153,239,0.8) 0%,rgba(66,187,255,1) 100%);">
-                <img src="../../../assets/Aiot-pm1.png" alt="">
+              <div
+                class="top_con_left_hll_two_left_img"
+                style="background:linear-gradient(270deg,rgba(0,153,239,0.8) 0%,rgba(66,187,255,1) 100%);"
+              >
+                <img src="../../../assets/Aiot-pm1.png" alt>
               </div>
               <div class="top_con_left_hll_two_left_word">
-                <p>当前<span style="color: #4CBDFE">21</span></p>
-                <p>最高<span style="color: #4CBDFE">31</span></p>
-                <p>最低<span style="color: #4CBDFE">17</span></p>
+                <p>
+                  当前
+                  <span style="color: #4CBDFE">21</span>
+                </p>
+                <p>
+                  最高
+                  <span style="color: #4CBDFE">31</span>
+                </p>
+                <p>
+                  最低
+                  <span style="color: #4CBDFE">17</span>
+                </p>
               </div>
             </div>
             <div class="top_con_left_hll_two_left">
-              <div class="top_con_left_hll_two_left_img" style="background:linear-gradient(270deg,rgba(39,161,125,1) 0%,rgba(47,214,149,1) 100%);">
-                <img src="../../../assets/Aiot-pm2.png" alt="">
+              <div
+                class="top_con_left_hll_two_left_img"
+                style="background:linear-gradient(270deg,rgba(39,161,125,1) 0%,rgba(47,214,149,1) 100%);"
+              >
+                <img src="../../../assets/Aiot-pm2.png" alt>
               </div>
               <div class="top_con_left_hll_two_left_word">
-                <p>当前<span style="color: #00F7BD">33</span></p>
-                <p>最高<span style="color: #00F7BD">53</span></p>
-                <p>最低<span style="color: #00F7BD">21</span></p>
+                <p>
+                  当前
+                  <span style="color: #00F7BD">33</span>
+                </p>
+                <p>
+                  最高
+                  <span style="color: #00F7BD">53</span>
+                </p>
+                <p>
+                  最低
+                  <span style="color: #00F7BD">21</span>
+                </p>
               </div>
             </div>
           </div>
           <div class="top_con_right_one_notice">
-            <img src="../../../assets/Aiot-laba.png" alt="">
-            <P style="color: #FC0C59">预警提示 : </P>
+            <img src="../../../assets/Aiot-laba.png" alt>
+            <P style="color: #FC0C59">预警提示 :</P>
             <p>当前空气质量良好，请继续保持</p>
           </div>
         </div>
         <div class="top_con_left_hll_one" style="height:305px;width:100%;background-color:#1D284D;">
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>水电监测</h5>
             </div>
           </div>
@@ -87,43 +142,43 @@
             <div id="goodsChart" style="width:100%;height:223px"></div>
           </div>
           <div class="top_con_right_one_notice">
-            <img src="../../../assets/Aiot-laba.png" alt="">
-            <P>智能提醒 : </P>
+            <img src="../../../assets/Aiot-laba.png" alt>
+            <P>智能提醒 :</P>
             <p>水电用量与昨日同期基本持平，处于正常范围</p>
           </div>
         </div>
       </div>
       <div class="top_con_middle">
         <div style="height:620px;width:100%;background-color:#1D284D;margin-bottom:10px;">
-          <img src="../../../assets/Aiot-middle.png" width="100%" height="620" alt="">
+          <img src="../../../assets/Aiot-middle.png" width="100%" height="620" alt>
         </div>
         <div style="height:305px;width:100%;background-color:#1D284D;">
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>深基坑监测</h5>
             </div>
-<!--            <div class="timeSelect" id="timeSelect">-->
-<!--              <p>地下水位</p>-->
-<!--              <p>土深水平</p>-->
-<!--              <p>边坡竖向</p>-->
-<!--              <p>边坡水平</p>-->
-<!--              <p>地标竖向</p>-->
-<!--              <p>建筑竖向</p>-->
-<!--            </div>-->
+            <!--            <div class="timeSelect" id="timeSelect">-->
+            <!--              <p>地下水位</p>-->
+            <!--              <p>土深水平</p>-->
+            <!--              <p>边坡竖向</p>-->
+            <!--              <p>边坡水平</p>-->
+            <!--              <p>地标竖向</p>-->
+            <!--              <p>建筑竖向</p>-->
+            <!--            </div>-->
           </div>
           <div class="table" id="scolTab" style="margin-top: 24px;flex: 1;overflow: hidden">
             <table width="100%" cellpadding="0" cellspacing="0" style="table-layout: auto;">
               <thead>
-              <tr>
-                <th>监测点编号</th>
-                <th>深度（m）</th>
-                <th >初始值（mm）</th>
-                <th>上次累计（mm）</th>
-                <th >本次变化（mm）</th>
-                <th >本次累计（mm）</th>
-                <th>变化速率（mm/d）</th>
-              </tr>
+                <tr>
+                  <th>监测点编号</th>
+                  <th>深度（m）</th>
+                  <th>初始值（mm）</th>
+                  <th>上次累计（mm）</th>
+                  <th>本次变化（mm）</th>
+                  <th>本次累计（mm）</th>
+                  <th>变化速率（mm/d）</th>
+                </tr>
               </thead>
               <tbody style="overflow-y: auto;">
                 <tr>
@@ -133,7 +188,9 @@
                   <td>-0.15</td>
                   <td>0.29</td>
                   <td>0.14</td>
-                  <td><span style="color: #FEDF50">0.15</span></td>
+                  <td>
+                    <span style="color: #FEDF50">0.15</span>
+                  </td>
                 </tr>
                 <tr>
                   <td>To2</td>
@@ -142,7 +199,9 @@
                   <td>-0.56</td>
                   <td>-0.4</td>
                   <td>-0.96</td>
-                  <td><span style="color: #FEDF50">0.2</span></td>
+                  <td>
+                    <span style="color: #FEDF50">0.2</span>
+                  </td>
                 </tr>
                 <tr>
                   <td>To3</td>
@@ -151,7 +210,9 @@
                   <td>0.85</td>
                   <td>-1.07</td>
                   <td>-0.22</td>
-                  <td><span style="color: #FEDF50">0.54</span></td>
+                  <td>
+                    <span style="color: #FEDF50">0.54</span>
+                  </td>
                 </tr>
                 <tr>
                   <td>To4</td>
@@ -160,7 +221,9 @@
                   <td>0.77</td>
                   <td>-0.03</td>
                   <td>0.74</td>
-                  <td><span style="color: #FEDF50">-0.03</span></td>
+                  <td>
+                    <span style="color: #FEDF50">-0.03</span>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -168,60 +231,98 @@
         </div>
       </div>
       <div class="top_con_right top_con_right_hll">
-        <div class="top_con_right_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+        <div
+          class="top_con_right_hll_one"
+          style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;"
+        >
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>环境监测</h5>
             </div>
           </div>
           <div class="bg padding10 bg_h" style="margin-top: 30px">
-            <div style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
+            <div
+              style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;"
+            >
               <div class="flex1 flex text_center" style="justify-content: space-around;">
-                <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
-                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
+                <div class="flex1">
+                  <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
+                </div>
+                <div class="flex1" style="font-size:18px;padding-top: 16px;">
+                  <span style="font-size:36px;">22</span>℃
+                </div>
+                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">阴天</div>
               </div>
-              <div class="flex1 flex"  style="flex-direction:column;">
+              <div class="flex1 flex" style="flex-direction:column;">
                 <div class="flex">
-                  <div class="flex1 font12"><img src="../../../assets/index/wind.png" alt=""> 南风2级 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/temperature.png" alt=""> 26℃ </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/rainfall.png" alt=""> 100% </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/wind.png" alt> 南风2级
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/temperature.png" alt> 100%
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/rainfall.png" alt> 67%
+                  </div>
                 </div>
                 <div class="flex">
-                  <div class="flex1 font12"><img src="../../../assets/index/pm25.png" alt=""> 21 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/pm10.png" alt=""> 33 </div>
-                  <div class="flex1 font12"><img src="../../../assets/index/noise.png" alt=""> 45dB </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/pm25.png" alt> 21
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/pm10.png" alt> 33
+                  </div>
+                  <div class="flex1 font12">
+                    <img src="../../../assets/index/noise.png" alt> 45dB
+                  </div>
                 </div>
               </div>
             </div>
-            <div style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
+            <div
+              style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;"
+            >
               <div class="flex1 flex">
                 <div class="flex1 text_center">
                   <p class="font12">明天</p>
-                  <img src="../../../assets/index/rain.png" alt="" width="34px">
+                  <img src="../../../assets/index/rain.png" alt width="34px">
                 </div>
                 <div class="flex1 text_center">
                   <p class="font12">后天</p>
-                  <img src="../../../assets/index/rain.png" alt="" width="34px">
+                  <img src="../../../assets/index/lzy.png" alt width="34px">
                 </div>
                 <div class="flex1 text_center">
                   <p class="font12">大后天</p>
-                  <img src="../../../assets/index/rain.png" alt="" width="34px">
+                  <img src="../../../assets/index/lzy.png" alt width="34px">
                 </div>
               </div>
               <div class="flex1 flex">
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">26</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
+                  <p style="font-size:14px;margin:8px 0">
+                    <span class="font28">29</span>℃
+                  </p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">
+                    中雨
+                    <img src="../../../assets/index/warning.png" alt width="20px">
+                  </p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">27</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">暴雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                  <p style="font-size:14px;margin:8px 0">
+                    <span class="font28">30</span>℃
+                  </p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">
+                    雷阵雨
+                    <img src="../../../assets/index/warning.png" alt width="20px">
+                  </p>
                 </div>
                 <div class="flex1 text_center">
-                  <p style="font-size:14px;margin:8px 0"><span class="font28">23</span>℃</p>
-                  <p class="font12" style="color:#FEDF50;padding-top:5px;">大雨</p>
+                  <p style="font-size:14px;margin:8px 0">
+                    <span class="font28">30</span>℃
+                  </p>
+                  <p class="font12" style="color:#FEDF50;padding-top:5px;">
+                    雷阵雨
+                    <img src="../../../assets/index/warning.png" alt width="20px">
+                  </p>
                 </div>
               </div>
             </div>
@@ -229,57 +330,66 @@
               <div style="height:26px;">
                 <div class="font12 text_center" style="line-height:26px;">晴雨表</div>
               </div>
-              <div class="flex"  style="flex-direction:column;line-height:22px;">
+              <div class="flex" style="flex-direction:column;line-height:22px;">
                 <div class="flex1 flex">
                   <div class="flex1 text_center" style="line-height:25px;">
                     <span class="blank_cir cir"></span>
-                    <p>26</p>
+                    <p>22</p>
                   </div>
-                  <div class="flex1 text_center" >
+                  <div class="flex1 text_center">
                     <span class="blue_cir cir"></span>
-                    <p>27</p>
+                    <p>23</p>
                   </div>
                 </div>
                 <div class="flex1 flex">
-                  <div class="flex1 text_center" >
+                  <div class="flex1 text_center">
                     <span class="blue_cir cir"></span>
-                    <p>28</p>
+                    <p>24</p>
                   </div>
-                  <div class="flex1 text_center" >
+                  <div class="flex1 text_center">
                     <span class="red_cir cir"></span>
-                    <p>29</p>
+                    <p>25</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="top_con_right_one_notice">
-            <img src="../../../assets/Aiot-laba.png" alt="">
-            <P>智能提醒 : </P>
+            <img src="../../../assets/Aiot-laba.png" alt>
+            <P>智能提醒 :</P>
             <p>预计明天有大雨，请做好相应准备</p>
           </div>
         </div>
-        <div class="top_con_right_hll_one" style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;">
+        <div
+          class="top_con_right_hll_one"
+          style="height:305px;width:100%;background-color:#1D284D;margin-bottom:10px;"
+        >
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>烟雾感应</h5>
             </div>
           </div>
           <div class="top_con_left_hll_one_top" style="border-bottom: 0;margin: 23px 0 0 46px">
-            <p style="font-size: 12px;color:rgba(219,225,255,1);">今日共预警<span style="color: #FEDF50;font-size: 28px;padding: 0 4px">1</span>次</p>
+            <p style="font-size: 12px;color:rgba(219,225,255,1);">
+              今日共预警
+              <span style="color: #FEDF50;font-size: 28px;padding: 0 4px">1</span>次
+            </p>
           </div>
           <div id="aiot-echart-line" style="width:100%;height:130px"></div>
           <div class="top_con_right_one_notice">
-            <img src="../../../assets/Aiot-laba.png" alt="">
-            <P>智能提醒 : </P>
+            <img src="../../../assets/Aiot-laba.png" alt>
+            <P>智能提醒 :</P>
             <p>施工一区发生烟雾报警次数最多，请关注</p>
           </div>
         </div>
-        <div class="top_con_right_hll_one" style="height:305px;width:100%;background-color:#1D284D;">
+        <div
+          class="top_con_right_hll_one"
+          style="height:305px;width:100%;background-color:#1D284D;"
+        >
           <div class="top_con_right_title">
             <div class="title_left">
-              <img src="../../../assets/safe-time.png" alt="">
+              <img src="../../../assets/safe-time.png" alt>
               <h5>劳动力监测</h5>
             </div>
           </div>
@@ -287,8 +397,8 @@
             <div id="echart-twoline" style="width:100%;height:200px"></div>
           </div>
           <div class="top_con_right_one_notice">
-            <img src="../../../assets/Aiot-laba.png" alt="">
-            <P style="color: #FC0C59">预警提示 : </P>
+            <img src="../../../assets/Aiot-laba.png" alt>
+            <P style="color: #FC0C59">预警提示 :</P>
             <p>今日现场施工人数与计划人数基本相符，劳动力满足要求</p>
           </div>
         </div>
@@ -298,27 +408,26 @@
 </template>
 <script>
 export default {
-  name: 'aiotPage',
-  data () {
-    return {
-    }
+  name: "aiotPage",
+  data() {
+    return {};
   },
   methods: {
-    goodsChart (){
+    goodsChart() {
       // 基于准备好的dom，初始化echarts实例
-      let myChart = this.$echarts.init(document.getElementById('goodsChart'))
+      let myChart = this.$echarts.init(document.getElementById("goodsChart"));
       // 绘制图表
       myChart.setOption({
-        backgroundColor: '#1D284D',
+        backgroundColor: "#1D284D",
         tooltip: {
-          trigger: 'axis',
+          trigger: "axis",
           axisPointer: {
-            type: 'shadow'
+            type: "shadow"
           }
         },
         legend: {
-          data: ['水量', '电量'],
-          align: 'left',
+          data: ["水量", "电量"],
+          align: "left",
           left: 10,
           textStyle: {
             color: "#fff"
@@ -328,100 +437,110 @@ export default {
           itemGap: 35
         },
         grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
           containLabel: true
         },
-        xAxis: [{
-          type: 'category',
-          data: ['8:00',
-            '12:00',
-            '16:00',
-            '20:00',
-            '24:00'
-          ],
-          axisLine: {
-            show: true,
-            lineStyle: {
-              color: "#063374",
-              width: 1,
-              type: "solid"
-            }
-          },
-          axisTick: {
-            show: false,
-          },
-          axisLabel: {
-            show: true,
-            textStyle: {
-              color: "#00c7ff",
-            }
-          },
-        }],
-        yAxis: [{
-          type: 'value',
-          axisLabel: {
-            formatter: '{value}'
-          },
-          axisTick: {
-            show: false,
-          },
-          axisLine: {
-            show: false,
-            lineStyle: {
-              color: "#00c7ff",
-              width: 1,
-              type: "solid"
+        xAxis: [
+          {
+            type: "category",
+            data: ["8:00", "12:00", "16:00", "20:00", "24:00"],
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#063374",
+                width: 1,
+                type: "solid"
+              }
             },
+            axisTick: {
+              show: false
+            },
+            axisLabel: {
+              show: true,
+              textStyle: {
+                color: "#00c7ff"
+              }
+            }
+          }
+        ],
+        yAxis: [
+          {
+            type: "value",
+            axisLabel: {
+              formatter: "{value}"
+            },
+            axisTick: {
+              show: false
+            },
+            axisLine: {
+              show: false,
+              lineStyle: {
+                color: "#00c7ff",
+                width: 1,
+                type: "solid"
+              }
+            },
+            splitLine: {
+              lineStyle: {
+                color: "#063374"
+              }
+            }
+          }
+        ],
+        series: [
+          {
+            name: "水量",
+            type: "bar",
+            data: [3.5, 0, 0, 0, 0],
+            barWidth: 10, //柱子宽度
+            barGap: 1, //柱子之间间距
+            itemStyle: {
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 1,
+                    color: "#3db0fe"
+                  },
+                  {
+                    offset: 0,
+                    color: "#0a81d4"
+                  }
+                ]),
+                opacity: 1
+              }
+            }
           },
-          splitLine: {
-            lineStyle: {
-              color: "#063374",
+          {
+            name: "电量",
+            type: "bar",
+            data: [21, 0, 0, 0, 0, 0],
+            barWidth: 10,
+            barGap: 1,
+            itemStyle: {
+              normal: {
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 1,
+                    color: "#4af0fc"
+                  },
+                  {
+                    offset: 0,
+                    color: "#03f2a3"
+                  }
+                ]),
+                opacity: 1
+              }
             }
           }
-        }],
-        series: [{
-          name: '水量',
-          type: 'bar',
-          data: [3.5, 0, 0, 0, 0],
-          barWidth: 10, //柱子宽度
-          barGap: 1, //柱子之间间距
-          itemStyle: {
-            normal: {
-              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                offset: 1,
-                color: '#3db0fe'
-              }, {
-                offset: 0,
-                color: '#0a81d4'
-              }]),
-              opacity: 1,
-            }
-          }
-        }, {
-          name: '电量',
-          type: 'bar',
-          data: [21,0, 0, 0, 0, 0],
-          barWidth: 10,
-          barGap: 1,
-          itemStyle: {
-            normal: {
-              color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                offset: 1,
-                color: '#4af0fc'
-              }, {
-                offset: 0,
-                color: '#03f2a3'
-              }]),
-              opacity: 1,
-            }
-          }
-        }]
-      })
+        ]
+      });
     },
     drawLine() {
-      var myChart = this.$echarts.init(document.getElementById("aiot-echart-line"));
+      var myChart = this.$echarts.init(
+        document.getElementById("aiot-echart-line")
+      );
       var option = {
         // backgroundColor: "#05224d",
         tooltip: {
@@ -606,15 +725,7 @@ export default {
                 margin: 15
               }
             },
-            data: [
-              "12:00",
-              "16:00",
-              "20:00",
-              "24:00",
-              "4:00",
-              "8:00",
-              "12:00"
-            ]
+            data: ["12:00", "16:00", "20:00", "24:00", "4:00", "8:00", "12:00"]
           }
         ],
         yAxis: [
@@ -705,15 +816,7 @@ export default {
             //     borderWidth: 99
             //   }
             // },
-            data: [
-              23,
-              36,
-              30,
-              25,
-              18,
-              29,
-              0
-            ]
+            data: [23, 36, 30, 25, 18, 29, 0]
           },
           {
             name: "劳务人员",
@@ -771,15 +874,7 @@ export default {
             //     borderWidth: 10
             // }
             //},
-            data: [
-              36,
-              22,
-              28,
-              19,
-              35,
-              36,
-              0
-            ]
+            data: [36, 22, 28, 19, 35, 36, 0]
           }
         ]
       };
@@ -789,29 +884,29 @@ export default {
       });
     }
   },
-  mounted () {
-    this.goodsChart()
+  mounted() {
+    this.goodsChart();
     this.drawLine();
     this.drawTwoLine();
   }
-}
+};
 </script>
 <style lang="scss" scoped>
-  @import "../homePage/homePage.scss";
-  @import "../siteSafety/siteSafety";
-  @import "./aiotPage";
+@import "../homePage/homePage.scss";
+@import "../siteSafety/siteSafety";
+@import "./aiotPage";
 </style>
 <style lang="scss" scoped>
-#timeSelect{
-  p{
+#timeSelect {
+  p {
     padding: 0 4px;
     border-right: 0;
   }
-  p:last-of-type{
-    border-right: 1px solid rgba(118,208,223,1);
+  p:last-of-type {
+    border-right: 1px solid rgba(118, 208, 223, 1);
   }
 }
-  .scolTab{
-    padding: 0!important;
-  }
+.scolTab {
+  padding: 0 !important;
+}
 </style>

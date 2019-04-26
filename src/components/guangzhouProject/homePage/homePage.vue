@@ -42,7 +42,7 @@
                             </div>
                             <div class="flex1 bg_b margin10 padding5" style="height:70px">
                                 <p class="textAlignCenter">科学创新目标</p>
-                                <p class="font12 text_center">省级工法3项，专利3项，QC奖项3项，协会奖项5项</p>
+                                <p class="font12 text_center">省级工法1项，专利5项，QC奖项2项，协会奖项5项</p>
                             </div>
                             <div class="flex1 bg_c margin10 padding5" style="height:70px">
                                 <p class="textAlignCenter">绿色施工</p>
@@ -542,8 +542,8 @@
                         <div style="height:125px;width:202px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
                             <div class="flex1 flex text_center" style="justify-content: space-around;">
                                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
-                                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
+                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">22</span>℃</div>
+                                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">阴天</div>
                             </div>
                             <div class="flex1 flex"  style="flex-direction:column;">
                                 <div class="flex">
@@ -566,25 +566,25 @@
                                 </div>
                                 <div class="flex1 text_center">
                                     <p class="font12">后天</p>
-                                    <img src="../../../assets/index/rain.png" alt="" width="34px">
+                                    <img src="../../../assets/index/lzy.png" alt="" width="34px">
                                 </div>
                                 <div class="flex1 text_center">
                                     <p class="font12">大后天</p>
-                                    <img src="../../../assets/index/rain.png" alt="" width="34px">
+                                    <img src="../../../assets/index/lzy.png" alt="" width="34px">
                                 </div>
                             </div>
                             <div class="flex1 flex">
                                 <div class="flex1 text_center">
-                                    <p style="font-size:14px;margin:8px 0"><span class="font28">26</span>℃</p>
-                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                                    <p style="font-size:14px;margin:8px 0"><span class="font28">29</span>℃</p>
+                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">中雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                                 </div>
                                 <div class="flex1 text_center">
-                                    <p style="font-size:14px;margin:8px 0"><span class="font28">27</span>℃</p>
-                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                                    <p style="font-size:14px;margin:8px 0"><span class="font28">30</span>℃</p>
+                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雷阵雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                                 </div>
                                 <div class="flex1 text_center">
-                                    <p style="font-size:14px;margin:8px 0"><span class="font28">23</span>℃</p>
-                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
+                                    <p style="font-size:14px;margin:8px 0"><span class="font28">30</span>℃</p>
+                                    <p class="font12" style="color:#FEDF50;padding-top:5px;">雷阵雨 <img src="../../../assets/index/warning.png" alt="" width="20px"></p>
                                 </div>
                             </div>
                         </div>
@@ -643,7 +643,7 @@
                     <div class="bg padding10">
                         <div class="flex">
                             <div class="flex1 font12 marginL30 text_center" style="cursor:pointer;" @click="dangerShowAlert = true">
-                                <div>今日重大危险源</div>
+                                <div>重大危险源</div>
                                 <div><span class="font28 color_red">1</span></div>
                             </div>
                             <div class="flex1 font12 marginL30 text_center">
@@ -734,7 +734,7 @@
                     <table style="width:100%;border-collapse:collapse;">
                         <tr class="font12 text_center" style="line-height:42px;color:#4CBDFE;background:rgba(255, 255, 255, 0.15);"><td>劳务人员数量</td><td>机械</td><td>物资</td><td>风险预估</td><td>待处理</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>15</td><td>-</td><td rowspan="4">物资进场1次</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
-                        <tr class="font12 text_center" style="line-height:41px;"><td>8</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_red"></i>重大危险源 雨</td><td>-</td></tr>
+                        <tr class="font12 text_center" style="line-height:41px;"><td>8</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>7</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
                         <tr class="font12 text_center" style="line-height:41px;"><td>5</td><td>-</td><td style="text-align:left;padding-left:15px;"><i class="i_yellow"></i>小到中雨</td><td>-</td></tr>
                     </table>
@@ -894,7 +894,7 @@
 
                     <div class="padding10" style="height:140px">
                         <div style="line-height:40px;background:#283664;font-size:16px;font-weight:500;">
-                            <span style="margin:0 15px">设备验收</span>
+                            <span style="margin:0 15px">设备维保</span>
                             <span>进场时间: </span>2019年4月25日
                         </div>
                         <div style="padding:10px">

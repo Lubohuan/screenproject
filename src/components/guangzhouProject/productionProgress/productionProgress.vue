@@ -60,11 +60,11 @@
                         <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
                       </div>
                       <div class="flex-3 flex ai-end" style="height:48px;">
-                        <span style="font-size:36px;line-height:35px;">26</span>
+                        <span style="font-size:36px;line-height:35px;">22</span>
                         <span style="font-size:18px;line-height:18px;">℃</span>
                       </div>
                       <div class="flex-2 flex ai-end" style="height:48px;">
-                        <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
+                        <span style="color:#FEDF50;font-size:16px;line-height:16px;">阴天</span>
                       </div>
                     </div>
                     <!-- 下半部分 -->
@@ -106,13 +106,13 @@
                         </dd>
                       </dl>
                       <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">26</span>℃
+                        <span class="font28">29</span>℃
                       </p>
                       <p
                         class="font12 text-center"
                         style="color:#FEDF50;padding-top:5px;line-height:12px;"
                       >
-                        雨
+                        中雨
                         <img src="../../../assets/index/warning.png" alt width="20px">
                       </p>
                     </div>
@@ -125,14 +125,14 @@
                         </dd>
                       </dl>
                       <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">27</span>℃
+                        <span class="font28">30</span>℃
                       </p>
                       <p
                         class="font12 text-center"
                         style="color:#FEDF50;padding-top:5px;line-height:12px;"
                       >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
+                        雷阵雨
+                        <img src="../../../assets/index/lzy.png" alt width="20px">
                       </p>
                     </div>
                     <!-- 大后天 -->
@@ -140,17 +140,17 @@
                       <dl>
                         <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
                         <dd>
-                          <img src="../../../assets/index/rain.png" alt>
+                          <img src="../../../assets/index/lzy.png" alt>
                         </dd>
                       </dl>
                       <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">23</span>℃
+                        <span class="font28">30</span>℃
                       </p>
                       <p
                         class="font12 text-center"
                         style="color:#FEDF50;padding-top:5px;line-height:12px;"
                       >
-                        雨
+                        雷阵雨
                         <img src="../../../assets/index/warning.png" alt width="20px">
                       </p>
                     </div>

@@ -129,8 +129,8 @@
                         <div style="height:65px;width:259px;float:left;border-right:1px solid rgba(255,255,255,0.1);display:flex; flex-direction: column;">
                             <div class="flex1 flex text_center" style="justify-content: space-around;">
                                 <div class="flex1"><img src="../../../assets/index/cloudy.png" alt="" width="58px" height="58px"></div>
-                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">26</span>℃</div>
-                                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">多云</div>
+                                <div class="flex1" style="font-size:18px;padding-top: 16px;"><span style="font-size:36px;">22</span>℃</div>
+                                <div class="flex1" style="color:#FEDF50;font-size:16px;padding-top: 22px;">阴天</div>
                             </div>
                             <!-- <div class="flex1 font12" style="line-height:70px;padding-left:15px">
                                 <img src="../../../assets/index/warning.png" alt=""> 高温预警，室外作业不宜超过6小时

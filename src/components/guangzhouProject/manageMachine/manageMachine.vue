@@ -57,7 +57,6 @@
                     </dd>
                   </dl>
                 </div>
-
               </div>
             </div>
           </div>
@@ -94,9 +93,7 @@
                   <tr>
                     <th>排名</th>
                     <th>设备类型</th>
-                    <th>
-                      人员证件
-                    </th>
+                    <th>人员证件</th>
                     <th>资料缺失</th>
                   </tr>
                 </thead>
@@ -119,7 +116,7 @@
                         <!-- <span>10%</span>
                         <span>
                           <i class="iconfont">↑</i>
-                        </span> -->
+                        </span>-->
                       </div>
                     </td>
                   </tr>
@@ -147,11 +144,11 @@
                         <!-- <span>33%</span>
                         <span>
                           <i class="iconfont">↑</i>
-                        </span> -->
+                        </span>-->
                       </div>
                     </td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>
                       <img src="../../../assets/index/third.png" alt>
                     </td>
@@ -164,15 +161,11 @@
                       <span>-</span>
                     </td>
                     <td>
-                      <div class="good">
-                      -
-                      </div>
+                      <div class="good">-</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      4
-                    </td>
+                    <td>4</td>
                     <td>
                       <div class="eclipse">
                         <span>-</span>
@@ -182,13 +175,9 @@
                       <span>-</span>
                     </td>
                     <td>
-                    <div class="good">
-                      -
-                      </div>
+                      <div class="good">-</div>
                     </td>
                   </tr>
-                 
-                 
                 </tbody>
               </table>
             </div>
@@ -227,7 +216,7 @@
       </div>
       <div class="top_con_middle">
         <!-- 轮播 -->
-        <div  class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
+        <div class="hengswiper" style="height:410px;width:100%;margin-bottom:10px;">
           <img src="../../../assets/manageMachine/bg.jpg">
           <div class="swiper-container" style="display:none">
             <div class="swiper-wrapper">
@@ -267,7 +256,7 @@
             <div class="ibox-content" style="padding:0">
               <div class="flex allHeight">
                 <div style="postion:relative;width:340px;height:100%;">
-                    <img src="../../../assets/manageMachine/candaer.png" alt="" width="100%">
+                  <img src="../../../assets/manageMachine/candaer.png" alt width="100%">
                 </div>
                 <div c style="width:440px;padding:20px;">
                   <ul class="list-unstyled list-task">
@@ -290,7 +279,7 @@
                     <li>
                       <span class="title">任务五：</span>
                       <span class="content">1钢筋工程检验批验收，1钢筋工程检验批验收</span>
-                    </li> -->
+                    </li>-->
                   </ul>
                 </div>
               </div>
@@ -305,9 +294,9 @@
               <span class="text">设备作业时长统计</span>
             </div>
             <div class="ibox-content" style="padding:10px;">
-                <div style="width:679px;margin:0 auto;margin-top:10px;">
-                  <img src="../../../assets/manageMachine/shebei.png" alt="" width="679px">
-                </div>
+              <div style="width:679px;margin:0 auto;margin-top:10px;">
+                <img src="../../../assets/manageMachine/shebei.png" alt width="679px">
+              </div>
             </div>
           </div>
         </div>
@@ -320,122 +309,119 @@
             <div class="ibox-title flex ai-center">
               <img src="../../../assets/index/icon.png" alt width="16px">
               <span class="text">天气预警中心</span>
-              <div
-                id="textPcontainer"
-                class="weather-warning"
-              >
+              <div id="textPcontainer" class="weather-warning">
                 <p id="textP">砼浇捣施工须搭设防雨棚，并及时遮盖砼面层，雨过后应及时做好面层的处理工作</p>
               </div>
             </div>
             <div class="ibox-content" style="padding-left:20px;">
-              <div class="weather-container flex">
-                  <!-- 第一格 -->
-                  <div
-                    class="item flex column"
-                    style="width:260px;border-right:1px solid rgba(255,255,255,.1);"
-                  >
-                    <!-- 上半部分 -->
-                    <div class="flex top">
-                      <div class="flex-3 flex ai-end" style="height:58px;">
-                        <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
-                      </div>
-                      <div class="flex-3 flex ai-end" style="height:48px;">
-                        <span style="font-size:36px;line-height:35px;">26</span>
-                        <span style="font-size:18px;line-height:18px;">℃</span>
-                      </div>
-                      <div class="flex-2 flex ai-end" style="height:48px;">
-                        <span style="color:#FEDF50;font-size:16px;line-height:16px;">多云</span>
-                      </div>
+             <div class="weather-container flex">
+                <!-- 第一格 -->
+                <div
+                  class="item flex column"
+                  style="width:260px;border-right:1px solid rgba(255,255,255,.1);"
+                >
+                  <!-- 上半部分 -->
+                  <div class="flex top">
+                    <div class="flex-3 flex ai-end" style="height:58px;">
+                      <img src="../../../assets/index/cloudy.png" alt width="58px" height="58px">
                     </div>
-                    <!-- 下半部分 -->
-                    <div class="flex bottom wrap">
-                      <div class="font12 flex ai-center" style="width:35%">
-                        <img src="../../../assets/index/wind.png" alt>
-                        <span>南风2级</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:34%">
-                        <img src="../../../assets/index/temperature.png" alt>
-                        <span>100℃</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:31%">
-                        <img src="../../../assets/index/rainfall.png" alt>
-                        <span>67%</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:35%">
-                        <img src="../../../assets/index/pm25.png" alt>
-                        <span>21</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:34%">
-                        <img src="../../../assets/index/pm10.png" alt>
-                        <span>33</span>
-                      </div>
-                      <div class="font12 flex ai-center" style="width:31%">
-                        <img src="../../../assets/index/noise.png" alt>
-                        <span>45dB</span>
-                      </div>
+                    <div class="flex-3 flex ai-end" style="height:48px;">
+                      <span style="font-size:36px;line-height:35px;">22</span>
+                      <span style="font-size:18px;line-height:18px;">℃</span>
+                    </div>
+                    <div class="flex-2 flex ai-end" style="height:48px;">
+                      <span style="color:#FEDF50;font-size:16px;line-height:16px;">阴天</span>
                     </div>
                   </div>
-                  <!-- 第二格 -->
-                  <div class="item flex" style="width:260px;padding-top:5px;">
-                    <!-- 明天-->
-                     <div class="flex column ai-center flex-1">
-                      <dl>
-                        <dt class="font12 text-center" style="line-height:13px;">明天</dt>
-                        <dd>
-                          <img src="../../../assets/index/rain.png" alt>
-                        </dd>
-                      </dl>
-                      <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">26</span>℃
-                      </p>
-                      <p
-                        class="font12 text-center"
-                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
-                      </p>
+                  <!-- 下半部分 -->
+                  <div class="flex bottom wrap">
+                    <div class="font12 flex ai-center" style="width:35%">
+                      <img src="../../../assets/index/wind.png" alt>
+                      <span>南风2级</span>
                     </div>
-                    <!-- 后天 -->
-                    <div class="flex column ai-center flex-1">
-                      <dl>
-                        <dt class="font12 text-center" style="line-height:13px;">后天</dt>
-                        <dd>
-                          <img src="../../../assets/index/rain.png" alt>
-                        </dd>
-                      </dl>
-                      <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">27</span>℃
-                      </p>
-                      <p
-                        class="font12 text-center"
-                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
-                      </p>
+                    <div class="font12 flex ai-center" style="width:34%">
+                      <img src="../../../assets/index/temperature.png" alt>
+                      <span>100℃</span>
                     </div>
-                    <!-- 大后天 -->
-                   <div class="flex column ai-center flex-1">
-                      <dl>
-                        <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
-                        <dd>
-                          <img src="../../../assets/index/rain.png" alt>
-                        </dd>
-                      </dl>
-                      <p style="font-size:14px;margin:6px 0">
-                        <span class="font28">23</span>℃
-                      </p>
-                      <p
-                        class="font12 text-center"
-                        style="color:#FEDF50;padding-top:5px;line-height:12px;"
-                      >
-                        雨
-                        <img src="../../../assets/index/warning.png" alt width="20px">
-                      </p>
+                    <div class="font12 flex ai-center" style="width:31%">
+                      <img src="../../../assets/index/rainfall.png" alt>
+                      <span>67%</span>
+                    </div>
+                    <div class="font12 flex ai-center" style="width:35%">
+                      <img src="../../../assets/index/pm25.png" alt>
+                      <span>21</span>
+                    </div>
+                    <div class="font12 flex ai-center" style="width:34%">
+                      <img src="../../../assets/index/pm10.png" alt>
+                      <span>33</span>
+                    </div>
+                    <div class="font12 flex ai-center" style="width:31%">
+                      <img src="../../../assets/index/noise.png" alt>
+                      <span>45dB</span>
                     </div>
                   </div>
                 </div>
+                <!-- 第二格 -->
+                <div class="item flex" style="width:260px;padding-top:5px;">
+                  <!-- 明天-->
+                  <div class="flex column ai-center flex-1">
+                    <dl>
+                      <dt class="font12 text-center" style="line-height:13px;">明天</dt>
+                      <dd>
+                        <img src="../../../assets/index/rain.png" alt>
+                      </dd>
+                    </dl>
+                    <p style="font-size:14px;margin:6px 0">
+                      <span class="font28">29</span>℃
+                    </p>
+                    <p
+                      class="font12 text-center"
+                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                    >
+                      中雨
+                      <img src="../../../assets/index/warning.png" alt width="20px">
+                    </p>
+                  </div>
+                  <!-- 后天 -->
+                  <div class="flex column ai-center flex-1">
+                    <dl>
+                      <dt class="font12 text-center" style="line-height:13px;">后天</dt>
+                      <dd>
+                        <img src="../../../assets/index/lzy.png" alt>
+                      </dd>
+                    </dl>
+                    <p style="font-size:14px;margin:6px 0">
+                      <span class="font28">30</span>℃
+                    </p>
+                    <p
+                      class="font12 text-right"
+                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                    >
+                      雷阵雨
+                      <img src="../../../assets/index/warning.png" alt width="20px">
+                    </p>
+                  </div>
+                  <!-- 大后天 -->
+                  <div class="flex column ai-center flex-1">
+                    <dl>
+                      <dt class="font12 text-center" style="line-height:13px;">大后天</dt>
+                      <dd>
+                        <img src="../../../assets/index/lzy.png" alt>
+                      </dd>
+                    </dl>
+                    <p style="font-size:14px;margin:6px 0">
+                      <span class="font28">30</span>℃
+                    </p>
+                    <p
+                      class="font12 text-center"
+                      style="color:#FEDF50;padding-top:5px;line-height:12px;"
+                    >
+                      雷阵雨
+                      <img src="../../../assets/index/warning.png" alt width="20px">
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -459,7 +445,7 @@
                   <div class="media-footer">2019-04-20</div>
                 </div>
                 <div class="media-right">
-                  <img src='../../../assets/manageMachine/jx4.jpg' alt>
+                  <img src="../../../assets/manageMachine/jx4.jpg" alt>
                 </div>
               </div>
               <div class="media" style="margin:3px 0;">
@@ -474,7 +460,7 @@
                   <div class="media-footer">2019-04-15</div>
                 </div>
                 <div class="media-right">
-                  <img src='../../../assets/manageMachine/jx3.jpg' alt>
+                  <img src="../../../assets/manageMachine/jx3.jpg" alt>
                 </div>
               </div>
               <div class="media" style="margin:0 0 3px 0;">
@@ -489,7 +475,7 @@
                   <div class="media-footer">2019-04-16 17:44</div>
                 </div>
                 <div class="media-right">
-                  <img src='../../../assets/manageMachine/jx2.jpg' alt>
+                  <img src="../../../assets/manageMachine/jx2.jpg" alt>
                 </div>
               </div>
               <div class="media">
@@ -504,7 +490,7 @@
                   <div class="media-footer">2019-04-09 14:24</div>
                 </div>
                 <div class="media-right">
-                  <img src='../../../assets/manageMachine/jx1.jpg' alt>
+                  <img src="../../../assets/manageMachine/jx1.jpg" alt>
                 </div>
               </div>
             </div>
@@ -518,41 +504,39 @@
               <span class="text">塔吊运转模拟图</span>
             </div>
             <div class="ibox-content">
-                <div style="height:2.5px;"></div>
-                <img src="../../../assets/manageMachine/jita.png" alt="" width="520px;">
+              <div style="height:2.5px;"></div>
+              <img src="../../../assets/manageMachine/jita.png" alt width="520px;">
             </div>
           </div>
         </div>
       </div>
       <!-- right end -->
     </div>
-    <el-dialog title="提示" width="73%" :visible.sync="dialogObj.dialogVisible1" >
-        <div class="modal">
-          <div class="modal-title flex jc-between">
-              <div class="all-height flex ai-center">
-                  <img src="../../../assets/index/icon.png" alt width="16px">
-                  <span class="text">详情</span>
-              </div>
-              <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
-                 <i class="el-icon-close"></i>
-              </div>
-
+    <el-dialog title="提示" width="73%" :visible.sync="dialogObj.dialogVisible1">
+      <div class="modal">
+        <div class="modal-title flex jc-between">
+          <div class="all-height flex ai-center">
+            <img src="../../../assets/index/icon.png" alt width="16px">
+            <span class="text">详情</span>
           </div>
-          <div class="modal-content" style="padding:10px;">
-            <div class="allHeight flex jc-between" >
-              <div>
-                <img src="../../../assets/manageMachine/pdf1.jpg" width="450" height="650">
-              </div>
-              <div>
-                <img src="../../../assets/manageMachine/pdf2.jpg"  width="450" height="650">
-              </div>
-              <div>
-                <img src="../../../assets/manageMachine/pdf3.jpg"  width="450" height="650">
-              </div>
-             
+          <div class="all-height flex ai-center close" @click="dialogObj.dialogVisible1 = false">
+            <i class="el-icon-close"></i>
+          </div>
+        </div>
+        <div class="modal-content" style="padding:10px;">
+          <div class="allHeight flex jc-between">
+            <div>
+              <img src="../../../assets/manageMachine/pdf1.jpg" width="450" height="650">
+            </div>
+            <div>
+              <img src="../../../assets/manageMachine/pdf2.jpg" width="450" height="650">
+            </div>
+            <div>
+              <img src="../../../assets/manageMachine/pdf3.jpg" width="450" height="650">
             </div>
           </div>
         </div>
+      </div>
     </el-dialog>
   </div>
 </template>
@@ -566,13 +550,13 @@ export default {
     return {
       intervalTimer: "",
       showScroll: false,
-      dialogObj:{
-        dialogVisible1:false
+      dialogObj: {
+        dialogVisible1: false
       }
     };
   },
   methods: {
-    showPdf(){
+    showPdf() {
       this.dialogObj.dialogVisible1 = true;
     },
     textScroll() {
